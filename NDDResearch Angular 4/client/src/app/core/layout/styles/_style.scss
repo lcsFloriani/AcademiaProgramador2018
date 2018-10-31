@@ -1,0 +1,111 @@
+@include exports('layout/style') {
+    .ndd-ng-navbar__brand-image {
+        background-image: url($navbar-logo-url);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: $logo-height;
+        width: $logo-width;
+        display: inline-block;
+        vertical-align: bottom;
+    }
+    .ndd-ng-sidebar-menu {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .ndd-ng-sidebar-options-bottomed {
+        border-top: 1px solid $ndd-sidebar-border-color;
+        margin-top: auto;
+    }
+    .content {
+        width: calc(100% - #{$ndd-sidebar-width});
+        left: $ndd-sidebar-width;
+        height: calc(100% - #{$navbar-height + $navbar-border-width});
+        transform: translateY(#{$navbar-height + $navbar-border-width});
+        position: absolute;
+        transition: all .4s;
+        background-color: $content-background-color;
+        display: inline-block;
+        &--ndd-sidebar-pinned {
+            left: $ndd-sidebar-width-expand;
+            width: calc(100% - #{$ndd-sidebar-width-expand});
+        }
+    }
+    .full-size {
+        height: 100%;
+    }
+    .ndd-ng-navbar-menu {
+        height: 40px;
+        max-width: 400px;
+        line-height: 1;
+        overflow: hidden;
+        float: left;
+        &:hover {
+            cursor: pointer;
+            background-color: #0e6ca5;
+        }
+        &:active {
+            cursor: pointer;
+            background-color: #0d6397;
+        }
+    }
+    .ndd-ng-navbar-menu__icon {
+        // sass-lint:disable no-important
+        font-size: rem-calc(15px) !important;
+        float: left;
+        text-rendering: auto;
+        padding: 10px;
+        // sass-lint:disable no-vendor-prefixes
+        -webkit-font-smoothing: antialiased;
+        vertical-align: 10px;
+    }
+    .ndd-ng-navbar-menu__data {
+        margin-top: 5px;
+        display: inline-block;
+        &--enterprisename {
+            font-size: rem-calc(15px);
+            font-weight: bold;
+        }
+        &--fullname {
+            font-size: rem-calc(12px);
+        }
+        &--partner {
+            font-size: rem-calc(10.5px);
+        }
+    }
+    .ndd-ng-navbar-menu__data-item {
+        max-width: 200px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        margin-right: 10px;
+        height: rem-calc(15px);
+    }
+    .button-logout {
+        background-color: $ndd-ng-theme-primary-color;
+        height: $button-logout-height;
+    }
+    .button-logout-name {
+        background-color: $ndd-ng-theme-primary-color;
+        color: #fff;
+        font-size: rem-calc(18px);
+        padding: 17px;
+        margin: 0;
+        border: 0;
+        width: 100%;
+        text-align: left;
+        &:hover {
+            background-color: #0e6ca5;
+        }
+        &:active {
+            background-color: #0d6397;
+        }
+    }
+    @media #{$small} {
+        .content {
+            transform: translateY($navbar-height-small);
+            left: 0;
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,54 @@
+@include exports('login/form') {
+    .login__form-content {
+        position: relative;
+        height: $login-form-wrapper-height;
+    }
+    .login--uppercase {
+        text-transform: uppercase;
+    }
+    .login__form-buttons-wrapper {
+        margin-top: $login-form-buttons-margin;
+    }
+    .login__form-buttons-wrapper>.login__form-button--right {
+        float: right;
+        clear: right;
+    }
+    .login__form-button--loading {
+        background-image: url('shared/images/loading.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .login__arrow-buttons-wrapper {
+        position: absolute;
+        bottom: $login-form-buttons-margin;
+    }
+    .login__form-button--arrow {
+        background-color: $login-white;
+        border: 0;
+        display: block;
+        color: $login-form-button-arrow-color;
+        &:hover {
+            font-weight: 600;
+        }
+    }
+    .login__form-button--arrow::before {
+        content: url('shared/images/thin-arrow-right.png');
+        vertical-align: 5%;
+    }
+    .login__form-title {
+        margin: 0;
+        margin-bottom: $login-form-buttons-margin;
+        font-size: $login-form-title-size;
+    }
+    .login__message {
+        margin-top: $login-form-message-margin;
+        font-size: $login-message-size;
+        font-weight: 600;
+        &--error {
+            color: $login-message-color-error;
+        }
+        &--success {
+            color: $login-message-color-success;
+        }
+    }
+}

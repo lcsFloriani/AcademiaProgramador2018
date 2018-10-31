@@ -1,0 +1,75 @@
+
+    <form class="feature-view-tab feature-form" [formGroup]="productEditForm">
+        <div class="feature-view-tab__content">
+            <div class="row feature-view__group">
+                <div class="col-sm-6 feature-view__body">
+                    <label class="form__label" for="name">
+                        Nome
+                        <span class="form__label form__label--required">*</span>
+                        <span class="form__label form__label--error" *ngIf="productEditForm.get('name').hasError('required') 
+                        && productEditForm.get('name').touched">Field is required</span>
+                    </label>
+                    <input class="form__input" formControlName="name" type="text" id="name" placeholder="Informe seu nome">
+                </div>
+                <div class="col-sm-6 feature-view__body">
+                    <label class="form__label" for="sale">
+                        Preço de Venda
+                        <span class="form__label form__label--required">*</span>
+                        <span class="form__label form__label--error" *ngIf="productEditForm.get('sale').hasError('required') 
+                        && productEditForm.get('sale').touched">Field is required</span>
+                    </label>
+                    <input class="form__input" formControlName="sale" type="text" id="sale" placeholder="Preço de venda">
+                </div>
+            </div>
+
+            <div class="row feature-view__group">
+                <div class="col-sm-6 feature-view__body">
+                    <label class="form__label" for="expanse">
+                        Preço de Custo
+                        <span class="form__label form__label--required">*</span>
+                        <span class="form__label form__label--error" *ngIf="productEditForm.get('expense').hasError('required') 
+                        && productEditForm.get('expense').touched">Field is required</span>
+                    </label>
+                    <input class="form__input" formControlName="expense" type="text" id="expense" placeholder="Preço de custo">
+                </div>
+                <div class="col-sm-6 feature-view__body">
+                    <label class="form__label" for="manufacture">
+                        Data de Fabricação
+                        <span class="form__label form__label--required">*</span>
+                        <span class="form__label form__label--error" *ngIf="productEditForm.get('manufacture').hasError('required') 
+                        && productEditForm.get('manufacture').touched">Field is required</span>
+                    </label>
+                    <input class="form__input" formControlName="manufacture" type="datetime-local" id="manufacture">
+                </div>
+            </div>
+
+            <div class="row feature-view__group">
+                <div class="col-sm-6 feature-view__body">
+                    <label class="form__label" for="expiration">
+                        Data de Validade
+                        <span class="form__label form__label--required">*</span>
+                        <span class="form__label form__label--error" *ngIf="productEditForm.get('expiration').hasError('required') 
+                        && productEditForm.get('expiration').touched">Field is required</span>
+                    </label>
+                    <input class="form__input" formControlName="expiration" type="datetime-local" id="expiration">
+                </div>
+                <div class="col-sm-6 feature-view__body">
+                    <label class="form__label" for="isAvailable">
+                        Disponivel?
+                        <span class="form__label form__label--required">*</span>
+                    </label>
+                    <div class="switch__container">
+                        <input id="switch-shadow" formControlName="isAvailable" class="switch switch--shadow" type="checkbox">
+                        <label for="switch-shadow"></label>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </form>
+    <div class="feature-view-tab__footer">
+        <button class="ndd-ng-button ndd-ng-button--primary" (click)="onEdit()">Salvar</button>
+        <button class="ndd-ng-button ndd-ng-button--cancel" (click)="redirect()">Voltar</button>
+    </div>
+    <div class="ndd-ng-spinner__spinner" *ngIf="isLoading"></div>
+    <div class="ndd-ng-spinner__color" *ngIf="isLoading"></div>

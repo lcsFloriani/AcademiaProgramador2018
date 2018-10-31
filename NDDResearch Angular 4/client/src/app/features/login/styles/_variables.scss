@@ -1,0 +1,57 @@
+$login-white: #fff;
+$login-padding: rem-calc(30px);
+
+$login-background-color: #efefef;
+$login-background-width: 100vw;
+$login-background-height: 100vh;
+$login-background-image-height: 70vh;
+
+$login-content-width: rem-calc(702px);
+$login-content-height: rem-calc(550px);
+$login-content-height-center: calc((100vh - #{$login-content-height})/2);
+$login-content-border: 1px solid #b4b4b4;
+$login-content-bg-color: #fff;
+
+$login-left-panel-width: rem-calc(400px);
+$login-left-panel-height: rem-calc(548px);
+
+$login-logo-height: rem-calc(30px);
+
+$login-form-wrapper-width: $login-left-panel-width;
+$login-form-wrapper-height: rem-calc(361px);
+
+$login-right-panel-width: rem-calc(299px);
+$login-right-panel-height: rem-calc(548px);
+$login-right-panel-bg-color: rgba(15, 117, 179, 1);
+$login-right-panel-padding: rem-calc(20px);
+
+$login-info-title-font-size: rem-calc(28px);
+
+$login-logo-ndd-width: rem-calc(84px);
+$login-logo-ndd-height: rem-calc(22px);
+$login-globe-size: rem-calc(23px);
+
+// FORM
+$login-form-buttons-margin: rem-calc(10px);
+$login-form-message-margin: rem-calc(5px);
+$login-form-button-arrow-color: #555;
+
+$login-form-title-size: rem-calc(20px);
+
+$login-message-size: rem-calc(14px);
+$login-message-color-error: #a70d13;
+$login-message-color-success: #13a70d;
+
+$login-header-dropdown-color: #e9e9e9;
+$login-header-dropdown-color-hover: #fff;
+$login-header-dropdown-color-active: #f7f7f7;
+
+// MOBILE
+$login-mobile-padding: rem-calc(20px);
+$login-content-mobile-height: calc(100vh - 25px);
+$login-logo-mobile-height: rem-calc(50px);
+
+$login-logo-ndd-mobile-width: rem-calc(57px);
+$login-logo-ndd-mobile-height: rem-calc(15px);
+
+$login-footer-mobile-font-size: rem-calc(11px);

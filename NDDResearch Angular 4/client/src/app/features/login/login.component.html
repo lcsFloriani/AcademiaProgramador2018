@@ -1,0 +1,47 @@
+<div class="login__background">
+    <div class="login__background--image ndd-ng-hide-when-mobile"></div>
+    <div class="login__content">
+        <div class="login__left-panel">
+            <div class="login__header">
+                <div class="login__logo"></div>
+                <span class="ndd-ng-hide-when-mobile">
+                    {{ 'NDDLoginTitle' | nddTranslation }}
+                </span>
+            </div>
+
+            <div class="login__form-wrapper">
+                <router-outlet></router-outlet>
+            </div>
+
+            <div class="login__language">
+                <div class="login__icon-globe"></div>
+                <span class="login__language--selected">{{ 'NDDPortuguese' | nddTranslation }}</span>
+            </div>
+        </div>
+        <div class="login__right-panel ndd-ng-hide-when-mobile">
+            <h1 class="login__info-title">
+                {{ 'NDDWelcome' | nddTranslation }}
+            </h1>
+            <span class="login__info-msg">
+                {{ 'NDDLoginInfo' | nddTranslation }}
+            </span>
+            <ul class="login__list">
+                <li class="login__list--item">{{ 'NDDInfoCompatibility' | nddTranslation }}</li>
+                <li class="login__list--item">{{ 'NDDInfoAccessibility' | nddTranslation }}</li>
+                <li class="login__list--item">{{ 'NDDInfoPattern' | nddTranslation }}</li>
+            </ul>
+        </div>
+    </div>
+    <div class="login__footer-mobile">
+        <div class="login__footer__logo"></div>
+        <span>{{ '&nbsp;© 2017' }}</span>
+        <span>{{ ' | ' + ('NDDVersion' | nddTranslation) + ' 1.0.0' }}</span>
+    </div>
+</div>
+<div class="login__footer ndd-ng-hide-when-mobile">
+    <div class="login__footer__logo"></div>
+    <span>{{ '&nbsp;© 2018' }}</span>
+    <span>{{ ' | ' + ('NDDRightsReserved' | nddTranslation) + ' | ' }}</span>
+    <a href="http://www.nddprint.com.br/" target="_blank">{{ ('NDDProductPage' | nddTranslation) }}</a>
+    <span>{{ ' | ' + ('NDDVersion' | nddTranslation) + ' 2.0.0' }}</span>
+</div>

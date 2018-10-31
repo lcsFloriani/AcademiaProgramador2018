@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5EEC9D0E-15A2-439B-A131-8DC77E0864EB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NDDResearch.Application</RootNamespace>
+    <AssemblyName>NDDResearch.Application</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper, Version=6.2.2.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.6.2.2\lib\net45\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentValidation, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7de548da2fbae0f0, processorArchitecture=MSIL">
+      <HintPath>..\packages\FluentValidation.7.3.4\lib\net45\FluentValidation.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Features\Addresses\Commands\AddressRegisterCommand.cs" />
+    <Compile Include="Features\Addresses\Commands\AddressUpdateCommand.cs" />
+    <Compile Include="Features\Customers\Commands\CustomerRemoveCommand.cs" />
+    <Compile Include="Features\Addresses\MappingProfile.cs" />
+    <Compile Include="Features\Addresses\Queries\AddressQuery.cs" />
+    <Compile Include="Features\Authentication\AuthenticationService.cs" />
+    <Compile Include="Features\Customers\Commands\CustomerRegisterCommand.cs" />
+    <Compile Include="Features\Customers\Commands\CustomerUpdateCommand.cs" />
+    <Compile Include="Features\Customers\CustomersService.cs" />
+    <Compile Include="Features\Customers\ICustomersService.cs" />
+    <Compile Include="Features\Customers\MappingProfile.cs" />
+    <Compile Include="Features\Customers\Queries\CustomerQuery.cs" />
+    <Compile Include="Features\Customers\Queries\CustomerDetailQuery.cs" />
+    <Compile Include="Features\Sites\Commands\SiteDeleteCommand.cs" />
+    <Compile Include="Features\Sites\Commands\SiteRegisterCommand.cs" />
+    <Compile Include="Features\Sites\Commands\SiteUpdateCommand.cs" />
+    <Compile Include="Features\Sites\ISitesService.cs" />
+    <Compile Include="Features\Sites\MappingProfile.cs" />
+    <Compile Include="Features\Sites\Queries\SiteQuery.cs" />
+    <Compile Include="Features\Sites\SitesService.cs" />
+    <Compile Include="Mapping\AutoMapperInitializer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NDDResearch.Domain\NDDResearch.Domain.csproj">
+      <Project>{652FE8D3-4536-43C5-9007-D38604F84006}</Project>
+      <Name>NDDResearch.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NDDResearch.Infra.Data\NDDResearch.Infra.Data.csproj">
+      <Project>{D5031E2F-6948-4CE1-871E-36D7372EAE91}</Project>
+      <Name>NDDResearch.Infra.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NDDResearch.Infra\NDDResearch.Infra.csproj">
+      <Project>{1CAC2280-6FBF-4A34-A7EF-4228F4E32529}</Project>
+      <Name>NDDResearch.Infra</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

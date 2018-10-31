@@ -1,0 +1,121 @@
+<ndd-ng-spinner [spinnerIsLoading]="isLoading">
+        <section class="feature-view-tab">
+            <div class="feature-view-tab__content">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <legend class="group__title"> {{ 'NDDRegistrationData' | nddTranslation }}</legend>
+                                </div>
+                            </div>
+                            <div class="row group__body">
+                                <div class="col-sm-12">
+                                    <div class="row">
+                                        <div class="col-sm-6 group__body-section">
+                                            <div>
+                                                <span class="group__label">{{ 'NDDDisplayName' | nddTranslation }}</span>
+                                            </div>
+                                            <div class="truncate">
+                                                <span title="{{ site?.name }}" class="group__value">{{ site?.name }}</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 group__body-section">
+                                            <div>
+                                                <span class="group__label">{{ 'NDDSiteDefault' | nddTranslation }}</span>
+                                            </div>
+                                            <div class="truncate">
+                                                <span class="group__value">{{ site?.isDefault ? ('NDDYes' | nddTranslation) : ('NDDNo' | nddTranslation) }}</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 group__body-section">
+                                            <div>
+                                                <span class="group__label">{{ 'NDDNationalIdNumber' | nddTranslation }}</span>
+                                            </div>
+                                            <div class="truncate">
+                                                <span title="{{ site?.nationalIdNumber }}" class="group__value">{{ site?.nationalIdNumber ? site?.nationalIdNumber : '-' }}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-5">
+                        <div class="group">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <legend class="group__title">{{ 'NDDLocation' | nddTranslation }}</legend>
+                                </div>
+                            </div>
+                            <div class="row group__body">
+                                <div class="col-md-12">
+                                    <div class="row">
+                                        <div class="col-md-4 group__body-section">
+                                            <div>
+                                                <span class="group__label">{{ 'NDDCountry' | nddTranslation }}</span>
+                                            </div>
+                                            <div class="truncate">
+                                                <span id="lblCountry" title="{{ site?.address.country }}" class="group__value">{{ site?.address.country }}</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5 group__body-section">
+                                            <div>
+                                                <span class="group__label">{{ 'NDDState' | nddTranslation }}</span>
+                                            </div>
+                                            <div class="truncate">
+                                                <span id="lblState" title="{{ site?.address.state }}" class="group__value">{{ site?.address.state }}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4 group__body-section">
+                                            <div>
+                                                <span class="group__label">{{ 'NDDCity' | nddTranslation }}</span>
+                                            </div>
+                                            <div class="truncate">
+                                                <span id="lblCity" title="{{ site?.address.city }}" class="group__value">{{ site?.address.city }}</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 group__body-section">
+                                            <div>
+                                                <span class="group__label">{{ 'NDDPostalCode' | nddTranslation }}</span>
+                                            </div>
+                                            <div class="truncate">
+                                                <span id="lblPostalCode" title="{{ site?.address.postalCode }}" class="group__value">{{ site?.address.postalCode }}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12 group__body-section">
+                                            <div>
+                                                <span class="group__label">{{ 'NDDAddress' | nddTranslation }}</span>
+                                            </div>
+                                            <div class="truncate">
+                                                <span id="lblStreet" title="{{ site?.address.street }}" class="group__value">{{ site?.address.street }}</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 group__body-section">
+                                            <div>
+                                                <span class="group__label">{{ 'NDDAdditionalInfo' | nddTranslation }}</span>
+                                            </div>
+                                            <div class="truncate">
+                                                <span id="lblAdditionalInfo" title="{{ site?.address.additionalInfo }}" class="group__value">{{ site?.address.additionalInfo ? site?.address.additionalInfo : '-' }}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="feature-view-tab__footer">
+                <ndd-ng-button
+                    [buttonText]="'NDDEdit' | nddTranslation"
+                    [buttonStyleType]="1"
+                    (onButtonClick)="onEdit()"></ndd-ng-button>
+            </div>
+        </section>
+    </ndd-ng-spinner>

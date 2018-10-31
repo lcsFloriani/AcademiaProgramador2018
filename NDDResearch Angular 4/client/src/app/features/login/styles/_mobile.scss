@@ -1,0 +1,59 @@
+@include exports('login/mobile') {
+    @media (max-width: 767px) {
+        .login__background {
+            position: relative;
+            width: $login-background-width;
+            height: $login-background-height;
+            background-color: $login-white;
+        }
+        .login__content {
+            position: static;
+            width: $login-background-width;
+            height: $login-content-mobile-height;
+            border: 0;
+        }
+        .login__left-panel {
+            width: $login-background-width;
+            height: $login-content-mobile-height;
+            overflow: auto;
+        }
+        .login__header {
+            padding: $login-mobile-padding;
+        }
+        .login__logo {
+            background-position: center;
+            height: $login-logo-mobile-height;
+        }
+        .login__form-wrapper {
+            width: $login-background-width;
+            height: auto;
+            padding-left: $login-mobile-padding;
+            padding-right: $login-mobile-padding;
+        }
+        .login__language {
+            position: static;
+            width: $login-background-width;
+            padding-left: $login-mobile-padding;
+            padding-right: $login-mobile-padding;
+        }
+        .login__footer-mobile {
+            display: block;
+            padding: $login-form-message-margin;
+            float: right;
+            font-size: $login-footer-mobile-font-size;
+        }
+        .login__footer__logo {
+            width: $login-logo-ndd-mobile-width;
+            height: $login-logo-ndd-mobile-height;
+            float: left;
+        }
+        .login__form-content {
+            position: relative;
+            height: auto;
+        }
+        .login__arrow-buttons-wrapper {
+            position: static;
+            margin: $login-form-message-margin;
+        }
+    }
+}

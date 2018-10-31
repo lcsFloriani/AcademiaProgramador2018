@@ -1,0 +1,52 @@
+<div class="login__form-content">
+    <form [formGroup]="formLogin" novalidate>
+        <ndd-ng-input controlId="login-input-username" 
+                    formControlName="username" 
+                    type="email"
+                    [placeholder]="'NDDEmail' | nddTranslation"
+                    nddInputTrimmer>
+                 <span *ngIf="formLogin.controls.username.errors?.emailFormat">{{ 'NDDEmailWrongFormat' | nddTranslation }}</span>
+        </ndd-ng-input>
+        <ndd-ng-input controlId="login-input-password" 
+                    type="password" 
+                    formControlName="password" 
+                    [placeholder]="'NDDPassword' | nddTranslation">
+        </ndd-ng-input>
+        <div class="login__form-buttons-wrapper">
+            <ndd-ng-button class="ndd-ng-hide-when-mobile"
+                buttonId="login-button-password"
+                [buttonText]="'NDDForgotYourPassword' | nddTranslation"
+                [buttonStyleType]="3"
+                (onButtonClick)="navigateToRequestPassword()">
+            </ndd-ng-button>
+            <br/><br/>
+            <ndd-ng-button
+                class="login__form-button--right"
+                *ngIf="!isLoading"
+                buttonId="login-button-submit"
+                buttonType="submit"
+                [buttonForm]="form"
+                [buttonText]="'NDDLogin' | nddTranslation"
+                [buttonStyleType]="1"
+                (onButtonClick)="login()">
+            </ndd-ng-button>
+            <button
+                class="ndd-ng-button__btn ndd-ng-button__btn--primary login__form-button--right login__form-button--loading"
+                *ngIf="isLoading"
+                type="button"
+                disabled>
+            </button>
+        </div>
+        <br/><br/>
+        <div id="login-form-validation-message-success" 
+            class="login__message login__message--success"
+            *ngIf="showSuccessMessage">
+            <span>{{ successMessage | nddTranslation }}</span>
+        </div> 
+        <div id="login-form-validation-message" 
+            class="login__message login__message--error"
+            *ngIf="showErrorMessage">
+            <span>{{ 'NDDLoginError' | nddTranslation }}</span>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,90 @@
+<ndd-ng-spinner [spinnerIsLoading]="isLoading">
+    <section class="feature-view">
+        <ndd-ng-titlebar titlebarIcon="ndd-font ndd-font-customer" [titlebarTitle]="'Criar cliente'" [titlebarRouterToReturnOnClose]=""></ndd-ng-titlebar>
+
+        <div class="container-fluid feature-view__content">
+            <form [formGroup]="form" novalidate>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <!-- Registration Data -->
+                        <legend class="group__title">{{ 'NDDRegistrationData' | nddTranslation }}</legend>
+
+                        <div class="row group__body">
+                            <div class="col-md-6">
+                                <ndd-ng-input #focusable [label]="'NDDName' | nddTranslation" formControlName="name" maxlength="50" nddInputCustomerName nddInputTrimmer [controlAutofocus]="true" >
+                                    <span *ngIf="form.controls.name.errors?.conflict">{{ 'NDDCustomerNameExists' | nddTranslation }}</span>
+                                </ndd-ng-input>
+                            </div>
+                            <div class="col-md-6">
+                                <ndd-ng-input [label]="'NDDDisplayName' | nddTranslation" formControlName="displayName" maxlength="50" nddInputTrimmer></ndd-ng-input>
+                            </div>
+                        </div>
+
+                        <div class="row group__body">
+                            <div class="col-md-6">
+                                <ndd-ng-input [label]="'NDDPhone' | nddTranslation" formControlName="phone" maxlength="50" nddInputTrimmer></ndd-ng-input>
+                            </div>
+
+                            <div class="col-md-6">
+                                <ndd-ng-input [label]="'NDDNationalIdNumber' | nddTranslation" formControlName="nationalIdNumber" maxlength="50"></ndd-ng-input>
+                            </div>
+                        </div>
+                            
+                        <div class="row group__body">
+                            <div class="col-md-12">
+                                <ndd-ng-input [label]="'NDDWebsite' | nddTranslation" formControlName="webSite" maxlength="50"></ndd-ng-input>
+                            </div>
+                        </div>
+
+                        <!-- Location -->
+                        <div formGroupName="address">
+                            <legend class="group__title">{{ 'NDDLocation' | nddTranslation }}</legend>
+
+                            <div class="row group__body">
+                                <div class="col-md-6">
+                                    <ndd-ng-input [label]="'NDDCountry' | nddTranslation" formControlName="country" maxlength="50" nddInputTrimmer></ndd-ng-input>
+                                </div>
+                                
+                                <div class="col-md-6">
+                                    <ndd-ng-input [label]="'NDDState' | nddTranslation" formControlName="state" maxlength="50" nddInputTrimmer></ndd-ng-input>
+                                </div>
+                            </div>
+                                
+                            <div class="row group__body">
+                                <div class="col-md-6">
+                                    <ndd-ng-input [label]="'NDDCity' | nddTranslation" formControlName="city" maxlength="50" nddInputTrimmer></ndd-ng-input>
+                                </div>
+                                
+                                <div class="col-md-6">
+                                    <ndd-ng-input [label]="'NDDPostalCode' | nddTranslation" formControlName="postalCode" maxlength="50" nddInputTrimmer></ndd-ng-input>
+                                </div>
+                            </div>
+                                
+                            <div class="row group__body">
+                                <div class="col-md-12">
+                                    <ndd-ng-input [label]="'NDDAddress' | nddTranslation" formControlName="street" maxlength="50" nddInputTrimmer></ndd-ng-input>
+                                </div>
+                            </div>
+                                
+                            <div class="row group__body">
+                                <div class="col-md-12">
+                                    <ndd-ng-input [label]="'NDDAdditionalInfo' | nddTranslation" formControlName="additionalInfo" maxlength="50"></ndd-ng-input>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="feature-view__footer">
+            <ndd-ng-button buttonId="ndd-ng-button-save" buttonType="submit" [buttonText]="'NDDRegister' | nddTranslation" [buttonStyleType]="1" (onButtonClick)="onSubmit()"></ndd-ng-button>
+
+            <ndd-ng-button buttonId="ndd-ng-button-save-open" buttonType="submit" [buttonText]="'NDDSaveAndOpen' | nddTranslation" [buttonStyleType]="-1" (onButtonClick)="onSaveAndOpen()"></ndd-ng-button>
+
+            <ndd-ng-button buttonId="ndd-ng-button-save-create" buttonType="submit" [buttonText]="'NDDRegisterAndNew' | nddTranslation" [buttonStyleType]="-1" (onButtonClick)="onSaveAndCreate()"></ndd-ng-button>
+
+            <ndd-ng-button buttonId="ndd-ng-button-cancel" buttonType="submit" [buttonText]="'NDDCancel' | nddTranslation" [buttonStyleType]="0" (onButtonClick)="onCancel()"></ndd-ng-button>
+        </div>
+    </section>
+</ndd-ng-spinner>

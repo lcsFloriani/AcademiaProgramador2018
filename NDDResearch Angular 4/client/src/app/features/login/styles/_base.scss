@@ -1,0 +1,112 @@
+@include exports('login/base') {
+    .login__background {
+        position: relative;
+        width: $login-background-width;
+        height: $login-background-height;
+        background-color: $login-background-color;
+        &--image {
+            width: $login-background-width;
+            height: $login-background-image-height;
+            background-image: url('shared/images/login-background.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            filter: brightness(.5);
+        }
+    }
+    .login__content {
+        position: absolute;
+        background-color: $login-content-bg-color;
+        width: $login-content-width;
+        height: $login-content-height;
+        top: $login-content-height-center;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        border: $login-content-border;
+    }
+    .login__left-panel {
+        width: $login-left-panel-width;
+        height: $login-left-panel-height;
+        float: left;
+    }
+    .login__header {
+        padding: $login-padding;
+        background-color: $login-white;
+    }
+    .login__logo {
+        background-image: url('shared/images/logo.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: $login-logo-height;
+        margin-bottom: rem-calc(10px);
+    }
+    .login__form-wrapper {
+        width: $login-form-wrapper-width;
+        height: $login-form-wrapper-height;
+        padding-left: $login-padding;
+        padding-right: $login-padding;
+        background-color: $login-white;
+    }
+    .login__language {
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 1.25rem;
+        width: $login-left-panel-width;
+        background-color: $login-white;
+        padding-left: $login-padding;
+        padding-right: $login-padding;
+        &--selected {
+            padding-left: rem-calc(10px);
+        }
+    }
+    .login__icon-globe {
+        float: left;
+        background-image: url('shared/images/globe.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: $login-globe-size;
+        height: $login-globe-size;
+    }
+    .login__right-panel {
+        float: right;
+        width: $login-right-panel-width;
+        height: $login-right-panel-height;
+        background-color: $login-right-panel-bg-color;
+        color: $login-white;
+        padding-top: $login-padding;
+        padding-left: $login-right-panel-padding;
+        padding-right: $login-right-panel-padding;
+    }
+    .login__info-title {
+        margin: 0;
+        font-size: $login-info-title-font-size;
+        margin-bottom: $login-padding;
+    }
+    .login__info-msg {
+        display: block;
+        margin-bottom: $login-padding;
+    }
+    .login__list {
+        margin: 0;
+        &--item {
+            margin-bottom: $login-right-panel-padding;
+        }
+    }
+    .login__footer {
+        position: absolute;
+        bottom: $login-form-message-margin;
+        right: $login-form-buttons-margin;
+    }
+    .login__footer-mobile {
+        display: none;
+    }
+    .login__footer__logo {
+        background-image: url('shared/images/logo-ndd.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: $login-logo-ndd-width;
+        height: $login-logo-ndd-height;
+        float: left;
+    }
+}

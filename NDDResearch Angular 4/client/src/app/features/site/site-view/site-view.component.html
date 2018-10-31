@@ -1,0 +1,8 @@
+<ndd-ng-titlebar titlebarIcon="ndd-font ndd-font-site" [titlebarTitle]="title" [titlebarInfoItems]="infoItems"
+    [titlebarInfoI18n]="true"></ndd-ng-titlebar>
+<div class="feature__content">
+    <ndd-ng-tabsbar [tabsbarI18n]="true">        
+        <ndd-ng-tab tabId="ndd-ng-tab-site-info" [tabRoute]="'./info'" tabTitle="NDDRegistrationData"></ndd-ng-tab>
+    </ndd-ng-tabsbar>
+    <router-outlet></router-outlet>
+</div>

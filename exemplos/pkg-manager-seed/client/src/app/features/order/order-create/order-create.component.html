@@ -1,0 +1,61 @@
+<div class="feature-view">
+    <ndd-ng-titlebar titlebarIcon="ndd-font ndd-font-cart" [titlebarTitle]="title" [titlebarInfoItems]="infoItems" [titlebarRouterToReturnOnClose]="returnRoute">
+    </ndd-ng-titlebar>
+    <form class="feature-view-tab feature-form" [formGroup]="orderCreateForm">
+        <div class="feature-view-tab__content">
+            <div class="row feature-view__group">
+                <div class="col-sm-6 feature-view__body">
+                    <label class="form__label" for="customer">
+                        Cliente
+                        <span class="form__label form__label--required">*</span>
+                        <span class="form__label form__label--error" *ngIf="orderCreateForm.get('customer').hasError('required') 
+                            && orderCreateForm.get('customer').touched">Field is required</span>
+                    </label>        
+                    <input class="form__input" formControlName="customer" type="text" id="customer" placeholder="Informe o nome do cliente">
+                </div>
+            </div>
+
+            <div class="row feature-view__group">
+                <div class="col-sm-6 feature-view__body">
+                    <label class="form__label" for="productId">
+                        Produto
+                        <span class="form__label form__label--required">*</span>
+                        <span class="form__label form__label--error" *ngIf="orderCreateForm.get('product').hasError('required') 
+                                && orderCreateForm.get('product').touched">Field is required</span>
+                    </label>
+                    <kendo-autocomplete
+                        [data]="data"
+                        [valueField]="'name'"
+                        [filterable]="true"
+                        class="form__input"
+                        placeholder="Informe um produto"
+                        formControlName="product"
+                        (filterChange)="onAutoCompleteChange($event)">
+                </kendo-autocomplete>
+                </div>
+            </div>
+
+            <div class="row feature-view__group">
+                <div class="col-sm-6 feature-view__body">
+                    <label class="form__label" for="quantity">
+                        Quantidade
+                        <span class="form__label form__label--required">*</span>
+                        <span class="form__label form__label--error" *ngIf="orderCreateForm.get('quantity').hasError('required') 
+                            && orderCreateForm.get('quantity').touched">Field is required</span>
+                        <span class="form__label form__label--error" *ngIf="orderCreateForm.get('quantity').hasError('min') 
+                            && orderCreateForm.get('quantity').touched">quantity must be greater
+                            than one</span>
+                    </label>
+                    <input class="form__input" formControlName="quantity" type="text" id="quantity" placeholder="Quantidade">
+                </div>
+            </div>
+
+        </div>
+    </form>
+</div>
+<div class="feature-view-tab__footer">
+    <button class="ndd-ng-button ndd-ng-button--primary" (click)="onCreate()">Salvar</button>
+    <button class="ndd-ng-button ndd-ng-button--cancel" (click)="redirect()">Fechar</button>
+</div>
+<div class="ndd-ng-spinner__spinner" *ngIf="isLoading"></div>
+<div class="ndd-ng-spinner__color" *ngIf="isLoading"></div>

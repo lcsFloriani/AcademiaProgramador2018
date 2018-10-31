@@ -1,0 +1,127 @@
+@include exports('user-menu/style') {
+    .user-menu {
+        background-color: $user-menu-background-color;
+        color: $user-menu-color;
+        height: $user-menu-header-height;
+    }
+    .user-menu__icon {
+        background-color: $user-menu-background-color;
+        color: $user-menu-color;
+        font-size: rem-calc(54px) !important;
+        float: left;
+        padding: rem-calc(14px);
+    }
+    .user-menu__title {
+        background-color: $user-menu-background-color;
+        color: $user-menu-color;
+        font-size: rem-calc(22px);
+        padding: rem-calc(17px);
+        margin: 0;
+        font-weight: 400 !important;
+    }
+    .user-menu__main {
+        color: $user-menu-color;
+        background-color: $user-menu-background-color;
+        padding-bottom: rem-calc(10px);
+    }
+    .user-menu__data {
+        padding-bottom: rem-calc(10px);
+        &--enterprisename {
+            font-size: rem-calc(20px);
+            font-weight: bold;
+        }
+        &--fullname {
+            font-size: rem-calc(17px);
+        }
+        &--domain-and-logonname {
+            font-size: rem-calc(12px);
+            font-style: italic;
+        }
+        &--email {
+            font-size: rem-calc(12px);
+            font-weight: bold;
+        }
+        &--dealer {
+            font-style: italic;
+            font-size: rem-calc(13px);
+        }
+    }
+    .user-menu__data-item {
+        max-width: rem-calc(200px);
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        margin-bottom: rem-calc(-6px);
+        line-height: 1.5;
+    }
+    .user-menu-content {
+        background-color: $user-menu-content-background-color;
+        color: $user-menu-content-color;
+        height: calc(100vh - #{$button-logout-height} - #{$user-menu-header-height} - #{$navbar-height});
+        position: relative;
+    }
+    .user-menu-content__main {
+        background-color: $user-menu-content-background-color;
+        color: $user-menu-content-color;
+    }
+    .user-menu-content__options {
+        background-color: $user-menu-content-background-color;
+        color: $user-menu-content-color;
+    }
+    .user-menu-content {
+        font-size: rem-calc(18px);
+        display: block;
+    }
+    .user-menu-content__lang {
+        &__title {
+            font-size: rem-calc(16px);
+            padding: rem-calc(10px) 0 rem-calc(10px) rem-calc(16px);
+            display: inline-block;
+        }
+        &__selected {
+            font-size: rem-calc(18px);
+            padding: rem-calc(10px) 0;
+        }
+        &__arrow {
+            transform: rotate(180deg);
+            float: right;
+            margin-right: rem-calc(10px);
+            margin-top: rem-calc(13px);
+        }
+        &:hover {
+            background-color: $user-menu-bg-color-btn-hover;
+            cursor: pointer;
+        }
+    }
+    .user-menu-content__mysettings {
+        font-size: rem-calc(16px);
+        padding: rem-calc(10px) 0 rem-calc(10px) rem-calc(16px);
+        display: block;
+        &:hover {
+            background-color: $user-menu-bg-color-btn-hover;
+            cursor: pointer;
+        }
+    }
+    .user-menu-content__lang-options {
+        &__arrow {
+            float: left;
+            margin-left: rem-calc(10px);
+            margin-top: rem-calc(15px);
+        }
+        &__title {
+            font-size: rem-calc(18px);
+            padding: rem-calc(10px) 0 rem-calc(10px) rem-calc(16px);
+            display: inline-block;
+            cursor: pointer;
+        }
+        &__list {
+            font-size: rem-calc(16px);
+            height: 100%;
+            padding: rem-calc(10px) 0 rem-calc(10px) rem-calc(16px);
+            &:hover {
+                background-color: $ndd-ng-theme-secondary-color;
+                cursor: pointer;
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+<div class="user-menu-content">
+    <div class="user-menu-content__main" *ngIf="!selectLanguage">
+        <div id="user-menu-change-language" class="user-menu-content__lang" (click)="changeLanguage()">
+            <span class="user-menu-content__lang__title">{{ 'NDDLanguage' | nddTranslation }}:</span>
+            <span id="user-menu-selected-language" class="user-menu-content__lang__selected">{{ initialCurrentLang }}</span>
+            <span class="ndd-font ndd-font-arrow user-menu-content__lang__arrow"></span>
+        </div>
+    </div>
+    <div *ngIf="selectLanguage" class="user-menu-content__lang-options">
+        <div id="user-menu-selectlang-back" (click)="selectLanguage = false">
+            <span class="ndd-font ndd-font-arrow user-menu-content__lang-options__arrow"></span>
+            <span class="user-menu-content__lang-options__title">{{ 'NDDChangeLanguage' | nddTranslation }}</span>
+        </div>
+        <div *ngFor="let lang of languages" [id]="'user-menu-languages-' + lang.id"
+            class="user-menu-content__lang-options__list" (click)="setLanguage(lang.id)">
+            <span> {{ lang.name }}</span>
+        </div>
+    </div>
+</div>

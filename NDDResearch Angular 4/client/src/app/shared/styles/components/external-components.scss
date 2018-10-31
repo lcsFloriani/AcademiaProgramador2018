@@ -1,0 +1,22 @@
+// Importa os estilos padrão dos componentes
+@import '~ndd-ng-theme-default/scss/base';
+@import '~ndd-ng-theme-default/scss/utils';
+@import '~ndd-ng-theme-default/scss/ndd-ng-actionbar';
+@import '~ndd-ng-theme-default/scss/ndd-ng-button';
+@import '~ndd-ng-theme-default/scss/ndd-ng-dialog';
+@import '~ndd-ng-theme-default/scss/ndd-ng-dropdown';
+@import '~ndd-ng-theme-default/scss/ndd-ng-message-box';
+@import '~ndd-ng-theme-default/scss/ndd-ng-responsive-menu';
+@import '~ndd-ng-theme-default/scss/ndd-ng-tabsbar';
+@import '~ndd-ng-theme-default/scss/ndd-ng-titlebar';
+@import '~ndd-ng-theme-default/scss/ndd-ng-tooltip';
+
+// Importa os estilos dos componentes externos
+@import '~ndd-ng-buttons/ndd-ng-buttons';
+@import '~ndd-ng-form/ndd-ng-form';
+@import '~ndd-ng-breadcrumb/ndd-ng-breadcrumb';
+@import '~ndd-ng-navbar/ndd-ng-navbar';
+@import '~ndd-ng-offsidebar/ndd-ng-offsidebar';
+@import '~ndd-ng-sidebar/ndd-ng-sidebar';
+@import '~ndd-ng-spinner/ndd-ng-spinner';
+@import '~ndd-ng-grid/ndd-ng-grid';

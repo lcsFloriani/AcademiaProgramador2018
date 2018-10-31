@@ -1,0 +1,1 @@
+(c) Copyright 2017 NDDigital, all rights reserved.

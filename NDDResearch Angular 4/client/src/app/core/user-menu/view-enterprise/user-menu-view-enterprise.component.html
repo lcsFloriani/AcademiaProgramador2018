@@ -1,0 +1,25 @@
+<div class="user-menu">
+    <h1 class="user-menu__title">{{ 'NDDMyData' | nddTranslation }}</h1>
+    
+    <div class="user-menu__main">
+        <div class="ndd-font ndd-font-user-thin user-menu__icon"> </div>
+        <div class="user-menu__data">
+            <div class="user-menu__data-item">
+                <span [title]=" ('NDDCompany' | nddTranslation) + ': ' +  enterprise "
+                    class="user-menu__data--enterprisename">{{ enterprise }}</span>
+            </div>
+            <div class="user-menu__data-item">
+                <span [title]=" ('NDDName' | nddTranslation) + ': ' +  fullName "
+                    class="user-menu__data--fullname">{{ fullName }}</span>
+            </div>
+            <div class="user-menu__data-item">
+                <span [title]=" ('NDDDomain' | nddTranslation) + '\\' + ('NDDLogon' | nddTranslation) + ': ' +  domain + '\\' + logon "
+                    class="user-menu__data--domain-and-logonname">{{ domain }}\{{ logon }}</span>
+            </div>
+            <div class="user-menu__data-item">
+                <span [title]=" ('NDDEmail' | nddTranslation) + ': ' +  email "
+                    class="user-menu__data--email">{{ email }}</span>
+            </div>
+        </div>
+    </div>
+</div>

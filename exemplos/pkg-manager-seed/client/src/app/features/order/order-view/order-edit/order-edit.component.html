@@ -1,0 +1,52 @@
+<form class="feature-view-tab feature-form" [formGroup]="orderEditForm">
+    <input formControlName="productId" class="form__input" type="hidden" id="productId" />
+    <div class="feature-view-tab__content">
+        <div class="row feature-view__group">
+            <div class="col-sm-6 feature-view__body">
+                <label class="form__label" for="customer">
+                    Cliente
+                    <span class="form__label form__label--required">*</span>
+                    <span class="form__label form__label--error" *ngIf="orderEditForm.get('customer').hasError('required') 
+                                && orderEditForm.get('customer').touched">Field is required</span>
+                </label>
+                <input class="form__input" formControlName="customer" type="text" id="customer" placeholder="Informe o nome do cliente">
+            </div>
+        </div>
+
+        <div class="row feature-view__group">
+            <div class="col-sm-6 feature-view__body">
+                <label class="form__label" for="productName">
+                    Produto
+                    <span class="form__label form__label--required">*</span>
+                    <span class="form__label form__label--error" *ngIf="orderEditForm.get('productName').hasError('required') 
+                                    && orderEditForm.get('productName').touched">Field is required</span>
+                </label>
+                <kendo-autocomplete [data]="data" [valueField]="'name'" [filterable]="true" class="form__input" placeholder="Informe um produto"
+                    formControlName="productName" (filterChange)="onAutoCompleteChange($event)">
+                </kendo-autocomplete>
+            </div>
+        </div>
+
+        <div class="row feature-view__group">
+            <div class="col-sm-6 feature-view__body">
+                <label class="form__label" for="quantity">
+                    Quantidade
+                    <span class="form__label form__label--required">*</span>
+                    <span class="form__label form__label--error" *ngIf="orderEditForm.get('quantity').hasError('required') 
+                                && orderEditForm.get('quantity').touched">Field is required</span>
+                    <span class="form__label form__label--error" *ngIf="orderEditForm.get('quantity').hasError('min') 
+                                && orderEditForm.get('quantity').touched">quantity must be greater than
+                        one</span>
+                </label>
+                <input class="form__input" formControlName="quantity" type="text" id="quantity" placeholder="Quantidade">
+            </div>
+        </div>
+
+    </div>
+</form>
+<div class="feature-view-tab__footer">
+    <button class="ndd-ng-button ndd-ng-button--primary" (click)="onEdit()">Salvar</button>
+    <button class="ndd-ng-button ndd-ng-button--cancel" (click)="redirect()">Voltar</button>
+</div>
+<div class="ndd-ng-spinner__spinner" *ngIf="isLoading"></div>
+<div class="ndd-ng-spinner__color" *ngIf="isLoading"></div>

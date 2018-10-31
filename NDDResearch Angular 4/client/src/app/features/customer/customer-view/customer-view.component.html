@@ -1,0 +1,9 @@
+<ndd-ng-titlebar titlebarIcon="ndd-font ndd-font-user" [titlebarTitle]="title" [titlebarInfoItems]="infoItems"
+    [titlebarInfoI18n]="true" [titlebarRouterToReturnOnClose]="returnRoute"></ndd-ng-titlebar>
+<div class="feature__content">
+    <ndd-ng-tabsbar [tabsbarI18n]="true">        
+        <ndd-ng-tab tabId="ndd-ng-tab-customer-info" [tabRoute]="'./info'" tabTitle="NDDRegistrationData"></ndd-ng-tab>
+        <ndd-ng-tab tabId="ndd-ng-tab-customer-site" [tabRoute]="'./sites'" tabTitle="NDDSites"></ndd-ng-tab>
+    </ndd-ng-tabsbar>
+    <router-outlet></router-outlet>
+</div>

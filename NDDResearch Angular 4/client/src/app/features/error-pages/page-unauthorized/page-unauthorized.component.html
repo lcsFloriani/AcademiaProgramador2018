@@ -1,0 +1,16 @@
+<div class="error-page">
+    <div class="error-page__content">
+        <div>
+            <h1 class="error-page__title">401</h1>
+        </div>
+        <div>
+            <h2 class="error-page__description">{{ 'NDDPageUnauthorized' | nddTranslation }}</h2>
+        </div>
+        <div>
+            <p>{{ 'NDDPageUnauthorizedDescription' | nddTranslation }}</p>
+        </div>
+        <div>
+            <button class="ndd-ng-button ndd-ng-button--primary" [routerLink]="['/login']" [queryParams]="{returnUrl:returnUrl}">{{ 'NDDGoBackToLogin' | nddTranslation }}</button>
+        </div>
+    </div>
+</div>

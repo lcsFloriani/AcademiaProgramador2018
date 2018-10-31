@@ -1,0 +1,65 @@
+<ngx-loading-bar></ngx-loading-bar>
+<ndd-ng-navbar navbarLogoClass="ndd-ng-navbar__brand-image" navbarBreadcrumbHomeName="{{ 'NDDResearchSeed' | nddTranslation }}"
+    (onNavbarToggle)="toggleSidebar()">
+    <div ndd-ng-navbar-menu>
+        <span class="ndd-ng-navbar__pipe-blue"></span>
+        <div id="ndd-ng-navbar-menu" class="ndd-ng-navbar-menu" (click)="openOffSidebar()">
+            <div class="ndd-font ndd-font-user ndd-ng-navbar-menu__icon"></div>
+            <div class="ndd-ng-navbar-menu__data">
+                <div class="ndd-ng-navbar-menu__data-item">
+                    <span class="ndd-ng-navbar-menu__data--enterprisename">{{ fullName }} </span>
+                </div>
+                <div class="ndd-ng-navbar-menu__data-item">
+                    <span class="ndd-ng-navbar-menu__data--fullname">{{ email }} </span>
+                </div>
+            </div>
+        </div>
+        <span class="ndd-ng-navbar__pipe-blue ndd-ng-navbar__pipe-blue--off-border"></span>
+    </div>
+</ndd-ng-navbar>
+
+<ndd-ng-sidebar [sidebarHeader]="false" [sidebarI18n]="true" (onSidebarPin)="setPin($event)">
+    <div ndd-ng-sidebar-menu class="ndd-ng-sidebar-menu">
+        <ndd-ng-sidebar-option optionId="menu-home" optionHref="/home" optionText="NDDStart" optionIcon="ndd-font ndd-font-home">
+        </ndd-ng-sidebar-option>
+
+        <ndd-ng-sidebar-option optionId="menu-customers" optionText="NDDCustomers" optionIcon="ndd-font ndd-font-customer">
+        </ndd-ng-sidebar-option>
+
+        <ndd-ng-sidebar-option optionId="menu-sites" optionText="NDDSites" optionIcon="ndd-font ndd-font-sites">
+        </ndd-ng-sidebar-option>
+    </div>
+
+    <div ndd-ng-sidebar-submenu>
+        <ndd-ng-sidebar-submenu-group groupTarget="menu-customers" groupHeader="NDDCustomers">
+            <div ndd-ng-sidebar-submenu-group-content>
+                <ndd-ng-sidebar-suboption subOptionId="submenu-customers" subOptionHref="/customers" subOptionText="NDDCustomers">
+                </ndd-ng-sidebar-suboption>
+            </div>
+        </ndd-ng-sidebar-submenu-group>
+        <ndd-ng-sidebar-submenu-group groupTarget="menu-sites" groupHeader="NDDSites">
+            <div ndd-ng-sidebar-submenu-group-content>
+                <ndd-ng-sidebar-suboption subOptionId="submenu-sites" subOptionHref="/sites" subOptionText="NDDSites">
+                </ndd-ng-sidebar-suboption>
+            </div>
+        </ndd-ng-sidebar-submenu-group>
+    </div>
+</ndd-ng-sidebar>
+
+<ndd-ng-offsidebar offsidebarId="ndd-ng-offsidebar-user-menu" [offsidebarCover]="true" (onOffsidebarClose)="closeOffSidebar()">
+    <div ndd-ng-offsidebar-header>
+        <ndd-user-menu-view-enterprise></ndd-user-menu-view-enterprise>
+    </div>
+    <div ndd-ng-offsidebar-content>
+        <ndd-user-menu-content></ndd-user-menu-content>
+    </div>
+    <div ndd-ng-offsidebar-footer>
+        <div class="button-logout">
+            <button id="ndd-ng-offsidebar-logout" class="button-logout-name" (click)="logout()"> {{ 'NDDLogout' | nddTranslation }}</button>
+        </div>
+    </div>
+</ndd-ng-offsidebar>
+
+<div class="content" [ngClass]="{'content--ndd-sidebar-pinned': pinned}">
+    <router-outlet></router-outlet>
+</div>

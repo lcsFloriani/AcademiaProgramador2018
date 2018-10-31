@@ -1,0 +1,17 @@
+<div class="error-page">
+    <div class="error-page__content">
+        <div>
+            <h1 class="error-page__title">403</h1>
+        </div>
+        <div>
+            <h2 class="error-page__description">{{ 'NDDAccessDenied' | nddTranslation }}</h2>
+        </div>
+        <div>
+            <p>{{ 'NDDAccessDeniedInfo' | nddTranslation }}</p>
+        </div>
+        <div>
+            <button class="ndd-ng-button ndd-ng-button--primary" [routerLink]="['/']">{{ 'NDDGoBackToHome' | nddTranslation }}</button>
+        </div>
+    </div>
+</div>
+    

@@ -1,0 +1,494 @@
+{
+	"info": {
+		"_postman_id": "b9e0ce76-86e3-4af2-b706-c1722ca05278",
+		"name": "M7_Enedir",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Funcionario",
+			"item": [
+				{
+					"name": "Buscar por Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:49330/api/functionaries/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49330",
+							"path": [
+								"api",
+								"functionaries",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listagem",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:49330/api/functionaries?quantity=3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49330",
+							"path": [
+								"api",
+								"functionaries"
+							],
+							"query": [
+								{
+									"key": "quantity",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Salvar",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"FirstName\": \"Galise\",\r\n   \"LastName\": \"da Silva\",\r\n   \"User\": \"Fulano\",\r\n   \"Password\": \"123\",\r\n   \"Status\": true,\r\n   \"Office\": 1\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:49330/api/functionaries",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49330",
+							"path": [
+								"api",
+								"functionaries"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Salvar Error(Sem 1° nome)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"LastName\": \"da Silva\",\r\n   \"User\": \"Fulano\",\r\n   \"Password\": \"123\",\r\n   \"Status\": true,\r\n   \"Office\": 1\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:49330/api/functionaries",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49330",
+							"path": [
+								"api",
+								"functionaries"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Salvar Error(Sem Cargo)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"FirstName\": \"Galise\",\r\n   \"LastName\": \"da Silva\",\r\n   \"User\": \"Fulano\",\r\n   \"Password\": \"123\",\r\n   \"Status\": true\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:49330/api/functionaries",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49330",
+							"path": [
+								"api",
+								"functionaries"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"Id\": 1,\r\n   \"FirstName\": \"Galise\",\r\n   \"LastName\": \"de Oliveira\",\r\n   \"User\": \"Fulano\",\r\n   \"Password\": \"123\",\r\n   \"Status\": true,\r\n   \"Office\": 1\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:49330/api/functionaries",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49330",
+							"path": [
+								"api",
+								"functionaries"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar Status",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\": 2,\n\t\"status\": false\n\t\n}"
+						},
+						"url": {
+							"raw": "http://localhost:49330/api/functionaries/status",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49330",
+							"path": [
+								"api",
+								"functionaries",
+								"status"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\":3\n}"
+						},
+						"url": {
+							"raw": "http://localhost:49330/api/functionaries",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49330",
+							"path": [
+								"api",
+								"functionaries"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar com Gasto",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\":1\n}"
+						},
+						"url": {
+							"raw": "http://localhost:49330/api/functionaries",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49330",
+							"path": [
+								"api",
+								"functionaries"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Gasto",
+			"item": [
+				{
+					"name": "Salvar",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t \"Description\": \"Viagem\",\n     \"Date\": \"05/25/2018\",\n     \"FunctionaryId\": 2,\n     \"Price\": 753.36,\n     \"OutgoType\": 2\n}"
+						},
+						"url": {
+							"raw": "http://localhost:49330/api/outgoing",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49330",
+							"path": [
+								"api",
+								"outgoing"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar por Id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:49330/api/outgoing/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49330",
+							"path": [
+								"api",
+								"outgoing",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listagem",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:49330/api/outgoing?quantity=3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49330",
+							"path": [
+								"api",
+								"outgoing"
+							],
+							"query": [
+								{
+									"key": "quantity",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\": 3\n}"
+						},
+						"url": {
+							"raw": "http://localhost:49330/api/outgoing",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49330",
+							"path": [
+								"api",
+								"outgoing"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Salvar Erro (Sem Id do funcionario)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t \"Description\": \"Viagem\",\n     \"Date\": \"05/25/2017\",\n     \"Price\": 753.36,\n     \"OutgoType\": 2\n}"
+						},
+						"url": {
+							"raw": "http://localhost:49330/api/outgoing",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49330",
+							"path": [
+								"api",
+								"outgoing"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Salvar Erro(Sem data)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t \"Description\": \"Viagem\",\n     \"FunctionaryId\": 2,\n     \"Price\": 753.36,\n     \"OutgoType\": 2\n}"
+						},
+						"url": {
+							"raw": "http://localhost:49330/api/outgoing",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49330",
+							"path": [
+								"api",
+								"outgoing"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "oauth2",
+		"oauth2": [
+			{
+				"key": "accessToken",
+				"value": "habHWx_nri_bpHvILTljui_l8KTNvwp63TGpiLE_qLmGE4nhcIP3-P5PQUll0TLJRNp-ra9OF3QZXNxJ-FzzSmnzlCwkST_3pw_cc31qMudy3-mLYU9jDZUwIdQ3OlFqKL6BZkHEI5sFECDJHPFvymwuKPiSrfFJ1NgrqKKRziCZZ4lBpjAR02fZuG9rDjp-",
+				"type": "string"
+			},
+			{
+				"key": "tokenType",
+				"value": "bearer",
+				"type": "string"
+			},
+			{
+				"key": "addTokenTo",
+				"value": "header",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "c4792567-e252-440d-99c1-a3002f2cd6a9",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "7120639e-4af7-4cdb-9615-a792d207e2df",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

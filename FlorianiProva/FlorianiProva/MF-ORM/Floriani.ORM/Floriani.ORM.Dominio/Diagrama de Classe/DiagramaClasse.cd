@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Floriani.ORM.Dominio.Base.Entidade" Collapsed="true">
+    <Position X="4.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Base\Entidade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Floriani.ORM.Dominio.Funcionalidades.Cargos.Cargo" Collapsed="true">
+    <Position X="2.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Funcionalidades\Cargos\Cargo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Floriani.ORM.Dominio.Funcionalidades.Departamentos.Departamento" Collapsed="true">
+    <Position X="8" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Funcionalidades\Departamentos\Departamento.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Floriani.ORM.Dominio.Funcionalidades.Dependentes.Dependente">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Funcionalidades\Dependentes\Dependente.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Floriani.ORM.Dominio.Funcionalidades.Funcionarios.Funcionario">
+    <Position X="4.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAEAAAAAAAAAAAAAAABAAAAIAEAAAA=</HashCode>
+      <FileName>Funcionalidades\Funcionarios\Funcionario.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Departamento" />
+      <Property Name="Cargo" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Dependentes" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Floriani.ORM.Dominio.Funcionalidades.Projetos.Projeto">
+    <Position X="1.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAAAAQAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Funcionalidades\Projetos\Projeto.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Funcionarios" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

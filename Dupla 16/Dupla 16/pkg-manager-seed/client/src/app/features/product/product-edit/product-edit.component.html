@@ -1,0 +1,100 @@
+<form [formGroup]="formEdit" class="feature-view-tab__content">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="col-sm-12">
+                    <span class="feature-view__title">Dados cadastrais</span>
+                </div>
+            </div>
+        </div>
+        <div class="col feature-view__group">
+            <div class="col-sm-6">
+                <div>
+                    <label for="name" class="form__label">
+                        <span class="feature-view__label">Nome</span>
+                        <span class="form__label form__label--required">*</span>
+                        <span class="form__label form__label--error" *ngIf="formEdit.get('name').hasError('required') && formEdit.get('name').touched">
+                            Campo obrigatório</span>
+                    </label>
+                </div>
+                <div>
+                    <input formControlName="name" type="text" id="name" class="form__input">
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div>
+                    <label for="sale" class="form__label">
+                        <span class="feature-view__label">Preço de Venda</span>
+                        <span class="form__label form__label--required">*</span>
+                        <span class="form__label form__label--error" *ngIf="formEdit.get('sale').hasError('required') && formEdit.get('sale').touched">
+                            Campo obrigatório</span>
+                    </label>
+                </div>
+                <div>
+                    <input formControlName="sale" type="text" id="sale" class="form__input">
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div>
+                    <label for="expense" class="form__label">
+                        <span class="feature-view__label">Preço de Custo</span>
+                        <span class="form__label form__label--required">*</span>
+                        <span class="form__label form__label--error" *ngIf="formEdit.get('expense').hasError('required') && formEdit.get('expense').touched">
+                            Campo obrigatório</span>
+                    </label>
+                </div>
+                <div>
+                    <input formControlName="expense" type="text" id="expense" class="form__input">
+                </div>
+            </div>
+        </div>
+
+        <div class="col feature-view__group">
+
+            <div class="col-sm-6">
+                <div>
+                    <label for="manufacture" class="form__label">
+                        <span class="feature-view__label">Data Fabricação</span>
+                        <span class="form__label form__label--required">*</span>
+                        <span class="form__label form__label--error" *ngIf="formEdit.get('manufacture').hasError('required') && formEdit.get('manufacture').touched">
+                            Campo obrigatório</span>
+                    </label>
+                </div>
+                <div>
+                    <input formControlName="manufacture" type="date" id="manufacture" class="form__input">
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div>
+                    <label for="expiration" class="form__label">
+                        <span class="feature-view__label">Data de Validade</span>
+                        <span class="form__label form__label--required">*</span>
+                        <span class="form__label form__label--error" *ngIf="formEdit.get('expiration').hasError('required') && formEdit.get('expiration').touched">
+                            Campo obrigatório</span>
+                            <span class="form__label form__label--error" *ngIf="formEdit.hasError('invalidDate') && formEdit.get('expiration').touched  && !formEdit.get('expiration').hasError('required')">
+                            Data de validade deve ser maior que a data de fabricação</span>
+                    </label>
+                </div>
+                <div id="expiration">
+                    <input formControlName="expiration" type="date" class="form__input">
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div>
+                    <label for="expiration" class="form__label">
+                        <span class="feature-view__label">Disponibilidade</span>
+                    </label>
+                </div>
+                <div>
+                    <ui-switch formControlName="isAvailable" size="small" color="blue"></ui-switch>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</form>
+
+<div class="feature-view-tab__footer">
+    <button type="submit" class="ndd-ng-button ndd-ng-button--primary" (click)="onSubmit($event)">Editar</button>
+    <button class="ndd-ng-button ndd-ng-button--cancel" (click)="redirect()">Cancelar</button>
+</div>

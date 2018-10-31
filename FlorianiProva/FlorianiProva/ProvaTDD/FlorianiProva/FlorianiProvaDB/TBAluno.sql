@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[TBAluno]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
+    [Nome] NVARCHAR(150) NOT NULL, 
+    [Idade] INT NOT NULL
+)

@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Apresentação", "1 - Apresentação", "{4AE78FEA-EC68-4D11-AB30-5ACB08E93F0B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Aplicação", "2 - Aplicação", "{249DB4B3-04F6-4B04-85B9-8DE62BAB1058}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Dominio", "3 - Dominio", "{6E0F6E8B-9BF0-45A4-A72F-A2ED7459EEDE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infraestrutura", "4 - Infraestrutura", "{63957290-A8F2-45AD-A27D-2F5AA0AF6BB2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testes", "Testes", "{62EBB4C0-4C60-45C9-98AA-6629CF79C0B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Floriani.ORM.Dominio", "Floriani.ORM.Dominio\Floriani.ORM.Dominio.csproj", "{3D5610C4-002E-44B7-9159-DF15A9294DCE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Floriani.Orm.Infra.Dados", "Floriani.Orm.Infra.Dados\Floriani.Orm.Infra.Dados.csproj", "{11CE0782-4629-4116-AC9F-847DB3D3464E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Floriani.ORM.Comum", "Floriani.ORM.Comum\Floriani.ORM.Comum.csproj", "{895093B0-1808-4D1C-A59A-D1EF41D089CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Floriani.ORM.Infra.Dados.Testes", "Floriani.ORM.Infra.Dados.Testes\Floriani.ORM.Infra.Dados.Testes.csproj", "{065A35EB-BE6A-4267-AB49-4F642EDB163C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3D5610C4-002E-44B7-9159-DF15A9294DCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D5610C4-002E-44B7-9159-DF15A9294DCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D5610C4-002E-44B7-9159-DF15A9294DCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D5610C4-002E-44B7-9159-DF15A9294DCE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11CE0782-4629-4116-AC9F-847DB3D3464E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11CE0782-4629-4116-AC9F-847DB3D3464E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11CE0782-4629-4116-AC9F-847DB3D3464E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11CE0782-4629-4116-AC9F-847DB3D3464E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{895093B0-1808-4D1C-A59A-D1EF41D089CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{895093B0-1808-4D1C-A59A-D1EF41D089CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{895093B0-1808-4D1C-A59A-D1EF41D089CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{895093B0-1808-4D1C-A59A-D1EF41D089CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{065A35EB-BE6A-4267-AB49-4F642EDB163C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{065A35EB-BE6A-4267-AB49-4F642EDB163C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{065A35EB-BE6A-4267-AB49-4F642EDB163C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{065A35EB-BE6A-4267-AB49-4F642EDB163C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3D5610C4-002E-44B7-9159-DF15A9294DCE} = {6E0F6E8B-9BF0-45A4-A72F-A2ED7459EEDE}
+		{11CE0782-4629-4116-AC9F-847DB3D3464E} = {63957290-A8F2-45AD-A27D-2F5AA0AF6BB2}
+		{895093B0-1808-4D1C-A59A-D1EF41D089CD} = {62EBB4C0-4C60-45C9-98AA-6629CF79C0B8}
+		{065A35EB-BE6A-4267-AB49-4F642EDB163C} = {62EBB4C0-4C60-45C9-98AA-6629CF79C0B8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C5F330BB-5B00-4351-835C-19F17E9C0ADE}
+	EndGlobalSection
+EndGlobal

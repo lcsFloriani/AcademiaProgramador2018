@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B14C8939-D792-4C97-8EA6-CFB6A7DCF459}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FlashCodeNFe.Infra.ORM</RootNamespace>
+    <AssemblyName>FlashCodeNFe.Infra.ORM</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.5\lib\net45-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Migrations, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Migrations.1.0.1.0\lib\net40-Client\Migrations.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Contexts\DbContextFactory.cs" />
+    <Compile Include="Contexts\NFeDBContext.cs" />
+    <Compile Include="Features\Destinatarios\DestinatarioEntityConfiguration.cs" />
+    <Compile Include="Features\Destinatarios\DestinatarioRepository.cs" />
+    <Compile Include="Features\Emitentes\EmitenteEntityConfiguration.cs" />
+    <Compile Include="Features\Emitentes\EmitenteRepository.cs" />
+    <Compile Include="Features\Enderecos\EnderecoEntityConfiguration.cs" />
+    <Compile Include="Features\Enderecos\EnderecoRepository.cs" />
+    <Compile Include="Features\Notas Fiscais\NotaFiscalEntityConfiguration.cs" />
+    <Compile Include="Features\Notas Fiscais\NotaFiscalRepository.cs" />
+    <Compile Include="Features\Produtos Notas\ProdutoNotaEntityConfiguration.cs" />
+    <Compile Include="Features\Produtos\ProdutoEntityConfiguration.cs" />
+    <Compile Include="Features\Produtos\ProdutoRepository.cs" />
+    <Compile Include="Features\Transportadores\TransportadorEntityConfiguration.cs" />
+    <Compile Include="Features\Transportadores\TransportadorRepository.cs" />
+    <Compile Include="Initializer\DbInitializer.cs" />
+    <Compile Include="Migrations\201810221758198_Initial.cs" />
+    <Compile Include="Migrations\201810221758198_Initial.Designer.cs">
+      <DependentUpon>201810221758198_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201810251748438_RemoveNota_ProdutoNota.cs" />
+    <Compile Include="Migrations\201810251748438_RemoveNota_ProdutoNota.Designer.cs">
+      <DependentUpon>201810251748438_RemoveNota_ProdutoNota.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201810251805349_TransportadorEnderecoCascade.cs" />
+    <Compile Include="Migrations\201810251805349_TransportadorEnderecoCascade.Designer.cs">
+      <DependentUpon>201810251805349_TransportadorEnderecoCascade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FlashCodeNFe.Dominio\FlashCodeNFe.Dominio.csproj">
+      <Project>{FEA02E0B-B9E1-47EC-8105-D5D69AC5254A}</Project>
+      <Name>FlashCodeNFe.Dominio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FlashCodeNFe.Infra\FlashCodeNFe.Infra.csproj">
+      <Project>{1CAC2280-6FBF-4A34-A7EF-4228F4E32529}</Project>
+      <Name>FlashCodeNFe.Infra</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201810221758198_Initial.resx">
+      <DependentUpon>201810221758198_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810251748438_RemoveNota_ProdutoNota.resx">
+      <DependentUpon>201810251748438_RemoveNota_ProdutoNota.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810251805349_TransportadorEnderecoCascade.resx">
+      <DependentUpon>201810251805349_TransportadorEnderecoCascade.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

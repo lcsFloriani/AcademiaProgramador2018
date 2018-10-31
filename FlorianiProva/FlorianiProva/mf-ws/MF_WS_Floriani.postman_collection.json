@@ -1,0 +1,280 @@
+{
+	"info": {
+		"_postman_id": "5de18ee4-d42a-4c1e-af98-2181bfa30d06",
+		"name": "MF_WS_Floriani",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"_postman_id": "1b13efa4-4405-4071-a464-e77546139b40",
+			"name": "Impressoras",
+			"item": [
+				{
+					"_postman_id": "39ad75f9-2ec0-46b8-8b4a-ec36b5d9f5d3",
+					"name": "Get by Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:55841/api/Impressoras/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "55841",
+							"path": [
+								"api",
+								"Impressoras",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"_postman_id": "2580ed55-03b0-4ffa-a5fc-5116d0567599",
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:55841/api/Impressoras/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "55841",
+							"path": [
+								"api",
+								"Impressoras",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"_postman_id": "fca48873-0eb6-4eed-be50-03ebe0be5152",
+					"name": "Post",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"Marca\" : \"Brother\",\n\t\"Ip\" : \"10.1.1.1\",\n\t\"EmUso\" : true,\n\t\"TonerColorido\": {\n\t\t\"tipo\": 0,\n    \t\"nivel\": 100,\n    \t\"id\": 1\n\t},\n\t\"TonerPretoBranco\" : {\n\t\t\"tipo\": 1,\n        \"nivel\": 100,\n        \"id\": 3\n\t}\n}"
+						},
+						"url": {
+							"raw": "http://localhost:55841/api/Impressoras/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "55841",
+							"path": [
+								"api",
+								"Impressoras",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"_postman_id": "18a194e5-bedc-4ef8-b0e2-2c42d8e2e52c",
+					"name": "Atualizar(put)",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"tonerColorido\": null,\n    \"tonerPretoBranco\": {\n        \"id\": 3\n    },\n    \"marca\": \"HP\",\n    \"ip\": \"10.1.1.1\",\n    \"emUso\": false,\n    \"id\": 1\n}"
+						},
+						"url": {
+							"raw": "http://localhost:55841/api/Impressoras/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "55841",
+							"path": [
+								"api",
+								"Impressoras",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"_postman_id": "5e8561d4-5012-4307-9523-5b2422cbc413",
+					"name": "Deletar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:55841/api/Impressoras/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "55841",
+							"path": [
+								"api",
+								"Impressoras",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"_postman_id": "483d751e-f981-4161-a0c8-83fc3bb2ced8",
+			"name": "Toners",
+			"item": [
+				{
+					"_postman_id": "7332fd25-dc8d-43f9-afcf-691b87c33162",
+					"name": "Get by Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:55841/api/Toners/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "55841",
+							"path": [
+								"api",
+								"Toners",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"_postman_id": "c2d0fd45-5234-41cd-af9e-bda66ec5d07e",
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:55841/api/toners",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "55841",
+							"path": [
+								"api",
+								"toners"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"_postman_id": "b089d4a4-4303-4697-90fa-f51833496a2e",
+					"name": "Post",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"Nivel\": 100,\n\t\"Tipo\": 1\n}"
+						},
+						"url": {
+							"raw": "http://localhost:55841/api/toners",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "55841",
+							"path": [
+								"api",
+								"toners"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"_postman_id": "e5dfe095-23f9-452a-902c-38634abb36d3",
+					"name": "Atualizar(put)",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"tipo\": 0,\n    \"nivel\": 100,\n    \"id\": 1\n}"
+						},
+						"url": {
+							"raw": "http://localhost:55841/api/toners",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "55841",
+							"path": [
+								"api",
+								"toners"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"_postman_id": "439d530a-5a01-48df-9392-94d051b9b336",
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:55841/api/Toners/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "55841",
+							"path": [
+								"api",
+								"Toners",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

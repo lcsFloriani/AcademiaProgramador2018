@@ -1,0 +1,5 @@
+﻿CREATE TABLE [dbo].[TBResultado]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
+    [Nota] DECIMAL(9, 2) NOT NULL
+)

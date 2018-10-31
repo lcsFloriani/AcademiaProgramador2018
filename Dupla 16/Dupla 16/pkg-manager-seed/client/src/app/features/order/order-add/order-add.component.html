@@ -1,0 +1,74 @@
+<ndd-ng-titlebar titlebarIcon="ndd-font ndd-font-cardboard-box" [titlebarTitle]="title" [titlebarInfoItems]="infoItems" [titlebarRouterToReturnOnClose]="returnRoute">
+</ndd-ng-titlebar>
+<form [formGroup]="form" class="feature-view-tab__content">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="col-sm-12">
+                    <span class="feature-view__title">Dados cadastrais</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col feature-view__group">
+            <div class="col-sm-6">
+                <div>
+                    <label for="customer" class="form__label">
+                        <span class="feature-view__label">Nome Cliente</span>
+                        <span class="form__label form__label--required">*</span>
+                        <span class="form__label form__label--error" *ngIf="form.get('customer').hasError('required') && form.get('customer').touched">
+                            Campo obrigatório</span>
+                    </label>
+                    <div>
+                        <input formControlName="customer" type="text" id="customer" class="form__input" placeholder="Nome do cliente">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div>
+                    <label for="product" class="form__label">
+                        <span class="feature-view__label">Produto</span>
+                        <span class="form__label form__label--required">*</span>
+                        <span class="form__label form__label--error" *ngIf="form.get('product').hasError('required') && form.get('product').touched">
+                            Campo obrigatório</span>
+                    </label>
+                </div>
+                <div>
+                    <kendo-dropdownlist [data]="data" formControlName="product" [textField]="'name'" [valueField]="'name'" [filterable]="true"
+                        (filterChange)="onAutoCompleteChange($event)"> {{ form.get('product').value | json }} 
+                    </kendo-dropdownlist>                           
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div>
+                    <label for="quantity" class="form__label">
+                        <span class="feature-view__label">Quantidade</span>
+                        <span class="form__label form__label--required">*</span>
+                        <span class="form__label form__label--error" *ngIf="form.get('quantity').hasError('required') && form.get('quantity').touched">
+                            Campo obrigatório</span>
+                    </label>
+                </div>
+                <div>
+                    <input formControlName="quantity" type="number" id="quantity" class="form__input" placeholder="Quantidade" onkeyup="getCalculate()">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="col-sm-6">
+            <div>
+                <label for="expense" class="form__label">
+                    <span class="feature-view__label">Total</span>
+                </label>
+            </div>
+            <div>
+                <span title="{{ order?.total }}" class="feature-view__value">
+                    {{ total | currency:'BRL':true:'2.2-4'}}
+                </span>
+            </div>
+        </div>
+</form>
+<div class="feature-view-tab__footer">
+    <button type="submit" class="ndd-ng-button ndd-ng-button--primary" (click)="onSubmit($event)">Salvar</button>
+    <button class="ndd-ng-button ndd-ng-button--cancel" (click)="redirect()">Cancelar</button>
+</div>

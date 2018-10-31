@@ -1,0 +1,37 @@
+.form{
+    position: relative;
+
+    &__input{
+        background: #fff;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.02);
+    border-radius: 2px;
+    border: 1px solid #d7d7e7;
+    font-size: 18px;
+    padding: 10px 15px;
+    outline: none;
+    font-family: inherit;
+    color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    &:focus {
+      outline: none;
+    }
+}
+
+&__label {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.6);
+    display: block;
+    margin-bottom: 10px;
+    &--required {
+      display: inline;
+      color: #E01D3B;
+    }
+    &--error {
+      color: #E01D3B;
+      font-weight: 700;
+      float: right;
+    }
+    }
+}

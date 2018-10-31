@@ -1,0 +1,136 @@
+<div class="feature-view-tab__content">
+
+    <div class="row">
+        <!-- #region Coluna 1 -->
+        <div class="col-sm-6">
+            <div class="row">
+                <div class="col-sm-12">
+                    <span class="feature-view__title">Dados cadastrais</span>
+                </div>
+            </div>
+            <div class="row feature-view__group">
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-sm-6 feature-view__body">
+                            <div>
+                                <span class="feature-view__label">Nome</span>
+                            </div>
+                            <div class="truncate">
+                                <span title="{{ product?.name }}" class="feature-view__value">
+                                    {{ product?.name }}
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div>
+                                <span class="feature-view__label">Disponibilidade</span>
+                            </div>
+                            <div class="truncate">
+                                <span title="{{ availabilityText }}" class="feature-view__value">
+                                    {{ availabilityText }}
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <span class="feature-view__title">Informações financeiras</span>
+                </div>
+            </div>
+            <div class="row feature-view__group">
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-sm-6 feature-view__body">
+                            <div>
+                                <span class="feature-view__label">Preço de custo</span>
+                            </div>
+                            <div class="truncate">
+                                <span title="{{ product?.expense }}" class="feature-view__value">
+                                    {{ product?.expense | currency:'BRL':true:'2.2-4' }}
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div>
+                                <span class="feature-view__label">Preço de venda</span>
+                            </div>
+                            <div class="truncate">
+                                <span title="{{ product?.sale }}" class="feature-view__value">
+                                    {{ product?.sale | currency:'BRL':true:'2.2-4' }}
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div>
+                                <span class="feature-view__label">Resultado</span>
+                            </div>
+                            <div class="truncate">
+                                <span title="{{ product?.calculateSale() }}" class="feature-view__value">
+                                    {{ product?.calculateSale() | currency:'BRL':true:'2.2-4' }}
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- #endregion -->
+
+        <div class="col-sm-6">
+            <div class="row">
+                <div class="col-sm-12">
+                    <span class="feature-view__title">Prazos</span>
+                </div>
+            </div>
+            <div class="row feature-view__group">
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-sm-6 feature-view__body">
+                            <div>
+                                <span class="feature-view__label">Data Fabricação</span>
+                            </div>
+                            <div class="truncate">
+                                <span title="{{ product?.manufacture }}" class="feature-view__value">
+                                    {{ product?.manufacture | date: 'dd/MM/yyyy' }}
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div>
+                                <span class="feature-view__label">Data de Validade</span>
+                            </div>
+                            <div class="truncate">
+                                <span title="{{ product?.expiration }}" class="feature-view__value">
+                                    {{ product?.expiration | date: 'dd/MM/yyyy' }}
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                                <div>
+                                    <span class="feature-view__label">Periodo de Validade</span>
+                                </div>
+                                <div class="truncate">
+                                    <span title="{{ product?.calculateDate() }}" class="feature-view__value">
+                                        {{ product?.calculateDate() }} dias
+                                    </span>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>          
+        </div>
+
+    </div>
+</div>
+<div class="feature-view-tab__footer">
+    <button class="ndd-ng-button ndd-ng-button--primary" (click)="onEdit()">Editar</button>
+
+    <button class="ndd-ng-button ndd-ng-button--cancel" (click)="redirect()">Voltar</button>
+</div>
+<div class="ndd-ng-spinner__spinner" *ngIf="isLoading"></div>
+<div class="ndd-ng-spinner__color" *ngIf="isLoading"></div>
+
+

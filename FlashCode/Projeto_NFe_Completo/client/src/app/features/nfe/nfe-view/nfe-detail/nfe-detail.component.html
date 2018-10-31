@@ -1,0 +1,121 @@
+<div class="feature-view-tab__content">
+    <div class="row">
+        <!-- #region Coluna 1-->
+        <div class="col-sm-6">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <span class="feature-view__title">DADOS DO PRODUTO</span>
+                        </div>
+                    </div>
+
+                    <div class="row feature-view__group">
+                        <div class="col-sm-12">
+                            <div class="row">
+                                <div class="col-sm-12 feature-view__body">
+                                    <div>
+                                        <span class="feature-view__label">Data de Entrada:</span>
+                                    </div>
+                                    <div class="truncate">
+                                        <span title="{{ nfe?.dataEntrada }}" class="feature-view__value">
+                                            {{ nfe?.dataEntrada | date:'short' }}
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-12 feature-view__body">
+                                    <div>
+                                        <span class="feature-view__label">Natureza da operacao:</span>
+                                    </div>
+                                    <div class="truncate">
+                                        <span title="{{ nfe?.naturezaOperacao }}" class="feature-view__value">
+                                            {{ nfe?.naturezaOperacao }}
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-12 feature-view__body">
+                                    <div>
+                                        <span class="feature-view__label">Nome do emitente:</span>
+                                    </div>
+                                    <div class="truncate">
+                                        <span title="{{ nfe?.nomeEmitente }}" class="feature-view__value">
+                                            {{ nfe?.nomeEmitente }}
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-12 feature-view__body">
+                                    <div>
+                                        <span class="feature-view__label">Nome do destinatario:</span>
+                                    </div>
+                                    <div class="truncate">
+                                        <span title="{{ nfe?.nomeDestinatario }}" class="feature-view__value">
+                                            {{ nfe?.nomeDestinatario }}
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-12 feature-view__body">
+                                    <div>
+                                        <span class="feature-view__label">Nome do transportador:</span>
+                                    </div>
+                                    <div class="truncate">
+                                        <span title="{{ nfe?.nomeTransportador }}" class="feature-view__value">
+                                            {{ nfe?.nomeTransportador }}
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6 feature-view__body">
+                                    <div>
+                                        <span class="feature-view__label">Valor do frete:</span>
+                                    </div>
+                                    <div class="truncate">
+                                        <span title="{{ nfe?.valor?.frete }}" class="feature-view__value">
+                                            {{ nfe?.valor?.frete | currency:'BRL':'symbol' }}
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 feature-view__body">
+                                    <div>
+                                        <span class="feature-view__label">Valor Total:</span>
+                                    </div>
+                                    <div class="truncate">
+                                        <span title="{{ nfe?.valor?.totalNota }}" class="feature-view__value">
+                                            {{ nfe?.valor?.totalNota | currency:'BRL':'symbol' }}
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- #endregion -->
+    </div>
+
+    <router-outlet></router-outlet>
+
+</div>
+
+
+<div class="feature-view-tab__footer">
+    <button class="ndd-ng-button ndd-ng-button--primary" (click)="onEdit()">Editar</button>
+    <button class="ndd-ng-button ndd-ng-button--cancel" (click)="redirect()">Voltar</button>
+</div>
+<div class="ndd-ng-spinner__spinner" *ngIf="isLoading"></div>
+<div class="ndd-ng-spinner__color" *ngIf="isLoading"></div>

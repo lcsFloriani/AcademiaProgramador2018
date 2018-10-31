@@ -1,0 +1,337 @@
+{
+	"info": {
+		"_postman_id": "ed0de70e-b603-4004-9254-90264b32f0ab",
+		"name": "MF_WSA_Floriani",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Funcionarios",
+			"item": [
+				{
+					"name": "Inserir",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"PrimeiroNome\" : \"Lucas\",\n\t\"Sobrenome\" : \"Floriani\",\n\t\"Usuario\" : \"lucas.costa\",\n\t\"Senha\": \"P@ssw0rd\",\n\t\"Cargo\" : 1,\n\t\"Status\": true\n\t\n}"
+						},
+						"url": {
+							"raw": "http://localhost:49812/api/funcionarios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49812",
+							"path": [
+								"api",
+								"funcionarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Getall",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:49812/api/funcionarios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49812",
+							"path": [
+								"api",
+								"funcionarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar Status",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:49812/api/funcionarios/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49812",
+							"path": [
+								"api",
+								"funcionarios",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get by Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:49812/api/funcionarios/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49812",
+							"path": [
+								"api",
+								"funcionarios",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\": 1\n}"
+						},
+						"url": {
+							"raw": "http://localhost:49812/api/funcionarios/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49812",
+							"path": [
+								"api",
+								"funcionarios",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Gastos",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "3vhQOd-l1IqXrSIAHqIv29qsS6hdY_KyRG2Exki-JsiGB7f2p3rED3_dNbRxG6_5A1WQ4N3-fQvFBFQdlVnRzxbMugItQCfxRcNGR87I1Q0YdrfAMbVYsc8r1sqeFss_wvu-Fo8-BHwp04UlCa8EfOekitAavpm7QZPWHsTe2rCj32jGN5GGc_9iR_uxcj3MAs2HmVlxyPlu3Zf2Y-mO2MxGSRJaBnNLD2ifdApPUzg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:49812/api/gastos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49812",
+							"path": [
+								"api",
+								"gastos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Inserir",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "crXFD2Ju07RxrxO_jbjBZVfiG2ce-s5p3CcVg0Yq55s28-M0L9AlNfSW_V5Suk_BZ85KjVPw9_J5iloC2vY7OxhowVplDCQNHHtSRWsXimWWAbTCyZu5Q81sr10CKlI6cheZOUnlzUF6ajgqL-k9oTfj3tQuclPug0Al91KjHIVppLcIRxuBdZDNsNXSdmMN3cRFMVyEMOGrjmw8n76_1uGEuoXfMazZG7_9qpxDZbU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"descricao\": \"Evento X\",\n\t\"data\": \"2012-04-23T18:25:43.511Z\",\n\t\"preco\": 50,\n\t\"tipo\": 1,\n\t\"funcionarioId\": 1\n\t\n}"
+						},
+						"url": {
+							"raw": "http://localhost:49812/api/gastos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49812",
+							"path": [
+								"api",
+								"gastos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "crXFD2Ju07RxrxO_jbjBZVfiG2ce-s5p3CcVg0Yq55s28-M0L9AlNfSW_V5Suk_BZ85KjVPw9_J5iloC2vY7OxhowVplDCQNHHtSRWsXimWWAbTCyZu5Q81sr10CKlI6cheZOUnlzUF6ajgqL-k9oTfj3tQuclPug0Al91KjHIVppLcIRxuBdZDNsNXSdmMN3cRFMVyEMOGrjmw8n76_1uGEuoXfMazZG7_9qpxDZbU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\": 1\n}"
+						},
+						"url": {
+							"raw": "http://localhost:49812/api/gastos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49812",
+							"path": [
+								"api",
+								"gastos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get by id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "crXFD2Ju07RxrxO_jbjBZVfiG2ce-s5p3CcVg0Yq55s28-M0L9AlNfSW_V5Suk_BZ85KjVPw9_J5iloC2vY7OxhowVplDCQNHHtSRWsXimWWAbTCyZu5Q81sr10CKlI6cheZOUnlzUF6ajgqL-k9oTfj3tQuclPug0Al91KjHIVppLcIRxuBdZDNsNXSdmMN3cRFMVyEMOGrjmw8n76_1uGEuoXfMazZG7_9qpxDZbU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:49812/api/gastos/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49812",
+							"path": [
+								"api",
+								"gastos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "grant_type",
+								"value": "password"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "grant_type",
+									"value": "password",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "lucas.costa",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "P@ssw0rd",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:49812/token",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "49812",
+							"path": [
+								"token"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

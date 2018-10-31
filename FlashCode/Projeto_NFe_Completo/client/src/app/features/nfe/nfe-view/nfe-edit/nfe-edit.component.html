@@ -1,0 +1,114 @@
+<div class="feature-view__content">
+    <form [formGroup]="formModel">
+        <div class="row">
+            <!-- #region Coluna 1-->
+            <div class="col-sm-5">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <span class="feature-view__title">DADOS DA NOTA FISCAL</span>
+                            </div>
+                        </div>
+
+                        <div class="row feature-view__group">
+                            <div class="col-sm-12">
+                                <div class="row">
+                                    <div class="col-sm-12 feature-view__body">
+                                        <label class="control-label">
+                                            <span class="feature-view__label">Natureza da Operação:</span>
+                                            <span class=" feature-view__label feature-view__label--error">*</span>
+                                        </label>
+                                        <input class="feature-view__value form-control " formControlName="naturezaOperacao"
+                                            type="text" placeholder="Entre com a operação">
+                                        <span *ngIf="formModel.get('naturezaOperacao').hasError('required') && formModel.get('naturezaOperacao').touched"
+                                            class=" feature-view__label feature-view__label--error">
+                                            Campo obrigatório
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-12 feature-view__body">
+                                        <label class="control-label">
+                                            <span class="feature-view__label">Emitente:</span>
+                                            <span class=" feature-view__label feature-view__label--error">*</span>
+                                        </label>
+                                        <kendo-dropdownlist class="feature-view__value form-control" [data]="emitentes"
+                                            [textField]="'nome'" [valueField]="'nome'" (selectionChange)="onSelectEmitente($event)"
+                                            [defaultItem]="defaultItemEmitente" [filterable]="true" (filterChange)="onFilterEmitente($event)">
+                                        </kendo-dropdownlist>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-12 feature-view__body">
+                                        <label class="control-label">
+                                            <span class="feature-view__label">Destinatário:</span>
+                                            <span class=" feature-view__label feature-view__label--error">*</span>
+                                        </label>
+                                        <kendo-dropdownlist class="feature-view__value form-control" [data]="destinatarios"
+                                            [textField]="'nome'" [valueField]="'nome'" (selectionChange)="onSelectDestinatario($event)"
+                                            [filterable]="true" (filterChange)="onFilterDestinatario($event)"
+                                            [defaultItem]="defaultItemDestinatario">
+                                        </kendo-dropdownlist>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-12 feature-view__body">
+                                        <label class="control-label">
+                                            <span class="feature-view__label">Transportador:</span>
+                                            <span class=" feature-view__label feature-view__label--error">*</span>
+                                        </label>
+                                        <kendo-dropdownlist class="feature-view__value form-control" [data]="transportadores"
+                                            [textField]="'nome'" [valueField]="'nome'" (selectionChange)="onSelectTransportador($event)"
+                                            [filterable]="true" (filterChange)="onFilterTransportador($event)"
+                                            [defaultItem]="defaultItemTrasportador">
+                                        </kendo-dropdownlist>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6 feature-view__body">
+                                        <label class="control-label">
+                                            <span class="feature-view__label">Valor do Frete:</span>
+                                            <span class=" feature-view__label feature-view__label--error">*</span>
+                                        </label>
+                                        <input class="feature-view__value form-control" formControlName="frete" type="number"
+                                            min="1" placeholder="Entre com o Frete">
+                                        <span *ngIf="formModel.get('frete').hasError('required') && formModel.get('frete').touched"
+                                            class=" feature-view__label feature-view__label--error">
+                                            Campo obrigatório
+                                        </span>
+                                    </div>
+                                    <div class="col-sm-6 feature-view__body">
+                                        <div>
+                                            <span class="feature-view__label">Valor Total:</span>
+                                        </div>
+                                        <div class="truncate">
+                                            <span title="{{ total }}" class="feature-view__value">
+                                                {{ total | currency: 'BRL': true}}
+                                            </span>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- #endregion -->
+
+        </div>
+    </form>
+</div>
+
+<div class="feature-view__footer">
+    <button class="ndd-ng-button ndd-ng-button--primary" [disabled]="formModel.invalid" (click)="save()">Salvar</button>
+    <button class="ndd-ng-button ndd-ng-button--cancel" (click)="redirect()">Cancelar</button>
+</div>
+
+<div class="ndd-ng-spinner__spinner" *ngIf="isLoading"></div>
+<div class="ndd-ng-spinner__color" *ngIf="isLoading"></div>

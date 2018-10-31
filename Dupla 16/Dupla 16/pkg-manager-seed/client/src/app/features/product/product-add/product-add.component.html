@@ -1,0 +1,104 @@
+<ndd-ng-titlebar titlebarIcon="ndd-font ndd-font-cardboard-box" [titlebarTitle]="title" [titlebarInfoItems]="infoItems" [titlebarRouterToReturnOnClose]="returnRoute">
+</ndd-ng-titlebar>
+<form [formGroup]="form" class="feature-view-tab__content">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="col-sm-12">
+                    <span class="feature-view__title">Dados cadastrais</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col feature-view__group">
+            <div class="col-sm-6">
+                <div>
+                    <label for="name" class="form__label">
+                        <span class="feature-view__label">Nome</span>
+                        <span class="form__label form__label--required">*</span>
+                        <span class="form__label form__label--error" *ngIf="form.get('name').hasError('required') && form.get('name').touched">
+                            Campo obrigatório</span>
+                    </label>
+                    <div>
+                        <input formControlName="name" type="text" id="name" class="form__input" placeholder="Nome do produto">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div>
+                    <label for="sale" class="form__label">
+                        <span class="feature-view__label">Preço de Venda</span>
+                        <span class="form__label form__label--required">*</span>
+                        <span class="form__label form__label--error" *ngIf="form.get('sale').hasError('required') && form.get('sale').touched">
+                            Campo obrigatório</span>
+                    </label>
+                </div>
+                <div>
+                    <input formControlName="sale" type="text" id="sale" class="form__input" placeholder="Preço de venda">
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div>
+                    <label for="expense" class="form__label">
+                        <span class="feature-view__label">Preço de Custo</span>
+                        <span class="form__label form__label--required">*</span>
+                        <span class="form__label form__label--error" *ngIf="form.get('expense').hasError('required') && form.get('expense').touched">
+                            Campo obrigatório</span>
+                    </label>
+                </div>
+                <div>
+                    <input formControlName="expense" type="text" id="expense" class="form__input" placeholder="Preço de custo">
+                </div>
+            </div>
+        </div>
+
+        <div class="col feature-view__group">
+            <div class="col-sm-6">
+                <div>
+                    <label for="manufacture" class="form__label">
+                        <span class="feature-view__label">Data Fabricação</span>
+                        <span class="form__label form__label--required">*</span>
+                        <span class="form__label form__label--error" *ngIf="form.get('manufacture').hasError('required') && form.get('manufacture').touched">
+                            Campo obrigatório</span>
+                    </label>
+                </div>
+                <div>
+                    <input formControlName="manufacture" type="date" id="manufacture" class="form__input" placeholder="Fabricação">
+                </div>
+            </div>
+
+            <div class="col-sm-6">
+                <div>
+                    <label for="expiration" class="form__label">
+                        <span class="feature-view__label">Data de Validade</span>
+                        <span class="form__label form__label--required">*</span>
+                        <span class="form__label form__label--error" *ngIf="form.get('expiration').hasError('required') && form.get('expiration').touched">
+                            Campo obrigatório</span>
+                        <span class="form__label form__label--error" *ngIf="form.hasError('invalidDate') && form.get('expiration').touched  && !form.get('expiration').hasError('required')">
+                            Data de validade deve ser maior que a data de fabricação</span>
+                    </label>
+                </div>
+                <div id="expiration">
+                    <input formControlName="expiration" type="date" class="form__input" placeholder="Data de Validade">
+                </div>
+            </div>
+
+            <div class="col-sm-6">
+                <div>
+                    <label for="expiration" class="form__label">
+                        <span class="feature-view__label">Disponibilidade</span>
+                    </label>
+                </div>
+                <div>
+                    <ui-switch formControlName="isAvailable" size="small" color="blue"></ui-switch>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</form>
+
+<div class="feature-view-tab__footer">
+    <button type="submit" class="ndd-ng-button ndd-ng-button--primary" (click)="onSubmit($event)">Salvar</button>
+    <button class="ndd-ng-button ndd-ng-button--cancel" (click)="redirect()">Cancelar</button>
+</div>

@@ -1,0 +1,698 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CoverageSession xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="4.6.0.0">
+  <Summary numSequencePoints="80" visitedSequencePoints="63" numBranchPoints="37" visitedBranchPoints="33" sequenceCoverage="78.75" branchCoverage="89.19" maxCyclomaticComplexity="4" minCyclomaticComplexity="1" maxCrapScore="4" minCrapScore="1" visitedClasses="11" numClasses="14" visitedMethods="25" numMethods="29" />
+  <Modules>
+    <Module hash="A8-41-7F-EF-33-51-B2-DF-7D-AC-63-B5-41-70-64-B4-A0-D1-DD-A3">
+      <Summary numSequencePoints="40" visitedSequencePoints="27" numBranchPoints="18" visitedBranchPoints="15" sequenceCoverage="67.5" branchCoverage="83.33" maxCyclomaticComplexity="4" minCyclomaticComplexity="1" maxCrapScore="4" minCrapScore="1" visitedClasses="7" numClasses="9" visitedMethods="7" numMethods="10" />
+      <ModulePath>C:\Users\ndduser\Desktop\FlorianiProva\ProvaTDD\FlorianiProva\FlorianiProva.Aplicacao.Testes\bin\Debug\FlorianiProva.Dominio.dll</ModulePath>
+      <ModuleTime>2018-06-19T19:57:17.402213Z</ModuleTime>
+      <ModuleName>FlorianiProva.Dominio</ModuleName>
+      <Files>
+        <File uid="1" fullPath="C:\Users\ndduser\Desktop\FlorianiProva\ProvaTDD\FlorianiProva\FlorianiProva.Dominio\Features\Resultados\Resultado.cs" />
+        <File uid="2" fullPath="C:\Users\ndduser\Desktop\FlorianiProva\ProvaTDD\FlorianiProva\FlorianiProva.Dominio\Features\Avaliações\Avaliacao.cs" />
+        <File uid="3" fullPath="C:\Users\ndduser\Desktop\FlorianiProva\ProvaTDD\FlorianiProva\FlorianiProva.Dominio\Features\Avaliações\Excecoes\AssuntoEmBrancoException.cs" />
+        <File uid="4" fullPath="C:\Users\ndduser\Desktop\FlorianiProva\ProvaTDD\FlorianiProva\FlorianiProva.Dominio\Features\Alunos\Aluno.cs" />
+        <File uid="5" fullPath="C:\Users\ndduser\Desktop\FlorianiProva\ProvaTDD\FlorianiProva\FlorianiProva.Dominio\Features\Alunos\Excecoes\IdadeNegativaException.cs" />
+        <File uid="6" fullPath="C:\Users\ndduser\Desktop\FlorianiProva\ProvaTDD\FlorianiProva\FlorianiProva.Dominio\Features\Alunos\Excecoes\NomeEmBrancoException.cs" />
+        <File uid="7" fullPath="C:\Users\ndduser\Desktop\FlorianiProva\ProvaTDD\FlorianiProva\FlorianiProva.Dominio\Features\Alunos\Excecoes\NomeMuitoGrandeException.cs" />
+        <File uid="8" fullPath="C:\Users\ndduser\Desktop\FlorianiProva\ProvaTDD\FlorianiProva\FlorianiProva.Dominio\Exceções\ExcecaoDeNegocio.cs" />
+        <File uid="9" fullPath="C:\Users\ndduser\Desktop\FlorianiProva\ProvaTDD\FlorianiProva\FlorianiProva.Dominio\Exceções\ExcecaoIdentificadorInvalido.cs" />
+      </Files>
+      <Classes>
+        <Class>
+          <Summary numSequencePoints="6" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="1" />
+          <FullName>FlorianiProva.Dominio.Features.Resultados.Resultado</FullName>
+          <Methods>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663297</MetadataToken>
+              <Name>System.Int32 FlorianiProva.Dominio.Features.Resultados.Resultado::get_Id()</Name>
+              <FileRef uid="1" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663298</MetadataToken>
+              <Name>System.Void FlorianiProva.Dominio.Features.Resultados.Resultado::set_Id(System.Int32)</Name>
+              <FileRef uid="1" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663299</MetadataToken>
+              <Name>System.Double FlorianiProva.Dominio.Features.Resultados.Resultado::get_Nota()</Name>
+              <FileRef uid="1" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663300</MetadataToken>
+              <Name>System.Void FlorianiProva.Dominio.Features.Resultados.Resultado::set_Nota(System.Double)</Name>
+              <FileRef uid="1" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663301</MetadataToken>
+              <Name>FlorianiProva.Dominio.Features.Alunos.Aluno FlorianiProva.Dominio.Features.Resultados.Resultado::get_Aluno()</Name>
+              <FileRef uid="1" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663302</MetadataToken>
+              <Name>System.Void FlorianiProva.Dominio.Features.Resultados.Resultado::set_Aluno(FlorianiProva.Dominio.Features.Alunos.Aluno)</Name>
+              <FileRef uid="1" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663303</MetadataToken>
+              <Name>FlorianiProva.Dominio.Features.Avaliações.Avaliacao FlorianiProva.Dominio.Features.Resultados.Resultado::get_Avaliacao()</Name>
+              <FileRef uid="1" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663304</MetadataToken>
+              <Name>System.Void FlorianiProva.Dominio.Features.Resultados.Resultado::set_Avaliacao(FlorianiProva.Dominio.Features.Avaliações.Avaliacao)</Name>
+              <FileRef uid="1" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="6" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663305</MetadataToken>
+              <Name>System.Void FlorianiProva.Dominio.Features.Resultados.Resultado::.ctor(FlorianiProva.Dominio.Features.Avaliações.Avaliacao,FlorianiProva.Dominio.Features.Alunos.Aluno,System.Double)</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="1" ordinal="0" offset="0" sl="18" sc="9" el="18" ec="72" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="2" ordinal="1" offset="7" sl="19" sc="9" el="19" ec="10" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="3" ordinal="2" offset="8" sl="20" sc="13" el="20" ec="35" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="4" ordinal="3" offset="16" sl="21" sc="13" el="21" ec="27" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="5" ordinal="4" offset="24" sl="22" sc="13" el="22" ec="25" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="6" ordinal="5" offset="32" sl="23" sc="9" el="23" ec="10" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="1" ordinal="0" offset="0" sl="18" sc="9" el="18" ec="72" bec="0" bev="0" fileid="1" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="4" visitedSequencePoints="4" numBranchPoints="3" visitedBranchPoints="3" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="2" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="1" />
+          <FullName>FlorianiProva.Dominio.Features.Avaliações.Avaliacao</FullName>
+          <Methods>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663306</MetadataToken>
+              <Name>System.Int32 FlorianiProva.Dominio.Features.Avaliações.Avaliacao::get_Id()</Name>
+              <FileRef uid="2" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663307</MetadataToken>
+              <Name>System.Void FlorianiProva.Dominio.Features.Avaliações.Avaliacao::set_Id(System.Int32)</Name>
+              <FileRef uid="2" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663308</MetadataToken>
+              <Name>System.String FlorianiProva.Dominio.Features.Avaliações.Avaliacao::get_Assunto()</Name>
+              <FileRef uid="2" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663309</MetadataToken>
+              <Name>System.Void FlorianiProva.Dominio.Features.Avaliações.Avaliacao::set_Assunto(System.String)</Name>
+              <FileRef uid="2" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663310</MetadataToken>
+              <Name>System.DateTime FlorianiProva.Dominio.Features.Avaliações.Avaliacao::get_Data()</Name>
+              <FileRef uid="2" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663311</MetadataToken>
+              <Name>System.Void FlorianiProva.Dominio.Features.Avaliações.Avaliacao::set_Data(System.DateTime)</Name>
+              <FileRef uid="2" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663312</MetadataToken>
+              <Name>System.Collections.Generic.List`1&lt;FlorianiProva.Dominio.Features.Resultados.Resultado&gt; FlorianiProva.Dominio.Features.Avaliações.Avaliacao::get_Resultados()</Name>
+              <FileRef uid="2" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663313</MetadataToken>
+              <Name>System.Void FlorianiProva.Dominio.Features.Avaliações.Avaliacao::set_Resultados(System.Collections.Generic.List`1&lt;FlorianiProva.Dominio.Features.Resultados.Resultado&gt;)</Name>
+              <FileRef uid="2" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="2" nPathComplexity="2" sequenceCoverage="100" branchCoverage="100" crapScore="2" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="4" visitedSequencePoints="4" numBranchPoints="3" visitedBranchPoints="3" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663314</MetadataToken>
+              <Name>System.Void FlorianiProva.Dominio.Features.Avaliações.Avaliacao::Validar()</Name>
+              <FileRef uid="2" />
+              <SequencePoints>
+                <SequencePoint vc="3" uspid="7" ordinal="0" offset="0" sl="18" sc="9" el="18" ec="10" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="3" uspid="8" ordinal="1" offset="1" sl="19" sc="13" el="19" ec="47" bec="2" bev="2" fileid="2" />
+                <SequencePoint vc="1" uspid="9" ordinal="2" offset="16" sl="20" sc="17" el="20" ec="54" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="2" uspid="10" ordinal="3" offset="22" sl="21" sc="9" el="21" ec="10" bec="0" bev="0" fileid="2" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="1" uspid="11" ordinal="0" offset="14" sl="19" path="0" offsetend="16" fileid="2" />
+                <BranchPoint vc="2" uspid="12" ordinal="1" offset="14" sl="19" path="1" offsetend="22" fileid="2" />
+              </BranchPoints>
+              <MethodPoint xsi:type="SequencePoint" vc="3" uspid="7" ordinal="0" offset="0" sl="18" sc="9" el="18" ec="10" bec="0" bev="0" fileid="2" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="0" />
+              <MetadataToken>100663315</MetadataToken>
+              <Name>System.Void FlorianiProva.Dominio.Features.Avaliações.Avaliacao::.ctor()</Name>
+              <SequencePoints />
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="13" ordinal="0" offset="0" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="1" />
+          <FullName>FlorianiProva.Dominio.Features.Avaliações.Excecoes.AssuntoEmBrancoException</FullName>
+          <Methods>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" crapScore="1" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663321</MetadataToken>
+              <Name>System.Void FlorianiProva.Dominio.Features.Avaliações.Excecoes.AssuntoEmBrancoException::.ctor()</Name>
+              <FileRef uid="3" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="14" ordinal="0" offset="0" sl="12" sc="45" el="12" ec="85" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="1" uspid="15" ordinal="1" offset="12" sl="13" sc="9" el="13" ec="10" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="1" uspid="16" ordinal="2" offset="13" sl="14" sc="9" el="14" ec="10" bec="0" bev="0" fileid="3" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="14" ordinal="0" offset="0" sl="12" sc="45" el="12" ec="85" bec="0" bev="0" fileid="3" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="12" visitedSequencePoints="8" numBranchPoints="8" visitedBranchPoints="7" sequenceCoverage="66.67" branchCoverage="87.5" maxCyclomaticComplexity="4" minCyclomaticComplexity="1" maxCrapScore="4" minCrapScore="2" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="2" />
+          <FullName>FlorianiProva.Dominio.Features.Alunos.Aluno</FullName>
+          <Methods>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663322</MetadataToken>
+              <Name>System.Int64 FlorianiProva.Dominio.Features.Alunos.Aluno::get_Id()</Name>
+              <FileRef uid="4" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663323</MetadataToken>
+              <Name>System.Void FlorianiProva.Dominio.Features.Alunos.Aluno::set_Id(System.Int64)</Name>
+              <FileRef uid="4" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663324</MetadataToken>
+              <Name>System.String FlorianiProva.Dominio.Features.Alunos.Aluno::get_Nome()</Name>
+              <FileRef uid="4" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663325</MetadataToken>
+              <Name>System.Void FlorianiProva.Dominio.Features.Alunos.Aluno::set_Nome(System.String)</Name>
+              <FileRef uid="4" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663326</MetadataToken>
+              <Name>System.Int32 FlorianiProva.Dominio.Features.Alunos.Aluno::get_Idade()</Name>
+              <FileRef uid="4" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663327</MetadataToken>
+              <Name>System.Void FlorianiProva.Dominio.Features.Alunos.Aluno::set_Idade(System.Int32)</Name>
+              <FileRef uid="4" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663328</MetadataToken>
+              <Name>System.Collections.Generic.List`1&lt;FlorianiProva.Dominio.Features.Resultados.Resultado&gt; FlorianiProva.Dominio.Features.Alunos.Aluno::get_Resultados()</Name>
+              <FileRef uid="4" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663329</MetadataToken>
+              <Name>System.Void FlorianiProva.Dominio.Features.Alunos.Aluno::set_Resultados(System.Collections.Generic.List`1&lt;FlorianiProva.Dominio.Features.Resultados.Resultado&gt;)</Name>
+              <FileRef uid="4" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="4" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663330</MetadataToken>
+              <Name>System.Double FlorianiProva.Dominio.Features.Alunos.Aluno::CalcularMedia()</Name>
+              <FileRef uid="4" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="17" ordinal="0" offset="0" sl="19" sc="9" el="19" ec="10" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="0" uspid="18" ordinal="1" offset="1" sl="20" sc="13" el="20" ec="37" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="0" uspid="19" ordinal="2" offset="11" sl="21" sc="13" el="21" ec="22" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="0" uspid="20" ordinal="3" offset="15" sl="22" sc="9" el="22" ec="10" bec="0" bev="0" fileid="4" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="17" ordinal="0" offset="0" sl="19" sc="9" el="19" ec="10" bec="0" bev="0" fileid="4" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="4" nPathComplexity="8" sequenceCoverage="100" branchCoverage="100" crapScore="4" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="8" visitedSequencePoints="8" numBranchPoints="7" visitedBranchPoints="7" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="4" minCyclomaticComplexity="4" maxCrapScore="4" minCrapScore="4" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663331</MetadataToken>
+              <Name>System.Void FlorianiProva.Dominio.Features.Alunos.Aluno::Validar()</Name>
+              <FileRef uid="4" />
+              <SequencePoints>
+                <SequencePoint vc="5" uspid="21" ordinal="0" offset="0" sl="24" sc="9" el="24" ec="10" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="5" uspid="22" ordinal="1" offset="1" sl="25" sc="13" el="25" ec="44" bec="2" bev="2" fileid="4" />
+                <SequencePoint vc="1" uspid="23" ordinal="2" offset="16" sl="26" sc="17" el="26" ec="51" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="4" uspid="24" ordinal="3" offset="22" sl="27" sc="13" el="27" ec="35" bec="2" bev="2" fileid="4" />
+                <SequencePoint vc="1" uspid="25" ordinal="4" offset="44" sl="28" sc="17" el="28" ec="54" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="3" uspid="26" ordinal="5" offset="50" sl="29" sc="13" el="29" ec="27" bec="2" bev="2" fileid="4" />
+                <SequencePoint vc="1" uspid="27" ordinal="6" offset="63" sl="30" sc="17" el="30" ec="52" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="2" uspid="28" ordinal="7" offset="69" sl="31" sc="9" el="31" ec="10" bec="0" bev="0" fileid="4" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="1" uspid="29" ordinal="0" offset="14" sl="25" path="0" offsetend="16" fileid="4" />
+                <BranchPoint vc="4" uspid="30" ordinal="1" offset="14" sl="25" path="1" offsetend="22" fileid="4" />
+                <BranchPoint vc="1" uspid="31" ordinal="2" offset="42" sl="27" path="0" offsetend="44" fileid="4" />
+                <BranchPoint vc="3" uspid="32" ordinal="3" offset="42" sl="27" path="1" offsetend="50" fileid="4" />
+                <BranchPoint vc="1" uspid="33" ordinal="4" offset="61" sl="29" path="0" offsetend="63" fileid="4" />
+                <BranchPoint vc="2" uspid="34" ordinal="5" offset="61" sl="29" path="1" offsetend="69" fileid="4" />
+              </BranchPoints>
+              <MethodPoint xsi:type="SequencePoint" vc="5" uspid="21" ordinal="0" offset="0" sl="24" sc="9" el="24" ec="10" bec="0" bev="0" fileid="4" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="0" />
+              <MetadataToken>100663332</MetadataToken>
+              <Name>System.Void FlorianiProva.Dominio.Features.Alunos.Aluno::.ctor()</Name>
+              <SequencePoints />
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="35" ordinal="0" offset="0" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="1" />
+          <FullName>FlorianiProva.Dominio.Features.Alunos.Excecoes.IdadeNegativaException</FullName>
+          <Methods>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" crapScore="1" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663338</MetadataToken>
+              <Name>System.Void FlorianiProva.Dominio.Features.Alunos.Excecoes.IdadeNegativaException::.ctor()</Name>
+              <FileRef uid="5" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="36" ordinal="0" offset="0" sl="12" sc="43" el="12" ec="78" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="1" uspid="37" ordinal="1" offset="12" sl="13" sc="9" el="13" ec="10" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="1" uspid="38" ordinal="2" offset="13" sl="14" sc="9" el="14" ec="10" bec="0" bev="0" fileid="5" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="36" ordinal="0" offset="0" sl="12" sc="43" el="12" ec="78" bec="0" bev="0" fileid="5" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="1" />
+          <FullName>FlorianiProva.Dominio.Features.Alunos.Excecoes.NomeEmBrancoException</FullName>
+          <Methods>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" crapScore="1" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663339</MetadataToken>
+              <Name>System.Void FlorianiProva.Dominio.Features.Alunos.Excecoes.NomeEmBrancoException::.ctor()</Name>
+              <FileRef uid="6" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="39" ordinal="0" offset="0" sl="12" sc="42" el="12" ec="79" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="1" uspid="40" ordinal="1" offset="12" sl="13" sc="9" el="13" ec="10" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="1" uspid="41" ordinal="2" offset="13" sl="14" sc="9" el="14" ec="10" bec="0" bev="0" fileid="6" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="39" ordinal="0" offset="0" sl="12" sc="42" el="12" ec="79" bec="0" bev="0" fileid="6" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="1" />
+          <FullName>FlorianiProva.Dominio.Features.Alunos.Excecoes.NomeMuitoGrandeException</FullName>
+          <Methods>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" crapScore="1" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663340</MetadataToken>
+              <Name>System.Void FlorianiProva.Dominio.Features.Alunos.Excecoes.NomeMuitoGrandeException::.ctor()</Name>
+              <FileRef uid="7" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="42" ordinal="0" offset="0" sl="12" sc="45" el="12" ec="92" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="1" uspid="43" ordinal="1" offset="12" sl="13" sc="9" el="13" ec="10" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="1" uspid="44" ordinal="2" offset="13" sl="14" sc="9" el="14" ec="10" bec="0" bev="0" fileid="7" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="42" ordinal="0" offset="0" sl="12" sc="45" el="12" ec="92" bec="0" bev="0" fileid="7" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="1" />
+          <FullName>FlorianiProva.Dominio.Exceções.ExcecaoDeNegocio</FullName>
+          <Methods>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" crapScore="1" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663341</MetadataToken>
+              <Name>System.Void FlorianiProva.Dominio.Exceções.ExcecaoDeNegocio::.ctor(System.String)</Name>
+              <FileRef uid="8" />
+              <SequencePoints>
+                <SequencePoint vc="4" uspid="45" ordinal="0" offset="0" sl="11" sc="52" el="11" ec="67" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="4" uspid="46" ordinal="1" offset="8" sl="12" sc="9" el="12" ec="10" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="4" uspid="47" ordinal="2" offset="9" sl="13" sc="9" el="13" ec="10" bec="0" bev="0" fileid="8" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="4" uspid="45" ordinal="0" offset="0" sl="11" sc="52" el="11" ec="67" bec="0" bev="0" fileid="8" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="1" />
+          <FullName>FlorianiProva.Dominio.Exceções.ExcecaoIdentificadorInvalido</FullName>
+          <Methods>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663342</MetadataToken>
+              <Name>System.Void FlorianiProva.Dominio.Exceções.ExcecaoIdentificadorInvalido::.ctor()</Name>
+              <FileRef uid="9" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="48" ordinal="0" offset="0" sl="11" sc="49" el="11" ec="84" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="0" uspid="49" ordinal="1" offset="12" sl="12" sc="9" el="12" ec="10" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="0" uspid="50" ordinal="2" offset="13" sl="13" sc="9" el="13" ec="10" bec="0" bev="0" fileid="9" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="48" ordinal="0" offset="0" sl="11" sc="49" el="11" ec="84" bec="0" bev="0" fileid="9" />
+            </Method>
+          </Methods>
+        </Class>
+      </Classes>
+    </Module>
+    <Module hash="7A-63-96-3D-E8-80-45-F2-79-79-E7-55-19-77-EA-6D-E6-DD-8A-CA">
+      <Summary numSequencePoints="30" visitedSequencePoints="30" numBranchPoints="12" visitedBranchPoints="12" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="2" numClasses="2" visitedMethods="12" numMethods="12" />
+      <ModulePath>C:\Users\ndduser\Desktop\FlorianiProva\ProvaTDD\FlorianiProva\FlorianiProva.Aplicacao.Testes\bin\Debug\FlorianiProva.Aplicacao.dll</ModulePath>
+      <ModuleTime>2018-06-19T19:57:17.8194933Z</ModuleTime>
+      <ModuleName>FlorianiProva.Aplicacao</ModuleName>
+      <Files>
+        <File uid="19" fullPath="C:\Users\ndduser\Desktop\FlorianiProva\ProvaTDD\FlorianiProva\FlorianiProva.Aplicacao\Features\Avaliacoes\AvaliacaoService.cs" />
+        <File uid="20" fullPath="C:\Users\ndduser\Desktop\FlorianiProva\ProvaTDD\FlorianiProva\FlorianiProva.Aplicacao\Features\Alunos\AlunoService.cs" />
+      </Files>
+      <Classes>
+        <Class>
+          <Summary numSequencePoints="15" visitedSequencePoints="15" numBranchPoints="6" visitedBranchPoints="6" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="1" numClasses="1" visitedMethods="6" numMethods="6" />
+          <FullName>FlorianiProva.Aplicacao.Features.Avaliacoes.AvaliacaoService</FullName>
+          <Methods>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" crapScore="1" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="4" visitedSequencePoints="4" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663297</MetadataToken>
+              <Name>System.Void FlorianiProva.Aplicacao.Features.Avaliacoes.AvaliacaoService::.ctor(FlorianiProva.Dominio.Features.Avaliações.IAvaliacaoRepository)</Name>
+              <FileRef uid="19" />
+              <SequencePoints>
+                <SequencePoint vc="6" uspid="51" ordinal="0" offset="0" sl="14" sc="9" el="14" ec="65" bec="0" bev="0" fileid="19" />
+                <SequencePoint vc="6" uspid="52" ordinal="1" offset="7" sl="15" sc="9" el="15" ec="10" bec="0" bev="0" fileid="19" />
+                <SequencePoint vc="6" uspid="53" ordinal="2" offset="8" sl="16" sc="13" el="16" ec="47" bec="0" bev="0" fileid="19" />
+                <SequencePoint vc="6" uspid="54" ordinal="3" offset="15" sl="17" sc="9" el="17" ec="10" bec="0" bev="0" fileid="19" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="6" uspid="51" ordinal="0" offset="0" sl="14" sc="9" el="14" ec="65" bec="0" bev="0" fileid="19" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" crapScore="1" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="4" visitedSequencePoints="4" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663298</MetadataToken>
+              <Name>FlorianiProva.Dominio.Features.Avaliações.Avaliacao FlorianiProva.Aplicacao.Features.Avaliacoes.AvaliacaoService::Atualizar(FlorianiProva.Dominio.Features.Avaliações.Avaliacao)</Name>
+              <FileRef uid="19" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="55" ordinal="0" offset="0" sl="20" sc="9" el="20" ec="10" bec="0" bev="0" fileid="19" />
+                <SequencePoint vc="1" uspid="56" ordinal="1" offset="1" sl="21" sc="13" el="21" ec="33" bec="0" bev="0" fileid="19" />
+                <SequencePoint vc="1" uspid="57" ordinal="2" offset="8" sl="22" sc="13" el="22" ec="62" bec="0" bev="0" fileid="19" />
+                <SequencePoint vc="1" uspid="58" ordinal="3" offset="23" sl="23" sc="9" el="23" ec="10" bec="0" bev="0" fileid="19" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="55" ordinal="0" offset="0" sl="20" sc="9" el="20" ec="10" bec="0" bev="0" fileid="19" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" crapScore="1" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663299</MetadataToken>
+              <Name>System.Boolean FlorianiProva.Aplicacao.Features.Avaliacoes.AvaliacaoService::Deletar(System.Int64)</Name>
+              <FileRef uid="19" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="59" ordinal="0" offset="0" sl="25" sc="41" el="25" ec="73" bec="0" bev="0" fileid="19" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="59" ordinal="0" offset="0" sl="25" sc="41" el="25" ec="73" bec="0" bev="0" fileid="19" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" crapScore="1" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="4" visitedSequencePoints="4" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663300</MetadataToken>
+              <Name>FlorianiProva.Dominio.Features.Avaliações.Avaliacao FlorianiProva.Aplicacao.Features.Avaliacoes.AvaliacaoService::Inserir(FlorianiProva.Dominio.Features.Avaliações.Avaliacao)</Name>
+              <FileRef uid="19" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="60" ordinal="0" offset="0" sl="28" sc="9" el="28" ec="10" bec="0" bev="0" fileid="19" />
+                <SequencePoint vc="1" uspid="61" ordinal="1" offset="1" sl="29" sc="13" el="29" ec="33" bec="0" bev="0" fileid="19" />
+                <SequencePoint vc="1" uspid="62" ordinal="2" offset="8" sl="30" sc="13" el="30" ec="60" bec="0" bev="0" fileid="19" />
+                <SequencePoint vc="1" uspid="63" ordinal="3" offset="23" sl="31" sc="9" el="31" ec="10" bec="0" bev="0" fileid="19" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="60" ordinal="0" offset="0" sl="28" sc="9" el="28" ec="10" bec="0" bev="0" fileid="19" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" crapScore="1" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663301</MetadataToken>
+              <Name>FlorianiProva.Dominio.Features.Avaliações.Avaliacao FlorianiProva.Aplicacao.Features.Avaliacoes.AvaliacaoService::ObterPorId(System.Int64)</Name>
+              <FileRef uid="19" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="64" ordinal="0" offset="0" sl="33" sc="49" el="33" ec="84" bec="0" bev="0" fileid="19" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="64" ordinal="0" offset="0" sl="33" sc="49" el="33" ec="84" bec="0" bev="0" fileid="19" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" crapScore="1" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663302</MetadataToken>
+              <Name>System.Collections.Generic.List`1&lt;FlorianiProva.Dominio.Features.Avaliações.Avaliacao&gt; FlorianiProva.Aplicacao.Features.Avaliacoes.AvaliacaoService::ObterTodos()</Name>
+              <FileRef uid="19" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="65" ordinal="0" offset="0" sl="35" sc="48" el="35" ec="81" bec="0" bev="0" fileid="19" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="65" ordinal="0" offset="0" sl="35" sc="48" el="35" ec="81" bec="0" bev="0" fileid="19" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="15" visitedSequencePoints="15" numBranchPoints="6" visitedBranchPoints="6" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="1" numClasses="1" visitedMethods="6" numMethods="6" />
+          <FullName>FlorianiProva.Aplicacao.Features.Alunos.AlunoService</FullName>
+          <Methods>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" crapScore="1" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="4" visitedSequencePoints="4" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663308</MetadataToken>
+              <Name>System.Void FlorianiProva.Aplicacao.Features.Alunos.AlunoService::.ctor(FlorianiProva.Dominio.Features.Alunos.IAlunoRepository)</Name>
+              <FileRef uid="20" />
+              <SequencePoints>
+                <SequencePoint vc="8" uspid="66" ordinal="0" offset="0" sl="14" sc="9" el="14" ec="57" bec="0" bev="0" fileid="20" />
+                <SequencePoint vc="8" uspid="67" ordinal="1" offset="7" sl="15" sc="9" el="15" ec="10" bec="0" bev="0" fileid="20" />
+                <SequencePoint vc="8" uspid="68" ordinal="2" offset="8" sl="16" sc="13" el="16" ec="43" bec="0" bev="0" fileid="20" />
+                <SequencePoint vc="8" uspid="69" ordinal="3" offset="15" sl="17" sc="9" el="17" ec="10" bec="0" bev="0" fileid="20" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="8" uspid="66" ordinal="0" offset="0" sl="14" sc="9" el="14" ec="57" bec="0" bev="0" fileid="20" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" crapScore="1" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="4" visitedSequencePoints="4" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663309</MetadataToken>
+              <Name>FlorianiProva.Dominio.Features.Alunos.Aluno FlorianiProva.Aplicacao.Features.Alunos.AlunoService::Atualizar(FlorianiProva.Dominio.Features.Alunos.Aluno)</Name>
+              <FileRef uid="20" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="70" ordinal="0" offset="0" sl="20" sc="9" el="20" ec="10" bec="0" bev="0" fileid="20" />
+                <SequencePoint vc="1" uspid="71" ordinal="1" offset="1" sl="21" sc="13" el="21" ec="29" bec="0" bev="0" fileid="20" />
+                <SequencePoint vc="1" uspid="72" ordinal="2" offset="8" sl="22" sc="13" el="22" ec="54" bec="0" bev="0" fileid="20" />
+                <SequencePoint vc="1" uspid="73" ordinal="3" offset="23" sl="23" sc="9" el="23" ec="10" bec="0" bev="0" fileid="20" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="70" ordinal="0" offset="0" sl="20" sc="9" el="20" ec="10" bec="0" bev="0" fileid="20" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" crapScore="1" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663310</MetadataToken>
+              <Name>System.Boolean FlorianiProva.Aplicacao.Features.Alunos.AlunoService::Deletar(System.Int64)</Name>
+              <FileRef uid="20" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="74" ordinal="0" offset="0" sl="25" sc="41" el="25" ec="69" bec="0" bev="0" fileid="20" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="74" ordinal="0" offset="0" sl="25" sc="41" el="25" ec="69" bec="0" bev="0" fileid="20" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" crapScore="1" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="4" visitedSequencePoints="4" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663311</MetadataToken>
+              <Name>FlorianiProva.Dominio.Features.Alunos.Aluno FlorianiProva.Aplicacao.Features.Alunos.AlunoService::Inserir(FlorianiProva.Dominio.Features.Alunos.Aluno)</Name>
+              <FileRef uid="20" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="75" ordinal="0" offset="0" sl="28" sc="9" el="28" ec="10" bec="0" bev="0" fileid="20" />
+                <SequencePoint vc="1" uspid="76" ordinal="1" offset="1" sl="29" sc="13" el="29" ec="29" bec="0" bev="0" fileid="20" />
+                <SequencePoint vc="1" uspid="77" ordinal="2" offset="8" sl="30" sc="13" el="30" ec="52" bec="0" bev="0" fileid="20" />
+                <SequencePoint vc="1" uspid="78" ordinal="3" offset="23" sl="31" sc="9" el="31" ec="10" bec="0" bev="0" fileid="20" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="75" ordinal="0" offset="0" sl="28" sc="9" el="28" ec="10" bec="0" bev="0" fileid="20" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" crapScore="1" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663312</MetadataToken>
+              <Name>FlorianiProva.Dominio.Features.Alunos.Aluno FlorianiProva.Aplicacao.Features.Alunos.AlunoService::ObterPorId(System.Int64)</Name>
+              <FileRef uid="20" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="79" ordinal="0" offset="0" sl="33" sc="45" el="33" ec="76" bec="0" bev="0" fileid="20" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="79" ordinal="0" offset="0" sl="33" sc="45" el="33" ec="76" bec="0" bev="0" fileid="20" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" crapScore="1" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663313</MetadataToken>
+              <Name>System.Collections.Generic.List`1&lt;FlorianiProva.Dominio.Features.Alunos.Aluno&gt; FlorianiProva.Aplicacao.Features.Alunos.AlunoService::ObterTodos()</Name>
+              <FileRef uid="20" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="80" ordinal="0" offset="0" sl="35" sc="44" el="35" ec="73" bec="0" bev="0" fileid="20" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="80" ordinal="0" offset="0" sl="35" sc="44" el="35" ec="73" bec="0" bev="0" fileid="20" />
+            </Method>
+          </Methods>
+        </Class>
+      </Classes>
+    </Module>
+    <Module hash="E4-DF-CD-7E-00-7C-78-01-26-45-A9-AD-3E-FD-00-B1-EC-CB-7F-F3">
+      <Summary numSequencePoints="10" visitedSequencePoints="6" numBranchPoints="7" visitedBranchPoints="6" sequenceCoverage="60" branchCoverage="85.71" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="1" visitedClasses="2" numClasses="3" visitedMethods="6" numMethods="7" />
+      <ModulePath>C:\Users\ndduser\Desktop\FlorianiProva\ProvaTDD\FlorianiProva\FlorianiProva.Aplicacao.Testes\bin\Debug\FlorianiProva.Comum.dll</ModulePath>
+      <ModuleTime>2018-06-19T20:01:51.6216624Z</ModuleTime>
+      <ModuleName>FlorianiProva.Comum</ModuleName>
+      <Files>
+        <File uid="23" fullPath="C:\Users\ndduser\Desktop\FlorianiProva\ProvaTDD\FlorianiProva\FlorianiProva.Comum\ObjetosMae\Avaliacoes\AvaliacaoObjetoMae.cs" />
+        <File uid="24" fullPath="C:\Users\ndduser\Desktop\FlorianiProva\ProvaTDD\FlorianiProva\FlorianiProva.Comum\ObjetosMae\Alunos\AlunoObjetoMae.cs" />
+        <File uid="25" fullPath="C:\Users\ndduser\Desktop\FlorianiProva\ProvaTDD\FlorianiProva\FlorianiProva.Comum\Base\BaseSqlTeste.cs" />
+      </Files>
+      <Classes>
+        <Class>
+          <Summary numSequencePoints="2" visitedSequencePoints="2" numBranchPoints="2" visitedBranchPoints="2" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="1" numClasses="1" visitedMethods="2" numMethods="2" />
+          <FullName>FlorianiProva.Comum.ObjetosMae.Avaliacoes.AvaliacaoObjetoMae</FullName>
+          <Methods>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" crapScore="1" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663297</MetadataToken>
+              <Name>FlorianiProva.Dominio.Features.Avaliações.Avaliacao FlorianiProva.Comum.ObjetosMae.Avaliacoes.AvaliacaoObjetoMae::AvaliacaoComAssuntoEmBranco()</Name>
+              <FileRef uid="23" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="81" ordinal="0" offset="0" sl="12" sc="66" el="16" ec="10" bec="0" bev="0" fileid="23" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="81" ordinal="0" offset="0" sl="12" sc="66" el="16" ec="10" bec="0" bev="0" fileid="23" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" crapScore="1" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663298</MetadataToken>
+              <Name>FlorianiProva.Dominio.Features.Avaliações.Avaliacao FlorianiProva.Comum.ObjetosMae.Avaliacoes.AvaliacaoObjetoMae::AvaliacaoValida()</Name>
+              <FileRef uid="23" />
+              <SequencePoints>
+                <SequencePoint vc="3" uspid="82" ordinal="0" offset="0" sl="17" sc="54" el="17" ec="116" bec="0" bev="0" fileid="23" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="3" uspid="82" ordinal="0" offset="0" sl="17" sc="54" el="17" ec="116" bec="0" bev="0" fileid="23" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="4" visitedSequencePoints="4" numBranchPoints="4" visitedBranchPoints="4" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="1" numClasses="1" visitedMethods="4" numMethods="4" />
+          <FullName>FlorianiProva.Comum.ObjetosMae.Alunos.AlunoObjetoMae</FullName>
+          <Methods>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" crapScore="1" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663299</MetadataToken>
+              <Name>FlorianiProva.Dominio.Features.Alunos.Aluno FlorianiProva.Comum.ObjetosMae.Alunos.AlunoObjetoMae::AlunoComNomeEmBranco()</Name>
+              <FileRef uid="24" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="83" ordinal="0" offset="0" sl="12" sc="55" el="16" ec="10" bec="0" bev="0" fileid="24" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="83" ordinal="0" offset="0" sl="12" sc="55" el="16" ec="10" bec="0" bev="0" fileid="24" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" crapScore="1" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663300</MetadataToken>
+              <Name>FlorianiProva.Dominio.Features.Alunos.Aluno FlorianiProva.Comum.ObjetosMae.Alunos.AlunoObjetoMae::AlunoComNomeMuitoGrande()</Name>
+              <FileRef uid="24" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="84" ordinal="0" offset="0" sl="17" sc="58" el="21" ec="10" bec="0" bev="0" fileid="24" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="84" ordinal="0" offset="0" sl="17" sc="58" el="21" ec="10" bec="0" bev="0" fileid="24" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" crapScore="1" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663301</MetadataToken>
+              <Name>FlorianiProva.Dominio.Features.Alunos.Aluno FlorianiProva.Comum.ObjetosMae.Alunos.AlunoObjetoMae::AlunoComIdadeNegativa()</Name>
+              <FileRef uid="24" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="85" ordinal="0" offset="0" sl="22" sc="56" el="26" ec="10" bec="0" bev="0" fileid="24" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="85" ordinal="0" offset="0" sl="22" sc="56" el="26" ec="10" bec="0" bev="0" fileid="24" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" crapScore="1" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663302</MetadataToken>
+              <Name>FlorianiProva.Dominio.Features.Alunos.Aluno FlorianiProva.Comum.ObjetosMae.Alunos.AlunoObjetoMae::AlunoValido()</Name>
+              <FileRef uid="24" />
+              <SequencePoints>
+                <SequencePoint vc="3" uspid="86" ordinal="0" offset="0" sl="27" sc="46" el="32" ec="10" bec="0" bev="0" fileid="24" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="3" uspid="86" ordinal="0" offset="0" sl="27" sc="46" el="32" ec="10" bec="0" bev="0" fileid="24" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="4" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="1" />
+          <FullName>FlorianiProva.Comum.Base.BaseSqlTeste</FullName>
+          <Methods>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="4" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663303</MetadataToken>
+              <Name>System.Void FlorianiProva.Comum.Base.BaseSqlTeste::SemearBanco()</Name>
+              <FileRef uid="25" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="87" ordinal="0" offset="0" sl="15" sc="9" el="15" ec="10" bec="0" bev="0" fileid="25" />
+                <SequencePoint vc="0" uspid="88" ordinal="1" offset="1" sl="16" sc="13" el="16" ec="38" bec="0" bev="0" fileid="25" />
+                <SequencePoint vc="0" uspid="89" ordinal="2" offset="13" sl="17" sc="13" el="17" ec="38" bec="0" bev="0" fileid="25" />
+                <SequencePoint vc="0" uspid="90" ordinal="3" offset="25" sl="18" sc="9" el="18" ec="10" bec="0" bev="0" fileid="25" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="87" ordinal="0" offset="0" sl="15" sc="9" el="15" ec="10" bec="0" bev="0" fileid="25" />
+            </Method>
+          </Methods>
+        </Class>
+      </Classes>
+    </Module>
+  </Modules>
+</CoverageSession>

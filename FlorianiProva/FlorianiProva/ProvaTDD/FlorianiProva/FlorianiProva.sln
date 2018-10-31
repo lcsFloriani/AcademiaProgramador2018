@@ -1,0 +1,95 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.7
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Apresentação", "1 - Apresentação", "{BDDE9991-42C2-45F8-B290-018A0F235F57}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Aplicação", "2 - Aplicação", "{F5316B26-27A1-47AC-B19D-FBF2247A4790}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Dominio", "3 - Dominio", "{D42138AB-0BB4-4D14-9BB8-7BAD9228177B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infraestrutura", "4 - Infraestrutura", "{0AF8A7B3-F54F-4DC6-B313-54EAD50CACA5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testes", "Testes", "{E6138574-33FD-4DE3-9F52-FD0A574BD249}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlorianiProva.Dominio", "FlorianiProva.Dominio\FlorianiProva.Dominio.csproj", "{FCB2DE10-BF30-4646-93F2-6749318E731A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlorianiProva.Dominio.Testes", "FlorianiProva.Dominio.Testes\FlorianiProva.Dominio.Testes.csproj", "{9850D473-2C3A-44ED-8C65-E6C4F4885164}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlorianiProva.Comum", "FlorianiProva.Comum\FlorianiProva.Comum.csproj", "{D02A9D56-8BC3-4A0E-ADDB-CCFD08DEF36D}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "FlorianiProvaDB", "FlorianiProvaDB\FlorianiProvaDB.sqlproj", "{72FEDFA2-F905-488F-BE6B-ACFE86036BBC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlorianiProva.Infra", "FlorianiProva.Infra\FlorianiProva.Infra.csproj", "{93A94933-C3CF-4FE3-8958-E1EF90BC7AEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlorianiProva.Infra.Data", "FlorianiProva.Infra.Data\FlorianiProva.Infra.Data.csproj", "{06D61CB4-12B5-4422-B5C5-294496530EA4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{871D9F44-421E-4393-950E-378711E5151E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlorianiProva.Infra.Data.Testes", "FlorianiProva.Infra.Data.Testes\FlorianiProva.Infra.Data.Testes.csproj", "{1D454D67-A55B-41A7-A43B-FE333A1FA3AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlorianiProva.Aplicacao", "FlorianiProva.Aplicacao\FlorianiProva.Aplicacao.csproj", "{036C397A-B84B-4B68-B4C8-CBFA01CAC81A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlorianiProva.Aplicacao.Testes", "FlorianiProva.Aplicacao.Testes\FlorianiProva.Aplicacao.Testes.csproj", "{B238C2B0-9E2F-47B6-9049-68DA97DAB314}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FCB2DE10-BF30-4646-93F2-6749318E731A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCB2DE10-BF30-4646-93F2-6749318E731A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCB2DE10-BF30-4646-93F2-6749318E731A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCB2DE10-BF30-4646-93F2-6749318E731A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9850D473-2C3A-44ED-8C65-E6C4F4885164}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9850D473-2C3A-44ED-8C65-E6C4F4885164}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9850D473-2C3A-44ED-8C65-E6C4F4885164}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9850D473-2C3A-44ED-8C65-E6C4F4885164}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D02A9D56-8BC3-4A0E-ADDB-CCFD08DEF36D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D02A9D56-8BC3-4A0E-ADDB-CCFD08DEF36D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D02A9D56-8BC3-4A0E-ADDB-CCFD08DEF36D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D02A9D56-8BC3-4A0E-ADDB-CCFD08DEF36D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72FEDFA2-F905-488F-BE6B-ACFE86036BBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72FEDFA2-F905-488F-BE6B-ACFE86036BBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72FEDFA2-F905-488F-BE6B-ACFE86036BBC}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{72FEDFA2-F905-488F-BE6B-ACFE86036BBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72FEDFA2-F905-488F-BE6B-ACFE86036BBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72FEDFA2-F905-488F-BE6B-ACFE86036BBC}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{93A94933-C3CF-4FE3-8958-E1EF90BC7AEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93A94933-C3CF-4FE3-8958-E1EF90BC7AEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93A94933-C3CF-4FE3-8958-E1EF90BC7AEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93A94933-C3CF-4FE3-8958-E1EF90BC7AEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06D61CB4-12B5-4422-B5C5-294496530EA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06D61CB4-12B5-4422-B5C5-294496530EA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06D61CB4-12B5-4422-B5C5-294496530EA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06D61CB4-12B5-4422-B5C5-294496530EA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D454D67-A55B-41A7-A43B-FE333A1FA3AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D454D67-A55B-41A7-A43B-FE333A1FA3AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D454D67-A55B-41A7-A43B-FE333A1FA3AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D454D67-A55B-41A7-A43B-FE333A1FA3AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{036C397A-B84B-4B68-B4C8-CBFA01CAC81A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{036C397A-B84B-4B68-B4C8-CBFA01CAC81A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{036C397A-B84B-4B68-B4C8-CBFA01CAC81A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{036C397A-B84B-4B68-B4C8-CBFA01CAC81A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B238C2B0-9E2F-47B6-9049-68DA97DAB314}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B238C2B0-9E2F-47B6-9049-68DA97DAB314}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B238C2B0-9E2F-47B6-9049-68DA97DAB314}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B238C2B0-9E2F-47B6-9049-68DA97DAB314}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FCB2DE10-BF30-4646-93F2-6749318E731A} = {D42138AB-0BB4-4D14-9BB8-7BAD9228177B}
+		{9850D473-2C3A-44ED-8C65-E6C4F4885164} = {E6138574-33FD-4DE3-9F52-FD0A574BD249}
+		{D02A9D56-8BC3-4A0E-ADDB-CCFD08DEF36D} = {E6138574-33FD-4DE3-9F52-FD0A574BD249}
+		{72FEDFA2-F905-488F-BE6B-ACFE86036BBC} = {871D9F44-421E-4393-950E-378711E5151E}
+		{93A94933-C3CF-4FE3-8958-E1EF90BC7AEA} = {0AF8A7B3-F54F-4DC6-B313-54EAD50CACA5}
+		{06D61CB4-12B5-4422-B5C5-294496530EA4} = {0AF8A7B3-F54F-4DC6-B313-54EAD50CACA5}
+		{1D454D67-A55B-41A7-A43B-FE333A1FA3AD} = {E6138574-33FD-4DE3-9F52-FD0A574BD249}
+		{036C397A-B84B-4B68-B4C8-CBFA01CAC81A} = {F5316B26-27A1-47AC-B19D-FBF2247A4790}
+		{B238C2B0-9E2F-47B6-9049-68DA97DAB314} = {E6138574-33FD-4DE3-9F52-FD0A574BD249}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,1983 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CoverageSession xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="4.6.0.0">
+  <Summary numSequencePoints="257" visitedSequencePoints="147" numBranchPoints="87" visitedBranchPoints="41" sequenceCoverage="57.20" branchCoverage="47.13" maxCyclomaticComplexity="6" minCyclomaticComplexity="1" maxCrapScore="42" minCrapScore="1" visitedClasses="10" numClasses="18" visitedMethods="24" numMethods="55" />
+  <Modules>
+    <Module hash="CC-56-C7-E7-CA-C3-91-38-81-D9-7C-91-42-00-B6-9C-92-D6-28-C0">
+      <Summary numSequencePoints="40" visitedSequencePoints="39" numBranchPoints="9" visitedBranchPoints="9" sequenceCoverage="97.5" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="1" visitedClasses="1" numClasses="1" visitedMethods="9" numMethods="9" />
+      <ModulePath>C:\Users\ndduser\Desktop\ww\Dupla16\Projeto-loterica\Projeto-loterica.Service.Tests\bin\Debug\Projeto-loterica.Service.Tests.dll</ModulePath>
+      <ModuleTime>2018-05-15T18:43:09.8146845Z</ModuleTime>
+      <ModuleName>Projeto-loterica.Service.Tests</ModuleName>
+      <Files>
+        <File uid="1" fullPath="C:\Users\ndduser\Desktop\ww\Dupla16\Projeto-loterica\Projeto-loterica.Service.Tests\Features\Apostas\ApostaServiceTest.cs" />
+      </Files>
+      <Classes>
+        <Class>
+          <Summary numSequencePoints="40" visitedSequencePoints="39" numBranchPoints="9" visitedBranchPoints="9" sequenceCoverage="97.5" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="1" visitedClasses="1" numClasses="1" visitedMethods="9" numMethods="9" />
+          <FullName>Projeto_loterica.Service.Tests.Features.Apostas.ApostaServiceTest</FullName>
+          <Methods>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" crapScore="1" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="5" visitedSequencePoints="5" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663297</MetadataToken>
+              <Name>System.Void Projeto_loterica.Service.Tests.Features.Apostas.ApostaServiceTest::ApostaService_Set()</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="5" uspid="1" ordinal="0" offset="0" sl="28" sc="9" el="28" ec="10" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="5" uspid="2" ordinal="1" offset="1" sl="29" sc="13" el="29" ec="51" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="5" uspid="3" ordinal="2" offset="12" sl="30" sc="13" el="30" ec="52" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="5" uspid="4" ordinal="3" offset="34" sl="31" sc="13" el="31" ec="49" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="5" uspid="5" ordinal="4" offset="45" sl="32" sc="9" el="32" ec="10" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="5" uspid="1" ordinal="0" offset="0" sl="28" sc="9" el="28" ec="10" bec="0" bev="0" fileid="1" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" crapScore="1" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="5" visitedSequencePoints="5" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663298</MetadataToken>
+              <Name>System.Void Projeto_loterica.Service.Tests.Features.Apostas.ApostaServiceTest::ApostaService_AddTest_Should_BeOk()</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="6" ordinal="0" offset="0" sl="36" sc="9" el="36" ec="10" bec="0" bev="0" fileid="1">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="1" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="1" uspid="7" ordinal="1" offset="1" sl="37" sc="13" el="37" ec="79" bec="0" bev="0" fileid="1">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="1" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="1" uspid="8" ordinal="2" offset="133" sl="39" sc="13" el="39" ec="44" bec="0" bev="0" fileid="1">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="1" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="1" uspid="9" ordinal="3" offset="151" sl="41" sc="13" el="41" ec="49" bec="0" bev="0" fileid="1">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="1" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="1" uspid="10" ordinal="4" offset="180" sl="43" sc="9" el="43" ec="10" bec="0" bev="0" fileid="1">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="1" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="6" ordinal="0" offset="0" sl="36" sc="9" el="36" ec="10" bec="0" bev="0" fileid="1">
+                <TrackedMethodRefs>
+                  <TrackedMethodRef uid="1" vc="1" />
+                </TrackedMethodRefs>
+              </MethodPoint>
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" crapScore="1" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="6" visitedSequencePoints="6" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663299</MetadataToken>
+              <Name>System.Void Projeto_loterica.Service.Tests.Features.Apostas.ApostaServiceTest::ApostaService_AddTest_Should_BeFail_NumerosIguais()</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="11" ordinal="0" offset="0" sl="47" sc="9" el="47" ec="10" bec="0" bev="0" fileid="1">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="2" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="1" uspid="12" ordinal="1" offset="1" sl="48" sc="13" el="48" ec="64" bec="0" bev="0" fileid="1">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="2" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="1" uspid="13" ordinal="2" offset="12" sl="50" sc="13" el="50" ec="54" bec="0" bev="0" fileid="1">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="2" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="1" uspid="14" ordinal="3" offset="25" sl="51" sc="13" el="51" ec="70" bec="0" bev="0" fileid="1">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="2" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="1" uspid="15" ordinal="4" offset="48" sl="52" sc="13" el="52" ec="40" bec="0" bev="0" fileid="1">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="2" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="1" uspid="16" ordinal="5" offset="60" sl="54" sc="9" el="54" ec="10" bec="0" bev="0" fileid="1">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="2" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="11" ordinal="0" offset="0" sl="47" sc="9" el="47" ec="10" bec="0" bev="0" fileid="1">
+                <TrackedMethodRefs>
+                  <TrackedMethodRef uid="2" vc="1" />
+                </TrackedMethodRefs>
+              </MethodPoint>
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" crapScore="1" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="6" visitedSequencePoints="6" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663300</MetadataToken>
+              <Name>System.Void Projeto_loterica.Service.Tests.Features.Apostas.ApostaServiceTest::ApostaService_AddTest_Should_BeFail_NumeroMenor6()</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="17" ordinal="0" offset="0" sl="58" sc="9" el="58" ec="10" bec="0" bev="0" fileid="1">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="3" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="1" uspid="18" ordinal="1" offset="1" sl="59" sc="13" el="59" ec="66" bec="0" bev="0" fileid="1">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="3" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="1" uspid="19" ordinal="2" offset="12" sl="61" sc="13" el="61" ec="54" bec="0" bev="0" fileid="1">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="3" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="1" uspid="20" ordinal="3" offset="25" sl="62" sc="13" el="62" ec="62" bec="0" bev="0" fileid="1">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="3" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="1" uspid="21" ordinal="4" offset="48" sl="63" sc="13" el="63" ec="40" bec="0" bev="0" fileid="1">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="3" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="1" uspid="22" ordinal="5" offset="60" sl="65" sc="9" el="65" ec="10" bec="0" bev="0" fileid="1">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="3" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="17" ordinal="0" offset="0" sl="58" sc="9" el="58" ec="10" bec="0" bev="0" fileid="1">
+                <TrackedMethodRefs>
+                  <TrackedMethodRef uid="3" vc="1" />
+                </TrackedMethodRefs>
+              </MethodPoint>
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" crapScore="1" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="6" visitedSequencePoints="6" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663301</MetadataToken>
+              <Name>System.Void Projeto_loterica.Service.Tests.Features.Apostas.ApostaServiceTest::ApostaService_DeleteTest_Should_BeOK()</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="23" ordinal="0" offset="0" sl="69" sc="9" el="69" ec="10" bec="0" bev="0" fileid="1">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="4" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="1" uspid="24" ordinal="1" offset="1" sl="70" sc="13" el="70" ec="28" bec="0" bev="0" fileid="1">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="4" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="1" uspid="25" ordinal="2" offset="14" sl="71" sc="13" el="71" ec="49" bec="0" bev="0" fileid="1">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="4" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="1" uspid="26" ordinal="3" offset="128" sl="73" sc="13" el="73" ec="34" bec="0" bev="0" fileid="1">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="4" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="1" uspid="27" ordinal="4" offset="146" sl="75" sc="13" el="75" ec="50" bec="0" bev="0" fileid="1">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="4" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="1" uspid="28" ordinal="5" offset="260" sl="76" sc="9" el="76" ec="10" bec="0" bev="0" fileid="1">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="4" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="23" ordinal="0" offset="0" sl="69" sc="9" el="69" ec="10" bec="0" bev="0" fileid="1">
+                <TrackedMethodRefs>
+                  <TrackedMethodRef uid="4" vc="1" />
+                </TrackedMethodRefs>
+              </MethodPoint>
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" crapScore="1" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="7" visitedSequencePoints="7" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663302</MetadataToken>
+              <Name>System.Void Projeto_loterica.Service.Tests.Features.Apostas.ApostaServiceTest::ApostaService_DeleteTest_Should_BeFail()</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="29" ordinal="0" offset="0" sl="80" sc="9" el="80" ec="10" bec="0" bev="0" fileid="1">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="5" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="1" uspid="30" ordinal="1" offset="1" sl="81" sc="13" el="81" ec="28" bec="0" bev="0" fileid="1">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="5" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="1" uspid="31" ordinal="2" offset="14" sl="82" sc="13" el="82" ec="49" bec="0" bev="0" fileid="1">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="5" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="1" uspid="32" ordinal="3" offset="128" sl="84" sc="13" el="84" ec="61" bec="0" bev="0" fileid="1">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="5" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="1" uspid="33" ordinal="4" offset="141" sl="85" sc="13" el="85" ec="67" bec="0" bev="0" fileid="1">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="5" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="1" uspid="34" ordinal="5" offset="164" sl="86" sc="13" el="86" ec="40" bec="0" bev="0" fileid="1">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="5" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="1" uspid="35" ordinal="6" offset="176" sl="87" sc="9" el="87" ec="10" bec="0" bev="0" fileid="1">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="5" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="29" ordinal="0" offset="0" sl="80" sc="9" el="80" ec="10" bec="0" bev="0" fileid="1">
+                <TrackedMethodRefs>
+                  <TrackedMethodRef uid="5" vc="1" />
+                </TrackedMethodRefs>
+              </MethodPoint>
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="0" />
+              <MetadataToken>100663303</MetadataToken>
+              <Name>System.Void Projeto_loterica.Service.Tests.Features.Apostas.ApostaServiceTest::.ctor()</Name>
+              <SequencePoints />
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="36" ordinal="0" offset="0" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" crapScore="1" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663304</MetadataToken>
+              <Name>System.Void Projeto_loterica.Service.Tests.Features.Apostas.ApostaServiceTest::&lt;ApostaService_AddTest_Should_BeFail_NumerosIguais&gt;b__5_0()</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="37" ordinal="0" offset="0" sl="50" sc="36" el="50" ec="53" bec="0" bev="0" fileid="1">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="2" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="37" ordinal="0" offset="0" sl="50" sc="36" el="50" ec="53" bec="0" bev="0" fileid="1">
+                <TrackedMethodRefs>
+                  <TrackedMethodRef uid="2" vc="1" />
+                </TrackedMethodRefs>
+              </MethodPoint>
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" crapScore="1" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663305</MetadataToken>
+              <Name>System.Void Projeto_loterica.Service.Tests.Features.Apostas.ApostaServiceTest::&lt;ApostaService_AddTest_Should_BeFail_NumeroMenor6&gt;b__6_0()</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="38" ordinal="0" offset="0" sl="61" sc="36" el="61" ec="53" bec="0" bev="0" fileid="1">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="3" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="38" ordinal="0" offset="0" sl="61" sc="36" el="61" ec="53" bec="0" bev="0" fileid="1">
+                <TrackedMethodRefs>
+                  <TrackedMethodRef uid="3" vc="1" />
+                </TrackedMethodRefs>
+              </MethodPoint>
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="66.67" branchCoverage="100" crapScore="1.04" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="2" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="66.67" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1.04" minCrapScore="1.04" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663306</MetadataToken>
+              <Name>System.Void Projeto_loterica.Service.Tests.Features.Apostas.ApostaServiceTest::&lt;ApostaService_DeleteTest_Should_BeFail&gt;b__8_1()</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="39" ordinal="0" offset="0" sl="84" sc="35" el="84" ec="36" bec="0" bev="0" fileid="1">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="5" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="1" uspid="40" ordinal="1" offset="1" sl="84" sc="37" el="84" ec="58" bec="0" bev="0" fileid="1">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="5" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="0" uspid="41" ordinal="2" offset="19" sl="84" sc="59" el="84" ec="60" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="39" ordinal="0" offset="0" sl="84" sc="35" el="84" ec="36" bec="0" bev="0" fileid="1">
+                <TrackedMethodRefs>
+                  <TrackedMethodRef uid="5" vc="1" />
+                </TrackedMethodRefs>
+              </MethodPoint>
+            </Method>
+          </Methods>
+        </Class>
+      </Classes>
+      <TrackedMethods>
+        <TrackedMethod uid="1" token="100663298" name="System.Void Projeto_loterica.Service.Tests.Features.Apostas.ApostaServiceTest::ApostaService_AddTest_Should_BeOk()" strategy="NUnitTest" />
+        <TrackedMethod uid="2" token="100663299" name="System.Void Projeto_loterica.Service.Tests.Features.Apostas.ApostaServiceTest::ApostaService_AddTest_Should_BeFail_NumerosIguais()" strategy="NUnitTest" />
+        <TrackedMethod uid="3" token="100663300" name="System.Void Projeto_loterica.Service.Tests.Features.Apostas.ApostaServiceTest::ApostaService_AddTest_Should_BeFail_NumeroMenor6()" strategy="NUnitTest" />
+        <TrackedMethod uid="4" token="100663301" name="System.Void Projeto_loterica.Service.Tests.Features.Apostas.ApostaServiceTest::ApostaService_DeleteTest_Should_BeOK()" strategy="NUnitTest" />
+        <TrackedMethod uid="5" token="100663302" name="System.Void Projeto_loterica.Service.Tests.Features.Apostas.ApostaServiceTest::ApostaService_DeleteTest_Should_BeFail()" strategy="NUnitTest" />
+      </TrackedMethods>
+    </Module>
+    <Module hash="ED-A3-CD-83-60-D3-CD-6F-7D-BB-18-05-69-D8-30-DC-AE-C5-F9-E8">
+      <Summary numSequencePoints="104" visitedSequencePoints="41" numBranchPoints="40" visitedBranchPoints="17" sequenceCoverage="39.42" branchCoverage="42.5" maxCyclomaticComplexity="6" minCyclomaticComplexity="1" maxCrapScore="42" minCrapScore="1" visitedClasses="6" numClasses="10" visitedMethods="8" numMethods="16" />
+      <ModulePath>C:\Users\ndduser\Desktop\ww\Dupla16\Projeto-loterica\Projeto-loterica.Service.Tests\bin\Debug\Projeto-loterica.Domain.dll</ModulePath>
+      <ModuleTime>2018-05-15T18:39:58.5204154Z</ModuleTime>
+      <ModuleName>Projeto-loterica.Domain</ModuleName>
+      <Files>
+        <File uid="3" fullPath="C:\Users\ndduser\Desktop\ww\Dupla16\Projeto-loterica\Projeto-loterica.Domain\Features\Resultados\Resultado.cs" />
+        <File uid="4" fullPath="C:\Users\ndduser\Desktop\ww\Dupla16\Projeto-loterica\Projeto-loterica.Domain\Features\Numeros\Numero.cs" />
+        <File uid="5" fullPath="C:\Users\ndduser\Desktop\ww\Dupla16\Projeto-loterica\Projeto-loterica.Domain\Exceptions\ApostaInvalidaException.cs" />
+        <File uid="6" fullPath="C:\Users\ndduser\Desktop\ww\Dupla16\Projeto-loterica\Projeto-loterica.Domain\Exceptions\DomainException.cs" />
+        <File uid="7" fullPath="C:\Users\ndduser\Desktop\ww\Dupla16\Projeto-loterica\Projeto-loterica.Domain\Exceptions\NumeroInvalidoException.cs" />
+        <File uid="8" fullPath="C:\Users\ndduser\Desktop\ww\Dupla16\Projeto-loterica\Projeto-loterica.Domain\Features\Concursos\Concurso.cs" />
+        <File uid="9" fullPath="C:\Users\ndduser\Desktop\ww\Dupla16\Projeto-loterica\Projeto-loterica.Domain\Features\Boloes\Bolao.cs" />
+        <File uid="10" fullPath="C:\Users\ndduser\Desktop\ww\Dupla16\Projeto-loterica\Projeto-loterica.Domain\Features\Apostas\Aposta.cs" />
+        <File uid="11" fullPath="C:\Users\ndduser\Desktop\ww\Dupla16\Projeto-loterica\Projeto-loterica.Domain\Exceptions\DataConcursoInvalidaException.cs" />
+        <File uid="12" fullPath="C:\Users\ndduser\Desktop\ww\Dupla16\Projeto-loterica\Projeto-loterica.Domain\Exceptions\IdentifierUndefinedException.cs" />
+        <File uid="13" fullPath="C:\Users\ndduser\Desktop\ww\Dupla16\Projeto-loterica\Projeto-loterica.Domain\Exceptions\NumeroRepetidoEmApostaException.cs" />
+        <File uid="14" fullPath="C:\Users\ndduser\Desktop\ww\Dupla16\Projeto-loterica\Projeto-loterica.Domain\Entidades\Entidade.cs" />
+      </Files>
+      <Classes>
+        <Class>
+          <Summary numSequencePoints="44" visitedSequencePoints="0" numBranchPoints="15" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="6" minCyclomaticComplexity="1" maxCrapScore="42" minCrapScore="2" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="3" />
+          <FullName>Projeto_loterica.Domain.Features.Resultados.Resultado</FullName>
+          <Methods>
+            <Method visited="false" cyclomaticComplexity="6" nPathComplexity="32" sequenceCoverage="0" branchCoverage="0" crapScore="42" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="29" visitedSequencePoints="0" numBranchPoints="11" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="6" minCyclomaticComplexity="6" maxCrapScore="42" minCrapScore="42" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663302</MetadataToken>
+              <Name>System.Void Projeto_loterica.Domain.Features.Resultados.Resultado::.ctor(System.Random)</Name>
+              <FileRef uid="3" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="42" ordinal="0" offset="0" sl="16" sc="9" el="16" ec="35" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="0" uspid="43" ordinal="1" offset="7" sl="16" sc="36" el="16" ec="37" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="0" uspid="44" ordinal="2" offset="8" sl="17" sc="13" el="17" ec="37" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="0" uspid="45" ordinal="3" offset="20" sl="19" sc="13" el="19" ec="44" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="0" uspid="46" ordinal="4" offset="22" sl="21" sc="18" el="21" ec="27" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="0" uspid="47" ordinal="5" offset="26" sl="22" sc="13" el="22" ec="14" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="0" uspid="48" ordinal="6" offset="29" sl="24" sc="17" el="24" ec="18" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="0" uspid="49" ordinal="7" offset="30" sl="25" sc="21" el="25" ec="46" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="0" uspid="50" ordinal="8" offset="32" sl="26" sc="21" el="26" ec="109" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="0" uspid="51" ordinal="9" offset="42" sl="27" sc="26" el="27" ec="35" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="0" uspid="52" ordinal="10" offset="46" sl="28" sc="21" el="28" ec="22" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="0" uspid="53" ordinal="11" offset="47" sl="29" sc="25" el="29" ec="57" bec="2" bev="0" fileid="3" />
+                <SequencePoint vc="0" uspid="54" ordinal="12" offset="69" sl="30" sc="25" el="30" ec="26" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="0" uspid="55" ordinal="13" offset="70" sl="31" sc="29" el="31" ec="55" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="0" uspid="56" ordinal="14" offset="72" sl="32" sc="25" el="32" ec="26" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="0" uspid="57" ordinal="15" offset="73" sl="33" sc="21" el="33" ec="22" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="0" uspid="58" ordinal="16" offset="74" sl="27" sc="44" el="27" ec="47" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="0" uspid="59" ordinal="17" offset="78" sl="27" sc="37" el="27" ec="42" bec="2" bev="0" fileid="3" />
+                <SequencePoint vc="0" uspid="60" ordinal="18" offset="88" sl="34" sc="21" el="34" ec="43" bec="2" bev="0" fileid="3" />
+                <SequencePoint vc="0" uspid="61" ordinal="19" offset="95" sl="35" sc="21" el="35" ec="22" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="0" uspid="62" ordinal="20" offset="96" sl="36" sc="25" el="36" ec="52" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="0" uspid="63" ordinal="21" offset="110" sl="37" sc="21" el="37" ec="22" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="0" uspid="64" ordinal="22" offset="111" sl="38" sc="17" el="38" ec="18" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="0" uspid="65" ordinal="23" offset="112" sl="23" sc="17" el="23" ec="43" bec="2" bev="0" fileid="3" />
+                <SequencePoint vc="0" uspid="66" ordinal="24" offset="122" sl="39" sc="17" el="39" ec="43" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="0" uspid="67" ordinal="25" offset="124" sl="40" sc="13" el="40" ec="14" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="0" uspid="68" ordinal="26" offset="125" sl="21" sc="49" el="21" ec="52" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="0" uspid="69" ordinal="27" offset="129" sl="21" sc="29" el="21" ec="47" bec="2" bev="0" fileid="3" />
+                <SequencePoint vc="0" uspid="70" ordinal="28" offset="146" sl="41" sc="9" el="41" ec="10" bec="0" bev="0" fileid="3" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="0" uspid="71" ordinal="0" offset="67" sl="29" path="0" offsetend="69" fileid="3" />
+                <BranchPoint vc="0" uspid="72" ordinal="1" offset="67" sl="29" path="1" offsetend="73" fileid="3" />
+                <BranchPoint vc="0" uspid="73" ordinal="2" offset="86" sl="27" path="0" offsetend="88" fileid="3" />
+                <BranchPoint vc="0" uspid="74" ordinal="3" offset="86" sl="27" path="1" offsetend="46" fileid="3" />
+                <BranchPoint vc="0" uspid="75" ordinal="4" offset="93" sl="34" path="0" offsetend="95" fileid="3" />
+                <BranchPoint vc="0" uspid="76" ordinal="5" offset="93" sl="34" path="1" offsetend="111" fileid="3" />
+                <BranchPoint vc="0" uspid="77" ordinal="6" offset="120" sl="23" path="0" offsetend="122" fileid="3" />
+                <BranchPoint vc="0" uspid="78" ordinal="7" offset="120" sl="23" path="1" offsetend="29" fileid="3" />
+                <BranchPoint vc="0" uspid="79" ordinal="8" offset="144" sl="21" path="0" offsetend="146" fileid="3" />
+                <BranchPoint vc="0" uspid="80" ordinal="9" offset="144" sl="21" path="1" offsetend="26" fileid="3" />
+              </BranchPoints>
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="42" ordinal="0" offset="0" sl="16" sc="9" el="16" ec="35" bec="0" bev="0" fileid="3" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="4" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663303</MetadataToken>
+              <Name>System.Void Projeto_loterica.Domain.Features.Resultados.Resultado::.ctor(Projeto_loterica.Domain.Features.Numeros.Numero[])</Name>
+              <FileRef uid="3" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="81" ordinal="0" offset="0" sl="42" sc="9" el="42" ec="37" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="0" uspid="82" ordinal="1" offset="7" sl="43" sc="9" el="43" ec="10" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="0" uspid="83" ordinal="2" offset="8" sl="44" sc="13" el="44" ec="25" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="0" uspid="84" ordinal="3" offset="15" sl="45" sc="9" el="45" ec="10" bec="0" bev="0" fileid="3" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="81" ordinal="0" offset="0" sl="42" sc="9" el="42" ec="37" bec="0" bev="0" fileid="3" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="2" nPathComplexity="2" sequenceCoverage="0" branchCoverage="0" crapScore="6" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="11" visitedSequencePoints="0" numBranchPoints="3" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" maxCrapScore="6" minCrapScore="6" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663304</MetadataToken>
+              <Name>Projeto_loterica.Domain.Features.Resultados.Resultado Projeto_loterica.Domain.Features.Resultados.Resultado::op_Explicit(System.String)</Name>
+              <FileRef uid="3" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="85" ordinal="0" offset="0" sl="46" sc="61" el="46" ec="62" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="0" uspid="86" ordinal="1" offset="1" sl="47" sc="13" el="47" ec="52" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="0" uspid="87" ordinal="2" offset="19" sl="48" sc="13" el="48" ec="41" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="0" uspid="88" ordinal="3" offset="26" sl="49" sc="18" el="49" ec="27" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="0" uspid="89" ordinal="4" offset="30" sl="50" sc="13" el="50" ec="14" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="0" uspid="90" ordinal="5" offset="31" sl="51" sc="17" el="51" ec="66" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="0" uspid="91" ordinal="6" offset="47" sl="52" sc="13" el="52" ec="14" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="0" uspid="92" ordinal="7" offset="48" sl="49" sc="61" el="49" ec="64" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="0" uspid="93" ordinal="8" offset="52" sl="49" sc="29" el="49" ec="59" bec="2" bev="0" fileid="3" />
+                <SequencePoint vc="0" uspid="94" ordinal="9" offset="62" sl="53" sc="13" el="53" ec="43" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="0" uspid="95" ordinal="10" offset="72" sl="54" sc="9" el="54" ec="10" bec="0" bev="0" fileid="3" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="0" uspid="96" ordinal="0" offset="60" sl="49" path="0" offsetend="62" fileid="3" />
+                <BranchPoint vc="0" uspid="97" ordinal="1" offset="60" sl="49" path="1" offsetend="30" fileid="3" />
+              </BranchPoints>
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="85" ordinal="0" offset="0" sl="46" sc="61" el="46" ec="62" bec="0" bev="0" fileid="3" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="12" visitedSequencePoints="8" numBranchPoints="5" visitedBranchPoints="3" sequenceCoverage="66.67" branchCoverage="60" maxCyclomaticComplexity="3" minCyclomaticComplexity="1" maxCrapScore="3.04" minCrapScore="1" visitedClasses="1" numClasses="1" visitedMethods="2" numMethods="3" />
+          <FullName>Projeto_loterica.Domain.Features.Numeros.Numero</FullName>
+          <Methods>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663305</MetadataToken>
+              <Name>System.Int32 Projeto_loterica.Domain.Features.Numeros.Numero::get_Valor()</Name>
+              <FileRef uid="4" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663306</MetadataToken>
+              <Name>System.Void Projeto_loterica.Domain.Features.Numeros.Numero::set_Valor(System.Int32)</Name>
+              <FileRef uid="4" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="3" nPathComplexity="2" sequenceCoverage="83.33" branchCoverage="66.67" crapScore="3.04" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="6" visitedSequencePoints="5" numBranchPoints="3" visitedBranchPoints="2" sequenceCoverage="83.33" branchCoverage="66.67" maxCyclomaticComplexity="3" minCyclomaticComplexity="3" maxCrapScore="3.04" minCrapScore="3.04" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663307</MetadataToken>
+              <Name>System.Void Projeto_loterica.Domain.Features.Numeros.Numero::.ctor(System.Int32)</Name>
+              <FileRef uid="4" />
+              <SequencePoints>
+                <SequencePoint vc="41" uspid="98" ordinal="0" offset="0" sl="16" sc="9" el="16" ec="34" bec="0" bev="0" fileid="4">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="3" vc="5" />
+                    <TrackedMethodRef uid="2" vc="6" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="41" uspid="99" ordinal="1" offset="7" sl="17" sc="9" el="17" ec="10" bec="0" bev="0" fileid="4">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="3" vc="5" />
+                    <TrackedMethodRef uid="2" vc="6" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="41" uspid="100" ordinal="2" offset="8" sl="18" sc="13" el="18" ec="92" bec="2" bev="1" fileid="4">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="3" vc="5" />
+                    <TrackedMethodRef uid="2" vc="6" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="0" uspid="101" ordinal="3" offset="24" sl="19" sc="17" el="19" ec="53" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="41" uspid="102" ordinal="4" offset="30" sl="20" sc="13" el="20" ec="28" bec="0" bev="0" fileid="4">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="3" vc="5" />
+                    <TrackedMethodRef uid="2" vc="6" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="41" uspid="103" ordinal="5" offset="38" sl="21" sc="9" el="21" ec="10" bec="0" bev="0" fileid="4">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="3" vc="5" />
+                    <TrackedMethodRef uid="2" vc="6" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="0" uspid="106" ordinal="2" offset="22" sl="18" path="0" offsetend="24" fileid="4" />
+                <BranchPoint vc="41" uspid="107" ordinal="3" offset="22" sl="18" path="1" offsetend="30" fileid="4">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="3" vc="5" />
+                    <TrackedMethodRef uid="2" vc="6" />
+                  </TrackedMethodRefs>
+                </BranchPoint>
+              </BranchPoints>
+              <MethodPoint xsi:type="SequencePoint" vc="41" uspid="98" ordinal="0" offset="0" sl="16" sc="9" el="16" ec="34" bec="0" bev="0" fileid="4">
+                <TrackedMethodRefs>
+                  <TrackedMethodRef uid="3" vc="5" />
+                  <TrackedMethodRef uid="2" vc="6" />
+                </TrackedMethodRefs>
+              </MethodPoint>
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" crapScore="1" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663308</MetadataToken>
+              <Name>Projeto_loterica.Domain.Features.Numeros.Numero Projeto_loterica.Domain.Features.Numeros.Numero::op_Implicit(System.Int32)</Name>
+              <FileRef uid="4" />
+              <SequencePoints>
+                <SequencePoint vc="41" uspid="108" ordinal="0" offset="0" sl="24" sc="9" el="24" ec="10" bec="0" bev="0" fileid="4">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="3" vc="5" />
+                    <TrackedMethodRef uid="2" vc="6" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="41" uspid="109" ordinal="1" offset="1" sl="25" sc="13" el="25" ec="34" bec="0" bev="0" fileid="4">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="3" vc="5" />
+                    <TrackedMethodRef uid="2" vc="6" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="41" uspid="110" ordinal="2" offset="10" sl="26" sc="9" el="26" ec="10" bec="0" bev="0" fileid="4">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="3" vc="5" />
+                    <TrackedMethodRef uid="2" vc="6" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="41" uspid="108" ordinal="0" offset="0" sl="24" sc="9" el="24" ec="10" bec="0" bev="0" fileid="4">
+                <TrackedMethodRefs>
+                  <TrackedMethodRef uid="3" vc="5" />
+                  <TrackedMethodRef uid="2" vc="6" />
+                </TrackedMethodRefs>
+              </MethodPoint>
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663309</MetadataToken>
+              <Name>System.Int32 Projeto_loterica.Domain.Features.Numeros.Numero::op_Implicit(Projeto_loterica.Domain.Features.Numeros.Numero)</Name>
+              <FileRef uid="4" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="111" ordinal="0" offset="0" sl="29" sc="9" el="29" ec="10" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="0" uspid="112" ordinal="1" offset="1" sl="30" sc="13" el="30" ec="28" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="0" uspid="113" ordinal="2" offset="10" sl="31" sc="9" el="31" ec="10" bec="0" bev="0" fileid="4" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="111" ordinal="0" offset="0" sl="29" sc="9" el="29" ec="10" bec="0" bev="0" fileid="4" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="1" />
+          <FullName>Projeto_loterica.Domain.Features.Exceptions.ApostaInvalidaException</FullName>
+          <Methods>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" crapScore="1" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663310</MetadataToken>
+              <Name>System.Void Projeto_loterica.Domain.Features.Exceptions.ApostaInvalidaException::.ctor()</Name>
+              <FileRef uid="5" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="114" ordinal="0" offset="0" sl="11" sc="44" el="11" ec="77" bec="0" bev="0" fileid="5">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="3" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="1" uspid="115" ordinal="1" offset="12" sl="12" sc="9" el="12" ec="10" bec="0" bev="0" fileid="5">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="3" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="1" uspid="116" ordinal="2" offset="13" sl="13" sc="9" el="13" ec="10" bec="0" bev="0" fileid="5">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="3" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="114" ordinal="0" offset="0" sl="11" sc="44" el="11" ec="77" bec="0" bev="0" fileid="5">
+                <TrackedMethodRefs>
+                  <TrackedMethodRef uid="3" vc="1" />
+                </TrackedMethodRefs>
+              </MethodPoint>
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="1" />
+          <FullName>Projeto_loterica.Domain.Features.Exceptions.DomainException</FullName>
+          <Methods>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" crapScore="1" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663311</MetadataToken>
+              <Name>System.Void Projeto_loterica.Domain.Features.Exceptions.DomainException::.ctor(System.String)</Name>
+              <FileRef uid="6" />
+              <SequencePoints>
+                <SequencePoint vc="3" uspid="117" ordinal="0" offset="0" sl="11" sc="50" el="11" ec="63" bec="0" bev="0" fileid="6">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="3" vc="1" />
+                    <TrackedMethodRef uid="2" vc="1" />
+                    <TrackedMethodRef uid="5" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="3" uspid="118" ordinal="1" offset="8" sl="11" sc="64" el="11" ec="65" bec="0" bev="0" fileid="6">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="3" vc="1" />
+                    <TrackedMethodRef uid="2" vc="1" />
+                    <TrackedMethodRef uid="5" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="3" uspid="119" ordinal="2" offset="9" sl="12" sc="9" el="12" ec="10" bec="0" bev="0" fileid="6">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="3" vc="1" />
+                    <TrackedMethodRef uid="2" vc="1" />
+                    <TrackedMethodRef uid="5" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="3" uspid="117" ordinal="0" offset="0" sl="11" sc="50" el="11" ec="63" bec="0" bev="0" fileid="6">
+                <TrackedMethodRefs>
+                  <TrackedMethodRef uid="3" vc="1" />
+                  <TrackedMethodRef uid="2" vc="1" />
+                  <TrackedMethodRef uid="5" vc="1" />
+                </TrackedMethodRefs>
+              </MethodPoint>
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="1" />
+          <FullName>Projeto_loterica.Domain.Features.Exceptions.NumeroInvalidoException</FullName>
+          <Methods>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663312</MetadataToken>
+              <Name>System.Void Projeto_loterica.Domain.Features.Exceptions.NumeroInvalidoException::.ctor()</Name>
+              <FileRef uid="7" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="120" ordinal="0" offset="0" sl="11" sc="44" el="11" ec="82" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="121" ordinal="1" offset="12" sl="12" sc="9" el="12" ec="10" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="122" ordinal="2" offset="13" sl="13" sc="9" el="13" ec="10" bec="0" bev="0" fileid="7" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="120" ordinal="0" offset="0" sl="11" sc="44" el="11" ec="82" bec="0" bev="0" fileid="7" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="9" visitedSequencePoints="0" numBranchPoints="4" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="2" minCyclomaticComplexity="1" maxCrapScore="6" minCrapScore="2" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="2" />
+          <FullName>Projeto_loterica.Domain.Features.Concursos.Concurso</FullName>
+          <Methods>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663313</MetadataToken>
+              <Name>System.Collections.Generic.List`1&lt;Projeto_loterica.Domain.Features.Boloes.Bolao&gt; Projeto_loterica.Domain.Features.Concursos.Concurso::get_Boloes()</Name>
+              <FileRef uid="8" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663314</MetadataToken>
+              <Name>System.Void Projeto_loterica.Domain.Features.Concursos.Concurso::set_Boloes(System.Collections.Generic.List`1&lt;Projeto_loterica.Domain.Features.Boloes.Bolao&gt;)</Name>
+              <FileRef uid="8" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663315</MetadataToken>
+              <Name>System.Collections.Generic.List`1&lt;Projeto_loterica.Domain.Features.Apostas.Aposta&gt; Projeto_loterica.Domain.Features.Concursos.Concurso::get_Apostas()</Name>
+              <FileRef uid="8" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663316</MetadataToken>
+              <Name>System.Void Projeto_loterica.Domain.Features.Concursos.Concurso::set_Apostas(System.Collections.Generic.List`1&lt;Projeto_loterica.Domain.Features.Apostas.Aposta&gt;)</Name>
+              <FileRef uid="8" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663317</MetadataToken>
+              <Name>System.Double Projeto_loterica.Domain.Features.Concursos.Concurso::get_ValorResultado()</Name>
+              <FileRef uid="8" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663318</MetadataToken>
+              <Name>System.Void Projeto_loterica.Domain.Features.Concursos.Concurso::set_ValorResultado(System.Double)</Name>
+              <FileRef uid="8" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663319</MetadataToken>
+              <Name>System.DateTime Projeto_loterica.Domain.Features.Concursos.Concurso::get_DataConcurso()</Name>
+              <FileRef uid="8" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663320</MetadataToken>
+              <Name>System.Void Projeto_loterica.Domain.Features.Concursos.Concurso::set_DataConcurso(System.DateTime)</Name>
+              <FileRef uid="8" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="5" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663321</MetadataToken>
+              <Name>System.Void Projeto_loterica.Domain.Features.Concursos.Concurso::.ctor()</Name>
+              <FileRef uid="8" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="123" ordinal="0" offset="0" sl="21" sc="9" el="21" ec="26" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="124" ordinal="1" offset="7" sl="22" sc="9" el="22" ec="10" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="125" ordinal="2" offset="8" sl="23" sc="13" el="23" ec="40" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="126" ordinal="3" offset="20" sl="24" sc="13" el="24" ec="42" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="127" ordinal="4" offset="32" sl="25" sc="9" el="25" ec="10" bec="0" bev="0" fileid="8" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="123" ordinal="0" offset="0" sl="21" sc="9" el="21" ec="26" bec="0" bev="0" fileid="8" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="2" nPathComplexity="2" sequenceCoverage="0" branchCoverage="0" crapScore="6" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="4" visitedSequencePoints="0" numBranchPoints="3" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" maxCrapScore="6" minCrapScore="6" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663322</MetadataToken>
+              <Name>System.Void Projeto_loterica.Domain.Features.Concursos.Concurso::Validar()</Name>
+              <FileRef uid="8" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="128" ordinal="0" offset="0" sl="28" sc="9" el="28" ec="10" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="129" ordinal="1" offset="1" sl="29" sc="13" el="29" ec="50" bec="2" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="130" ordinal="2" offset="29" sl="30" sc="17" el="30" ec="59" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="131" ordinal="3" offset="35" sl="32" sc="9" el="32" ec="10" bec="0" bev="0" fileid="8" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="0" uspid="132" ordinal="0" offset="27" sl="29" path="0" offsetend="29" fileid="8" />
+                <BranchPoint vc="0" uspid="133" ordinal="1" offset="27" sl="29" path="1" offsetend="35" fileid="8" />
+              </BranchPoints>
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="128" ordinal="0" offset="0" sl="28" sc="9" el="28" ec="10" bec="0" bev="0" fileid="8" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="0" />
+          <FullName>Projeto_loterica.Domain.Features.Boloes.Bolao</FullName>
+          <Methods>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663323</MetadataToken>
+              <Name>System.Collections.Generic.List`1&lt;Projeto_loterica.Domain.Features.Boloes.Bolao&gt; Projeto_loterica.Domain.Features.Boloes.Bolao::get_Boloes()</Name>
+              <FileRef uid="9" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663324</MetadataToken>
+              <Name>System.Void Projeto_loterica.Domain.Features.Boloes.Bolao::set_Boloes(System.Collections.Generic.List`1&lt;Projeto_loterica.Domain.Features.Boloes.Bolao&gt;)</Name>
+              <FileRef uid="9" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663325</MetadataToken>
+              <Name>System.Collections.Generic.List`1&lt;Projeto_loterica.Domain.Features.Apostas.Aposta&gt; Projeto_loterica.Domain.Features.Boloes.Bolao::get_Apostas()</Name>
+              <FileRef uid="9" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663326</MetadataToken>
+              <Name>System.Void Projeto_loterica.Domain.Features.Boloes.Bolao::set_Apostas(System.Collections.Generic.List`1&lt;Projeto_loterica.Domain.Features.Apostas.Aposta&gt;)</Name>
+              <FileRef uid="9" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="0" />
+              <MetadataToken>100663327</MetadataToken>
+              <Name>System.Void Projeto_loterica.Domain.Features.Boloes.Bolao::.ctor()</Name>
+              <SequencePoints />
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="134" ordinal="0" offset="0" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="21" visitedSequencePoints="21" numBranchPoints="10" visitedBranchPoints="10" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="5" minCyclomaticComplexity="1" maxCrapScore="5" minCrapScore="1" visitedClasses="1" numClasses="1" visitedMethods="2" numMethods="2" />
+          <FullName>Projeto_loterica.Domain.Features.Apostas.Aposta</FullName>
+          <Methods>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663328</MetadataToken>
+              <Name>System.Collections.Generic.List`1&lt;Projeto_loterica.Domain.Features.Numeros.Numero&gt; Projeto_loterica.Domain.Features.Apostas.Aposta::get_Numeros()</Name>
+              <FileRef uid="10" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663329</MetadataToken>
+              <Name>System.Void Projeto_loterica.Domain.Features.Apostas.Aposta::set_Numeros(System.Collections.Generic.List`1&lt;Projeto_loterica.Domain.Features.Numeros.Numero&gt;)</Name>
+              <FileRef uid="10" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663330</MetadataToken>
+              <Name>Projeto_loterica.Domain.Features.Enums.Vencedora Projeto_loterica.Domain.Features.Apostas.Aposta::get_resultado()</Name>
+              <FileRef uid="10" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663331</MetadataToken>
+              <Name>System.Void Projeto_loterica.Domain.Features.Apostas.Aposta::set_resultado(Projeto_loterica.Domain.Features.Enums.Vencedora)</Name>
+              <FileRef uid="10" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663332</MetadataToken>
+              <Name>System.Double Projeto_loterica.Domain.Features.Apostas.Aposta::get_ValorRecebido()</Name>
+              <FileRef uid="10" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663333</MetadataToken>
+              <Name>System.Void Projeto_loterica.Domain.Features.Apostas.Aposta::set_ValorRecebido(System.Double)</Name>
+              <FileRef uid="10" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663334</MetadataToken>
+              <Name>System.Double Projeto_loterica.Domain.Features.Apostas.Aposta::get_ValorPago()</Name>
+              <FileRef uid="10" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663335</MetadataToken>
+              <Name>System.Void Projeto_loterica.Domain.Features.Apostas.Aposta::set_ValorPago(System.Double)</Name>
+              <FileRef uid="10" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" crapScore="1" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="4" visitedSequencePoints="4" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663336</MetadataToken>
+              <Name>System.Void Projeto_loterica.Domain.Features.Apostas.Aposta::.ctor()</Name>
+              <FileRef uid="10" />
+              <SequencePoints>
+                <SequencePoint vc="8" uspid="135" ordinal="0" offset="0" sl="21" sc="9" el="21" ec="24" bec="0" bev="0" fileid="10">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="3" vc="1" />
+                    <TrackedMethodRef uid="2" vc="1" />
+                    <TrackedMethodRef uid="1" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="8" uspid="136" ordinal="1" offset="7" sl="22" sc="9" el="22" ec="10" bec="0" bev="0" fileid="10">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="3" vc="1" />
+                    <TrackedMethodRef uid="2" vc="1" />
+                    <TrackedMethodRef uid="1" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="8" uspid="137" ordinal="2" offset="8" sl="23" sc="13" el="23" ec="42" bec="0" bev="0" fileid="10">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="3" vc="1" />
+                    <TrackedMethodRef uid="2" vc="1" />
+                    <TrackedMethodRef uid="1" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="8" uspid="138" ordinal="3" offset="20" sl="24" sc="9" el="24" ec="10" bec="0" bev="0" fileid="10">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="3" vc="1" />
+                    <TrackedMethodRef uid="2" vc="1" />
+                    <TrackedMethodRef uid="1" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="8" uspid="135" ordinal="0" offset="0" sl="21" sc="9" el="21" ec="24" bec="0" bev="0" fileid="10">
+                <TrackedMethodRefs>
+                  <TrackedMethodRef uid="3" vc="1" />
+                  <TrackedMethodRef uid="2" vc="1" />
+                  <TrackedMethodRef uid="1" vc="1" />
+                </TrackedMethodRefs>
+              </MethodPoint>
+            </Method>
+            <Method visited="true" cyclomaticComplexity="5" nPathComplexity="16" sequenceCoverage="100" branchCoverage="100" crapScore="5" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="17" visitedSequencePoints="17" numBranchPoints="9" visitedBranchPoints="9" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="5" minCyclomaticComplexity="5" maxCrapScore="5" minCrapScore="5" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663337</MetadataToken>
+              <Name>System.Void Projeto_loterica.Domain.Features.Apostas.Aposta::Validar()</Name>
+              <FileRef uid="10" />
+              <SequencePoints>
+                <SequencePoint vc="3" uspid="139" ordinal="0" offset="0" sl="26" sc="9" el="26" ec="10" bec="0" bev="0" fileid="10">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="3" vc="1" />
+                    <TrackedMethodRef uid="2" vc="1" />
+                    <TrackedMethodRef uid="1" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="3" uspid="140" ordinal="1" offset="1" sl="27" sc="13" el="27" ec="36" bec="2" bev="2" fileid="10">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="3" vc="1" />
+                    <TrackedMethodRef uid="2" vc="1" />
+                    <TrackedMethodRef uid="1" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="1" uspid="141" ordinal="2" offset="22" sl="28" sc="17" el="28" ec="53" bec="0" bev="0" fileid="10">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="3" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="2" uspid="142" ordinal="3" offset="28" sl="29" sc="13" el="29" ec="50" bec="0" bev="0" fileid="10">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="2" vc="1" />
+                    <TrackedMethodRef uid="1" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="2" uspid="143" ordinal="4" offset="40" sl="30" sc="18" el="30" ec="27" bec="0" bev="0" fileid="10">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="2" vc="1" />
+                    <TrackedMethodRef uid="1" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="7" uspid="144" ordinal="5" offset="44" sl="31" sc="13" el="31" ec="14" bec="0" bev="0" fileid="10">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="2" vc="1" />
+                    <TrackedMethodRef uid="1" vc="6" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="7" uspid="145" ordinal="6" offset="45" sl="32" sc="22" el="32" ec="33" bec="0" bev="0" fileid="10">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="2" vc="1" />
+                    <TrackedMethodRef uid="1" vc="6" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="16" uspid="146" ordinal="7" offset="51" sl="33" sc="17" el="33" ec="18" bec="0" bev="0" fileid="10">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="2" vc="1" />
+                    <TrackedMethodRef uid="1" vc="15" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="16" uspid="147" ordinal="8" offset="52" sl="34" sc="21" el="34" ec="72" bec="2" bev="2" fileid="10">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="2" vc="1" />
+                    <TrackedMethodRef uid="1" vc="15" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="1" uspid="148" ordinal="9" offset="76" sl="35" sc="25" el="35" ec="69" bec="0" bev="0" fileid="10">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="2" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="15" uspid="149" ordinal="10" offset="82" sl="36" sc="17" el="36" ec="18" bec="0" bev="0" fileid="10">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="1" vc="15" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="15" uspid="150" ordinal="11" offset="83" sl="32" sc="60" el="32" ec="63" bec="0" bev="0" fileid="10">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="1" vc="15" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="22" uspid="151" ordinal="12" offset="87" sl="32" sc="35" el="32" ec="58" bec="2" bev="2" fileid="10">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="2" vc="1" />
+                    <TrackedMethodRef uid="1" vc="21" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="6" uspid="152" ordinal="13" offset="99" sl="37" sc="13" el="37" ec="14" bec="0" bev="0" fileid="10">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="1" vc="6" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="6" uspid="153" ordinal="14" offset="100" sl="30" sc="54" el="30" ec="57" bec="0" bev="0" fileid="10">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="1" vc="6" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="8" uspid="154" ordinal="15" offset="104" sl="30" sc="29" el="30" ec="52" bec="2" bev="2" fileid="10">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="2" vc="1" />
+                    <TrackedMethodRef uid="1" vc="7" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="1" uspid="155" ordinal="16" offset="116" sl="38" sc="9" el="38" ec="10" bec="0" bev="0" fileid="10">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="1" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="1" uspid="156" ordinal="0" offset="20" sl="27" path="0" offsetend="22" fileid="10">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="3" vc="1" />
+                  </TrackedMethodRefs>
+                </BranchPoint>
+                <BranchPoint vc="2" uspid="157" ordinal="1" offset="20" sl="27" path="1" offsetend="28" fileid="10">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="2" vc="1" />
+                    <TrackedMethodRef uid="1" vc="1" />
+                  </TrackedMethodRefs>
+                </BranchPoint>
+                <BranchPoint vc="1" uspid="158" ordinal="2" offset="74" sl="34" path="0" offsetend="76" fileid="10">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="2" vc="1" />
+                  </TrackedMethodRefs>
+                </BranchPoint>
+                <BranchPoint vc="15" uspid="159" ordinal="3" offset="74" sl="34" path="1" offsetend="82" fileid="10">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="1" vc="15" />
+                  </TrackedMethodRefs>
+                </BranchPoint>
+                <BranchPoint vc="6" uspid="160" ordinal="4" offset="97" sl="32" path="0" offsetend="99" fileid="10">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="1" vc="6" />
+                  </TrackedMethodRefs>
+                </BranchPoint>
+                <BranchPoint vc="16" uspid="161" ordinal="5" offset="97" sl="32" path="1" offsetend="51" fileid="10">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="2" vc="1" />
+                    <TrackedMethodRef uid="1" vc="15" />
+                  </TrackedMethodRefs>
+                </BranchPoint>
+                <BranchPoint vc="1" uspid="162" ordinal="6" offset="114" sl="30" path="0" offsetend="116" fileid="10">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="1" vc="1" />
+                  </TrackedMethodRefs>
+                </BranchPoint>
+                <BranchPoint vc="7" uspid="163" ordinal="7" offset="114" sl="30" path="1" offsetend="44" fileid="10">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="2" vc="1" />
+                    <TrackedMethodRef uid="1" vc="6" />
+                  </TrackedMethodRefs>
+                </BranchPoint>
+              </BranchPoints>
+              <MethodPoint xsi:type="SequencePoint" vc="3" uspid="139" ordinal="0" offset="0" sl="26" sc="9" el="26" ec="10" bec="0" bev="0" fileid="10">
+                <TrackedMethodRefs>
+                  <TrackedMethodRef uid="3" vc="1" />
+                  <TrackedMethodRef uid="2" vc="1" />
+                  <TrackedMethodRef uid="1" vc="1" />
+                </TrackedMethodRefs>
+              </MethodPoint>
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="1" />
+          <FullName>Projeto_loterica.Domain.Exceptions.DataConcursoInvalidaException</FullName>
+          <Methods>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663338</MetadataToken>
+              <Name>System.Void Projeto_loterica.Domain.Exceptions.DataConcursoInvalidaException::.ctor()</Name>
+              <FileRef uid="11" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="164" ordinal="0" offset="0" sl="12" sc="50" el="12" ec="111" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="165" ordinal="1" offset="12" sl="13" sc="9" el="13" ec="10" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="166" ordinal="2" offset="13" sl="14" sc="9" el="14" ec="10" bec="0" bev="0" fileid="11" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="164" ordinal="0" offset="0" sl="12" sc="50" el="12" ec="111" bec="0" bev="0" fileid="11" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="1" />
+          <FullName>Projeto_loterica.Domain.Exceptions.IdentifierUndefinedException</FullName>
+          <Methods>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" crapScore="1" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663339</MetadataToken>
+              <Name>System.Void Projeto_loterica.Domain.Exceptions.IdentifierUndefinedException::.ctor()</Name>
+              <FileRef uid="12" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="167" ordinal="0" offset="0" sl="12" sc="49" el="12" ec="85" bec="0" bev="0" fileid="12">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="5" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="1" uspid="168" ordinal="1" offset="12" sl="13" sc="9" el="13" ec="10" bec="0" bev="0" fileid="12">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="5" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="1" uspid="169" ordinal="2" offset="13" sl="14" sc="9" el="14" ec="10" bec="0" bev="0" fileid="12">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="5" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="167" ordinal="0" offset="0" sl="12" sc="49" el="12" ec="85" bec="0" bev="0" fileid="12">
+                <TrackedMethodRefs>
+                  <TrackedMethodRef uid="5" vc="1" />
+                </TrackedMethodRefs>
+              </MethodPoint>
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="1" />
+          <FullName>Projeto_loterica.Domain.Exceptions.NumeroRepetidoEmApostaException</FullName>
+          <Methods>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" crapScore="1" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663340</MetadataToken>
+              <Name>System.Void Projeto_loterica.Domain.Exceptions.NumeroRepetidoEmApostaException::.ctor()</Name>
+              <FileRef uid="13" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="170" ordinal="0" offset="0" sl="12" sc="52" el="12" ec="89" bec="0" bev="0" fileid="13">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="2" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="1" uspid="171" ordinal="1" offset="12" sl="13" sc="9" el="13" ec="10" bec="0" bev="0" fileid="13">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="2" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="1" uspid="172" ordinal="2" offset="13" sl="14" sc="9" el="14" ec="10" bec="0" bev="0" fileid="13">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="2" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="170" ordinal="0" offset="0" sl="12" sc="52" el="12" ec="89" bec="0" bev="0" fileid="13">
+                <TrackedMethodRefs>
+                  <TrackedMethodRef uid="2" vc="1" />
+                </TrackedMethodRefs>
+              </MethodPoint>
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="0" />
+          <FullName>Projeto_loterica.Domain.Entidades.Entidade</FullName>
+          <Methods>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663341</MetadataToken>
+              <Name>System.Int32 Projeto_loterica.Domain.Entidades.Entidade::get_Id()</Name>
+              <FileRef uid="14" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663342</MetadataToken>
+              <Name>System.Void Projeto_loterica.Domain.Entidades.Entidade::set_Id(System.Int32)</Name>
+              <FileRef uid="14" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="0" />
+              <MetadataToken>100663343</MetadataToken>
+              <Name>System.Void Projeto_loterica.Domain.Entidades.Entidade::.ctor()</Name>
+              <SequencePoints />
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="173" ordinal="0" offset="0" />
+            </Method>
+          </Methods>
+        </Class>
+      </Classes>
+      <TrackedMethods />
+    </Module>
+    <Module hash="C1-60-B5-E6-1A-B8-F3-4A-48-FC-E5-04-EB-9A-AE-3E-8C-93-1A-16">
+      <Summary numSequencePoints="67" visitedSequencePoints="21" numBranchPoints="26" visitedBranchPoints="3" sequenceCoverage="31.34" branchCoverage="11.54" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="1" visitedClasses="1" numClasses="5" visitedMethods="3" numMethods="26" />
+      <ModulePath>C:\Users\ndduser\Desktop\ww\Dupla16\Projeto-loterica\Projeto-loterica.Service.Tests\bin\Debug\Projeto-loterica.Application.dll</ModulePath>
+      <ModuleTime>2018-05-15T18:39:59.154097Z</ModuleTime>
+      <ModuleName>Projeto-loterica.Application</ModuleName>
+      <Files>
+        <File uid="27" fullPath="C:\Users\ndduser\Desktop\ww\Dupla16\Projeto-loterica\Projeto-loterica.Application\Features\Resultados\ResultadoService.cs" />
+        <File uid="28" fullPath="C:\Users\ndduser\Desktop\ww\Dupla16\Projeto-loterica\Projeto-loterica.Application\Features\Numeros\NumeroService.cs" />
+        <File uid="29" fullPath="C:\Users\ndduser\Desktop\ww\Dupla16\Projeto-loterica\Projeto-loterica.Application\Features\Concursos\ConcursoService.cs" />
+        <File uid="30" fullPath="C:\Users\ndduser\Desktop\ww\Dupla16\Projeto-loterica\Projeto-loterica.Application\Features\Boloes\BolaoService.cs" />
+        <File uid="31" fullPath="C:\Users\ndduser\Desktop\ww\Dupla16\Projeto-loterica\Projeto-loterica.Application\Features\Apostas\ApostaService.cs" />
+      </Files>
+      <Classes>
+        <Class>
+          <Summary numSequencePoints="10" visitedSequencePoints="0" numBranchPoints="5" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="5" />
+          <FullName>Projeto_loterica.Application.Features.Resultados.ResultadoService</FullName>
+          <Methods>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="2" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663302</MetadataToken>
+              <Name>Projeto_loterica.Domain.Features.Resultados.Resultado Projeto_loterica.Application.Features.Resultados.ResultadoService::Add(Projeto_loterica.Domain.Features.Resultados.Resultado)</Name>
+              <FileRef uid="27" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="174" ordinal="0" offset="0" sl="14" sc="9" el="14" ec="10" bec="0" bev="0" fileid="27" />
+                <SequencePoint vc="0" uspid="175" ordinal="1" offset="1" sl="15" sc="13" el="15" ec="49" bec="0" bev="0" fileid="27" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="174" ordinal="0" offset="0" sl="14" sc="9" el="14" ec="10" bec="0" bev="0" fileid="27" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="2" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663303</MetadataToken>
+              <Name>System.Void Projeto_loterica.Application.Features.Resultados.ResultadoService::Delete(Projeto_loterica.Domain.Features.Resultados.Resultado)</Name>
+              <FileRef uid="27" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="176" ordinal="0" offset="0" sl="19" sc="9" el="19" ec="10" bec="0" bev="0" fileid="27" />
+                <SequencePoint vc="0" uspid="177" ordinal="1" offset="1" sl="20" sc="13" el="20" ec="49" bec="0" bev="0" fileid="27" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="176" ordinal="0" offset="0" sl="19" sc="9" el="19" ec="10" bec="0" bev="0" fileid="27" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="2" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663304</MetadataToken>
+              <Name>System.Collections.Generic.IEnumerable`1&lt;Projeto_loterica.Domain.Features.Resultados.Resultado&gt; Projeto_loterica.Application.Features.Resultados.ResultadoService::GetAll()</Name>
+              <FileRef uid="27" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="178" ordinal="0" offset="0" sl="24" sc="9" el="24" ec="10" bec="0" bev="0" fileid="27" />
+                <SequencePoint vc="0" uspid="179" ordinal="1" offset="1" sl="25" sc="13" el="25" ec="49" bec="0" bev="0" fileid="27" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="178" ordinal="0" offset="0" sl="24" sc="9" el="24" ec="10" bec="0" bev="0" fileid="27" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="2" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663305</MetadataToken>
+              <Name>Projeto_loterica.Domain.Features.Resultados.Resultado Projeto_loterica.Application.Features.Resultados.ResultadoService::GetById(System.Int64)</Name>
+              <FileRef uid="27" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="180" ordinal="0" offset="0" sl="29" sc="9" el="29" ec="10" bec="0" bev="0" fileid="27" />
+                <SequencePoint vc="0" uspid="181" ordinal="1" offset="1" sl="30" sc="13" el="30" ec="49" bec="0" bev="0" fileid="27" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="180" ordinal="0" offset="0" sl="29" sc="9" el="29" ec="10" bec="0" bev="0" fileid="27" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="2" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663306</MetadataToken>
+              <Name>Projeto_loterica.Domain.Features.Resultados.Resultado Projeto_loterica.Application.Features.Resultados.ResultadoService::Update(Projeto_loterica.Domain.Features.Resultados.Resultado)</Name>
+              <FileRef uid="27" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="182" ordinal="0" offset="0" sl="34" sc="9" el="34" ec="10" bec="0" bev="0" fileid="27" />
+                <SequencePoint vc="0" uspid="183" ordinal="1" offset="1" sl="35" sc="13" el="35" ec="49" bec="0" bev="0" fileid="27" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="182" ordinal="0" offset="0" sl="34" sc="9" el="34" ec="10" bec="0" bev="0" fileid="27" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="0" />
+              <MetadataToken>100663307</MetadataToken>
+              <Name>System.Void Projeto_loterica.Application.Features.Resultados.ResultadoService::.ctor()</Name>
+              <SequencePoints />
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="184" ordinal="0" offset="0" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="10" visitedSequencePoints="0" numBranchPoints="5" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="5" />
+          <FullName>Projeto_loterica.Application.Features.Numeros.NumeroService</FullName>
+          <Methods>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="2" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663308</MetadataToken>
+              <Name>Projeto_loterica.Domain.Features.Numeros.Numero Projeto_loterica.Application.Features.Numeros.NumeroService::Add(Projeto_loterica.Domain.Features.Numeros.Numero)</Name>
+              <FileRef uid="28" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="185" ordinal="0" offset="0" sl="14" sc="9" el="14" ec="10" bec="0" bev="0" fileid="28" />
+                <SequencePoint vc="0" uspid="186" ordinal="1" offset="1" sl="15" sc="13" el="15" ec="49" bec="0" bev="0" fileid="28" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="185" ordinal="0" offset="0" sl="14" sc="9" el="14" ec="10" bec="0" bev="0" fileid="28" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="2" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663309</MetadataToken>
+              <Name>System.Void Projeto_loterica.Application.Features.Numeros.NumeroService::Delete(Projeto_loterica.Domain.Features.Numeros.Numero)</Name>
+              <FileRef uid="28" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="187" ordinal="0" offset="0" sl="19" sc="9" el="19" ec="10" bec="0" bev="0" fileid="28" />
+                <SequencePoint vc="0" uspid="188" ordinal="1" offset="1" sl="20" sc="13" el="20" ec="49" bec="0" bev="0" fileid="28" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="187" ordinal="0" offset="0" sl="19" sc="9" el="19" ec="10" bec="0" bev="0" fileid="28" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="2" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663310</MetadataToken>
+              <Name>System.Collections.Generic.IEnumerable`1&lt;Projeto_loterica.Domain.Features.Numeros.Numero&gt; Projeto_loterica.Application.Features.Numeros.NumeroService::GetAll()</Name>
+              <FileRef uid="28" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="189" ordinal="0" offset="0" sl="24" sc="9" el="24" ec="10" bec="0" bev="0" fileid="28" />
+                <SequencePoint vc="0" uspid="190" ordinal="1" offset="1" sl="25" sc="13" el="25" ec="49" bec="0" bev="0" fileid="28" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="189" ordinal="0" offset="0" sl="24" sc="9" el="24" ec="10" bec="0" bev="0" fileid="28" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="2" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663311</MetadataToken>
+              <Name>Projeto_loterica.Domain.Features.Numeros.Numero Projeto_loterica.Application.Features.Numeros.NumeroService::GetById(System.Int64)</Name>
+              <FileRef uid="28" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="191" ordinal="0" offset="0" sl="29" sc="9" el="29" ec="10" bec="0" bev="0" fileid="28" />
+                <SequencePoint vc="0" uspid="192" ordinal="1" offset="1" sl="30" sc="13" el="30" ec="49" bec="0" bev="0" fileid="28" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="191" ordinal="0" offset="0" sl="29" sc="9" el="29" ec="10" bec="0" bev="0" fileid="28" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="2" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663312</MetadataToken>
+              <Name>Projeto_loterica.Domain.Features.Numeros.Numero Projeto_loterica.Application.Features.Numeros.NumeroService::Update(Projeto_loterica.Domain.Features.Numeros.Numero)</Name>
+              <FileRef uid="28" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="193" ordinal="0" offset="0" sl="34" sc="9" el="34" ec="10" bec="0" bev="0" fileid="28" />
+                <SequencePoint vc="0" uspid="194" ordinal="1" offset="1" sl="35" sc="13" el="35" ec="49" bec="0" bev="0" fileid="28" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="193" ordinal="0" offset="0" sl="34" sc="9" el="34" ec="10" bec="0" bev="0" fileid="28" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="0" />
+              <MetadataToken>100663313</MetadataToken>
+              <Name>System.Void Projeto_loterica.Application.Features.Numeros.NumeroService::.ctor()</Name>
+              <SequencePoints />
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="195" ordinal="0" offset="0" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="10" visitedSequencePoints="0" numBranchPoints="5" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="5" />
+          <FullName>Projeto_loterica.Application.Features.Concursos.ConcursoService</FullName>
+          <Methods>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="2" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663314</MetadataToken>
+              <Name>Projeto_loterica.Domain.Features.Concursos.Concurso Projeto_loterica.Application.Features.Concursos.ConcursoService::Add(Projeto_loterica.Domain.Features.Concursos.Concurso)</Name>
+              <FileRef uid="29" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="196" ordinal="0" offset="0" sl="14" sc="9" el="14" ec="10" bec="0" bev="0" fileid="29" />
+                <SequencePoint vc="0" uspid="197" ordinal="1" offset="1" sl="15" sc="13" el="15" ec="49" bec="0" bev="0" fileid="29" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="196" ordinal="0" offset="0" sl="14" sc="9" el="14" ec="10" bec="0" bev="0" fileid="29" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="2" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663315</MetadataToken>
+              <Name>System.Void Projeto_loterica.Application.Features.Concursos.ConcursoService::Delete(Projeto_loterica.Domain.Features.Concursos.Concurso)</Name>
+              <FileRef uid="29" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="198" ordinal="0" offset="0" sl="19" sc="9" el="19" ec="10" bec="0" bev="0" fileid="29" />
+                <SequencePoint vc="0" uspid="199" ordinal="1" offset="1" sl="20" sc="13" el="20" ec="49" bec="0" bev="0" fileid="29" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="198" ordinal="0" offset="0" sl="19" sc="9" el="19" ec="10" bec="0" bev="0" fileid="29" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="2" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663316</MetadataToken>
+              <Name>System.Collections.Generic.IEnumerable`1&lt;Projeto_loterica.Domain.Features.Concursos.Concurso&gt; Projeto_loterica.Application.Features.Concursos.ConcursoService::GetAll()</Name>
+              <FileRef uid="29" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="200" ordinal="0" offset="0" sl="24" sc="9" el="24" ec="10" bec="0" bev="0" fileid="29" />
+                <SequencePoint vc="0" uspid="201" ordinal="1" offset="1" sl="25" sc="13" el="25" ec="49" bec="0" bev="0" fileid="29" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="200" ordinal="0" offset="0" sl="24" sc="9" el="24" ec="10" bec="0" bev="0" fileid="29" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="2" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663317</MetadataToken>
+              <Name>Projeto_loterica.Domain.Features.Concursos.Concurso Projeto_loterica.Application.Features.Concursos.ConcursoService::GetById(System.Int64)</Name>
+              <FileRef uid="29" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="202" ordinal="0" offset="0" sl="29" sc="9" el="29" ec="10" bec="0" bev="0" fileid="29" />
+                <SequencePoint vc="0" uspid="203" ordinal="1" offset="1" sl="30" sc="13" el="30" ec="49" bec="0" bev="0" fileid="29" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="202" ordinal="0" offset="0" sl="29" sc="9" el="29" ec="10" bec="0" bev="0" fileid="29" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="2" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663318</MetadataToken>
+              <Name>Projeto_loterica.Domain.Features.Concursos.Concurso Projeto_loterica.Application.Features.Concursos.ConcursoService::Update(Projeto_loterica.Domain.Features.Concursos.Concurso)</Name>
+              <FileRef uid="29" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="204" ordinal="0" offset="0" sl="34" sc="9" el="34" ec="10" bec="0" bev="0" fileid="29" />
+                <SequencePoint vc="0" uspid="205" ordinal="1" offset="1" sl="35" sc="13" el="35" ec="49" bec="0" bev="0" fileid="29" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="204" ordinal="0" offset="0" sl="34" sc="9" el="34" ec="10" bec="0" bev="0" fileid="29" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="0" />
+              <MetadataToken>100663319</MetadataToken>
+              <Name>System.Void Projeto_loterica.Application.Features.Concursos.ConcursoService::.ctor()</Name>
+              <SequencePoints />
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="206" ordinal="0" offset="0" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="10" visitedSequencePoints="0" numBranchPoints="5" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="5" />
+          <FullName>Projeto_loterica.Application.Features.Boloes.BolaoService</FullName>
+          <Methods>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="2" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663320</MetadataToken>
+              <Name>Projeto_loterica.Domain.Features.Boloes.Bolao Projeto_loterica.Application.Features.Boloes.BolaoService::Add(Projeto_loterica.Domain.Features.Boloes.Bolao)</Name>
+              <FileRef uid="30" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="207" ordinal="0" offset="0" sl="14" sc="9" el="14" ec="10" bec="0" bev="0" fileid="30" />
+                <SequencePoint vc="0" uspid="208" ordinal="1" offset="1" sl="15" sc="13" el="15" ec="49" bec="0" bev="0" fileid="30" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="207" ordinal="0" offset="0" sl="14" sc="9" el="14" ec="10" bec="0" bev="0" fileid="30" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="2" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663321</MetadataToken>
+              <Name>System.Void Projeto_loterica.Application.Features.Boloes.BolaoService::Delete(Projeto_loterica.Domain.Features.Boloes.Bolao)</Name>
+              <FileRef uid="30" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="209" ordinal="0" offset="0" sl="19" sc="9" el="19" ec="10" bec="0" bev="0" fileid="30" />
+                <SequencePoint vc="0" uspid="210" ordinal="1" offset="1" sl="20" sc="13" el="20" ec="49" bec="0" bev="0" fileid="30" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="209" ordinal="0" offset="0" sl="19" sc="9" el="19" ec="10" bec="0" bev="0" fileid="30" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="2" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663322</MetadataToken>
+              <Name>System.Collections.Generic.IEnumerable`1&lt;Projeto_loterica.Domain.Features.Boloes.Bolao&gt; Projeto_loterica.Application.Features.Boloes.BolaoService::GetAll()</Name>
+              <FileRef uid="30" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="211" ordinal="0" offset="0" sl="24" sc="9" el="24" ec="10" bec="0" bev="0" fileid="30" />
+                <SequencePoint vc="0" uspid="212" ordinal="1" offset="1" sl="25" sc="13" el="25" ec="49" bec="0" bev="0" fileid="30" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="211" ordinal="0" offset="0" sl="24" sc="9" el="24" ec="10" bec="0" bev="0" fileid="30" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="2" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663323</MetadataToken>
+              <Name>Projeto_loterica.Domain.Features.Boloes.Bolao Projeto_loterica.Application.Features.Boloes.BolaoService::GetById(System.Int64)</Name>
+              <FileRef uid="30" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="213" ordinal="0" offset="0" sl="29" sc="9" el="29" ec="10" bec="0" bev="0" fileid="30" />
+                <SequencePoint vc="0" uspid="214" ordinal="1" offset="1" sl="30" sc="13" el="30" ec="49" bec="0" bev="0" fileid="30" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="213" ordinal="0" offset="0" sl="29" sc="9" el="29" ec="10" bec="0" bev="0" fileid="30" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="2" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663324</MetadataToken>
+              <Name>Projeto_loterica.Domain.Features.Boloes.Bolao Projeto_loterica.Application.Features.Boloes.BolaoService::Update(Projeto_loterica.Domain.Features.Boloes.Bolao)</Name>
+              <FileRef uid="30" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="215" ordinal="0" offset="0" sl="34" sc="9" el="34" ec="10" bec="0" bev="0" fileid="30" />
+                <SequencePoint vc="0" uspid="216" ordinal="1" offset="1" sl="35" sc="13" el="35" ec="49" bec="0" bev="0" fileid="30" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="215" ordinal="0" offset="0" sl="34" sc="9" el="34" ec="10" bec="0" bev="0" fileid="30" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="0" />
+              <MetadataToken>100663325</MetadataToken>
+              <Name>System.Void Projeto_loterica.Application.Features.Boloes.BolaoService::.ctor()</Name>
+              <SequencePoints />
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="217" ordinal="0" offset="0" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="27" visitedSequencePoints="21" numBranchPoints="6" visitedBranchPoints="3" sequenceCoverage="77.78" branchCoverage="50" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="1" visitedClasses="1" numClasses="1" visitedMethods="3" numMethods="6" />
+          <FullName>Projeto_loterica.Application.Features.Apostas.ApostaService</FullName>
+          <Methods>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" crapScore="1" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="4" visitedSequencePoints="4" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663326</MetadataToken>
+              <Name>System.Void Projeto_loterica.Application.Features.Apostas.ApostaService::.ctor(Projeto_loterica.Domain.Features.Apostas.IApostaRepository)</Name>
+              <FileRef uid="31" />
+              <SequencePoints>
+                <SequencePoint vc="5" uspid="218" ordinal="0" offset="0" sl="16" sc="9" el="16" ec="65" bec="0" bev="0" fileid="31" />
+                <SequencePoint vc="5" uspid="219" ordinal="1" offset="7" sl="17" sc="9" el="17" ec="10" bec="0" bev="0" fileid="31" />
+                <SequencePoint vc="5" uspid="220" ordinal="2" offset="8" sl="18" sc="13" el="18" ec="50" bec="0" bev="0" fileid="31" />
+                <SequencePoint vc="5" uspid="221" ordinal="3" offset="15" sl="19" sc="9" el="19" ec="10" bec="0" bev="0" fileid="31" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="5" uspid="218" ordinal="0" offset="0" sl="16" sc="9" el="16" ec="65" bec="0" bev="0" fileid="31" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" crapScore="1" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="8" visitedSequencePoints="8" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663327</MetadataToken>
+              <Name>Projeto_loterica.Domain.Features.Apostas.Aposta Projeto_loterica.Application.Features.Apostas.ApostaService::Add(Projeto_loterica.Domain.Features.Apostas.Aposta)</Name>
+              <FileRef uid="31" />
+              <SequencePoints>
+                <SequencePoint vc="3" uspid="222" ordinal="0" offset="0" sl="22" sc="9" el="22" ec="10" bec="0" bev="0" fileid="31">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="3" vc="1" />
+                    <TrackedMethodRef uid="2" vc="1" />
+                    <TrackedMethodRef uid="1" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="3" uspid="223" ordinal="1" offset="1" sl="24" sc="13" el="24" ec="14" bec="0" bev="0" fileid="31">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="3" vc="1" />
+                    <TrackedMethodRef uid="2" vc="1" />
+                    <TrackedMethodRef uid="1" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="3" uspid="224" ordinal="2" offset="2" sl="25" sc="17" el="25" ec="34" bec="0" bev="0" fileid="31">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="3" vc="1" />
+                    <TrackedMethodRef uid="2" vc="1" />
+                    <TrackedMethodRef uid="1" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="1" uspid="225" ordinal="3" offset="9" sl="26" sc="17" el="26" ec="54" bec="0" bev="0" fileid="31">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="1" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="2" uspid="226" ordinal="4" offset="24" sl="28" sc="13" el="28" ec="30" bec="0" bev="0" fileid="31">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="3" vc="1" />
+                    <TrackedMethodRef uid="2" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="2" uspid="227" ordinal="5" offset="25" sl="29" sc="13" el="29" ec="14" bec="0" bev="0" fileid="31">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="3" vc="1" />
+                    <TrackedMethodRef uid="2" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="2" uspid="228" ordinal="6" offset="26" sl="30" sc="17" el="30" ec="23" bec="0" bev="0" fileid="31">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="3" vc="1" />
+                    <TrackedMethodRef uid="2" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="1" uspid="229" ordinal="7" offset="28" sl="32" sc="9" el="32" ec="10" bec="0" bev="0" fileid="31">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="1" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="3" uspid="222" ordinal="0" offset="0" sl="22" sc="9" el="22" ec="10" bec="0" bev="0" fileid="31">
+                <TrackedMethodRefs>
+                  <TrackedMethodRef uid="3" vc="1" />
+                  <TrackedMethodRef uid="2" vc="1" />
+                  <TrackedMethodRef uid="1" vc="1" />
+                </TrackedMethodRefs>
+              </MethodPoint>
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" crapScore="1" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="9" visitedSequencePoints="9" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663328</MetadataToken>
+              <Name>System.Void Projeto_loterica.Application.Features.Apostas.ApostaService::Delete(Projeto_loterica.Domain.Features.Apostas.Aposta)</Name>
+              <FileRef uid="31" />
+              <SequencePoints>
+                <SequencePoint vc="2" uspid="230" ordinal="0" offset="0" sl="35" sc="9" el="35" ec="10" bec="0" bev="0" fileid="31">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="5" vc="1" />
+                    <TrackedMethodRef uid="4" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="2" uspid="231" ordinal="1" offset="1" sl="37" sc="13" el="37" ec="14" bec="0" bev="0" fileid="31">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="5" vc="1" />
+                    <TrackedMethodRef uid="4" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="2" uspid="232" ordinal="2" offset="2" sl="38" sc="17" el="38" ec="49" bec="0" bev="0" fileid="31">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="5" vc="1" />
+                    <TrackedMethodRef uid="4" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="1" uspid="233" ordinal="3" offset="15" sl="39" sc="17" el="39" ec="50" bec="0" bev="0" fileid="31">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="4" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="1" uspid="234" ordinal="4" offset="28" sl="40" sc="13" el="40" ec="14" bec="0" bev="0" fileid="31">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="4" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="1" uspid="235" ordinal="5" offset="31" sl="41" sc="13" el="41" ec="30" bec="0" bev="0" fileid="31">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="5" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="1" uspid="236" ordinal="6" offset="32" sl="42" sc="13" el="42" ec="14" bec="0" bev="0" fileid="31">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="5" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="1" uspid="237" ordinal="7" offset="33" sl="44" sc="17" el="44" ec="23" bec="0" bev="0" fileid="31">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="5" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="1" uspid="238" ordinal="8" offset="35" sl="46" sc="9" el="46" ec="10" bec="0" bev="0" fileid="31">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="4" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="2" uspid="230" ordinal="0" offset="0" sl="35" sc="9" el="35" ec="10" bec="0" bev="0" fileid="31">
+                <TrackedMethodRefs>
+                  <TrackedMethodRef uid="5" vc="1" />
+                  <TrackedMethodRef uid="4" vc="1" />
+                </TrackedMethodRefs>
+              </MethodPoint>
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="2" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663329</MetadataToken>
+              <Name>System.Collections.Generic.IEnumerable`1&lt;Projeto_loterica.Domain.Features.Apostas.Aposta&gt; Projeto_loterica.Application.Features.Apostas.ApostaService::GetAll()</Name>
+              <FileRef uid="31" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="239" ordinal="0" offset="0" sl="49" sc="9" el="49" ec="10" bec="0" bev="0" fileid="31" />
+                <SequencePoint vc="0" uspid="240" ordinal="1" offset="1" sl="50" sc="13" el="50" ec="49" bec="0" bev="0" fileid="31" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="239" ordinal="0" offset="0" sl="49" sc="9" el="49" ec="10" bec="0" bev="0" fileid="31" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="2" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663330</MetadataToken>
+              <Name>Projeto_loterica.Domain.Features.Apostas.Aposta Projeto_loterica.Application.Features.Apostas.ApostaService::GetById(System.Int64)</Name>
+              <FileRef uid="31" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="241" ordinal="0" offset="0" sl="54" sc="9" el="54" ec="10" bec="0" bev="0" fileid="31" />
+                <SequencePoint vc="0" uspid="242" ordinal="1" offset="1" sl="55" sc="13" el="55" ec="49" bec="0" bev="0" fileid="31" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="241" ordinal="0" offset="0" sl="54" sc="9" el="54" ec="10" bec="0" bev="0" fileid="31" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="2" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663331</MetadataToken>
+              <Name>Projeto_loterica.Domain.Features.Apostas.Aposta Projeto_loterica.Application.Features.Apostas.ApostaService::Update(Projeto_loterica.Domain.Features.Apostas.Aposta)</Name>
+              <FileRef uid="31" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="243" ordinal="0" offset="0" sl="59" sc="9" el="59" ec="10" bec="0" bev="0" fileid="31" />
+                <SequencePoint vc="0" uspid="244" ordinal="1" offset="1" sl="60" sc="13" el="60" ec="49" bec="0" bev="0" fileid="31" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="243" ordinal="0" offset="0" sl="59" sc="9" el="59" ec="10" bec="0" bev="0" fileid="31" />
+            </Method>
+          </Methods>
+        </Class>
+      </Classes>
+      <TrackedMethods />
+    </Module>
+    <Module hash="59-12-09-09-BD-8D-A0-F5-42-DA-D8-03-F4-BE-2E-2B-EF-96-F9-9E">
+      <Summary numSequencePoints="42" visitedSequencePoints="42" numBranchPoints="9" visitedBranchPoints="9" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" maxCrapScore="2" minCrapScore="2" visitedClasses="1" numClasses="1" visitedMethods="3" numMethods="3" />
+      <ModulePath>C:\Users\ndduser\Desktop\ww\Dupla16\Projeto-loterica\Projeto-loterica.Service.Tests\bin\Debug\Projeto-loterica.Common.Tests.dll</ModulePath>
+      <ModuleTime>2018-05-15T18:39:59.7807613Z</ModuleTime>
+      <ModuleName>Projeto-loterica.Common.Tests</ModuleName>
+      <Files>
+        <File uid="37" fullPath="C:\Users\ndduser\Desktop\ww\Dupla16\Projeto-loterica\Projeto-loterica.Common.Tests\Features\Apostas\ObjectMother.cs" />
+      </Files>
+      <Classes>
+        <Class>
+          <Summary numSequencePoints="42" visitedSequencePoints="42" numBranchPoints="9" visitedBranchPoints="9" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" maxCrapScore="2" minCrapScore="2" visitedClasses="1" numClasses="1" visitedMethods="3" numMethods="3" />
+          <FullName>Projeto_loterica.Common.Tests.Features.ObjectMothers.ObjectMother</FullName>
+          <Methods>
+            <Method visited="true" cyclomaticComplexity="2" nPathComplexity="2" sequenceCoverage="100" branchCoverage="100" crapScore="2" isConstructor="false" isStatic="true" isGetter="true" isSetter="false">
+              <Summary numSequencePoints="14" visitedSequencePoints="14" numBranchPoints="3" visitedBranchPoints="3" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663297</MetadataToken>
+              <Name>Projeto_loterica.Domain.Features.Apostas.Aposta Projeto_loterica.Common.Tests.Features.ObjectMothers.ObjectMother::get_apostaValida()</Name>
+              <FileRef uid="37" />
+              <SequencePoints>
+                <SequencePoint vc="5" uspid="245" ordinal="0" offset="0" sl="17" sc="13" el="17" ec="14" bec="0" bev="0" fileid="37" />
+                <SequencePoint vc="5" uspid="246" ordinal="1" offset="1" sl="18" sc="17" el="18" ec="43" bec="0" bev="0" fileid="37" />
+                <SequencePoint vc="5" uspid="247" ordinal="2" offset="7" sl="19" sc="17" el="19" ec="53" bec="0" bev="0" fileid="37" />
+                <SequencePoint vc="5" uspid="248" ordinal="3" offset="19" sl="20" sc="22" el="20" ec="31" bec="0" bev="0" fileid="37" />
+                <SequencePoint vc="30" uspid="249" ordinal="4" offset="23" sl="21" sc="17" el="21" ec="18" bec="0" bev="0" fileid="37" />
+                <SequencePoint vc="30" uspid="250" ordinal="5" offset="24" sl="22" sc="21" el="22" ec="47" bec="0" bev="0" fileid="37" />
+                <SequencePoint vc="30" uspid="251" ordinal="6" offset="44" sl="23" sc="17" el="23" ec="18" bec="0" bev="0" fileid="37" />
+                <SequencePoint vc="30" uspid="252" ordinal="7" offset="45" sl="20" sc="40" el="20" ec="43" bec="0" bev="0" fileid="37" />
+                <SequencePoint vc="35" uspid="253" ordinal="8" offset="49" sl="20" sc="33" el="20" ec="38" bec="2" bev="2" fileid="37" />
+                <SequencePoint vc="5" uspid="254" ordinal="9" offset="57" sl="24" sc="17" el="24" ec="41" bec="0" bev="0" fileid="37" />
+                <SequencePoint vc="5" uspid="255" ordinal="10" offset="73" sl="25" sc="17" el="25" ec="47" bec="0" bev="0" fileid="37" />
+                <SequencePoint vc="5" uspid="256" ordinal="11" offset="89" sl="26" sc="17" el="26" ec="52" bec="0" bev="0" fileid="37" />
+                <SequencePoint vc="5" uspid="257" ordinal="12" offset="97" sl="27" sc="17" el="27" ec="31" bec="0" bev="0" fileid="37" />
+                <SequencePoint vc="5" uspid="258" ordinal="13" offset="101" sl="28" sc="13" el="28" ec="14" bec="0" bev="0" fileid="37" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="5" uspid="259" ordinal="0" offset="55" sl="20" path="0" offsetend="57" fileid="37" />
+                <BranchPoint vc="30" uspid="260" ordinal="1" offset="55" sl="20" path="1" offsetend="23" fileid="37" />
+              </BranchPoints>
+              <MethodPoint xsi:type="SequencePoint" vc="5" uspid="245" ordinal="0" offset="0" sl="17" sc="13" el="17" ec="14" bec="0" bev="0" fileid="37" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="2" nPathComplexity="2" sequenceCoverage="100" branchCoverage="100" crapScore="2" isConstructor="false" isStatic="true" isGetter="true" isSetter="false">
+              <Summary numSequencePoints="14" visitedSequencePoints="14" numBranchPoints="3" visitedBranchPoints="3" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663298</MetadataToken>
+              <Name>Projeto_loterica.Domain.Features.Apostas.Aposta Projeto_loterica.Common.Tests.Features.ObjectMothers.ObjectMother::get_apostaInvalidaNumerosIguais()</Name>
+              <FileRef uid="37" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="261" ordinal="0" offset="0" sl="34" sc="13" el="34" ec="14" bec="0" bev="0" fileid="37">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="2" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="1" uspid="262" ordinal="1" offset="1" sl="35" sc="17" el="35" ec="43" bec="0" bev="0" fileid="37">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="2" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="1" uspid="263" ordinal="2" offset="7" sl="36" sc="17" el="36" ec="53" bec="0" bev="0" fileid="37">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="2" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="1" uspid="264" ordinal="3" offset="19" sl="37" sc="22" el="37" ec="31" bec="0" bev="0" fileid="37">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="2" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="6" uspid="265" ordinal="4" offset="23" sl="38" sc="17" el="38" ec="18" bec="0" bev="0" fileid="37">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="2" vc="6" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="6" uspid="266" ordinal="5" offset="24" sl="39" sc="21" el="39" ec="43" bec="0" bev="0" fileid="37">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="2" vc="6" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="6" uspid="267" ordinal="6" offset="42" sl="40" sc="17" el="40" ec="18" bec="0" bev="0" fileid="37">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="2" vc="6" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="6" uspid="268" ordinal="7" offset="43" sl="37" sc="40" el="37" ec="43" bec="0" bev="0" fileid="37">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="2" vc="6" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="7" uspid="269" ordinal="8" offset="47" sl="37" sc="33" el="37" ec="38" bec="2" bev="2" fileid="37">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="2" vc="7" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="1" uspid="270" ordinal="9" offset="55" sl="41" sc="17" el="41" ec="41" bec="0" bev="0" fileid="37">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="2" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="1" uspid="271" ordinal="10" offset="71" sl="42" sc="17" el="42" ec="47" bec="0" bev="0" fileid="37">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="2" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="1" uspid="272" ordinal="11" offset="87" sl="43" sc="17" el="43" ec="52" bec="0" bev="0" fileid="37">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="2" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="1" uspid="273" ordinal="12" offset="95" sl="44" sc="17" el="44" ec="31" bec="0" bev="0" fileid="37">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="2" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="1" uspid="274" ordinal="13" offset="99" sl="45" sc="13" el="45" ec="14" bec="0" bev="0" fileid="37">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="2" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="1" uspid="275" ordinal="0" offset="53" sl="37" path="0" offsetend="55" fileid="37">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="2" vc="1" />
+                  </TrackedMethodRefs>
+                </BranchPoint>
+                <BranchPoint vc="6" uspid="276" ordinal="1" offset="53" sl="37" path="1" offsetend="23" fileid="37">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="2" vc="6" />
+                  </TrackedMethodRefs>
+                </BranchPoint>
+              </BranchPoints>
+              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="261" ordinal="0" offset="0" sl="34" sc="13" el="34" ec="14" bec="0" bev="0" fileid="37">
+                <TrackedMethodRefs>
+                  <TrackedMethodRef uid="2" vc="1" />
+                </TrackedMethodRefs>
+              </MethodPoint>
+            </Method>
+            <Method visited="true" cyclomaticComplexity="2" nPathComplexity="2" sequenceCoverage="100" branchCoverage="100" crapScore="2" isConstructor="false" isStatic="true" isGetter="true" isSetter="false">
+              <Summary numSequencePoints="14" visitedSequencePoints="14" numBranchPoints="3" visitedBranchPoints="3" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663299</MetadataToken>
+              <Name>Projeto_loterica.Domain.Features.Apostas.Aposta Projeto_loterica.Common.Tests.Features.ObjectMothers.ObjectMother::get_apostaInvalidaMenosDe6Numeros()</Name>
+              <FileRef uid="37" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="277" ordinal="0" offset="0" sl="51" sc="13" el="51" ec="14" bec="0" bev="0" fileid="37">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="3" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="1" uspid="278" ordinal="1" offset="1" sl="52" sc="17" el="52" ec="43" bec="0" bev="0" fileid="37">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="3" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="1" uspid="279" ordinal="2" offset="7" sl="53" sc="17" el="53" ec="53" bec="0" bev="0" fileid="37">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="3" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="1" uspid="280" ordinal="3" offset="19" sl="54" sc="22" el="54" ec="31" bec="0" bev="0" fileid="37">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="3" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="5" uspid="281" ordinal="4" offset="23" sl="55" sc="17" el="55" ec="18" bec="0" bev="0" fileid="37">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="3" vc="5" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="5" uspid="282" ordinal="5" offset="24" sl="56" sc="21" el="56" ec="47" bec="0" bev="0" fileid="37">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="3" vc="5" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="5" uspid="283" ordinal="6" offset="44" sl="57" sc="17" el="57" ec="18" bec="0" bev="0" fileid="37">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="3" vc="5" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="5" uspid="284" ordinal="7" offset="45" sl="54" sc="40" el="54" ec="43" bec="0" bev="0" fileid="37">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="3" vc="5" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="6" uspid="285" ordinal="8" offset="49" sl="54" sc="33" el="54" ec="38" bec="2" bev="2" fileid="37">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="3" vc="6" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="1" uspid="286" ordinal="9" offset="57" sl="58" sc="17" el="58" ec="41" bec="0" bev="0" fileid="37">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="3" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="1" uspid="287" ordinal="10" offset="73" sl="59" sc="17" el="59" ec="47" bec="0" bev="0" fileid="37">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="3" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="1" uspid="288" ordinal="11" offset="89" sl="60" sc="17" el="60" ec="52" bec="0" bev="0" fileid="37">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="3" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="1" uspid="289" ordinal="12" offset="97" sl="61" sc="17" el="61" ec="31" bec="0" bev="0" fileid="37">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="3" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="1" uspid="290" ordinal="13" offset="101" sl="62" sc="13" el="62" ec="14" bec="0" bev="0" fileid="37">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="3" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="1" uspid="291" ordinal="0" offset="55" sl="54" path="0" offsetend="57" fileid="37">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="3" vc="1" />
+                  </TrackedMethodRefs>
+                </BranchPoint>
+                <BranchPoint vc="5" uspid="292" ordinal="1" offset="55" sl="54" path="1" offsetend="23" fileid="37">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="3" vc="5" />
+                  </TrackedMethodRefs>
+                </BranchPoint>
+              </BranchPoints>
+              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="277" ordinal="0" offset="0" sl="51" sc="13" el="51" ec="14" bec="0" bev="0" fileid="37">
+                <TrackedMethodRefs>
+                  <TrackedMethodRef uid="3" vc="1" />
+                </TrackedMethodRefs>
+              </MethodPoint>
+            </Method>
+          </Methods>
+        </Class>
+      </Classes>
+      <TrackedMethods />
+    </Module>
+    <Module hash="28-E6-3D-BD-51-50-F1-9B-7F-71-36-79-DC-70-2B-33-1D-B9-23-75">
+      <Summary numSequencePoints="4" visitedSequencePoints="4" numBranchPoints="3" visitedBranchPoints="3" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" maxCrapScore="2" minCrapScore="2" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="1" />
+      <ModulePath>C:\Users\ndduser\Desktop\ww\Dupla16\Projeto-loterica\Projeto-loterica.Service.Tests\bin\Debug\Projeto-loterica.Infra.dll</ModulePath>
+      <ModuleTime>2018-05-15T18:39:58.8823757Z</ModuleTime>
+      <ModuleName>Projeto-loterica.Infra</ModuleName>
+      <Files>
+        <File uid="39" fullPath="C:\Users\ndduser\Desktop\ww\Dupla16\Projeto-loterica\Projeto-loterica.Infra\Utils\Validador.cs" />
+      </Files>
+      <Classes>
+        <Class>
+          <Summary numSequencePoints="4" visitedSequencePoints="4" numBranchPoints="3" visitedBranchPoints="3" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" maxCrapScore="2" minCrapScore="2" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="1" />
+          <FullName>Projeto_loterica.Infra.Utils.Validador</FullName>
+          <Methods>
+            <Method visited="true" cyclomaticComplexity="2" nPathComplexity="2" sequenceCoverage="100" branchCoverage="100" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="4" visitedSequencePoints="4" numBranchPoints="3" visitedBranchPoints="3" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663297</MetadataToken>
+              <Name>System.Void Projeto_loterica.Infra.Utils.Validador::ValidateId(System.Int64)</Name>
+              <FileRef uid="39" />
+              <SequencePoints>
+                <SequencePoint vc="2" uspid="293" ordinal="0" offset="0" sl="13" sc="9" el="13" ec="10" bec="0" bev="0" fileid="39">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="5" vc="1" />
+                    <TrackedMethodRef uid="4" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="2" uspid="294" ordinal="1" offset="1" sl="14" sc="13" el="14" ec="30" bec="2" bev="2" fileid="39">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="5" vc="1" />
+                    <TrackedMethodRef uid="4" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="1" uspid="295" ordinal="2" offset="14" sl="15" sc="17" el="15" ec="58" bec="0" bev="0" fileid="39">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="5" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+                <SequencePoint vc="1" uspid="296" ordinal="3" offset="20" sl="17" sc="9" el="17" ec="10" bec="0" bev="0" fileid="39">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="4" vc="1" />
+                  </TrackedMethodRefs>
+                </SequencePoint>
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="1" uspid="297" ordinal="0" offset="12" sl="14" path="0" offsetend="14" fileid="39">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="5" vc="1" />
+                  </TrackedMethodRefs>
+                </BranchPoint>
+                <BranchPoint vc="1" uspid="298" ordinal="1" offset="12" sl="14" path="1" offsetend="20" fileid="39">
+                  <TrackedMethodRefs>
+                    <TrackedMethodRef uid="4" vc="1" />
+                  </TrackedMethodRefs>
+                </BranchPoint>
+              </BranchPoints>
+              <MethodPoint xsi:type="SequencePoint" vc="2" uspid="293" ordinal="0" offset="0" sl="13" sc="9" el="13" ec="10" bec="0" bev="0" fileid="39">
+                <TrackedMethodRefs>
+                  <TrackedMethodRef uid="5" vc="1" />
+                  <TrackedMethodRef uid="4" vc="1" />
+                </TrackedMethodRefs>
+              </MethodPoint>
+            </Method>
+          </Methods>
+        </Class>
+      </Classes>
+      <TrackedMethods />
+    </Module>
+  </Modules>
+</CoverageSession>

@@ -1,0 +1,114 @@
+<div class="feature-view-tab__content"> 
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="row">
+                <div class="col-sm-12">
+                    <span class="feature-view__title">Informações de Transportador</span>
+                </div>
+            </div>
+            <div class="row feature-view__group" *ngIf="conveyor?.personType === 1">
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-sm-6 feature-view__body">
+                            <div>
+                                <span class="feature-view__label">Nome: </span>
+                            </div>
+                            <div class="truncate">
+                                <span title="{{ conveyor?.nameCompanyName }}" class="feature-view__value">
+                                    {{ conveyor?.nameCompanyName }}</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="row">
+                                <div class="col-sm-4 feature-view__body">
+                                    <div>
+                                        <span class="feature-view__label">Tipo de pessoa</span>
+                                    </div>
+                                    <div class="truncate">
+                                        <span title="personType1" class="feature-view__value">Pessoa Fisica</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 feature-view__body">
+                                    <div>
+                                        <span class="feature-view__label">Cpf: </span>
+                                    </div>
+                                    <div class="truncate">
+                                        <span title="{{ conveyor?.cpfCnpj }}" class="feature-view__value">
+                                            {{ conveyor?.cpfCnpj | nddCpfCnpj }}
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 feature-view__body">
+                                    <div>
+                                        <span class="feature-view__label">Responsabilidade de Frete</span>
+                                    </div>
+                                    <div class="truncate">
+                                        <span title="{{conveyor?.freightResponsibility}}" class="feature-view__value">
+                                            {{ conveyor?.freightResponsibility | nddFreightResponsibility }}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row feature-view__group" *ngIf="conveyor?.personType === 2">
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-sm-6 feature-view__body">
+                            <div>
+                                <span class="feature-view__label">Nome Fantasia: </span>
+                            </div>
+                            <div class="truncate">
+                                <span title="{{ conveyor?.nameCompanyName }}" class="feature-view__value">
+                                    {{ conveyor?.nameCompanyName }}</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="row">
+                                <div class="col-sm-4 feature-view__body">
+                                    <div>
+                                        <span class="feature-view__label">Tipo de pessoa</span>
+                                    </div>
+                                    <div class="truncate">
+                                        <span title="personType1" class="feature-view__value">Pessoa Juridica</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 feature-view__body">
+                                    <div>
+                                        <span class="feature-view__label">Cnpj: </span>
+                                    </div>
+                                    <div class="truncate">
+                                        <span title="{{ conveyor?.cpfCnpj }}" class="feature-view__value">
+                                            {{ conveyor?.cpfCnpj | nddCpfCnpj }}
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 feature-view__body">
+                                    <div>
+                                        <span class="feature-view__label">Responsabilidade de Frete</span>
+                                    </div>
+                                    <div class="truncate">
+                                        <span title="{{ conveyor?.freightResponsibility }}" class="feature-view__value">
+                                            {{ conveyor?.freightResponsibility | nddFreightResponsibility }}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <ndd-address-detail [address]="conveyor?.address"></ndd-address-detail>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="feature-view-tab__footer">
+    <button class="ndd-ng-button ndd-ng-button--primary" (click)="onEdit()">Editar</button>
+    <button class="ndd-ng-button ndd-ng-button--cancel" (click)="redirect()">Fechar</button>
+</div>
+<div class="ndd-ng-spinner__spinner" *ngIf="isLoading"></div>
+<div class="ndd-ng-spinner__color" *ngIf="isLoading"></div>

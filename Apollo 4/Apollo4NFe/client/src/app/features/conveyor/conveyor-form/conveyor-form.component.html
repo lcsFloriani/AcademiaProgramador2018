@@ -1,0 +1,154 @@
+<div class="feature-view-tab__content conveyor-form">
+    <form [formGroup]="formModel" class="form">
+        <div class="row">
+            <!-- #region Coluna 1 -->
+            <div class="col-sm-6">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <span class="feature-view__title">Informações de Transportador</span>
+                    </div>
+                </div>
+                <div class="row feature-view__group">
+                    <div class="col-sm-6 feature-view__body">
+                        <div class="form__radio">
+                            <input type="radio" name="personType" id="individual" class="k-radio" formControlName="personType"
+                                value='1'>
+                            <label class="k-radio-label" for="individual">Pessoa Física</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 feature-view__body">
+                        <div class="form__radio">
+                            <input type="radio" name="personType" id="legal" class="k-radio" formControlName="personType"
+                                value='2'>
+                            <label class="k-radio-label" for="legal">Pessoa Jurídica</label>
+                        </div>
+                    </div>
+                    <div *ngIf="formModel.get('personType').value == '1'" formGroupName="individual">
+                        <div class="col-sm-12 feature-view__body">
+                            <div class="form__group">
+                                <div>
+                                    <label class="form__label" for="name">
+                                        Nome:
+                                        <span class="form__label form__label--required">*</span>
+                                    </label>
+                                </div>
+                                <div>
+                                    <input formControlName="name" type="text" id="name" class="form__input"
+                                        autocomplete="off" placeholder="Insira o nome">
+                                </div>
+                                <div>
+                                    <label class="form__label" for="name">
+                                        <span class="form__label form__label--error" *ngIf="formModel.get('individual').get('name').hasError('required') && formModel.get('individual').get('name').touched">
+                                            Campo obrigatório
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-8 feature-view__body">
+                            <div class="form__group">
+                                <div>
+                                    <label class="form__label" for="cpf">
+                                        CPF:
+                                        <span class="form__label form__label--required">*</span>
+                                    </label>
+                                </div>
+                                <div>
+                                    <input formControlName="cpf" type="text" id="cpf" class="form__input" autocomplete="off"
+                                        placeholder="Insira o CPF" mask='000.000.000-00' [dropSpecialCharacters]="true">
+                                </div>
+                                <div>
+                                    <label class="form__label" for="cpf">
+                                        <span class="form__label form__label--error" *ngIf="formModel.get('individual').get('cpf').hasError('required') && formModel.get('individual').get('cpf').touched">
+                                            Campo obrigatório
+                                        </span>
+                                        <span class="form__label form__label--error" *ngIf="!formModel.get('individual').get('cpf').hasError('required') && formModel.get('individual').get('cpf').hasError('invalidCpf') && formModel.get('individual').get('cpf').touched">
+                                           CPF invalido!
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div formGroupName="enterprise" *ngIf="formModel.get('personType').value == '2'">
+                        <div class="col-sm-12 feature-view__body">
+                            <div class="form__group">
+                                <div>
+                                    <label class="form__label" for="companyName">
+                                        Nome:
+                                        <span class="form__label form__label--required">*</span>
+                                    </label>
+                                </div>
+                                <div>
+                                    <input formControlName="companyName" type="text" id="companyName" class="form__input"
+                                        autocomplete="companyName" placeholder="Insira o nome fantasia">
+                                </div>
+                                <div>
+                                    <label class="form__label" for="companyName">
+                                        <span class="form__label form__label--error" *ngIf="formModel.get('enterprise').get('companyName').hasError('required') && formModel.get('enterprise').get('companyName').touched">
+                                            Campo obrigatório
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-8 feature-view__body">
+                            <div class="form__group">
+                                <div>
+                                    <label class="form__label" for="cnpj">
+                                        CNPJ
+                                        <span class="form__label form__label--required">*</span>
+                                    </label>
+                                </div>
+                                <div>
+                                    <input formControlName="cnpj" type="text" id="cnpj" class="form__input"
+                                        autocomplete="off" placeholder="Insira o CNPJ" mask='00.000.000/0000-00'
+                                        [dropSpecialCharacters]="true">
+                                </div>
+                                <div>
+                                    <label class="form__label" for="cnpj">
+                                        <span class="form__label form__label--error" *ngIf="formModel.get('enterprise').get('cnpj').hasError('required') && formModel.get('enterprise').get('cnpj').touched">
+                                            Campo obrigatório
+                                        </span>
+                                        <span class="form__label form__label--error" *ngIf="!formModel.get('enterprise').get('cnpj').hasError('required') && formModel.get('enterprise').get('cnpj').hasError('invalidCnpj') && formModel.get('enterprise').get('cnpj').touched">
+                                            CPF invalido!
+                                         </span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 feature-view__body">
+                        <div>
+                            <label class="form__label" for="state">
+                                Responsabilidade de frete
+                                <span class="form__label form__label--required">*</span>
+                            </label>
+                        </div>
+                        <div>
+                            <kendo-dropdownlist formControlName="freightResponsibility" [data]="responsibilityList"
+                                textField="name" valueField="value" [valuePrimitive]="true">
+                            </kendo-dropdownlist>
+                        </div>
+                        <div>
+                            <label class="form__label" for="freightResponsibility">
+                                <span class="form__label form__label--error" *ngIf="formModel.get('freightResponsibility').hasError('required') && formModel.get('freightResponsibility').touched">
+                                    Campo obrigatório
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- #endregion -->
+
+            <!-- #region Coluna 2 -->
+            <div class="col-sm-6">
+                <!-- endereço -->
+                <ndd-address-form [formModel]="formModel.get('address')"></ndd-address-form>
+            </div>
+            <!-- #endregion -->
+        </div>
+    </form>
+</div>

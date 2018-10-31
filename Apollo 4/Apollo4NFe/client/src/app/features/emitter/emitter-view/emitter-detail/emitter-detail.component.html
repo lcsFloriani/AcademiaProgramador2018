@@ -1,0 +1,77 @@
+<div class="feature-view-tab__content">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="row">
+                <div class="col-sm-12">
+                    <span class="feature-view__title">Informações do emitente</span>
+                </div>
+            </div>
+            <div class="row feature-view__group">
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-sm-12 feature-view__body">
+                            <div>
+                                <span class="feature-view__label">Nome Fantasia</span>
+                            </div>
+                            <div class="truncate">
+                                <span title="{{ emitter?.fantasyName }}" class="feature-view__value">
+                                    {{ emitter?.fantasyName }}</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 feature-view__body">
+                            <div>
+                                <span class="feature-view__label">Razão Social</span>
+                            </div>
+                            <div class="truncate">
+                                <span title="{{ emitter?.companyName }}" class="feature-view__value">
+                                    {{ emitter?.companyName }}</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="row">
+                                <div class="col-sm-4 feature-view__body">
+                                    <div>
+                                        <span class="feature-view__label">CNPJ</span>
+                                    </div>
+                                    <div class="truncate">
+                                        <span title="{{ emitter?.cnpj | nddCpfCnpj }}" class="feature-view__value">
+                                            {{ emitter?.cnpj | nddCpfCnpj }}</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 feature-view__body">
+                                    <div>
+                                        <span class="feature-view__label">Inscrição Estadual</span>
+                                    </div>
+                                    <div class="truncate">
+                                        <span title="{{ emitter?.stateRegistration }}" class="feature-view__value">
+                                            {{ emitter?.stateRegistration }}</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div>
+                                        <span class="feature-view__label">Inscrição Municipal</span>
+                                    </div>
+                                    <div class="truncate">
+                                        <span title="{{ emitter?.municipalRegistration }}" class="feature-view__value">
+                                            {{ emitter?.municipalRegistration }}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <ndd-address-detail [address]="emitter?.address"></ndd-address-detail>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="feature-view-tab__footer">
+    <button class="ndd-ng-button ndd-ng-button--primary" (click)="onEdit()">Editar</button>
+    <button class="ndd-ng-button ndd-ng-button--cancel" (click)="redirect()">Fechar</button>
+</div>
+<div class="ndd-ng-spinner__spinner" *ngIf="isLoading"></div>
+<div class="ndd-ng-spinner__color" *ngIf="isLoading"></div>

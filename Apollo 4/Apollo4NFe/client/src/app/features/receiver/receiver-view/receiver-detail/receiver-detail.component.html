@@ -1,0 +1,59 @@
+<div class="feature-view-tab__content">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="row">
+                <div class="col-sm-12">
+                    <span class="feature-view__title">Informações do destinatário</span>
+                </div>
+            </div>
+            <div class="row feature-view__group">
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-sm-12 feature-view__body">
+                            <div>
+                                <span class="feature-view__label">Nome</span>
+                            </div>
+                            <div class="truncate">
+                                <span title="{{ receiver?.nameCompanyName }}" class="feature-view__value">
+                                    {{ receiver?.nameCompanyName }}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-8  feature-view__body">
+                    <div>
+                        <span class="feature-view__label">Documento</span>
+                    </div>
+                    <div class="truncate">
+                        <span title="{{ receiver?.cpfCnpj | nddCpfCnpj }}" class="feature-view__value">
+                            {{ receiver?.cpfCnpj | nddCpfCnpj }}</span>
+                    </div>
+                </div>
+                <div class="col-sm-4 feature-view__body" *ngIf="receiver?.type === 2">
+                    <div>
+                        <span class="feature-view__label">Inscrição Estadual</span>
+                    </div>
+                    <div class="truncate">
+                        <span title="{{ receiver?.stateRegistration }}" class="feature-view__value">
+                            {{ receiver?.stateRegistration }}</span>
+                    </div>
+                </div>
+
+                <div class="col-sm-12">
+                    <ndd-address-detail [address]="receiver?.address"></ndd-address-detail>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="col-sm-6">
+            <!-- <ndd-address-detail [address]="receiver?.address"></ndd-address-detail> -->
+        </div>
+    </div>
+</div>
+<div class="feature-view-tab__footer">
+    <button class="ndd-ng-button ndd-ng-button--primary" (click)="onEdit()">Editar</button>
+    <button class="ndd-ng-button ndd-ng-button--cancel" (click)="redirect()">Fechar</button>
+</div>
+<div class="ndd-ng-spinner__spinner" *ngIf="isLoading"></div>
+<div class="ndd-ng-spinner__color" *ngIf="isLoading"></div>

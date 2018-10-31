@@ -1,0 +1,84 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.7
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GerenciadorProvas.WinApp", "GerenciadorProvas.WinApp\GerenciadorProvas.WinApp.csproj", "{827F0134-E7FA-4956-8817-BEE9247D9511}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Apresentacao", "1. Apresentacao", "{C210D5DF-33CA-4283-B3CD-685DBF642968}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Aplicacao", "2. Aplicacao", "{82FADA41-DF3C-413C-9B4E-21653E9AE322}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Dominio", "3. Dominio", "{47793993-D19D-47AA-8348-FB858FD93DCE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Infraestrutura", "4. Infraestrutura", "{4346FC1B-3136-4267-8A9B-74E52C7534E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GerenciadorProvas.Aplicacao", "GerenciadorProvas.Application\GerenciadorProvas.Aplicacao.csproj", "{EA530463-B109-47F1-BCE1-3232DB635678}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GerenciadorProvas.Dominio", "GerenciadorProvas.Domain\GerenciadorProvas.Dominio.csproj", "{444B8890-C7D5-4829-BC12-18669B110E9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GerenciadorProvas.Infra", "GerenciadorProvas.infra\GerenciadorProvas.Infra.csproj", "{1D098B17-88EF-4651-A157-8C39AF224D99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GerenciadorProvas.Infra.Dados", "GerenciadorProvas.Infra.Data\GerenciadorProvas.Infra.Dados.csproj", "{043D118A-E062-4DE9-A5E4-D67264E7AA66}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5. BancoDados", "5. BancoDados", "{D77884B0-CC25-4CDD-84AF-AAEAB115A56C}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "DBGerenciadorProvas", "DBGerenciadorProvas\DBGerenciadorProvas.sqlproj", "{A936C7AB-C0B7-4516-8C82-045765CF42DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GerenciadorProvas.DominioTestes", "GerenciadorProvas.DomainTests\GerenciadorProvas.DominioTestes.csproj", "{038ED01E-6617-4D37-93F3-58338F8FFDD4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6. Testes", "6. Testes", "{C61356B8-5DA2-4DEA-AE0E-8D685AD46708}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{827F0134-E7FA-4956-8817-BEE9247D9511}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{827F0134-E7FA-4956-8817-BEE9247D9511}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{827F0134-E7FA-4956-8817-BEE9247D9511}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{827F0134-E7FA-4956-8817-BEE9247D9511}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA530463-B109-47F1-BCE1-3232DB635678}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA530463-B109-47F1-BCE1-3232DB635678}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA530463-B109-47F1-BCE1-3232DB635678}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA530463-B109-47F1-BCE1-3232DB635678}.Release|Any CPU.Build.0 = Release|Any CPU
+		{444B8890-C7D5-4829-BC12-18669B110E9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{444B8890-C7D5-4829-BC12-18669B110E9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{444B8890-C7D5-4829-BC12-18669B110E9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{444B8890-C7D5-4829-BC12-18669B110E9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D098B17-88EF-4651-A157-8C39AF224D99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D098B17-88EF-4651-A157-8C39AF224D99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D098B17-88EF-4651-A157-8C39AF224D99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D098B17-88EF-4651-A157-8C39AF224D99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{043D118A-E062-4DE9-A5E4-D67264E7AA66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{043D118A-E062-4DE9-A5E4-D67264E7AA66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{043D118A-E062-4DE9-A5E4-D67264E7AA66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{043D118A-E062-4DE9-A5E4-D67264E7AA66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A936C7AB-C0B7-4516-8C82-045765CF42DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A936C7AB-C0B7-4516-8C82-045765CF42DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A936C7AB-C0B7-4516-8C82-045765CF42DA}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{A936C7AB-C0B7-4516-8C82-045765CF42DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A936C7AB-C0B7-4516-8C82-045765CF42DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A936C7AB-C0B7-4516-8C82-045765CF42DA}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{038ED01E-6617-4D37-93F3-58338F8FFDD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{038ED01E-6617-4D37-93F3-58338F8FFDD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{038ED01E-6617-4D37-93F3-58338F8FFDD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{038ED01E-6617-4D37-93F3-58338F8FFDD4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{827F0134-E7FA-4956-8817-BEE9247D9511} = {C210D5DF-33CA-4283-B3CD-685DBF642968}
+		{EA530463-B109-47F1-BCE1-3232DB635678} = {82FADA41-DF3C-413C-9B4E-21653E9AE322}
+		{444B8890-C7D5-4829-BC12-18669B110E9B} = {47793993-D19D-47AA-8348-FB858FD93DCE}
+		{1D098B17-88EF-4651-A157-8C39AF224D99} = {4346FC1B-3136-4267-8A9B-74E52C7534E9}
+		{043D118A-E062-4DE9-A5E4-D67264E7AA66} = {4346FC1B-3136-4267-8A9B-74E52C7534E9}
+		{A936C7AB-C0B7-4516-8C82-045765CF42DA} = {D77884B0-CC25-4CDD-84AF-AAEAB115A56C}
+		{038ED01E-6617-4D37-93F3-58338F8FFDD4} = {C61356B8-5DA2-4DEA-AE0E-8D685AD46708}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9889574B-713D-4AED-903F-5C10BBA96914}
+	EndGlobalSection
+EndGlobal

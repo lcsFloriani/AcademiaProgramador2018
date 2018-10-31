@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{827F0134-E7FA-4956-8817-BEE9247D9511}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GerenciadorProvas.WinApp</RootNamespace>
+    <AssemblyName>GerenciadorProvas.WinApp</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CsvHelper, Version=7.0.0.0, Culture=neutral, PublicKeyToken=8c4959082be5c823" />
+    <Reference Include="itextsharp, Version=5.5.13.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Features\Core\Common\ControleGenerico.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Features\Core\Common\ControleGenerico.Designer.cs">
+      <DependentUpon>ControleGenerico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Core\Common\ICadastroDialog.cs" />
+    <Compile Include="Features\Core\Common\IGerenciadorFormulario.cs" />
+    <Compile Include="Features\Core\EstadoBotoes.cs" />
+    <Compile Include="Features\Core\TituloBotoes.cs" />
+    <Compile Include="Features\DisciplinaModulo\DisciplinaDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Features\DisciplinaModulo\DisciplinaDialog.Designer.cs">
+      <DependentUpon>DisciplinaDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Core\Common\GerenciadorFormulario.cs" />
+    <Compile Include="Features\DisciplinaModulo\DisciplinaGerenciadorFormulario.cs" />
+    <Compile Include="Features\MateriaModulo\MateriaDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Features\MateriaModulo\MateriaDialog.Designer.cs">
+      <DependentUpon>MateriaDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Features\MateriaModulo\MateriaGerenciadorFormulario.cs" />
+    <Compile Include="Features\QuestaoModulo\QuestaoDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Features\QuestaoModulo\QuestaoDialog.Designer.cs">
+      <DependentUpon>QuestaoDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Features\QuestaoModulo\QuestaoGerenciadorFormulario.cs" />
+    <Compile Include="Features\SerieModulo\SerieDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Features\SerieModulo\SerieDialog.Designer.cs">
+      <DependentUpon>SerieDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Features\SerieModulo\SerieGerenciadorFormulario.cs" />
+    <Compile Include="Features\TesteModulo\TesteDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Features\TesteModulo\TesteDialog.Designer.cs">
+      <DependentUpon>TesteDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Features\TesteModulo\TesteGerenciadorFormulario.cs" />
+    <Compile Include="PrincipalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrincipalForm.Designer.cs">
+      <DependentUpon>PrincipalForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Features\Core\Common\ControleGenerico.resx">
+      <DependentUpon>ControleGenerico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Features\DisciplinaModulo\DisciplinaDialog.resx">
+      <DependentUpon>DisciplinaDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Features\MateriaModulo\MateriaDialog.resx">
+      <DependentUpon>MateriaDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Features\QuestaoModulo\QuestaoDialog.resx">
+      <DependentUpon>QuestaoDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Features\SerieModulo\SerieDialog.resx">
+      <DependentUpon>SerieDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Features\TesteModulo\TesteDialog.resx">
+      <DependentUpon>TesteDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrincipalForm.resx">
+      <DependentUpon>PrincipalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GerenciadorProvas.Application\GerenciadorProvas.Aplicacao.csproj">
+      <Project>{ea530463-b109-47f1-bce1-3232db635678}</Project>
+      <Name>GerenciadorProvas.Aplicacao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GerenciadorProvas.Domain\GerenciadorProvas.Dominio.csproj">
+      <Project>{444b8890-c7d5-4829-bc12-18669b110e9b}</Project>
+      <Name>GerenciadorProvas.Dominio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GerenciadorProvas.Infra.Data\GerenciadorProvas.Infra.Dados.csproj">
+      <Project>{043D118A-E062-4DE9-A5E4-D67264E7AA66}</Project>
+      <Name>GerenciadorProvas.Infra.Dados</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GerenciadorProvas.infra\GerenciadorProvas.Infra.csproj">
+      <Project>{1d098b17-88ef-4651-a157-8c39af224d99}</Project>
+      <Name>GerenciadorProvas.Infra</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rubbish-bin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fax-machine.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

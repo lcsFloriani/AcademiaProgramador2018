@@ -1,0 +1,48 @@
+{
+  "_from": "ndd-config-formatter-plugin",
+  "_id": "ndd-config-formatter-plugin@1.0.1",
+  "_inBundle": false,
+  "_integrity": "sha1-+UNl6ogj609uPMmTDsb15EK11xc=",
+  "_location": "/ndd-config-formatter-plugin",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "ndd-config-formatter-plugin",
+    "name": "ndd-config-formatter-plugin",
+    "escapedName": "ndd-config-formatter-plugin",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "http://npm/ndd-config-formatter-plugin/-/ndd-config-formatter-plugin-1.0.1.tgz",
+  "_shasum": "f94365ea8823eb4f6e3cc9930ec6f5e442b5d717",
+  "_spec": "ndd-config-formatter-plugin",
+  "_where": "C:\\Users\\Luiz Arndt\\Desktop\\NDD\\ProjetoWebNFe\\Apollo4.1\\Apollo4NFe\\client",
+  "author": {
+    "name": "P&D NDD"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Plugin para formatar o arquivo de configuração",
+  "keywords": [
+    "configuração",
+    "plugin",
+    "formatar"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "ndd-config-formatter-plugin",
+  "repository": {
+    "type": "git",
+    "url": "https://tfs.nddigital.com.br/tfs/NDD-PDICollection/NDDResearch/_git/ndd-config-formatter-plugin"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "version": "1.0.1"
+}

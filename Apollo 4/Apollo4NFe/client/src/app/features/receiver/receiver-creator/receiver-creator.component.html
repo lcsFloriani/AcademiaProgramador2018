@@ -1,0 +1,11 @@
+<ndd-ng-titlebar titlebarIcon="ndd-font ndd-font-receiver" [titlebarTitle]="title"></ndd-ng-titlebar>
+
+<ndd-receiver-form [formModel]="form"></ndd-receiver-form>
+
+<div class="feature-view-tab__footer">
+    <button class="ndd-ng-button ndd-ng-button--primary" (click)="onSubmit()" [disabled]="form.invalid">Salvar</button>
+    <button class="ndd-ng-button ndd-ng-button--cancel" (click)="redirect()">Cancelar</button>
+</div>
+
+<div class="ndd-ng-spinner__spinner" *ngIf="isLoading"></div>
+<div class="ndd-ng-spinner__color" *ngIf="isLoading"></div>

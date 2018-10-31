@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BABF8B35-D45C-4B1B-8FF3-989FBEEFAE95}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Pizzaria.WinApp</RootNamespace>
+    <AssemblyName>Pizzaria.WinApp</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\ControleFormulario.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Common\ControleFormulario.designer.cs">
+      <DependentUpon>ControleFormulario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\ControleFormularioException.cs" />
+    <Compile Include="Common\ControleFormularioItemNaoSelecionadoException.cs" />
+    <Compile Include="Common\EstadoBotoes.cs" />
+    <Compile Include="Common\GerenciadorFormulario.cs" />
+    <Compile Include="Common\IGerenciadorFormulario.cs" />
+    <Compile Include="Common\TituloBotoes.cs" />
+    <Compile Include="Features\Clientes\ClienteDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Features\Clientes\ClienteDialog.Designer.cs">
+      <DependentUpon>ClienteDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Clientes\ClienteGerenciadorFormulario.cs" />
+    <Compile Include="Features\Pedidos\PedidoDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Features\Pedidos\PedidoDialog.Designer.cs">
+      <DependentUpon>PedidoDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Pedidos\PedidoFiltroDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Features\Pedidos\PedidoFiltroDialog.Designer.cs">
+      <DependentUpon>PedidoFiltroDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Pedidos\PedidoGerenciadorFormulario.cs" />
+    <Compile Include="Features\Pedidos\PedidoStatusDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Features\Pedidos\PedidoStatusDialog.Designer.cs">
+      <DependentUpon>PedidoStatusDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Produtos\ProdutoDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Features\Produtos\ProdutoDialog.Designer.cs">
+      <DependentUpon>ProdutoDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Produtos\ProdutoGerenciadorFormulario.cs" />
+    <Compile Include="PrincipalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrincipalForm.Designer.cs">
+      <DependentUpon>PrincipalForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Common\ControleFormulario.resx">
+      <DependentUpon>ControleFormulario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Features\Clientes\ClienteDialog.resx">
+      <DependentUpon>ClienteDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Features\Pedidos\PedidoDialog.resx">
+      <DependentUpon>PedidoDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Features\Pedidos\PedidoFiltroDialog.resx">
+      <DependentUpon>PedidoFiltroDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Features\Pedidos\PedidoStatusDialog.resx">
+      <DependentUpon>PedidoStatusDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Features\Produtos\ProdutoDialog.resx">
+      <DependentUpon>ProdutoDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrincipalForm.resx">
+      <DependentUpon>PrincipalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_procura.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Pizzaria.Application\Pizzaria.Application.csproj">
+      <Project>{9D79BBE5-6DBF-4F4F-9451-B2DDF7E046FC}</Project>
+      <Name>Pizzaria.Application</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pizzaria.Common.Tests\Pizzaria.Common.Tests.csproj">
+      <Project>{613DDBCC-8C6E-41F5-A55D-4B8FC172D280}</Project>
+      <Name>Pizzaria.Common.Tests</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pizzaria.Domain\Pizzaria.Domain.csproj">
+      <Project>{4B3EFFED-BC3C-4281-9614-C696F3FC670E}</Project>
+      <Name>Pizzaria.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pizzaria.Infra.Cep\Pizzaria.Infra.Cep.csproj">
+      <Project>{9501C1F4-AF95-4DFF-B9D3-65A07BA28A29}</Project>
+      <Name>Pizzaria.Infra.Cep</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pizzaria.Infra.Data\Pizzaria.Infra.Data.csproj">
+      <Project>{7897DEAD-3F09-4E0B-939A-41DD5C61D48F}</Project>
+      <Name>Pizzaria.Infra.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pizzaria.Infra\Pizzaria.Infra.csproj">
+      <Project>{70B58639-B462-46B4-9319-AFEBD9217792}</Project>
+      <Name>Pizzaria.Infra</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_editar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_salvar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_excluir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_remover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iocn_adicionar.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

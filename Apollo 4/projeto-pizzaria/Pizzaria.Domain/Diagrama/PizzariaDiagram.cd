@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Pizzaria.Domain.Features.Enderecos.Endereco">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAACIEAAAAgACAAAAAAQAAAAAAAAABAAA=</HashCode>
+      <FileName>Features\Enderecos\Endereco.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pizzaria.Domain.Features.Produtos.Produto">
+    <Position X="16.5" Y="3.5" Width="1.75" />
+    <AssociationLine Name="Tamanho" Type="Pizzaria.Domain.Enums.TamanhoProdutoEnum" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="17.875" Y="3.5" />
+        <Point X="17.875" Y="1.253" />
+        <Point X="19.25" Y="1.253" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAABgAAAAAAAAAAEAAAAAQAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Features\Produtos\Produto.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Tamanho" />
+      <Property Name="Tipo" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Pizzaria.Domain.Features.Clientes.Cliente">
+    <Position X="3.25" Y="2.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAgAAAQAAEAAgAAAAAAAAAAQAAAAAAAAEAEAA=</HashCode>
+      <FileName>Features\Clientes\Cliente.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Endereco" />
+      <Property Name="TipoCliente" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Pizzaria.Domain.Features.Pedidos.Pedido">
+    <Position X="6.75" Y="1.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAKAACAQAEAAIAECBCAAAAAEAgAERACAAAAAAAAAwE=</HashCode>
+      <FileName>Features\Pedidos\Pedido.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="FormaPagamento" />
+      <Property Name="StatusPedido" />
+      <Property Name="Cliente" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="ItensPedidos" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Pizzaria.Domain.Features.ItensPedido.ItemPedido">
+    <Position X="12.25" Y="2.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>EAAqAAEAAgAAAEEEEABAAAAIAAAAAQQAAAAQAAIAAII=</HashCode>
+      <FileName>Features\ItensPedido\ItemPedido.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Adicional" />
+      <Property Name="Pedido" />
+      <Property Name="SegundoProduto" />
+      <Property Name="PrimeiroProduto" />
+    </ShowAsAssociation>
+  </Class>
+  <Enum Name="Pizzaria.Domain.Enums.FormaPagamentoEnum" Collapsed="true">
+    <Position X="7.25" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAACAAAAAAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Enums\FormaPagamentoEnum.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Pizzaria.Domain.Enums.TamanhoProdutoEnum">
+    <Position X="19.25" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAEIAAQAAEAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Enums\TamanhoPizzaEnum.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Pizzaria.Domain.Enums.TipoClienteEnum">
+    <Position X="3.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Enums\TipoClienteEnum.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Pizzaria.Domain.Enums.StatusPedidoEnum" Collapsed="true">
+    <Position X="9.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAQAAAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Enums\StatusPedidoEnum.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Pizzaria.Domain.Enums.TipoProdutoEnum">
+    <Position X="14.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAABAAAAAAEAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Enums\TipoProdutoEnum .cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

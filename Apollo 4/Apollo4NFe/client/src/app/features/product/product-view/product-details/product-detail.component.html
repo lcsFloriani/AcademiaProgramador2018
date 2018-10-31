@@ -1,0 +1,96 @@
+<div class="feature-view-tab__content">
+    <div class="row">
+        <!-- #region Coluna 1 -->
+        <div class="col-sm-5">
+            <div class="row">
+                <div class="col-sm-12">
+                    <span class="feature-view__title">Informações do Produto</span>
+                </div>
+            </div>
+            <div class="row feature-view__group">
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-sm-6 feature-view__body">
+                            <div>
+                                <span class="feature-view__label">Codigo</span>
+                            </div>
+                            <div class="truncate">
+                                <span title="{{ product?.code }}" class="feature-view__value">
+                                    {{ product?.code }}
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div>
+                                <span class="feature-view__label">Descrição</span>
+                            </div>
+                            <div class="truncate">
+                                <span title="{{ product?.description }}" class="feature-view__value">
+                                    {{ product?.description }}
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row feature-view__group">
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-sm-6 feature-view__body">
+                            <div>
+                                <span class="feature-view__label">Preço Unitario</span>
+                            </div>
+                            <div class="truncate">
+                                <span title="{{ product?.unitaryValue }}" class="feature-view__value">
+                                    {{ product?.unitaryValue | currency:"BRL" }}
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- #endregion -->
+        <!-- #region Coluna 1 -->
+        <div class="col-sm-5">
+            <div class="row">
+                <div class="col-sm-12">
+                    <span class="feature-view__title">Informações de Tributação</span>
+                </div>
+            </div>
+            <div class="row feature-view__group">
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-sm-6 feature-view__body">
+                            <div>
+                                <span class="feature-view__label">ICMS</span>
+                            </div>
+                            <div class="truncate">
+                                <span title="{{ product?.aliquotICMS }}" class="feature-view__value">
+                                    {{ product?.aliquotICMS | nddPercentage }}
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div>
+                                <span class="feature-view__label">IPI</span>
+                            </div>
+                            <div class="truncate">
+                                <span title="{{ product?.aliquotIPI }}" class="feature-view__value">
+                                    {{ product?.aliquotIPI | nddPercentage }}
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- #endregion -->
+    </div>
+</div>
+<div class="feature-view-tab__footer">
+    <button class="ndd-ng-button ndd-ng-button--primary" (click)="onEdit()">Editar</button>
+    <button class="ndd-ng-button ndd-ng-button--cancel" (click)="redirect()">Voltar</button>
+</div>
+<div class="ndd-ng-spinner__spinner" *ngIf="isLoading"></div>
+<div class="ndd-ng-spinner__color" *ngIf="isLoading"></div>

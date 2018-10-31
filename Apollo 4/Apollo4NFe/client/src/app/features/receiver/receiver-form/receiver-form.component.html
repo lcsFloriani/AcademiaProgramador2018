@@ -1,0 +1,152 @@
+<div class="feature-view-tab__content receiver-form">
+    <form [formGroup]="formModel" class="form">
+        <div class="row">
+            <!-- #region Coluna 1 -->
+            <div class="col-sm-6">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <span class="feature-view__title">Informações de Emitente</span>
+                    </div>
+                </div>
+
+                <div class="row feature-view__group">
+                    <div class="col-sm-12 feature-view__body">
+                        <div class="form__group">
+                            <div class="row">
+                                <div class="col-sm-6 feature-view__body">
+                                    <div class="form__radio">
+                                        <input type="radio" name="type" id="individual" class="k-radio" formControlName="type"
+                                            value="1">
+                                        <label class="k-radio-label" for="individual">Destinatário Física</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 feature-view__body">
+                                    <div class="form__radio">
+                                        <input type="radio" name="type" id="enterprise" class="k-radio" formControlName="type"
+                                            value="2">
+                                        <label class="k-radio-label" for="enterprise">Destinatário Jurídica</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div *ngIf="formModel.get('type').value == '1'" formGroupName="individual">
+                            <div class="col-sm-12 feature-view__body">
+                                <div class="form__group">
+                                    <div>
+                                        <label class="form__label" for="name">
+                                            Nome
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input formControlName="name" type="text" id="name" class="form__input"
+                                            autocomplete="off" placeholder="Insira o nome">
+                                    </div>
+                                    <div>
+                                        <span class="form__label form__label--error" *ngIf="formModel.get('individual').get('name').touched && formModel.get('individual').get('name').hasError('required')">
+                                            Campo obrigatório
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-12 feature-view__body">
+                                <div class="form__group">
+                                    <div>
+                                        <label class="form__label" for="cpf">
+                                            CPF
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input formControlName="cpf" type="text" id="cpf" class="form__input" mask='000.000.000-00'
+                                            [dropSpecialCharacters]="true" autocomplete="off" placeholder="Insira o CPF">
+                                    </div>
+                                    <div>
+                                        <span *ngIf="formModel.get('individual').get('cpf').touched">
+                                            <span class="form__label form__label--error" *ngIf="formModel.get('individual').get('cpf').hasError('required')">
+                                                Campo obrigatório
+                                            </span>
+                                            <span class="form__label form__label--error" *ngIf="!formModel.get('individual').get('cpf').hasError('required') && formModel.get('individual').get('cpf').hasError('invalidCpf')">
+                                                Campo inválido
+                                            </span>
+                                        </span>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div *ngIf="formModel.get('type').value == '2'" formGroupName="enterprise">
+                            <div class="col-sm-12 feature-view__body">
+                                <div class="form__group">
+                                    <div>
+                                        <label class="form__label" for="companyName">
+                                            Razão Social
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input formControlName="companyName" type="text" id="companyName" class="form__input"
+                                            autocomplete="off" placeholder="Insira a razão social">
+                                    </div>
+                                    <div>
+                                        <span class="form__label form__label--error" *ngIf="formModel.get('enterprise').get('companyName').touched && formModel.get('enterprise').get('companyName').hasError('required')">
+                                            Campo obrigatório
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-12 feature-view__body">
+                                <div class="form__group">
+                                    <div>
+                                        <label class="form__label" for="cpfCnpj">
+                                            CNPJ
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input formControlName="cnpj" type="text" id="cnpj" class="form__input" mask='00.000.000/0000-00'
+                                            [dropSpecialCharacters]="true" autocomplete="off" placeholder="Insira o CNPJ">
+                                    </div>
+                                    <div>
+                                        <span for="cnpj" *ngIf="formModel.get('enterprise').get('cnpj').touched">
+                                            <span class="form__label form__label--error" *ngIf="formModel.get('enterprise').get('cnpj').hasError('required')">
+                                                Campo obrigatório
+                                            </span>
+                                            <span class="form__label form__label--error" *ngIf="!formModel.get('enterprise').get('cnpj').hasError('required') && formModel.get('enterprise').get('cnpj').hasError('invalidCnpj')">
+                                                Campo inválido
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-12 feature-view__body">
+                                <div class="form__group">
+                                    <div>
+                                        <label class="form__label" for="stateRegistration">
+                                            Inscrição Estadual
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input formControlName="stateRegistration" type="text" id="stateRegistration"
+                                            class="form__input" autocomplete="off" placeholder="Insira a inscrição estadual">
+                                    </div>
+                                    <div>
+                                        <span class="form__label form__label--error" *ngIf="formModel.get('enterprise').touched && formModel.get('enterprise').get('stateRegistration').hasError('required')">
+                                            Campo obrigatório
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- #region Coluna 2 -->
+            <div class="col-sm-6">
+                <ndd-address-form [formModel]="formModel.get('address')"></ndd-address-form>
+            </div>
+        </div>
+
+    </form>
+</div>

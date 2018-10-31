@@ -1,0 +1,159 @@
+<div class="feature-view-tab__content emitter-form">
+    <form [formGroup]="formModel" class="form">
+        <div class="row">
+            <!-- #region Coluna 1 -->
+            <div class="col-sm-6">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <span class="feature-view__title">Cadastro de nota fiscal</span>
+                    </div>
+                </div>
+                <div class="row feature-view__group">
+                    <div class="col-sm-6 feature-view__body">
+                        <div class="form__group">
+                            <div>
+                                <label class="form__label" for="emitter">
+                                    Emitente
+                                    <span class="form__label form__label--required">*</span>
+                                </label>
+                            </div>
+                            <div>
+                                <kendo-autocomplete [data]="emitterData" [valueField]="'fantasyName'" [filterable]="true"
+                                    class="form__input" placeholder="Selecione um Emitente" formControlName="emitter"
+                                    (filterChange)="onEmitterAutoCompleteChange($event)" (valueChange)="getSelectedEmitter($event)">
+                                </kendo-autocomplete>
+                            </div>
+                            <div>
+                                <label class="form__label" for="emitter">
+                                    <span class="form__label form__label--error" *ngIf="formModel.get('emitter').hasError('required') && formModel.get('emitter').touched">
+                                        Campo obrigatório
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 feature-view__body">
+                        <div class="form__group">
+                            <div>
+                                <label class="form__label" for="conveyor">
+                                    Transportador
+                                    <span class="form__label form__label--required">*</span>
+                                </label>
+                            </div>
+                            <div>
+                                <kendo-autocomplete [data]="conveyorData" [valueField]="'nameCompanyName'" [filterable]="true"
+                                    class="form__input" placeholder="Selecione um Transportador" formControlName="conveyor"
+                                    (filterChange)="onConveyorAutoCompleteChange($event)" (valueChange)="getSelectedConveyor($event)">
+                                </kendo-autocomplete>
+                            </div>
+                            <div>
+                                <label class="form__label" for="conveyor">
+                                    <span class="form__label form__label--error" *ngIf="formModel.get('conveyor').hasError('required') && formModel.get('conveyor').touched">
+                                        Campo obrigatório
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 feature-view__body">
+                        <div class="form__group">
+                            <div>
+                                <label class="form__label" for="receiver">
+                                    Destinatário
+                                    <span class="form__label form__label--required">*</span>
+                                </label>
+                            </div>
+                            <div>
+                                <kendo-autocomplete [data]="receiverData" [valueField]="'nameCompanyName'" [filterable]="true"
+                                    class="form__input" placeholder="Selecione um Destinatário" formControlName="receiver"
+                                    (filterChange)="onReceiverAutoCompleteChange($event)" (valueChange)="getSelectedReceiver($event)">
+                                </kendo-autocomplete>
+                            </div>
+                            <div>
+                                <label class="form__label" for="receiver">
+                                    <span class="form__label form__label--error" *ngIf="formModel.get('receiver').hasError('required') && formModel.get('receiver').touched">
+                                        Campo obrigatório
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 feature-view__body">
+                        <div class="form__group">
+                            <div>
+                                <label class="form__label" for="entryDate">
+                                    Data:
+                                    <span class="form__label form__label--required">*</span>
+                                </label>
+                            </div>
+                            <div>
+                                <input class="form__input" formControlName="entryDate" type="datetime-local" id="entryDate">
+                            </div>
+                            <div>
+                                <label class="form__label" for="entryDate">
+                                    <span class="form__label form__label--error" *ngIf="formModel.get('entryDate').hasError('required') && formModel.get('entryDate').touched">
+                                        Campo obrigatório
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 feature-view__body">
+                        <div class="form__group">
+                            <div>
+                                <label class="form__label" for="natureOperation">
+                                    Natureza da operação:
+                                    <span class="form__label form__label--required">*</span>
+                                </label>
+                            </div>
+                            <div>
+                                <input formControlName="natureOperation" type="text" id="natureOperation" class="form__input"
+                                    autocomplete="off" placeholder="Informe a natureza da operação">
+                            </div>
+                            <div>
+                                <label class="form__label" for="natureOperation">
+                                    <span class="form__label form__label--error" *ngIf="formModel.get('natureOperation').hasError('required') && formModel.get('natureOperation').touched">
+                                        Campo obrigatório
+                                    </span>
+                                    <span class="form__label form__label--error" *ngIf="!formModel.get('natureOperation').hasError('required') && formModel.get('natureOperation').hasError('minlength') && formModel.get('natureOperation').touched">
+                                        A natureza da operação deve ter no mínimo 5 caracteres!
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 feature-view__body">
+                        <div class="form__group">
+                            <div>
+                                <label class="form__label" for="valueFreight">
+                                    Valor do frete:
+                                    <span class="form__label form__label--required">*</span>
+                                </label>
+                            </div>
+                            <div>
+                                <input formControlName="valueFreight" type="text" id="valueFreight" class="form__input"
+                                    autocomplete="off" placeholder="Informe o valor do frete">
+                            </div>
+                            <div>
+                                <label class="form__label" for="valueFreight">
+                                    <span class="form__label form__label--error" *ngIf="formModel.get('valueFreight').hasError('required') && formModel.get('valueFreight').touched">
+                                        Campo obrigatório
+                                    </span>
+                                    <span class="form__label form__label--error" *ngIf="!formModel.get('valueFreight').hasError('required') && formModel.get('valueFreight').hasError('invalidNumber') && formModel.get('valueFreight').touched">
+                                        Campo precisa ser numerico
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- #endregion -->
+
+            <!-- #region Coluna 2 -->
+            <div class="col-sm-6">
+            </div>
+            <!-- #endregion -->
+        </div>
+    </form>
+</div>

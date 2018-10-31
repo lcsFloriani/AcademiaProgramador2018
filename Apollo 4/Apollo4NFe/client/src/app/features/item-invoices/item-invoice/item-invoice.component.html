@@ -1,0 +1,118 @@
+<div class="feature-view-tab__content item-invoice-create-list">
+    <form [formGroup]="formModel" class="form">
+        <div class="row">
+            <div class="col-sm-12 feature-view__title">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <span class="feature-view__title">Cadastro de produtos na nota fiscal</span>
+                    </div>
+                </div>
+                <div class="row feature-view__group">
+                    <div class="col-sm-12 feature-view__body">
+                        <div class="col-sm-3">
+                            <div class="form__group">
+                                <div>
+                                    <label class="form__label" for="quantity">
+                                        Produto:
+                                        <span class="form__label form__label--required">*</span>
+                                    </label>
+                                </div>
+                                <div>
+
+                                    <kendo-autocomplete [data]="data" [valueField]="'description'" [filterable]="true"
+                                        class="form__input" placeholder="Selecione um produto" formControlName="product"
+                                        (filterChange)="onAutoCompleteChange($event)">
+                                    </kendo-autocomplete>
+                                </div>
+                                <div *ngIf="productAlreadyExist">
+                                    <label class="form__label" for="product">
+                                        <span class="form__label form__label--error">
+                                            Produto já existe
+                                        </span>
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="form__label" for="product">
+                                        <span class="form__label form__label--error" *ngIf="formModel.get('product').hasError('required') && formModel.get('product').touched">
+                                            Campo obrigatório
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="form__group">
+                                <div>
+                                    <label class="form__label" for="quantity">
+                                        Quantidade:
+                                        <span class="form__label form__label--required">*</span>
+                                    </label>
+                                </div>
+                                <div>
+                                    <input formControlName="quantity" type="text" id="quantity" class="form__input"
+                                        autocomplete="off" placeholder="Insira a quantidade">
+                                </div>
+                                <div>
+                                    <label class="form__label" for="quantity">
+                                        <span class="form__label form__label--error" *ngIf="formModel.get('quantity').hasError('required') && formModel.get('quantity').touched">
+                                            Campo obrigatório
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 feature-view__body">
+                            <div class="form__group form__group__button_grid">
+                                <button class="ndd-ng-button ndd-ng-button--primary" (click)="onAddItem()">Adicionar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- #region Coluna 2 -->
+            <!-- <div class="col-sm-6">
+               
+            </div> -->
+            <div class="col-sm-12 feature-view__body">
+                <kendo-grid [style.height]="'100%'" [data]="productList" [pageSize]="state.take" [selectable]="selectableSettings"
+                    [skip]="state.skip" [sort]="state.sort" [sortable]="true" [pageable]="pageableSettings"
+                    [scrollable]="'none'" (dataStateChange)="dataStateChange($event)" (selectionChange)="onSelectionChange($event)">
+
+                    <ng-template kendoGridToolbarTemplate position="top" #head>
+                        <div class="pkg-manager-grid__action-container">
+                            <button (click)="redirectOpenProduct()" class="pkg-manager-grid__action" [disabled]="selectedRows.length != 1">
+                                <i class="ndd-font ndd-font-open pkg-manager-grid__action__icon"></i>
+                                <span class="pkg-manager-grid__action__description">Abrir</span>
+                            </button>
+                            <button (click)="onRemoveItem()" class="pkg-manager-grid__action" [disabled]="!selectedRows.length">
+                                <i class="ndd-font ndd-font-delete pkg-manager-grid__action__icon"></i>
+                                <span class="pkg-manager-grid__action__description">Remover</span>
+                            </button>
+                        </div>
+                    </ng-template>
+
+                    <kendo-grid-checkbox-column width="2"></kendo-grid-checkbox-column>
+                    <kendo-grid-column field="product.description" title="Produto" width="400">
+                        <ng-template kendoGridCellTemplate let-product>
+                            <a href="javascript:void(0);" (click)="redirectOpenProductLink(product)">
+                                {{ product.description }}
+                            </a>
+                        </ng-template>
+                    </kendo-grid-column>
+                    <kendo-grid-column field="product.description" title="Produto" width="500"></kendo-grid-column>
+                    <kendo-grid-column field="quantity" title="Quantidade" width="50"></kendo-grid-column>
+                    <kendo-grid-column format="{0:c}" field="product.unitaryValue" title="Preço" width="105"></kendo-grid-column>
+
+                </kendo-grid>
+
+            </div>
+            <div class="col-sm-12 feature-view__footer">
+                <div class="pkg-manager-grid__action-container">
+                    <span class="pkg-manager-grid__action__description">
+                        Valor Total: {{ totalProducts | currency:'BRL':true }}
+                    </span>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

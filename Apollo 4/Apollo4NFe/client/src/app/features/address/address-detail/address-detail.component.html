@@ -1,0 +1,81 @@
+<!-- <div class="feature-view-tab__content"> -->
+<div class="row">
+    <div class="col-sm-12">
+        <div class="row">
+            <div class="col-sm-12">
+                <span class="feature-view__title">Endereço</span>
+            </div>
+        </div>
+        <div class="row feature-view__group">
+            <div class="col-sm-12">
+                <div class="row">
+                    <div class="col-sm-8 feature-view__body">
+                        <div>
+                            <span class="feature-view__label">Logradouro</span>
+                        </div>
+                        <div class="truncate">
+                            <span title="{{ address?.street }}" class="feature-view__value">
+                                {{ address?.street }}</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div>
+                            <span class="feature-view__label">Número</span>
+                        </div>
+                        <div class="truncate">
+                            <span title="{{ address?.number }}" class="feature-view__value">
+                                {{ address?.number }}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <div class="row">
+                    <div class="col-sm-4 feature-view__body">
+                        <div>
+                            <span class="feature-view__label">Bairro</span>
+                        </div>
+                        <div class="truncate">
+                            <span title="{{ address?.neighbourhood }}" class="feature-view__value">
+                                {{ address?.neighbourhood }}</span>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 feature-view__body">
+                        <div>
+                            <span class="feature-view__label">Município</span>
+                        </div>
+                        <div class="truncate">
+                            <span title="{{ address?.city }}" class="feature-view__value">
+                                {{ address?.city }}</span>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 feature-view__body">
+                        <div>
+                            <span class="feature-view__label">Estado</span>
+                        </div>
+                        <div class="truncate">
+                            <span title="{{ address?.state }}" class="feature-view__value">
+                                {{ address?.state | nddState }}</span>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-sm-12 feature-view__body">
+                            <div>
+                                <span class="feature-view__label">Município</span>
+                            </div>
+                            <div class="truncate">
+                                <span title="{{ address?.city }}" class="feature-view__value">
+                                    {{ address?.city }}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- </div> -->

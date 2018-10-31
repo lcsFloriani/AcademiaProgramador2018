@@ -1,0 +1,1366 @@
+{
+	"info": {
+		"_postman_id": "98351e4f-b827-4a76-b7c7-188c5517710f",
+		"name": "Apollo4_BancoTabajara",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"_postman_id": "b92ffdef-1b4d-4467-a947-365109a98217",
+			"name": "Contas",
+			"item": [
+				{
+					"_postman_id": "2a71a21b-a76d-4247-af04-d2ed9d2ffc84",
+					"name": "Adicionar",
+					"item": [
+						{
+							"_postman_id": "64a50172-795f-44fc-b199-2b21e6cd343c",
+							"name": "Adicionar uma Conta",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "   {\n        \"numeroConta\": 453435,\n        \"saldo\": 1175.4,\n        \"estado\": true,\n        \"limite\": 150,\n        \"movimentacoes\": [],\n        \"clienteId\": 3,\n        \"cliente\": \n        {\n        \t\"id\": 3,\n        \t\"nome\": \"Carla\",\n        \t\"cpf\":21126699233,\n    \t\t\"datanascimento\": \"1989-07-15T00:00:00\",\n        \t\"rg\":357001485\n        }\n    }"
+								},
+								"url": {
+									"raw": "http://localhost:57701/api/contas",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "57701",
+									"path": [
+										"api",
+										"contas"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"_postman_id": "24f90af8-c30b-4781-8788-2d77fd49c104",
+							"name": "Erro no Adicionar Contas com numero invalido",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "  {\n        \"saldo\": 1175.4,\n        \"estado\": true,\n        \"limite\": 150,\n        \"movimentacoes\": [],\n        \"clienteId\": 3,\n        \"cliente\": \n        {\n        \t\"id\": 3,\n        \t\"nome\": \"Carla\",\n        \t\"cpf\":21126699233,\n    \t\t\"datanascimento\": \"1989-07-15T00:00:00\",\n        \t\"rg\":357001485\n        }\n    }"
+								},
+								"url": {
+									"raw": "http://localhost:57701/api/contas",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "57701",
+									"path": [
+										"api",
+										"contas"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"_postman_id": "3ee437b7-94f7-4586-b8aa-254c920427a2",
+							"name": "Erro no Adicionar Contas com cliente nulo",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "  {\n  \t\t\"numeroConta\": 453435,\n        \"saldo\": 1175.4,\n        \"estado\": true,\n        \"limite\": 150,\n        \"movimentacoes\": [],\n        \"clienteId\": 3,\n        \"cliente\": null\n    }"
+								},
+								"url": {
+									"raw": "http://localhost:57701/api/contas",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "57701",
+									"path": [
+										"api",
+										"contas"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"_postman_id": "955886de-7b8d-4581-9b34-ab7b54dd062e",
+					"name": "Atualizar",
+					"item": [
+						{
+							"_postman_id": "a50a41c8-a4b8-435a-b1cf-6b3c0cd13729",
+							"name": "Atualizando uma Conta",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": " {\r\n        \"id\": 1,\r\n        \"numeroConta\": 35892,\r\n        \"saldo\": 1025.4,\r\n        \"estado\": false,\r\n        \"limite\": 150,\r\n        \"movimentacoes\": [],\r\n        \"clienteid\" : 1,\r\n        \"cliente\": {\r\n            \"id\": 1,\r\n            \"nome\": \"José\",\r\n            \"cpf\": \"43242847866\",\r\n            \"dataNascimento\": \"1995-04-16T00:00:00\",\r\n            \"rg\": \"538702879\"\r\n        }\r\n    }"
+								},
+								"url": {
+									"raw": "http://localhost:57701/api/contas",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "57701",
+									"path": [
+										"api",
+										"contas"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"_postman_id": "40308115-8aae-4a58-afd0-1fe06e5669e3",
+							"name": "Erro no Atualizar Id invalido",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "   {\r\n\t\t\"id\":0,\r\n\t\t\"numeroConta\": 453435,\r\n        \"saldo\": 1000.4,\r\n        \"estado\": true,\r\n        \"limite\": 1050,\r\n        \"movimentacoes\": [],\r\n        \"clienteId\": 3,\r\n        \"cliente\": \r\n        {\r\n        \t\"id\": 3,\r\n        \t\"nome\": \"Carla\",\r\n        \t\"cpf\":21126699233,\r\n    \t\t\"datanascimento\": \"1989-07-15T00:00:00\",\r\n        \t\"rg\":357001485\r\n        }\r\n    }"
+								},
+								"url": {
+									"raw": "http://localhost:57701/api/contas",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "57701",
+									"path": [
+										"api",
+										"contas"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"_postman_id": "7c636176-7493-4119-b67e-4943500ec01d",
+							"name": "Erro no Atualizar  Conta com numero invalido",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "   {\r\n\t\t\"id\":2,\r\n        \"saldo\": 1000.4,\r\n        \"estado\": true,\r\n        \"limite\": 1050,\r\n        \"movimentacoes\": [],\r\n        \"clienteId\": 3,\r\n        \"cliente\": \r\n        {\r\n        \t\"id\": 3,\r\n        \t\"nome\": \"Carla\",\r\n        \t\"cpf\":21126699233,\r\n    \t\t\"datanascimento\": \"1989-07-15T00:00:00\",\r\n        \t\"rg\":357001485\r\n        }\r\n    }"
+								},
+								"url": {
+									"raw": "http://localhost:57701/api/contas",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "57701",
+									"path": [
+										"api",
+										"contas"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"_postman_id": "65ca98b4-2d0a-4b9f-84c8-dcefb5cb627b",
+							"name": "Erro no Atualizar Conta com cliente nulo",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "   {\n\t\t\"id\":2,\n        \"numeroConta\": 453435,\n        \"saldo\": 1000.4,\n        \"estado\": true,\n        \"limite\": 1050,\n        \"movimentacoes\": [],\n        \"clienteId\": 3,\n        \"cliente\": null\n    }"
+								},
+								"url": {
+									"raw": "http://localhost:57701/api/contas",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "57701",
+									"path": [
+										"api",
+										"contas"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"_postman_id": "b69b618b-456e-4f3a-b146-f4d7eb3d5803",
+					"name": "Listagem",
+					"item": [
+						{
+							"_postman_id": "0fbef272-88da-4e6b-b461-7366ce236757",
+							"name": "Listagem de Contas",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/xml"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \n}"
+								},
+								"url": {
+									"raw": "http://localhost:57701/api/contas/?quantidade=3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "57701",
+									"path": [
+										"api",
+										"contas",
+										""
+									],
+									"query": [
+										{
+											"key": "quantidade",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"_postman_id": "10546263-e1c9-40eb-b755-dc3dde570644",
+					"name": "BuscarPorId",
+					"item": [
+						{
+							"_postman_id": "eeed76a0-37b0-4374-8f7f-3798322f2cc0",
+							"name": "Buscar Conta por id",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/xml"
+									}
+								],
+								"body": {},
+								"url": {
+									"raw": "http://localhost:57701/api/contas/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "57701",
+									"path": [
+										"api",
+										"contas",
+										"1"
+									]
+								},
+								"description": "Buscar Conta por id"
+							},
+							"response": []
+						},
+						{
+							"_postman_id": "691f93e6-329c-4f82-8460-3bc70cce1b76",
+							"name": "Erro em Buscar Conta por Id",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/xml"
+									}
+								],
+								"body": {},
+								"url": {
+									"raw": "http://localhost:57701/api/contas/0",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "57701",
+									"path": [
+										"api",
+										"contas",
+										"0"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"_postman_id": "adbdcc22-7629-4438-8f92-8a6e5171258a",
+							"name": "Erro em Buscar Conta que não existe",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {},
+								"url": {
+									"raw": "http://localhost:57701/api/contas/20",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "57701",
+									"path": [
+										"api",
+										"contas",
+										"20"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"_postman_id": "45ae2364-62e3-41ff-9759-ac3cd4b1fb59",
+					"name": "Excluir",
+					"item": [
+						{
+							"_postman_id": "5b23bbb8-4857-48e1-9017-d3f1e75805c1",
+							"name": "Deletar uma Conta",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": " {\n        \"id\": 1,\n        \"numeroConta\": 35892,\n        \"saldo\": 1175.4,\n        \"estado\": true,\n        \"limite\": 150,\n        \"movimentacoes\": [\n            {\n                \"id\": 1,\n                \"data\": \"2018-07-28T12:49:51.553\",\n                \"tipoOperacao\": 0,\n                \"valor\": 300,\n                \"contaId\": 1\n            },\n            {\n                \"id\": 2,\n                \"data\": \"2018-07-28T12:49:51.557\",\n                \"tipoOperacao\": 1,\n                \"valor\": 100,\n                \"contaId\": 1\n            },\n            {\n                \"id\": 3,\n                \"data\": \"2018-07-28T12:49:51.557\",\n                \"tipoOperacao\": 0,\n                \"valor\": 375.4,\n                \"contaId\": 1\n            }\n        ],\n        \"clienteId\": 1,\n        \"cliente\": {\n            \"id\": 1,\n            \"nome\": \"José\",\n            \"cpf\": \"43242847866\",\n            \"dataNascimento\": \"1995-04-16T00:00:00\",\n            \"rg\": \"538702879\"\n        },\n        \"saldoTotal\": 1325.4\n    }"
+								},
+								"url": {
+									"raw": "http://localhost:57701/api/contas/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "57701",
+									"path": [
+										"api",
+										"contas",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"_postman_id": "ac840390-6811-4ef4-bc1c-119badbe66c3",
+							"name": "Erro no Deletar Conta com o id nulo.",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": " {\n        \"id\": 0,\n        \"numeroConta\": 35892,\n        \"saldo\": 1175.4,\n        \"estado\": true,\n        \"limite\": 150,\n        \"movimentacoes\": [\n            {\n                \"id\": 1,\n                \"data\": \"2018-07-28T12:49:51.553\",\n                \"tipoOperacao\": 0,\n                \"valor\": 300,\n                \"contaId\": 1\n            },\n            {\n                \"id\": 2,\n                \"data\": \"2018-07-28T12:49:51.557\",\n                \"tipoOperacao\": 1,\n                \"valor\": 100,\n                \"contaId\": 1\n            },\n            {\n                \"id\": 3,\n                \"data\": \"2018-07-28T12:49:51.557\",\n                \"tipoOperacao\": 0,\n                \"valor\": 375.4,\n                \"contaId\": 1\n            }\n        ],\n        \"clienteId\": 1,\n        \"cliente\": {\n            \"id\": 1,\n            \"nome\": \"José\",\n            \"cpf\": \"43242847866\",\n            \"dataNascimento\": \"1995-04-16T00:00:00\",\n            \"rg\": \"538702879\"\n        },\n        \"saldoTotal\": 1325.4\n    }"
+								},
+								"url": {
+									"raw": "http://localhost:57701/api/contas",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "57701",
+									"path": [
+										"api",
+										"contas"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"_postman_id": "ceb8f66c-393e-43bf-a239-5db1f9aa4662",
+					"name": "AlterarEstado",
+					"item": [
+						{
+							"_postman_id": "d509d335-8558-4ec9-adc5-93bd4da4f7a3",
+							"name": "Atualizar Estado da Conta",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "\"false\" \n"
+								},
+								"url": {
+									"raw": "http://localhost:57701/api/contas/1/alterarestado",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "57701",
+									"path": [
+										"api",
+										"contas",
+										"1",
+										"alterarestado"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"_postman_id": "c9e7df0c-dba1-46cc-9393-ae4aec249cd1",
+							"name": "Erro em Atualizar Estado da Conta ",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "\"false\" \n"
+								},
+								"url": {
+									"raw": "http://localhost:57701/api/contas/0/alterarestado",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "57701",
+									"path": [
+										"api",
+										"contas",
+										"0",
+										"alterarestado"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"_postman_id": "f6b31a93-8c5b-4a55-beed-53a427414dc7",
+							"name": "Erro em Atualizar Estado Conta Inexistente ",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "\"false\" \n"
+								},
+								"url": {
+									"raw": "http://localhost:57701/api/contas/500/alterarestado",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "57701",
+									"path": [
+										"api",
+										"contas",
+										"500",
+										"alterarestado"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"_postman_id": "04377cb1-3593-4638-9bf5-1cab27b6e06d",
+					"name": "Sacar",
+					"item": [
+						{
+							"_postman_id": "9361b04e-857c-42fc-b759-af57e7bdc5d3",
+							"name": "Sacar Saldo da Conta",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "\"50\" \n"
+								},
+								"url": {
+									"raw": "http://localhost:57701/api/contas/1/sacar",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "57701",
+									"path": [
+										"api",
+										"contas",
+										"1",
+										"sacar"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"_postman_id": "612e1133-60b9-4205-b4ac-37ef77d6297d",
+							"name": "Erro em Sacar Saldo da Conta",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "\"50\" \n"
+								},
+								"url": {
+									"raw": "http://localhost:57701/api/contas/0/sacar",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "57701",
+									"path": [
+										"api",
+										"contas",
+										"0",
+										"sacar"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"_postman_id": "8eca3e2a-70f6-4265-91e8-9d986e0fe9cf",
+							"name": "Erro em Sacar Saldo da Conta Valor Negativo ou Zero",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "\"0\" \n"
+								},
+								"url": {
+									"raw": "http://localhost:57701/api/contas/1/sacar",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "57701",
+									"path": [
+										"api",
+										"contas",
+										"1",
+										"sacar"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"_postman_id": "bf879d71-960f-4ca0-8eeb-ba2d3e67fe6c",
+							"name": "Erro em Sacar Saldo da Conta Saldo Indisponivel",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "\"3000\" \n"
+								},
+								"url": {
+									"raw": "http://localhost:57701/api/contas/1/sacar",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "57701",
+									"path": [
+										"api",
+										"contas",
+										"1",
+										"sacar"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"_postman_id": "926335e4-55c6-439e-ade6-62153a46e88c",
+							"name": "Erro em Sacar Saldo Conta Inexistente",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "\"50\" \n"
+								},
+								"url": {
+									"raw": "http://localhost:57701/api/contas/500/sacar",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "57701",
+									"path": [
+										"api",
+										"contas",
+										"500",
+										"sacar"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"_postman_id": "7a9986b2-866a-4d97-9cd7-bff1f2b7d1d6",
+					"name": "Depositar",
+					"item": [
+						{
+							"_postman_id": "9d727a44-d0d8-4975-9b75-ef4e73c22d1f",
+							"name": "Depositar Saldo na Conta",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "\"50\" \n"
+								},
+								"url": {
+									"raw": "http://localhost:57701/api/contas/1/depositar",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "57701",
+									"path": [
+										"api",
+										"contas",
+										"1",
+										"depositar"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"_postman_id": "c77f0979-f356-47e1-817b-fddcfdf9781b",
+							"name": "Erro em Depositar Saldo na Conta",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "\"50\" \n"
+								},
+								"url": {
+									"raw": "http://localhost:57701/api/contas/0/depositar",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "57701",
+									"path": [
+										"api",
+										"contas",
+										"0",
+										"depositar"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"_postman_id": "7a7f8359-33bd-48e9-8711-aa5cd9144e3b",
+							"name": "Erro em Depositar Saldo na Conta Valor Negativo ou Zero",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "\"50\" \n"
+								},
+								"url": {
+									"raw": "http://localhost:57701/api/contas/0/depositar",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "57701",
+									"path": [
+										"api",
+										"contas",
+										"0",
+										"depositar"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"_postman_id": "2e6d440d-968c-4393-a45b-32475bb92fef",
+							"name": "Erro em Depositar Saldo Conta Inexistente",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "\"0\" \n"
+								},
+								"url": {
+									"raw": "http://localhost:57701/api/contas/500/depositar",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "57701",
+									"path": [
+										"api",
+										"contas",
+										"500",
+										"depositar"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"_postman_id": "a2849d02-a94e-4eb1-ac51-f2e183569e50",
+					"name": "Transferir",
+					"item": [
+						{
+							"_postman_id": "b664be61-1ae5-4669-b5da-6a6304c1d433",
+							"name": "Realizar Transferencia",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "\"300\""
+								},
+								"url": {
+									"raw": "http://localhost:57701/api/contas/2/realizar_transferencia/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "57701",
+									"path": [
+										"api",
+										"contas",
+										"2",
+										"realizar_transferencia",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"_postman_id": "1dce1027-0801-4697-a810-7a3b5d62aa71",
+							"name": "Erro em Tranferir Conta Inexistente",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "\"200\""
+								},
+								"url": {
+									"raw": "http://localhost:57701/api/contas/200/realizar_transferencia/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "57701",
+									"path": [
+										"api",
+										"contas",
+										"200",
+										"realizar_transferencia",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"_postman_id": "0fa1e74a-1f02-4545-b6ad-47a2fa0754d8",
+							"name": "Erro em Realizar Tranferencia Com Valor Negativo ou Zero",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "\"0\""
+								},
+								"url": {
+									"raw": "http://localhost:57701/api/contas/2/realizar_transferencia/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "57701",
+									"path": [
+										"api",
+										"contas",
+										"2",
+										"realizar_transferencia",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"_postman_id": "807b1d28-8b41-4704-baad-63e57de81e55",
+							"name": "Erro em Realizar Tranferencia Com Saldo Indisponivel",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "\"2000000000000\""
+								},
+								"url": {
+									"raw": "http://localhost:57701/api/contas/2/realizar_transferencia/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "57701",
+									"path": [
+										"api",
+										"contas",
+										"2",
+										"realizar_transferencia",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"_postman_id": "92b3d531-d5b3-4037-ac93-a59a3b2d856b",
+					"name": "GerarExtrato",
+					"item": [
+						{
+							"_postman_id": "3ba849ab-f9e2-4c8d-8ae2-ef67db8b3671",
+							"name": "Gerar Extrato",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {},
+								"url": {
+									"raw": "http://localhost:57701/api/contas/1/gerarExtrato",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "57701",
+									"path": [
+										"api",
+										"contas",
+										"1",
+										"gerarExtrato"
+									]
+								},
+								"description": "Gerar Extrato da Conta por id"
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				}
+			]
+		},
+		{
+			"_postman_id": "c17f5534-17fd-4f55-8e94-26b7edcee953",
+			"name": "Clientes",
+			"item": [
+				{
+					"_postman_id": "d2ec09f3-0f1b-46d5-87ed-608088e43964",
+					"name": "Adicionar",
+					"item": [
+						{
+							"_postman_id": "332fbc49-3a42-468c-91c9-16796cdd2076",
+							"name": "Adicionar Cliente",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/xml"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "<Cliente xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\">\r\n<Id>1</Id>\r\n<Nome>José</Nome>\r\n<CPF>43242847866</CPF>\r\n<DataNascimento>1995-04-16T00:00:00</DataNascimento>\r\n<RG>538702879</RG>\r\n</Cliente>"
+								},
+								"url": {
+									"raw": "http://localhost:57701/api/clientes",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "57701",
+									"path": [
+										"api",
+										"clientes"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"_postman_id": "553bf78e-962e-460e-979c-5cfd4145b695",
+							"name": "Erro ao Adicionar Cliente",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/xml"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "<Cliente xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\">\r\n<Id>1</Id>\r\n<Nome></Nome>\r\n<CPF>43242847866</CPF>\r\n<DataNascimento>1995-04-16T00:00:00</DataNascimento>\r\n<RG>538702879</RG>\r\n</Cliente>"
+								},
+								"url": {
+									"raw": "http://localhost:57701/api/clientes",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "57701",
+									"path": [
+										"api",
+										"clientes"
+									]
+								},
+								"description": "Erro ao adicionar cliente com nome nulo"
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"_postman_id": "33e908a4-469b-470c-a114-86863c27d937",
+					"name": "Atualizar",
+					"item": [
+						{
+							"_postman_id": "0b843f77-91c5-49a2-986a-471d1ee49f7d",
+							"name": "Atualizar Cliente",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/xml"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "<Cliente xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\">\r\n<Id>4</Id>\r\n<Nome>Sebastião</Nome>\r\n<CPF>43242847866</CPF>\r\n<DataNascimento>1995-04-16T00:00:00</DataNascimento>\r\n<RG>538702879</RG>\r\n</Cliente>"
+								},
+								"url": {
+									"raw": "http://localhost:57701/api/clientes",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "57701",
+									"path": [
+										"api",
+										"clientes"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"_postman_id": "8d1de8bb-3796-4d74-b35e-cb42a9c8660b",
+							"name": "Erro ao Atualizar Cliente",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/xml"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "<Cliente xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\">\r\n<Id>0</Id>\r\n<Nome>Sebastião</Nome>\r\n<CPF>43242847866</CPF>\r\n<DataNascimento>1995-04-16T00:00:00</DataNascimento>\r\n<RG>538702879</RG>\r\n</Cliente>"
+								},
+								"url": {
+									"raw": "http://localhost:57701/api/clientes",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "57701",
+									"path": [
+										"api",
+										"clientes"
+									]
+								},
+								"description": "Erro ao atualizar Cliente com id 0"
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"_postman_id": "1dcedea0-2923-468d-aaea-341208e8c5d6",
+					"name": "Listagem",
+					"item": [
+						{
+							"_postman_id": "f12b32f2-a261-47e4-b7e8-898c8be2c396",
+							"name": "Listagem de Clientes",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/xml"
+									}
+								],
+								"body": {},
+								"url": {
+									"raw": "http://localhost:57701/api/clientes?quantidade=3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "57701",
+									"path": [
+										"api",
+										"clientes"
+									],
+									"query": [
+										{
+											"key": "quantidade",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"_postman_id": "ae3199e5-07b7-4d00-8df2-b2fb24d41598",
+					"name": "BuscarPorId",
+					"item": [
+						{
+							"_postman_id": "0f547da7-81d4-4375-84de-70f40375b24d",
+							"name": "Buscar Cliente por id",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/xml"
+									}
+								],
+								"body": {},
+								"url": {
+									"raw": "http://localhost:57701/api/clientes/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "57701",
+									"path": [
+										"api",
+										"clientes",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"_postman_id": "a5ee05b0-c69b-41c2-a81b-fcb202dc33ad",
+							"name": "Erro em Buscar Cliente por id",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/xml"
+									}
+								],
+								"body": {},
+								"url": {
+									"raw": "http://localhost:57701/api/clientes/20",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "57701",
+									"path": [
+										"api",
+										"clientes",
+										"20"
+									]
+								},
+								"description": "Cenário de erro para GetId com id inválido"
+							},
+							"response": []
+						},
+						{
+							"_postman_id": "215ce68e-5c80-491c-81fe-e7afd67bf7f9",
+							"name": "Erro em Buscar Cliente que não existe",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/xml"
+									}
+								],
+								"body": {},
+								"url": {
+									"raw": "http://localhost:57701/api/clientes/0",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "57701",
+									"path": [
+										"api",
+										"clientes",
+										"0"
+									]
+								},
+								"description": "Cenário de erro para GetId com id inválido"
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"_postman_id": "84db3a81-14a7-4689-b084-7b10131df8e3",
+					"name": "Excluir",
+					"item": [
+						{
+							"_postman_id": "f35d1bf9-4ff0-4537-a84d-1d4a07af4453",
+							"name": "Excluir Cliente",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/xml"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:57701/api/clientes/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "57701",
+									"path": [
+										"api",
+										"clientes",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"_postman_id": "9d61cfb0-69f2-4fe4-8d8d-81a3c8de29f4",
+							"name": "Erro ao excluir Cliente",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/xml"
+									}
+								],
+								"body": {},
+								"url": {
+									"raw": "http://localhost:57701/api/clientes/0",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "57701",
+									"path": [
+										"api",
+										"clientes",
+										"0"
+									]
+								},
+								"description": "Erro ao excluir cliente com id 0"
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,1964 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CoverageSession xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="4.6.0.0">
+  <Summary numSequencePoints="241" visitedSequencePoints="79" numBranchPoints="68" visitedBranchPoints="14" sequenceCoverage="32.78" branchCoverage="20.59" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="1" visitedClasses="9" numClasses="16" visitedMethods="14" numMethods="68" />
+  <Modules>
+    <Module hash="31-D9-96-C3-45-20-6E-24-E4-2A-0D-E4-6C-58-51-4B-8B-75-4E-81">
+      <Summary numSequencePoints="98" visitedSequencePoints="70" numBranchPoints="18" visitedBranchPoints="11" sequenceCoverage="71.43" branchCoverage="61.11" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="1" visitedClasses="8" numClasses="8" visitedMethods="11" numMethods="18" />
+      <ModulePath>C:\academia\Apollo 4.1\Apollo4NFe\server\Projeto_NFe.Infra.Data.Tests\bin\Debug\Projeto_NFe.Infra.ORM.dll</ModulePath>
+      <ModuleTime>2018-10-03T17:44:00.3984752Z</ModuleTime>
+      <ModuleName>Projeto_NFe.Infra.ORM</ModuleName>
+      <Files>
+        <File uid="1" fullPath="C:\academia\Apollo 4.1\Apollo4NFe\server\Projeto_NFe.Infra.Data\Features\Receivers\ReceiverRepository.cs" />
+        <File uid="2" fullPath="C:\academia\Apollo 4.1\Apollo4NFe\server\Projeto_NFe.Infra.Data\Features\Receivers\ReceiverConfiguration.cs" />
+        <File uid="3" fullPath="C:\academia\Apollo 4.1\Apollo4NFe\server\Projeto_NFe.Infra.Data\Features\Products\ProductConfiguration.cs" />
+        <File uid="4" fullPath="C:\academia\Apollo 4.1\Apollo4NFe\server\Projeto_NFe.Infra.Data\Features\ItemInvoices\ItemInvoiceConfiguration.cs" />
+        <File uid="5" fullPath="C:\academia\Apollo 4.1\Apollo4NFe\server\Projeto_NFe.Infra.Data\Features\Invoices\InvoiceInProcessConfiguration.cs" />
+        <File uid="6" fullPath="C:\academia\Apollo 4.1\Apollo4NFe\server\Projeto_NFe.Infra.Data\Features\Emitters\EmittersConfiguration.cs" />
+        <File uid="7" fullPath="C:\academia\Apollo 4.1\Apollo4NFe\server\Projeto_NFe.Infra.Data\Features\Conveyors\ConveyorsConfiguration.cs" />
+        <File uid="8" fullPath="C:\academia\Apollo 4.1\Apollo4NFe\server\Projeto_NFe.Infra.Data\Context\ProjetoNFeContext.cs" />
+      </Files>
+      <Classes>
+        <Class>
+          <Summary numSequencePoints="27" visitedSequencePoints="8" numBranchPoints="8" visitedBranchPoints="2" sequenceCoverage="29.63" branchCoverage="25" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="1" visitedClasses="1" numClasses="1" visitedMethods="2" numMethods="8" />
+          <FullName>Projeto_NFe.Infra.Data.Features.Receivers.ReceiverRepository</FullName>
+          <Methods>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" crapScore="1" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="5" visitedSequencePoints="5" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663297</MetadataToken>
+              <Name>System.Void Projeto_NFe.Infra.Data.Features.Receivers.ReceiverRepository::.ctor(Projeto_NFe.Infra.ORM.Context.ProjetoNFeContext)</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="1" ordinal="0" offset="0" sl="21" sc="3" el="21" ec="34" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="2" ordinal="1" offset="8" sl="23" sc="3" el="23" ec="55" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="3" ordinal="2" offset="15" sl="24" sc="3" el="24" ec="4" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="4" ordinal="3" offset="16" sl="25" sc="4" el="25" ec="28" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="5" ordinal="4" offset="23" sl="26" sc="3" el="26" ec="4" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="1" ordinal="0" offset="0" sl="21" sc="3" el="21" ec="34" bec="0" bev="0" fileid="1" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="2" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663298</MetadataToken>
+              <Name>System.Boolean Projeto_NFe.Infra.Data.Features.Receivers.ReceiverRepository::CheckDependency(Projeto_NFe.Domain.Features.Receivers.Receiver)</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="6" ordinal="0" offset="0" sl="29" sc="3" el="29" ec="4" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="7" ordinal="1" offset="1" sl="30" sc="4" el="30" ec="40" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="6" ordinal="0" offset="0" sl="29" sc="3" el="29" ec="4" bec="0" bev="0" fileid="1" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="4" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663299</MetadataToken>
+              <Name>System.Boolean Projeto_NFe.Infra.Data.Features.Receivers.ReceiverRepository::Delete(Projeto_NFe.Domain.Features.Receivers.Receiver)</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="8" ordinal="0" offset="0" sl="34" sc="3" el="34" ec="4" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="9" ordinal="1" offset="1" sl="35" sc="4" el="35" ec="42" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="10" ordinal="2" offset="19" sl="37" sc="4" el="37" ec="50" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="11" ordinal="3" offset="42" sl="38" sc="3" el="38" ec="4" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="8" ordinal="0" offset="0" sl="34" sc="3" el="34" ec="4" bec="0" bev="0" fileid="1" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663300</MetadataToken>
+              <Name>Projeto_NFe.Domain.Features.Receivers.Receiver Projeto_NFe.Infra.Data.Features.Receivers.ReceiverRepository::Get(System.Int64)</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="12" ordinal="0" offset="13" sl="41" sc="3" el="41" ec="4" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="13" ordinal="1" offset="14" sl="42" sc="4" el="42" ec="72" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="14" ordinal="2" offset="131" sl="43" sc="3" el="43" ec="4" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="15" ordinal="0" offset="0" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663301</MetadataToken>
+              <Name>System.Linq.IQueryable`1&lt;Projeto_NFe.Domain.Features.Receivers.Receiver&gt; Projeto_NFe.Infra.Data.Features.Receivers.ReceiverRepository::GetAll(System.Int32)</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="16" ordinal="0" offset="0" sl="46" sc="3" el="46" ec="4" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="17" ordinal="1" offset="1" sl="47" sc="4" el="47" ec="48" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="18" ordinal="2" offset="21" sl="48" sc="3" el="48" ec="4" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="16" ordinal="0" offset="0" sl="46" sc="3" el="46" ec="4" bec="0" bev="0" fileid="1" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663302</MetadataToken>
+              <Name>System.Linq.IQueryable`1&lt;Projeto_NFe.Domain.Features.Receivers.Receiver&gt; Projeto_NFe.Infra.Data.Features.Receivers.ReceiverRepository::GetAll()</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="19" ordinal="0" offset="0" sl="51" sc="3" el="51" ec="4" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="20" ordinal="1" offset="1" sl="52" sc="4" el="52" ec="35" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="21" ordinal="2" offset="15" sl="53" sc="3" el="53" ec="4" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="19" ordinal="0" offset="0" sl="51" sc="3" el="51" ec="4" bec="0" bev="0" fileid="1" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663303</MetadataToken>
+              <Name>Projeto_NFe.Domain.Features.Receivers.Receiver Projeto_NFe.Infra.Data.Features.Receivers.ReceiverRepository::Save(Projeto_NFe.Domain.Features.Receivers.Receiver)</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="22" ordinal="0" offset="0" sl="56" sc="3" el="56" ec="4" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="23" ordinal="1" offset="1" sl="57" sc="4" el="57" ec="46" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="24" ordinal="2" offset="21" sl="58" sc="3" el="58" ec="4" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="22" ordinal="0" offset="0" sl="56" sc="3" el="56" ec="4" bec="0" bev="0" fileid="1" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="75" branchCoverage="100" crapScore="1.02" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="4" visitedSequencePoints="3" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="75" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1.02" minCrapScore="1.02" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663304</MetadataToken>
+              <Name>System.Boolean Projeto_NFe.Infra.Data.Features.Receivers.ReceiverRepository::Update(Projeto_NFe.Domain.Features.Receivers.Receiver)</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="25" ordinal="0" offset="0" sl="61" sc="3" el="61" ec="4" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="26" ordinal="1" offset="1" sl="62" sc="4" el="62" ec="60" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="27" ordinal="2" offset="21" sl="63" sc="4" el="63" ec="50" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="28" ordinal="3" offset="44" sl="64" sc="3" el="64" ec="4" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="25" ordinal="0" offset="0" sl="61" sc="3" el="61" ec="4" bec="0" bev="0" fileid="1" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="0" />
+          <FullName>Projeto_NFe.Infra.Data.Features.Receivers.ReceiverRepository/&lt;&gt;c__DisplayClass5_0</FullName>
+          <Methods>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="0" />
+              <MetadataToken>100663329</MetadataToken>
+              <Name>System.Void Projeto_NFe.Infra.Data.Features.Receivers.ReceiverRepository/&lt;&gt;c__DisplayClass5_0::.ctor()</Name>
+              <SequencePoints />
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="29" ordinal="0" offset="0" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="13" visitedSequencePoints="13" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="1" />
+          <FullName>Projeto_NFe.Infra.ORM.Features.Receivers.ReceiverConfiguration</FullName>
+          <Methods>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" crapScore="1" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="13" visitedSequencePoints="13" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663305</MetadataToken>
+              <Name>System.Void Projeto_NFe.Infra.ORM.Features.Receivers.ReceiverConfiguration::.ctor()</Name>
+              <FileRef uid="2" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="30" ordinal="0" offset="0" sl="13" sc="3" el="13" ec="33" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="1" uspid="31" ordinal="1" offset="7" sl="14" sc="3" el="14" ec="4" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="1" uspid="32" ordinal="2" offset="8" sl="15" sc="4" el="15" ec="28" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="1" uspid="33" ordinal="3" offset="20" sl="16" sc="4" el="16" ec="56" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="1" uspid="34" ordinal="4" offset="94" sl="17" sc="4" el="17" ec="41" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="1" uspid="35" ordinal="5" offset="163" sl="18" sc="4" el="18" ec="54" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="1" uspid="36" ordinal="6" offset="232" sl="19" sc="4" el="19" ec="52" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="1" uspid="37" ordinal="7" offset="301" sl="20" sc="4" el="20" ec="51" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="1" uspid="38" ordinal="8" offset="390" sl="21" sc="4" el="21" ec="51" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="1" uspid="39" ordinal="9" offset="479" sl="22" sc="4" el="22" ec="58" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="1" uspid="40" ordinal="10" offset="568" sl="23" sc="4" el="23" ec="49" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="1" uspid="41" ordinal="11" offset="657" sl="24" sc="4" el="24" ec="50" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="1" uspid="42" ordinal="12" offset="746" sl="25" sc="3" el="25" ec="4" bec="0" bev="0" fileid="2" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="30" ordinal="0" offset="0" sl="13" sc="3" el="13" ec="33" bec="0" bev="0" fileid="2" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="0" />
+          <FullName>Projeto_NFe.Infra.ORM.Features.Receivers.ReceiverConfiguration/&lt;&gt;c</FullName>
+          <Methods>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="0" />
+              <MetadataToken>100663330</MetadataToken>
+              <Name>System.Void Projeto_NFe.Infra.ORM.Features.Receivers.ReceiverConfiguration/&lt;&gt;c::.cctor()</Name>
+              <SequencePoints />
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="43" ordinal="0" offset="0" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="0" />
+              <MetadataToken>100663331</MetadataToken>
+              <Name>System.Void Projeto_NFe.Infra.ORM.Features.Receivers.ReceiverConfiguration/&lt;&gt;c::.ctor()</Name>
+              <SequencePoints />
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="44" ordinal="0" offset="0" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="8" visitedSequencePoints="8" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="1" />
+          <FullName>Projeto_NFe.Infra.ORM.Features.Products.ProductConfiguration</FullName>
+          <Methods>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" crapScore="1" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="8" visitedSequencePoints="8" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663306</MetadataToken>
+              <Name>System.Void Projeto_NFe.Infra.ORM.Features.Products.ProductConfiguration::.ctor()</Name>
+              <FileRef uid="3" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="45" ordinal="0" offset="0" sl="13" sc="3" el="13" ec="32" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="1" uspid="46" ordinal="1" offset="7" sl="14" sc="3" el="14" ec="4" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="1" uspid="47" ordinal="2" offset="8" sl="15" sc="4" el="15" ec="32" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="1" uspid="48" ordinal="3" offset="20" sl="16" sc="4" el="16" ec="60" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="1" uspid="49" ordinal="4" offset="94" sl="17" sc="4" el="17" ec="46" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="1" uspid="50" ordinal="5" offset="163" sl="18" sc="4" el="18" ec="53" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="1" uspid="51" ordinal="6" offset="232" sl="19" sc="4" el="19" ec="54" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="1" uspid="52" ordinal="7" offset="301" sl="20" sc="3" el="20" ec="4" bec="0" bev="0" fileid="3" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="45" ordinal="0" offset="0" sl="13" sc="3" el="13" ec="32" bec="0" bev="0" fileid="3" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="0" />
+          <FullName>Projeto_NFe.Infra.ORM.Features.Products.ProductConfiguration/&lt;&gt;c</FullName>
+          <Methods>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="0" />
+              <MetadataToken>100663332</MetadataToken>
+              <Name>System.Void Projeto_NFe.Infra.ORM.Features.Products.ProductConfiguration/&lt;&gt;c::.cctor()</Name>
+              <SequencePoints />
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="53" ordinal="0" offset="0" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="0" />
+              <MetadataToken>100663333</MetadataToken>
+              <Name>System.Void Projeto_NFe.Infra.ORM.Features.Products.ProductConfiguration/&lt;&gt;c::.ctor()</Name>
+              <SequencePoints />
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="54" ordinal="0" offset="0" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="1" />
+          <FullName>Projeto_NFe.Infra.ORM.Features.ItemInvoices.ItemInvoiceConfiguration</FullName>
+          <Methods>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" crapScore="1" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663307</MetadataToken>
+              <Name>System.Void Projeto_NFe.Infra.ORM.Features.ItemInvoices.ItemInvoiceConfiguration::.ctor()</Name>
+              <FileRef uid="4" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="55" ordinal="0" offset="0" sl="13" sc="3" el="13" ec="36" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="1" uspid="56" ordinal="1" offset="7" sl="14" sc="3" el="14" ec="4" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="1" uspid="57" ordinal="2" offset="8" sl="21" sc="3" el="21" ec="4" bec="0" bev="0" fileid="4" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="55" ordinal="0" offset="0" sl="13" sc="3" el="13" ec="36" bec="0" bev="0" fileid="4" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="8" visitedSequencePoints="8" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="1" />
+          <FullName>Projeto_NFe.Infra.ORM.Features.Invoices.InvoiceInProcessConfiguration</FullName>
+          <Methods>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" crapScore="1" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="8" visitedSequencePoints="8" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663308</MetadataToken>
+              <Name>System.Void Projeto_NFe.Infra.ORM.Features.Invoices.InvoiceInProcessConfiguration::.ctor()</Name>
+              <FileRef uid="5" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="58" ordinal="0" offset="0" sl="13" sc="3" el="13" ec="41" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="1" uspid="59" ordinal="1" offset="7" sl="14" sc="3" el="14" ec="4" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="1" uspid="60" ordinal="2" offset="8" sl="15" sc="4" el="15" ec="36" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="1" uspid="61" ordinal="3" offset="20" sl="16" sc="4" el="16" ec="64" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="1" uspid="62" ordinal="4" offset="94" sl="17" sc="4" el="17" ec="46" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="1" uspid="63" ordinal="5" offset="163" sl="18" sc="4" el="18" ec="52" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="1" uspid="64" ordinal="6" offset="232" sl="19" sc="4" el="19" ec="49" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="1" uspid="65" ordinal="7" offset="301" sl="20" sc="3" el="20" ec="4" bec="0" bev="0" fileid="5" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="58" ordinal="0" offset="0" sl="13" sc="3" el="13" ec="41" bec="0" bev="0" fileid="5" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="0" />
+          <FullName>Projeto_NFe.Infra.ORM.Features.Invoices.InvoiceInProcessConfiguration/&lt;&gt;c</FullName>
+          <Methods>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="0" />
+              <MetadataToken>100663334</MetadataToken>
+              <Name>System.Void Projeto_NFe.Infra.ORM.Features.Invoices.InvoiceInProcessConfiguration/&lt;&gt;c::.cctor()</Name>
+              <SequencePoints />
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="66" ordinal="0" offset="0" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="0" />
+              <MetadataToken>100663335</MetadataToken>
+              <Name>System.Void Projeto_NFe.Infra.ORM.Features.Invoices.InvoiceInProcessConfiguration/&lt;&gt;c::.ctor()</Name>
+              <SequencePoints />
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="67" ordinal="0" offset="0" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="10" visitedSequencePoints="10" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="1" />
+          <FullName>Projeto_NFe.Infra.ORM.Features.Emitters.EmittersConfiguration</FullName>
+          <Methods>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" crapScore="1" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="10" visitedSequencePoints="10" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663309</MetadataToken>
+              <Name>System.Void Projeto_NFe.Infra.ORM.Features.Emitters.EmittersConfiguration::.ctor()</Name>
+              <FileRef uid="6" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="68" ordinal="0" offset="0" sl="13" sc="3" el="13" ec="33" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="1" uspid="69" ordinal="1" offset="7" sl="14" sc="3" el="14" ec="4" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="1" uspid="70" ordinal="2" offset="8" sl="15" sc="4" el="15" ec="27" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="1" uspid="71" ordinal="3" offset="20" sl="16" sc="4" el="16" ec="55" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="1" uspid="72" ordinal="4" offset="94" sl="17" sc="4" el="17" ec="41" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="1" uspid="73" ordinal="5" offset="163" sl="18" sc="4" el="18" ec="48" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="1" uspid="74" ordinal="6" offset="232" sl="19" sc="4" el="19" ec="48" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="1" uspid="75" ordinal="7" offset="301" sl="20" sc="4" el="20" ec="58" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="1" uspid="76" ordinal="8" offset="370" sl="21" sc="4" el="21" ec="54" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="1" uspid="77" ordinal="9" offset="439" sl="22" sc="3" el="22" ec="4" bec="0" bev="0" fileid="6" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="68" ordinal="0" offset="0" sl="13" sc="3" el="13" ec="33" bec="0" bev="0" fileid="6" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="0" />
+          <FullName>Projeto_NFe.Infra.ORM.Features.Emitters.EmittersConfiguration/&lt;&gt;c</FullName>
+          <Methods>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="0" />
+              <MetadataToken>100663336</MetadataToken>
+              <Name>System.Void Projeto_NFe.Infra.ORM.Features.Emitters.EmittersConfiguration/&lt;&gt;c::.cctor()</Name>
+              <SequencePoints />
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="78" ordinal="0" offset="0" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="0" />
+              <MetadataToken>100663337</MetadataToken>
+              <Name>System.Void Projeto_NFe.Infra.ORM.Features.Emitters.EmittersConfiguration/&lt;&gt;c::.ctor()</Name>
+              <SequencePoints />
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="79" ordinal="0" offset="0" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="9" visitedSequencePoints="9" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="1" />
+          <FullName>Projeto_NFe.Infra.ORM.Features.Conveyors.ConveyorsConfiguration</FullName>
+          <Methods>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" crapScore="1" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="9" visitedSequencePoints="9" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663310</MetadataToken>
+              <Name>System.Void Projeto_NFe.Infra.ORM.Features.Conveyors.ConveyorsConfiguration::.ctor()</Name>
+              <FileRef uid="7" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="80" ordinal="0" offset="0" sl="13" sc="3" el="13" ec="34" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="1" uspid="81" ordinal="1" offset="7" sl="14" sc="3" el="14" ec="4" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="1" uspid="82" ordinal="2" offset="8" sl="15" sc="4" el="15" ec="28" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="1" uspid="83" ordinal="3" offset="20" sl="16" sc="4" el="16" ec="56" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="1" uspid="84" ordinal="4" offset="94" sl="17" sc="4" el="17" ec="58" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="1" uspid="85" ordinal="5" offset="163" sl="18" sc="4" el="18" ec="41" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="1" uspid="86" ordinal="6" offset="232" sl="19" sc="4" el="19" ec="44" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="1" uspid="87" ordinal="7" offset="301" sl="20" sc="4" el="20" ec="52" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="1" uspid="88" ordinal="8" offset="370" sl="21" sc="3" el="21" ec="4" bec="0" bev="0" fileid="7" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="80" ordinal="0" offset="0" sl="13" sc="3" el="13" ec="34" bec="0" bev="0" fileid="7" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="0" />
+          <FullName>Projeto_NFe.Infra.ORM.Features.Conveyors.ConveyorsConfiguration/&lt;&gt;c</FullName>
+          <Methods>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="0" />
+              <MetadataToken>100663338</MetadataToken>
+              <Name>System.Void Projeto_NFe.Infra.ORM.Features.Conveyors.ConveyorsConfiguration/&lt;&gt;c::.cctor()</Name>
+              <SequencePoints />
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="89" ordinal="0" offset="0" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="0" />
+              <MetadataToken>100663339</MetadataToken>
+              <Name>System.Void Projeto_NFe.Infra.ORM.Features.Conveyors.ConveyorsConfiguration/&lt;&gt;c::.ctor()</Name>
+              <SequencePoints />
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="90" ordinal="0" offset="0" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="20" visitedSequencePoints="11" numBranchPoints="4" visitedBranchPoints="3" sequenceCoverage="55" branchCoverage="75" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="1" visitedClasses="1" numClasses="1" visitedMethods="3" numMethods="4" />
+          <FullName>Projeto_NFe.Infra.ORM.Context.ProjetoNFeContext</FullName>
+          <Methods>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663317</MetadataToken>
+              <Name>System.Data.Entity.DbSet`1&lt;Projeto_NFe.Domain.Features.Conveyors.Conveyor&gt; Projeto_NFe.Infra.ORM.Context.ProjetoNFeContext::get_Conveyors()</Name>
+              <FileRef uid="8" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663318</MetadataToken>
+              <Name>System.Void Projeto_NFe.Infra.ORM.Context.ProjetoNFeContext::set_Conveyors(System.Data.Entity.DbSet`1&lt;Projeto_NFe.Domain.Features.Conveyors.Conveyor&gt;)</Name>
+              <FileRef uid="8" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663319</MetadataToken>
+              <Name>System.Data.Entity.DbSet`1&lt;Projeto_NFe.Domain.Features.Emitters.Emitter&gt; Projeto_NFe.Infra.ORM.Context.ProjetoNFeContext::get_Emitters()</Name>
+              <FileRef uid="8" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663320</MetadataToken>
+              <Name>System.Void Projeto_NFe.Infra.ORM.Context.ProjetoNFeContext::set_Emitters(System.Data.Entity.DbSet`1&lt;Projeto_NFe.Domain.Features.Emitters.Emitter&gt;)</Name>
+              <FileRef uid="8" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663321</MetadataToken>
+              <Name>System.Data.Entity.DbSet`1&lt;Projeto_NFe.Domain.Features.Invoices.InvoiceInProcess&gt; Projeto_NFe.Infra.ORM.Context.ProjetoNFeContext::get_InvoicesProcess()</Name>
+              <FileRef uid="8" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663322</MetadataToken>
+              <Name>System.Void Projeto_NFe.Infra.ORM.Context.ProjetoNFeContext::set_InvoicesProcess(System.Data.Entity.DbSet`1&lt;Projeto_NFe.Domain.Features.Invoices.InvoiceInProcess&gt;)</Name>
+              <FileRef uid="8" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663323</MetadataToken>
+              <Name>System.Data.Entity.DbSet`1&lt;Projeto_NFe.Domain.Features.ItemInvoices.ItemInvoice&gt; Projeto_NFe.Infra.ORM.Context.ProjetoNFeContext::get_ItemInvoices()</Name>
+              <FileRef uid="8" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663324</MetadataToken>
+              <Name>System.Void Projeto_NFe.Infra.ORM.Context.ProjetoNFeContext::set_ItemInvoices(System.Data.Entity.DbSet`1&lt;Projeto_NFe.Domain.Features.ItemInvoices.ItemInvoice&gt;)</Name>
+              <FileRef uid="8" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663325</MetadataToken>
+              <Name>System.Data.Entity.DbSet`1&lt;Projeto_NFe.Domain.Features.Products.Product&gt; Projeto_NFe.Infra.ORM.Context.ProjetoNFeContext::get_Products()</Name>
+              <FileRef uid="8" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663326</MetadataToken>
+              <Name>System.Void Projeto_NFe.Infra.ORM.Context.ProjetoNFeContext::set_Products(System.Data.Entity.DbSet`1&lt;Projeto_NFe.Domain.Features.Products.Product&gt;)</Name>
+              <FileRef uid="8" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663327</MetadataToken>
+              <Name>System.Data.Entity.DbSet`1&lt;Projeto_NFe.Domain.Features.Receivers.Receiver&gt; Projeto_NFe.Infra.ORM.Context.ProjetoNFeContext::get_Receivers()</Name>
+              <FileRef uid="8" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663328</MetadataToken>
+              <Name>System.Void Projeto_NFe.Infra.ORM.Context.ProjetoNFeContext::set_Receivers(System.Data.Entity.DbSet`1&lt;Projeto_NFe.Domain.Features.Receivers.Receiver&gt;)</Name>
+              <FileRef uid="8" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="5" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663313</MetadataToken>
+              <Name>System.Void Projeto_NFe.Infra.ORM.Context.ProjetoNFeContext::.ctor()</Name>
+              <FileRef uid="8" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="91" ordinal="0" offset="0" sl="19" sc="32" el="19" ec="55" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="92" ordinal="1" offset="12" sl="20" sc="3" el="20" ec="4" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="93" ordinal="2" offset="13" sl="21" sc="4" el="21" ec="45" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="94" ordinal="3" offset="26" sl="22" sc="4" el="22" ec="47" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="95" ordinal="4" offset="39" sl="23" sc="3" el="23" ec="4" bec="0" bev="0" fileid="8" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="91" ordinal="0" offset="0" sl="19" sc="32" el="19" ec="55" bec="0" bev="0" fileid="8" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" crapScore="1" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663314</MetadataToken>
+              <Name>System.Void Projeto_NFe.Infra.ORM.Context.ProjetoNFeContext::.ctor(System.Data.Common.DbConnection)</Name>
+              <FileRef uid="8" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="96" ordinal="0" offset="0" sl="25" sc="58" el="25" ec="82" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="1" uspid="97" ordinal="1" offset="9" sl="25" sc="83" el="25" ec="84" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="1" uspid="98" ordinal="2" offset="10" sl="25" sc="85" el="25" ec="86" bec="0" bev="0" fileid="8" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="96" ordinal="0" offset="0" sl="25" sc="58" el="25" ec="82" bec="0" bev="0" fileid="8" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" crapScore="1" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="4" visitedSequencePoints="4" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663315</MetadataToken>
+              <Name>System.Void Projeto_NFe.Infra.ORM.Context.ProjetoNFeContext::OnModelCreating(System.Data.Entity.DbModelBuilder)</Name>
+              <FileRef uid="8" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="99" ordinal="0" offset="0" sl="28" sc="3" el="28" ec="4" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="1" uspid="100" ordinal="1" offset="1" sl="29" sc="4" el="29" ec="101" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="1" uspid="101" ordinal="2" offset="18" sl="30" sc="4" el="30" ec="41" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="1" uspid="102" ordinal="3" offset="26" sl="31" sc="3" el="31" ec="4" bec="0" bev="0" fileid="8" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="99" ordinal="0" offset="0" sl="28" sc="3" el="28" ec="4" bec="0" bev="0" fileid="8" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="50" branchCoverage="100" crapScore="1.12" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="8" visitedSequencePoints="4" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="50" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1.12" minCrapScore="1.12" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663316</MetadataToken>
+              <Name>System.Int32 Projeto_NFe.Infra.ORM.Context.ProjetoNFeContext::SaveChanges()</Name>
+              <FileRef uid="8" />
+              <SequencePoints>
+                <SequencePoint vc="3" uspid="103" ordinal="0" offset="0" sl="34" sc="3" el="34" ec="4" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="3" uspid="104" ordinal="1" offset="1" sl="35" sc="8" el="35" ec="9" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="3" uspid="105" ordinal="2" offset="2" sl="36" sc="5" el="36" ec="31" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="106" ordinal="3" offset="11" sl="37" sc="6" el="37" ec="43" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="107" ordinal="4" offset="12" sl="37" sc="44" el="37" ec="45" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="108" ordinal="5" offset="13" sl="38" sc="5" el="38" ec="70" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="109" ordinal="6" offset="20" sl="39" sc="5" el="39" ec="24" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="2" uspid="110" ordinal="7" offset="22" sl="41" sc="3" el="41" ec="4" bec="0" bev="0" fileid="8" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="3" uspid="103" ordinal="0" offset="0" sl="34" sc="3" el="34" ec="4" bec="0" bev="0" fileid="8" />
+            </Method>
+          </Methods>
+        </Class>
+      </Classes>
+    </Module>
+    <Module hash="F7-80-F2-B8-C0-D3-47-33-EC-99-EB-7A-93-9A-4D-27-9D-96-74-2F">
+      <Summary numSequencePoints="26" visitedSequencePoints="0" numBranchPoints="11" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="7" visitedMethods="0" numMethods="11" />
+      <ModulePath>C:\academia\Apollo 4.1\Apollo4NFe\server\Projeto_NFe.Infra.Data.Tests\bin\Debug\Projeto_NFe.Domain.dll</ModulePath>
+      <ModuleTime>2018-10-03T17:39:20.8130121Z</ModuleTime>
+      <ModuleName>Projeto_NFe.Domain</ModuleName>
+      <Files>
+        <File uid="17" fullPath="C:\academia\Apollo 4.1\Apollo4NFe\server\Projeto_NFe.Domain\Features\Receivers\Receiver.cs" />
+        <File uid="18" fullPath="C:\academia\Apollo 4.1\Apollo4NFe\server\Projeto_NFe.Domain\Features\Products\Product.cs" />
+        <File uid="19" fullPath="C:\academia\Apollo 4.1\Apollo4NFe\server\Projeto_NFe.Domain\Features\ItemInvoices\ItemInvoice.cs" />
+        <File uid="20" fullPath="C:\academia\Apollo 4.1\Apollo4NFe\server\Projeto_NFe.Domain\Features\Invoices\InvoiceInProcess.cs" />
+        <File uid="21" fullPath="C:\academia\Apollo 4.1\Apollo4NFe\server\Projeto_NFe.Domain\Features\Emitters\Emitter.cs" />
+        <File uid="22" fullPath="C:\academia\Apollo 4.1\Apollo4NFe\server\Projeto_NFe.Domain\Features\Conveyors\Conveyor.cs" />
+        <File uid="23" fullPath="C:\academia\Apollo 4.1\Apollo4NFe\server\Projeto_NFe.Domain\Features\Addresses\Address.cs" />
+        <File uid="24" fullPath="C:\academia\Apollo 4.1\Apollo4NFe\server\Projeto_NFe.Domain\Exceptions\BusinessException.cs" />
+        <File uid="25" fullPath="C:\academia\Apollo 4.1\Apollo4NFe\server\Projeto_NFe.Domain\Exceptions\IdentifierUndefinedException.cs" />
+        <File uid="26" fullPath="C:\academia\Apollo 4.1\Apollo4NFe\server\Projeto_NFe.Domain\Exceptions\InvalidPathException.cs" />
+        <File uid="27" fullPath="C:\academia\Apollo 4.1\Apollo4NFe\server\Projeto_NFe.Domain\Exceptions\UnsupportedOperationException.cs" />
+      </Files>
+      <Classes>
+        <Class>
+          <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="0" />
+          <FullName>Projeto_NFe.Domain.Features.Receivers.Receiver</FullName>
+          <Methods>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663304</MetadataToken>
+              <Name>System.Int64 Projeto_NFe.Domain.Features.Receivers.Receiver::get_Id()</Name>
+              <FileRef uid="17" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663305</MetadataToken>
+              <Name>System.Void Projeto_NFe.Domain.Features.Receivers.Receiver::set_Id(System.Int64)</Name>
+              <FileRef uid="17" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663306</MetadataToken>
+              <Name>Projeto_NFe.Domain.Enums.PersonType Projeto_NFe.Domain.Features.Receivers.Receiver::get_Type()</Name>
+              <FileRef uid="17" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663307</MetadataToken>
+              <Name>System.Void Projeto_NFe.Domain.Features.Receivers.Receiver::set_Type(Projeto_NFe.Domain.Enums.PersonType)</Name>
+              <FileRef uid="17" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663308</MetadataToken>
+              <Name>System.String Projeto_NFe.Domain.Features.Receivers.Receiver::get_NameCompanyName()</Name>
+              <FileRef uid="17" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663309</MetadataToken>
+              <Name>System.Void Projeto_NFe.Domain.Features.Receivers.Receiver::set_NameCompanyName(System.String)</Name>
+              <FileRef uid="17" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663310</MetadataToken>
+              <Name>System.String Projeto_NFe.Domain.Features.Receivers.Receiver::get_CpfCnpj()</Name>
+              <FileRef uid="17" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663311</MetadataToken>
+              <Name>System.Void Projeto_NFe.Domain.Features.Receivers.Receiver::set_CpfCnpj(System.String)</Name>
+              <FileRef uid="17" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663312</MetadataToken>
+              <Name>System.String Projeto_NFe.Domain.Features.Receivers.Receiver::get_StateRegistration()</Name>
+              <FileRef uid="17" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663313</MetadataToken>
+              <Name>System.Void Projeto_NFe.Domain.Features.Receivers.Receiver::set_StateRegistration(System.String)</Name>
+              <FileRef uid="17" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663314</MetadataToken>
+              <Name>Projeto_NFe.Domain.Features.Addresses.Address Projeto_NFe.Domain.Features.Receivers.Receiver::get_Address()</Name>
+              <FileRef uid="17" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663315</MetadataToken>
+              <Name>System.Void Projeto_NFe.Domain.Features.Receivers.Receiver::set_Address(Projeto_NFe.Domain.Features.Addresses.Address)</Name>
+              <FileRef uid="17" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="0" />
+              <MetadataToken>100663316</MetadataToken>
+              <Name>System.Void Projeto_NFe.Domain.Features.Receivers.Receiver::.ctor()</Name>
+              <SequencePoints />
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="111" ordinal="0" offset="0" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="3" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="3" />
+          <FullName>Projeto_NFe.Domain.Features.Products.Product</FullName>
+          <Methods>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663324</MetadataToken>
+              <Name>System.Int64 Projeto_NFe.Domain.Features.Products.Product::get_Id()</Name>
+              <FileRef uid="18" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663325</MetadataToken>
+              <Name>System.Void Projeto_NFe.Domain.Features.Products.Product::set_Id(System.Int64)</Name>
+              <FileRef uid="18" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663326</MetadataToken>
+              <Name>System.String Projeto_NFe.Domain.Features.Products.Product::get_Code()</Name>
+              <FileRef uid="18" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663327</MetadataToken>
+              <Name>System.Void Projeto_NFe.Domain.Features.Products.Product::set_Code(System.String)</Name>
+              <FileRef uid="18" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663328</MetadataToken>
+              <Name>System.String Projeto_NFe.Domain.Features.Products.Product::get_Description()</Name>
+              <FileRef uid="18" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663329</MetadataToken>
+              <Name>System.Void Projeto_NFe.Domain.Features.Products.Product::set_Description(System.String)</Name>
+              <FileRef uid="18" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663330</MetadataToken>
+              <Name>System.Double Projeto_NFe.Domain.Features.Products.Product::get_UnitaryValue()</Name>
+              <FileRef uid="18" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663331</MetadataToken>
+              <Name>System.Void Projeto_NFe.Domain.Features.Products.Product::set_UnitaryValue(System.Double)</Name>
+              <FileRef uid="18" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663332</MetadataToken>
+              <Name>System.Double Projeto_NFe.Domain.Features.Products.Product::get_AliquotICMS()</Name>
+              <FileRef uid="18" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="112" ordinal="0" offset="0" sl="18" sc="44" el="18" ec="48" bec="0" bev="0" fileid="18" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="112" ordinal="0" offset="0" sl="18" sc="44" el="18" ec="48" bec="0" bev="0" fileid="18" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663333</MetadataToken>
+              <Name>System.Double Projeto_NFe.Domain.Features.Products.Product::get_AliquotIPI()</Name>
+              <FileRef uid="18" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="113" ordinal="0" offset="0" sl="19" sc="43" el="19" ec="47" bec="0" bev="0" fileid="18" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="113" ordinal="0" offset="0" sl="19" sc="43" el="19" ec="47" bec="0" bev="0" fileid="18" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663334</MetadataToken>
+              <Name>System.Void Projeto_NFe.Domain.Features.Products.Product::.ctor()</Name>
+              <FileRef uid="18" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="114" ordinal="0" offset="0" sl="12" sc="9" el="12" ec="48" bec="0" bev="0" fileid="18" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="114" ordinal="0" offset="0" sl="12" sc="9" el="12" ec="48" bec="0" bev="0" fileid="18" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="9" visitedSequencePoints="0" numBranchPoints="3" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="3" />
+          <FullName>Projeto_NFe.Domain.Features.ItemInvoices.ItemInvoice</FullName>
+          <Methods>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663336</MetadataToken>
+              <Name>System.Int64 Projeto_NFe.Domain.Features.ItemInvoices.ItemInvoice::get_Id()</Name>
+              <FileRef uid="19" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663337</MetadataToken>
+              <Name>System.Void Projeto_NFe.Domain.Features.ItemInvoices.ItemInvoice::set_Id(System.Int64)</Name>
+              <FileRef uid="19" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663338</MetadataToken>
+              <Name>System.Int32 Projeto_NFe.Domain.Features.ItemInvoices.ItemInvoice::get_Quantity()</Name>
+              <FileRef uid="19" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663339</MetadataToken>
+              <Name>System.Void Projeto_NFe.Domain.Features.ItemInvoices.ItemInvoice::set_Quantity(System.Int32)</Name>
+              <FileRef uid="19" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663340</MetadataToken>
+              <Name>Projeto_NFe.Domain.Features.Invoices.InvoiceInProcess Projeto_NFe.Domain.Features.ItemInvoices.ItemInvoice::get_InvoiceProcess()</Name>
+              <FileRef uid="19" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663341</MetadataToken>
+              <Name>System.Void Projeto_NFe.Domain.Features.ItemInvoices.ItemInvoice::set_InvoiceProcess(Projeto_NFe.Domain.Features.Invoices.InvoiceInProcess)</Name>
+              <FileRef uid="19" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663342</MetadataToken>
+              <Name>System.Int64 Projeto_NFe.Domain.Features.ItemInvoices.ItemInvoice::get_InvoiceInProcessId()</Name>
+              <FileRef uid="19" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663343</MetadataToken>
+              <Name>System.Void Projeto_NFe.Domain.Features.ItemInvoices.ItemInvoice::set_InvoiceInProcessId(System.Int64)</Name>
+              <FileRef uid="19" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663344</MetadataToken>
+              <Name>Projeto_NFe.Domain.Features.Products.Product Projeto_NFe.Domain.Features.ItemInvoices.ItemInvoice::get_Product()</Name>
+              <FileRef uid="19" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663345</MetadataToken>
+              <Name>System.Void Projeto_NFe.Domain.Features.ItemInvoices.ItemInvoice::set_Product(Projeto_NFe.Domain.Features.Products.Product)</Name>
+              <FileRef uid="19" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663346</MetadataToken>
+              <Name>System.Int64 Projeto_NFe.Domain.Features.ItemInvoices.ItemInvoice::get_ProductId()</Name>
+              <FileRef uid="19" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663347</MetadataToken>
+              <Name>System.Void Projeto_NFe.Domain.Features.ItemInvoices.ItemInvoice::set_ProductId(System.Int64)</Name>
+              <FileRef uid="19" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663348</MetadataToken>
+              <Name>System.Double Projeto_NFe.Domain.Features.ItemInvoices.ItemInvoice::get_ICMSValue()</Name>
+              <FileRef uid="19" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="115" ordinal="0" offset="0" sl="22" sc="13" el="22" ec="14" bec="0" bev="0" fileid="19" />
+                <SequencePoint vc="0" uspid="116" ordinal="1" offset="1" sl="23" sc="17" el="23" ec="57" bec="0" bev="0" fileid="19" />
+                <SequencePoint vc="0" uspid="117" ordinal="2" offset="22" sl="24" sc="13" el="24" ec="14" bec="0" bev="0" fileid="19" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="115" ordinal="0" offset="0" sl="22" sc="13" el="22" ec="14" bec="0" bev="0" fileid="19" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663349</MetadataToken>
+              <Name>System.Double Projeto_NFe.Domain.Features.ItemInvoices.ItemInvoice::get_IPIValue()</Name>
+              <FileRef uid="19" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="118" ordinal="0" offset="0" sl="29" sc="13" el="29" ec="14" bec="0" bev="0" fileid="19" />
+                <SequencePoint vc="0" uspid="119" ordinal="1" offset="1" sl="30" sc="16" el="30" ec="54" bec="0" bev="0" fileid="19" />
+                <SequencePoint vc="0" uspid="120" ordinal="2" offset="22" sl="31" sc="13" el="31" ec="14" bec="0" bev="0" fileid="19" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="118" ordinal="0" offset="0" sl="29" sc="13" el="29" ec="14" bec="0" bev="0" fileid="19" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663350</MetadataToken>
+              <Name>System.Double Projeto_NFe.Domain.Features.ItemInvoices.ItemInvoice::get_TotalValue()</Name>
+              <FileRef uid="19" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="121" ordinal="0" offset="0" sl="36" sc="13" el="36" ec="14" bec="0" bev="0" fileid="19" />
+                <SequencePoint vc="0" uspid="122" ordinal="1" offset="1" sl="37" sc="17" el="37" ec="56" bec="0" bev="0" fileid="19" />
+                <SequencePoint vc="0" uspid="123" ordinal="2" offset="23" sl="38" sc="13" el="38" ec="14" bec="0" bev="0" fileid="19" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="121" ordinal="0" offset="0" sl="36" sc="13" el="36" ec="14" bec="0" bev="0" fileid="19" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="0" />
+              <MetadataToken>100663351</MetadataToken>
+              <Name>System.Void Projeto_NFe.Domain.Features.ItemInvoices.ItemInvoice::.ctor()</Name>
+              <SequencePoints />
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="124" ordinal="0" offset="0" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="0" />
+          <FullName>Projeto_NFe.Domain.Features.Invoices.InvoiceInProcess</FullName>
+          <Methods>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663358</MetadataToken>
+              <Name>System.Int64 Projeto_NFe.Domain.Features.Invoices.InvoiceInProcess::get_Id()</Name>
+              <FileRef uid="20" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663359</MetadataToken>
+              <Name>System.Void Projeto_NFe.Domain.Features.Invoices.InvoiceInProcess::set_Id(System.Int64)</Name>
+              <FileRef uid="20" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663360</MetadataToken>
+              <Name>System.DateTime Projeto_NFe.Domain.Features.Invoices.InvoiceInProcess::get_EntryDate()</Name>
+              <FileRef uid="20" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663361</MetadataToken>
+              <Name>System.Void Projeto_NFe.Domain.Features.Invoices.InvoiceInProcess::set_EntryDate(System.DateTime)</Name>
+              <FileRef uid="20" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663362</MetadataToken>
+              <Name>System.String Projeto_NFe.Domain.Features.Invoices.InvoiceInProcess::get_NatureOperation()</Name>
+              <FileRef uid="20" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663363</MetadataToken>
+              <Name>System.Void Projeto_NFe.Domain.Features.Invoices.InvoiceInProcess::set_NatureOperation(System.String)</Name>
+              <FileRef uid="20" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663364</MetadataToken>
+              <Name>System.Double Projeto_NFe.Domain.Features.Invoices.InvoiceInProcess::get_ValueFreight()</Name>
+              <FileRef uid="20" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663365</MetadataToken>
+              <Name>System.Void Projeto_NFe.Domain.Features.Invoices.InvoiceInProcess::set_ValueFreight(System.Double)</Name>
+              <FileRef uid="20" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663366</MetadataToken>
+              <Name>Projeto_NFe.Domain.Features.Conveyors.Conveyor Projeto_NFe.Domain.Features.Invoices.InvoiceInProcess::get_Conveyor()</Name>
+              <FileRef uid="20" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663367</MetadataToken>
+              <Name>System.Void Projeto_NFe.Domain.Features.Invoices.InvoiceInProcess::set_Conveyor(Projeto_NFe.Domain.Features.Conveyors.Conveyor)</Name>
+              <FileRef uid="20" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663368</MetadataToken>
+              <Name>Projeto_NFe.Domain.Features.Emitters.Emitter Projeto_NFe.Domain.Features.Invoices.InvoiceInProcess::get_Emitter()</Name>
+              <FileRef uid="20" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663369</MetadataToken>
+              <Name>System.Void Projeto_NFe.Domain.Features.Invoices.InvoiceInProcess::set_Emitter(Projeto_NFe.Domain.Features.Emitters.Emitter)</Name>
+              <FileRef uid="20" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663370</MetadataToken>
+              <Name>Projeto_NFe.Domain.Features.Receivers.Receiver Projeto_NFe.Domain.Features.Invoices.InvoiceInProcess::get_Receiver()</Name>
+              <FileRef uid="20" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663371</MetadataToken>
+              <Name>System.Void Projeto_NFe.Domain.Features.Invoices.InvoiceInProcess::set_Receiver(Projeto_NFe.Domain.Features.Receivers.Receiver)</Name>
+              <FileRef uid="20" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663372</MetadataToken>
+              <Name>System.Collections.Generic.List`1&lt;Projeto_NFe.Domain.Features.ItemInvoices.ItemInvoice&gt; Projeto_NFe.Domain.Features.Invoices.InvoiceInProcess::get_Items()</Name>
+              <FileRef uid="20" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663373</MetadataToken>
+              <Name>System.Void Projeto_NFe.Domain.Features.Invoices.InvoiceInProcess::set_Items(System.Collections.Generic.List`1&lt;Projeto_NFe.Domain.Features.ItemInvoices.ItemInvoice&gt;)</Name>
+              <FileRef uid="20" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="0" />
+              <MetadataToken>100663374</MetadataToken>
+              <Name>System.Void Projeto_NFe.Domain.Features.Invoices.InvoiceInProcess::.ctor()</Name>
+              <SequencePoints />
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="125" ordinal="0" offset="0" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="0" />
+          <FullName>Projeto_NFe.Domain.Features.Emitters.Emitter</FullName>
+          <Methods>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663375</MetadataToken>
+              <Name>System.Int64 Projeto_NFe.Domain.Features.Emitters.Emitter::get_Id()</Name>
+              <FileRef uid="21" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663376</MetadataToken>
+              <Name>System.Void Projeto_NFe.Domain.Features.Emitters.Emitter::set_Id(System.Int64)</Name>
+              <FileRef uid="21" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663377</MetadataToken>
+              <Name>System.String Projeto_NFe.Domain.Features.Emitters.Emitter::get_FantasyName()</Name>
+              <FileRef uid="21" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663378</MetadataToken>
+              <Name>System.Void Projeto_NFe.Domain.Features.Emitters.Emitter::set_FantasyName(System.String)</Name>
+              <FileRef uid="21" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663379</MetadataToken>
+              <Name>System.String Projeto_NFe.Domain.Features.Emitters.Emitter::get_CompanyName()</Name>
+              <FileRef uid="21" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663380</MetadataToken>
+              <Name>System.Void Projeto_NFe.Domain.Features.Emitters.Emitter::set_CompanyName(System.String)</Name>
+              <FileRef uid="21" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663381</MetadataToken>
+              <Name>System.String Projeto_NFe.Domain.Features.Emitters.Emitter::get_Cnpj()</Name>
+              <FileRef uid="21" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663382</MetadataToken>
+              <Name>System.Void Projeto_NFe.Domain.Features.Emitters.Emitter::set_Cnpj(System.String)</Name>
+              <FileRef uid="21" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663383</MetadataToken>
+              <Name>System.String Projeto_NFe.Domain.Features.Emitters.Emitter::get_StateRegistration()</Name>
+              <FileRef uid="21" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663384</MetadataToken>
+              <Name>System.Void Projeto_NFe.Domain.Features.Emitters.Emitter::set_StateRegistration(System.String)</Name>
+              <FileRef uid="21" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663385</MetadataToken>
+              <Name>System.String Projeto_NFe.Domain.Features.Emitters.Emitter::get_MunicipalRegistration()</Name>
+              <FileRef uid="21" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663386</MetadataToken>
+              <Name>System.Void Projeto_NFe.Domain.Features.Emitters.Emitter::set_MunicipalRegistration(System.String)</Name>
+              <FileRef uid="21" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663387</MetadataToken>
+              <Name>Projeto_NFe.Domain.Features.Addresses.Address Projeto_NFe.Domain.Features.Emitters.Emitter::get_Address()</Name>
+              <FileRef uid="21" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663388</MetadataToken>
+              <Name>System.Void Projeto_NFe.Domain.Features.Emitters.Emitter::set_Address(Projeto_NFe.Domain.Features.Addresses.Address)</Name>
+              <FileRef uid="21" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="0" />
+              <MetadataToken>100663389</MetadataToken>
+              <Name>System.Void Projeto_NFe.Domain.Features.Emitters.Emitter::.ctor()</Name>
+              <SequencePoints />
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="126" ordinal="0" offset="0" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="0" />
+          <FullName>Projeto_NFe.Domain.Features.Conveyors.Conveyor</FullName>
+          <Methods>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663404</MetadataToken>
+              <Name>System.Int64 Projeto_NFe.Domain.Features.Conveyors.Conveyor::get_Id()</Name>
+              <FileRef uid="22" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663405</MetadataToken>
+              <Name>System.Void Projeto_NFe.Domain.Features.Conveyors.Conveyor::set_Id(System.Int64)</Name>
+              <FileRef uid="22" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663406</MetadataToken>
+              <Name>Projeto_NFe.Domain.Enums.PersonType Projeto_NFe.Domain.Features.Conveyors.Conveyor::get_Type()</Name>
+              <FileRef uid="22" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663407</MetadataToken>
+              <Name>System.Void Projeto_NFe.Domain.Features.Conveyors.Conveyor::set_Type(Projeto_NFe.Domain.Enums.PersonType)</Name>
+              <FileRef uid="22" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663408</MetadataToken>
+              <Name>System.String Projeto_NFe.Domain.Features.Conveyors.Conveyor::get_NameCompanyName()</Name>
+              <FileRef uid="22" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663409</MetadataToken>
+              <Name>System.Void Projeto_NFe.Domain.Features.Conveyors.Conveyor::set_NameCompanyName(System.String)</Name>
+              <FileRef uid="22" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663410</MetadataToken>
+              <Name>Projeto_NFe.Domain.Enums.FreightResponsibility Projeto_NFe.Domain.Features.Conveyors.Conveyor::get_FreightResponsibility()</Name>
+              <FileRef uid="22" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663411</MetadataToken>
+              <Name>System.Void Projeto_NFe.Domain.Features.Conveyors.Conveyor::set_FreightResponsibility(Projeto_NFe.Domain.Enums.FreightResponsibility)</Name>
+              <FileRef uid="22" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663412</MetadataToken>
+              <Name>System.String Projeto_NFe.Domain.Features.Conveyors.Conveyor::get_CpfCnpj()</Name>
+              <FileRef uid="22" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663413</MetadataToken>
+              <Name>System.Void Projeto_NFe.Domain.Features.Conveyors.Conveyor::set_CpfCnpj(System.String)</Name>
+              <FileRef uid="22" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663414</MetadataToken>
+              <Name>Projeto_NFe.Domain.Features.Addresses.Address Projeto_NFe.Domain.Features.Conveyors.Conveyor::get_Address()</Name>
+              <FileRef uid="22" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663415</MetadataToken>
+              <Name>System.Void Projeto_NFe.Domain.Features.Conveyors.Conveyor::set_Address(Projeto_NFe.Domain.Features.Addresses.Address)</Name>
+              <FileRef uid="22" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="0" />
+              <MetadataToken>100663416</MetadataToken>
+              <Name>System.Void Projeto_NFe.Domain.Features.Conveyors.Conveyor::.ctor()</Name>
+              <SequencePoints />
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="127" ordinal="0" offset="0" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="1" />
+          <FullName>Projeto_NFe.Domain.Features.Addresses.Address</FullName>
+          <Methods>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663417</MetadataToken>
+              <Name>System.String Projeto_NFe.Domain.Features.Addresses.Address::get_Street()</Name>
+              <FileRef uid="23" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663418</MetadataToken>
+              <Name>System.Void Projeto_NFe.Domain.Features.Addresses.Address::set_Street(System.String)</Name>
+              <FileRef uid="23" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663419</MetadataToken>
+              <Name>System.Int32 Projeto_NFe.Domain.Features.Addresses.Address::get_Number()</Name>
+              <FileRef uid="23" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663420</MetadataToken>
+              <Name>System.Void Projeto_NFe.Domain.Features.Addresses.Address::set_Number(System.Int32)</Name>
+              <FileRef uid="23" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663421</MetadataToken>
+              <Name>System.String Projeto_NFe.Domain.Features.Addresses.Address::get_Neighbourhood()</Name>
+              <FileRef uid="23" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663422</MetadataToken>
+              <Name>System.Void Projeto_NFe.Domain.Features.Addresses.Address::set_Neighbourhood(System.String)</Name>
+              <FileRef uid="23" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663423</MetadataToken>
+              <Name>System.String Projeto_NFe.Domain.Features.Addresses.Address::get_City()</Name>
+              <FileRef uid="23" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663424</MetadataToken>
+              <Name>System.Void Projeto_NFe.Domain.Features.Addresses.Address::set_City(System.String)</Name>
+              <FileRef uid="23" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663425</MetadataToken>
+              <Name>Projeto_NFe.Domain.Enums.State Projeto_NFe.Domain.Features.Addresses.Address::get_State()</Name>
+              <FileRef uid="23" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="true">
+              <MetadataToken>100663426</MetadataToken>
+              <Name>System.Void Projeto_NFe.Domain.Features.Addresses.Address::set_State(Projeto_NFe.Domain.Enums.State)</Name>
+              <FileRef uid="23" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663427</MetadataToken>
+              <Name>Projeto_NFe.Domain.Enums.Country Projeto_NFe.Domain.Features.Addresses.Address::get_Country()</Name>
+              <FileRef uid="23" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="128" ordinal="0" offset="0" sl="15" sc="41" el="15" ec="55" bec="0" bev="0" fileid="23" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="128" ordinal="0" offset="0" sl="15" sc="41" el="15" ec="55" bec="0" bev="0" fileid="23" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="0" />
+              <MetadataToken>100663428</MetadataToken>
+              <Name>System.Void Projeto_NFe.Domain.Features.Addresses.Address::.ctor()</Name>
+              <SequencePoints />
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="129" ordinal="0" offset="0" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="4" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="1" />
+          <FullName>Projeto_NFe.Domain.Exceptions.BusinessException</FullName>
+          <Methods>
+            <Method skippedDueTo="AutoImplementedProperty" visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <MetadataToken>100663430</MetadataToken>
+              <Name>Projeto_NFe.Domain.Exceptions.ErrorCodes Projeto_NFe.Domain.Exceptions.BusinessException::get_ErrorCode()</Name>
+              <FileRef uid="24" />
+              <SequencePoints />
+              <BranchPoints />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="4" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663429</MetadataToken>
+              <Name>System.Void Projeto_NFe.Domain.Exceptions.BusinessException::.ctor(Projeto_NFe.Domain.Exceptions.ErrorCodes,System.String)</Name>
+              <FileRef uid="24" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="130" ordinal="0" offset="0" sl="11" sc="68" el="11" ec="83" bec="0" bev="0" fileid="24" />
+                <SequencePoint vc="0" uspid="131" ordinal="1" offset="8" sl="12" sc="3" el="12" ec="4" bec="0" bev="0" fileid="24" />
+                <SequencePoint vc="0" uspid="132" ordinal="2" offset="9" sl="13" sc="4" el="13" ec="26" bec="0" bev="0" fileid="24" />
+                <SequencePoint vc="0" uspid="133" ordinal="3" offset="16" sl="14" sc="3" el="14" ec="4" bec="0" bev="0" fileid="24" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="130" ordinal="0" offset="0" sl="11" sc="68" el="11" ec="83" bec="0" bev="0" fileid="24" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="1" />
+          <FullName>Projeto_NFe.Domain.Exceptions.IdentifierUndefinedException</FullName>
+          <Methods>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663431</MetadataToken>
+              <Name>System.Void Projeto_NFe.Domain.Exceptions.IdentifierUndefinedException::.ctor()</Name>
+              <FileRef uid="25" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="134" ordinal="0" offset="0" sl="11" sc="49" el="11" ec="104" bec="0" bev="0" fileid="25" />
+                <SequencePoint vc="0" uspid="135" ordinal="1" offset="17" sl="12" sc="9" el="12" ec="10" bec="0" bev="0" fileid="25" />
+                <SequencePoint vc="0" uspid="136" ordinal="2" offset="18" sl="14" sc="9" el="14" ec="10" bec="0" bev="0" fileid="25" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="134" ordinal="0" offset="0" sl="11" sc="49" el="11" ec="104" bec="0" bev="0" fileid="25" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="1" />
+          <FullName>Projeto_NFe.Domain.Exceptions.InvalidPathException</FullName>
+          <Methods>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663432</MetadataToken>
+              <Name>System.Void Projeto_NFe.Domain.Exceptions.InvalidPathException::.ctor()</Name>
+              <FileRef uid="26" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="137" ordinal="0" offset="0" sl="11" sc="41" el="11" ec="77" bec="0" bev="0" fileid="26" />
+                <SequencePoint vc="0" uspid="138" ordinal="1" offset="12" sl="12" sc="9" el="12" ec="10" bec="0" bev="0" fileid="26" />
+                <SequencePoint vc="0" uspid="139" ordinal="2" offset="13" sl="14" sc="9" el="14" ec="10" bec="0" bev="0" fileid="26" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="137" ordinal="0" offset="0" sl="11" sc="41" el="11" ec="77" bec="0" bev="0" fileid="26" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="1" />
+          <FullName>Projeto_NFe.Domain.Exceptions.UnsupportedOperationException</FullName>
+          <Methods>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663433</MetadataToken>
+              <Name>System.Void Projeto_NFe.Domain.Exceptions.UnsupportedOperationException::.ctor()</Name>
+              <FileRef uid="27" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="140" ordinal="0" offset="0" sl="11" sc="50" el="11" ec="80" bec="0" bev="0" fileid="27" />
+                <SequencePoint vc="0" uspid="141" ordinal="1" offset="12" sl="12" sc="9" el="12" ec="10" bec="0" bev="0" fileid="27" />
+                <SequencePoint vc="0" uspid="142" ordinal="2" offset="13" sl="14" sc="9" el="14" ec="10" bec="0" bev="0" fileid="27" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="140" ordinal="0" offset="0" sl="11" sc="50" el="11" ec="80" bec="0" bev="0" fileid="27" />
+            </Method>
+          </Methods>
+        </Class>
+      </Classes>
+    </Module>
+    <Module hash="1D-FD-7C-0E-C4-B5-15-DE-36-7A-4B-10-DF-05-26-E8-9B-20-EB-5C">
+      <Summary numSequencePoints="117" visitedSequencePoints="9" numBranchPoints="39" visitedBranchPoints="3" sequenceCoverage="7.69" branchCoverage="7.69" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="1" visitedClasses="1" numClasses="1" visitedMethods="3" numMethods="39" />
+      <ModulePath>C:\academia\Apollo 4.1\Apollo4NFe\server\Projeto_NFe.Infra.Data.Tests\bin\Debug\Projeto_NFe.Common.Tests.dll</ModulePath>
+      <ModuleTime>2018-10-03T17:44:00.6796635Z</ModuleTime>
+      <ModuleName>Projeto_NFe.Common.Tests</ModuleName>
+      <Files>
+        <File uid="39" fullPath="C:\academia\Apollo 4.1\Apollo4NFe\server\Projeto_NFe.Common.Tests\Features\AccessKeys\ObjectMother.cs" />
+        <File uid="40" fullPath="C:\academia\Apollo 4.1\Apollo4NFe\server\Projeto_NFe.Common.Tests\Features\Addresses\ObjectMother.cs" />
+        <File uid="41" fullPath="C:\academia\Apollo 4.1\Apollo4NFe\server\Projeto_NFe.Common.Tests\Features\Emitters\ObjectMother.cs" />
+        <File uid="42" fullPath="C:\academia\Apollo 4.1\Apollo4NFe\server\Projeto_NFe.Common.Tests\Features\CNPJ\ObjectMother.cs" />
+        <File uid="43" fullPath="C:\academia\Apollo 4.1\Apollo4NFe\server\Projeto_NFe.Common.Tests\Features\CPF\ObjectMother.cs" />
+        <File uid="44" fullPath="C:\academia\Apollo 4.1\Apollo4NFe\server\Projeto_NFe.Common.Tests\Features\Conveyors\ObjectMother.cs" />
+        <File uid="45" fullPath="C:\academia\Apollo 4.1\Apollo4NFe\server\Projeto_NFe.Common.Tests\Features\ItemInvoices\ObjectMother.cs" />
+        <File uid="46" fullPath="C:\academia\Apollo 4.1\Apollo4NFe\server\Projeto_NFe.Common.Tests\Features\Product\ObjectMother.cs" />
+        <File uid="47" fullPath="C:\academia\Apollo 4.1\Apollo4NFe\server\Projeto_NFe.Common.Tests\Features\Receivers\ObjectMother.cs" />
+      </Files>
+      <Classes>
+        <Class>
+          <Summary numSequencePoints="117" visitedSequencePoints="9" numBranchPoints="39" visitedBranchPoints="3" sequenceCoverage="7.69" branchCoverage="7.69" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="1" visitedClasses="1" numClasses="1" visitedMethods="3" numMethods="39" />
+          <FullName>Projeto_NFe.Common.Tests.Base.ObjectMother</FullName>
+          <Methods>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663297</MetadataToken>
+              <Name>Projeto_NFe.Infra.AccessKeys.AccessKey Projeto_NFe.Common.Tests.Base.ObjectMother::GetAccessKey()</Name>
+              <FileRef uid="39" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="143" ordinal="0" offset="0" sl="13" sc="9" el="13" ec="10" bec="0" bev="0" fileid="39" />
+                <SequencePoint vc="0" uspid="144" ordinal="1" offset="1" sl="14" sc="13" el="17" ec="15" bec="0" bev="0" fileid="39" />
+                <SequencePoint vc="0" uspid="145" ordinal="2" offset="21" sl="18" sc="9" el="18" ec="10" bec="0" bev="0" fileid="39" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="143" ordinal="0" offset="0" sl="13" sc="9" el="13" ec="10" bec="0" bev="0" fileid="39" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663298</MetadataToken>
+              <Name>Projeto_NFe.Infra.AccessKeys.AccessKey Projeto_NFe.Common.Tests.Base.ObjectMother::GetAccessKeyNumberLessThanFortyFourCharacters()</Name>
+              <FileRef uid="39" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="146" ordinal="0" offset="0" sl="21" sc="9" el="21" ec="10" bec="0" bev="0" fileid="39" />
+                <SequencePoint vc="0" uspid="147" ordinal="1" offset="1" sl="22" sc="13" el="25" ec="15" bec="0" bev="0" fileid="39" />
+                <SequencePoint vc="0" uspid="148" ordinal="2" offset="21" sl="26" sc="9" el="26" ec="10" bec="0" bev="0" fileid="39" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="146" ordinal="0" offset="0" sl="21" sc="9" el="21" ec="10" bec="0" bev="0" fileid="39" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" crapScore="1" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663299</MetadataToken>
+              <Name>Projeto_NFe.Domain.Features.Addresses.Address Projeto_NFe.Common.Tests.Base.ObjectMother::GetAddress()</Name>
+              <FileRef uid="40" />
+              <SequencePoints>
+                <SequencePoint vc="3" uspid="149" ordinal="0" offset="0" sl="14" sc="9" el="14" ec="10" bec="0" bev="0" fileid="40" />
+                <SequencePoint vc="3" uspid="150" ordinal="1" offset="1" sl="15" sc="13" el="22" ec="15" bec="0" bev="0" fileid="40" />
+                <SequencePoint vc="3" uspid="151" ordinal="2" offset="63" sl="23" sc="9" el="23" ec="10" bec="0" bev="0" fileid="40" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="3" uspid="149" ordinal="0" offset="0" sl="14" sc="9" el="14" ec="10" bec="0" bev="0" fileid="40" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663300</MetadataToken>
+              <Name>Projeto_NFe.Domain.Features.Addresses.Address Projeto_NFe.Common.Tests.Base.ObjectMother::GetAddressInvalidStreet()</Name>
+              <FileRef uid="40" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="152" ordinal="0" offset="0" sl="26" sc="9" el="26" ec="10" bec="0" bev="0" fileid="40" />
+                <SequencePoint vc="0" uspid="153" ordinal="1" offset="1" sl="27" sc="13" el="34" ec="15" bec="0" bev="0" fileid="40" />
+                <SequencePoint vc="0" uspid="154" ordinal="2" offset="63" sl="35" sc="9" el="35" ec="10" bec="0" bev="0" fileid="40" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="152" ordinal="0" offset="0" sl="26" sc="9" el="26" ec="10" bec="0" bev="0" fileid="40" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663301</MetadataToken>
+              <Name>Projeto_NFe.Domain.Features.Addresses.Address Projeto_NFe.Common.Tests.Base.ObjectMother::GetAddressInvalidNeighbourhood()</Name>
+              <FileRef uid="40" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="155" ordinal="0" offset="0" sl="38" sc="9" el="38" ec="10" bec="0" bev="0" fileid="40" />
+                <SequencePoint vc="0" uspid="156" ordinal="1" offset="1" sl="39" sc="13" el="46" ec="15" bec="0" bev="0" fileid="40" />
+                <SequencePoint vc="0" uspid="157" ordinal="2" offset="63" sl="47" sc="9" el="47" ec="10" bec="0" bev="0" fileid="40" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="155" ordinal="0" offset="0" sl="38" sc="9" el="38" ec="10" bec="0" bev="0" fileid="40" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663302</MetadataToken>
+              <Name>Projeto_NFe.Domain.Features.Addresses.Address Projeto_NFe.Common.Tests.Base.ObjectMother::GetAddressInvalidCity()</Name>
+              <FileRef uid="40" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="158" ordinal="0" offset="0" sl="50" sc="9" el="50" ec="10" bec="0" bev="0" fileid="40" />
+                <SequencePoint vc="0" uspid="159" ordinal="1" offset="1" sl="51" sc="13" el="58" ec="15" bec="0" bev="0" fileid="40" />
+                <SequencePoint vc="0" uspid="160" ordinal="2" offset="63" sl="59" sc="9" el="59" ec="10" bec="0" bev="0" fileid="40" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="158" ordinal="0" offset="0" sl="50" sc="9" el="50" ec="10" bec="0" bev="0" fileid="40" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663303</MetadataToken>
+              <Name>Projeto_NFe.Domain.Features.Addresses.Address Projeto_NFe.Common.Tests.Base.ObjectMother::GetAddressInvalidNumber()</Name>
+              <FileRef uid="40" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="161" ordinal="0" offset="0" sl="62" sc="9" el="62" ec="10" bec="0" bev="0" fileid="40" />
+                <SequencePoint vc="0" uspid="162" ordinal="1" offset="1" sl="63" sc="13" el="70" ec="15" bec="0" bev="0" fileid="40" />
+                <SequencePoint vc="0" uspid="163" ordinal="2" offset="62" sl="71" sc="9" el="71" ec="10" bec="0" bev="0" fileid="40" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="161" ordinal="0" offset="0" sl="62" sc="9" el="62" ec="10" bec="0" bev="0" fileid="40" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663304</MetadataToken>
+              <Name>Projeto_NFe.Domain.Features.Addresses.Address Projeto_NFe.Common.Tests.Base.ObjectMother::GetAddressInvalidState()</Name>
+              <FileRef uid="40" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="164" ordinal="0" offset="0" sl="74" sc="9" el="74" ec="10" bec="0" bev="0" fileid="40" />
+                <SequencePoint vc="0" uspid="165" ordinal="1" offset="1" sl="75" sc="13" el="82" ec="15" bec="0" bev="0" fileid="40" />
+                <SequencePoint vc="0" uspid="166" ordinal="2" offset="61" sl="83" sc="9" el="83" ec="10" bec="0" bev="0" fileid="40" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="164" ordinal="0" offset="0" sl="74" sc="9" el="74" ec="10" bec="0" bev="0" fileid="40" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663305</MetadataToken>
+              <Name>Projeto_NFe.Domain.Features.Emitters.Emitter Projeto_NFe.Common.Tests.Base.ObjectMother::GetEmitter(Projeto_NFe.Domain.Features.Addresses.Address)</Name>
+              <FileRef uid="41" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="167" ordinal="0" offset="0" sl="15" sc="3" el="15" ec="4" bec="0" bev="0" fileid="41" />
+                <SequencePoint vc="0" uspid="168" ordinal="1" offset="1" sl="16" sc="4" el="23" ec="6" bec="0" bev="0" fileid="41" />
+                <SequencePoint vc="0" uspid="169" ordinal="2" offset="77" sl="24" sc="3" el="24" ec="4" bec="0" bev="0" fileid="41" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="167" ordinal="0" offset="0" sl="15" sc="3" el="15" ec="4" bec="0" bev="0" fileid="41" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663306</MetadataToken>
+              <Name>Projeto_NFe.Infra.CNPJ.Cnpj Projeto_NFe.Common.Tests.Base.ObjectMother::GetCnpj()</Name>
+              <FileRef uid="42" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="170" ordinal="0" offset="0" sl="13" sc="9" el="13" ec="10" bec="0" bev="0" fileid="42" />
+                <SequencePoint vc="0" uspid="171" ordinal="1" offset="1" sl="14" sc="13" el="17" ec="15" bec="0" bev="0" fileid="42" />
+                <SequencePoint vc="0" uspid="172" ordinal="2" offset="21" sl="18" sc="9" el="18" ec="10" bec="0" bev="0" fileid="42" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="170" ordinal="0" offset="0" sl="13" sc="9" el="13" ec="10" bec="0" bev="0" fileid="42" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663307</MetadataToken>
+              <Name>Projeto_NFe.Infra.CNPJ.Cnpj Projeto_NFe.Common.Tests.Base.ObjectMother::GetCnpjWithValueEmpty()</Name>
+              <FileRef uid="42" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="173" ordinal="0" offset="0" sl="21" sc="9" el="21" ec="10" bec="0" bev="0" fileid="42" />
+                <SequencePoint vc="0" uspid="174" ordinal="1" offset="1" sl="22" sc="13" el="25" ec="15" bec="0" bev="0" fileid="42" />
+                <SequencePoint vc="0" uspid="175" ordinal="2" offset="21" sl="26" sc="9" el="26" ec="10" bec="0" bev="0" fileid="42" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="173" ordinal="0" offset="0" sl="21" sc="9" el="21" ec="10" bec="0" bev="0" fileid="42" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663308</MetadataToken>
+              <Name>Projeto_NFe.Infra.CNPJ.Cnpj Projeto_NFe.Common.Tests.Base.ObjectMother::GetCnpjInvalidValue()</Name>
+              <FileRef uid="42" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="176" ordinal="0" offset="0" sl="29" sc="9" el="29" ec="10" bec="0" bev="0" fileid="42" />
+                <SequencePoint vc="0" uspid="177" ordinal="1" offset="1" sl="30" sc="13" el="33" ec="15" bec="0" bev="0" fileid="42" />
+                <SequencePoint vc="0" uspid="178" ordinal="2" offset="21" sl="34" sc="9" el="34" ec="10" bec="0" bev="0" fileid="42" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="176" ordinal="0" offset="0" sl="29" sc="9" el="29" ec="10" bec="0" bev="0" fileid="42" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663309</MetadataToken>
+              <Name>Projeto_NFe.Infra.CNPJ.Cnpj Projeto_NFe.Common.Tests.Base.ObjectMother::GetCnpjEqualToZero()</Name>
+              <FileRef uid="42" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="179" ordinal="0" offset="0" sl="37" sc="9" el="37" ec="10" bec="0" bev="0" fileid="42" />
+                <SequencePoint vc="0" uspid="180" ordinal="1" offset="1" sl="38" sc="13" el="41" ec="15" bec="0" bev="0" fileid="42" />
+                <SequencePoint vc="0" uspid="181" ordinal="2" offset="21" sl="42" sc="9" el="42" ec="10" bec="0" bev="0" fileid="42" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="179" ordinal="0" offset="0" sl="37" sc="9" el="37" ec="10" bec="0" bev="0" fileid="42" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663310</MetadataToken>
+              <Name>Projeto_NFe.Infra.CNPJ.Cnpj Projeto_NFe.Common.Tests.Base.ObjectMother::GetCnpjLessThanFourTeen()</Name>
+              <FileRef uid="42" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="182" ordinal="0" offset="0" sl="45" sc="9" el="45" ec="10" bec="0" bev="0" fileid="42" />
+                <SequencePoint vc="0" uspid="183" ordinal="1" offset="1" sl="46" sc="13" el="49" ec="15" bec="0" bev="0" fileid="42" />
+                <SequencePoint vc="0" uspid="184" ordinal="2" offset="21" sl="50" sc="9" el="50" ec="10" bec="0" bev="0" fileid="42" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="182" ordinal="0" offset="0" sl="45" sc="9" el="45" ec="10" bec="0" bev="0" fileid="42" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663311</MetadataToken>
+              <Name>Projeto_NFe.Infra.CNPJ.Cnpj Projeto_NFe.Common.Tests.Base.ObjectMother::GetCnpjOverFlow()</Name>
+              <FileRef uid="42" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="185" ordinal="0" offset="0" sl="53" sc="9" el="53" ec="10" bec="0" bev="0" fileid="42" />
+                <SequencePoint vc="0" uspid="186" ordinal="1" offset="1" sl="54" sc="13" el="57" ec="15" bec="0" bev="0" fileid="42" />
+                <SequencePoint vc="0" uspid="187" ordinal="2" offset="21" sl="58" sc="9" el="58" ec="10" bec="0" bev="0" fileid="42" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="185" ordinal="0" offset="0" sl="53" sc="9" el="53" ec="10" bec="0" bev="0" fileid="42" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663312</MetadataToken>
+              <Name>Projeto_NFe.Infra.CNPJ.Cnpj Projeto_NFe.Common.Tests.Base.ObjectMother::GetCnpjIncorrectValue()</Name>
+              <FileRef uid="42" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="188" ordinal="0" offset="0" sl="62" sc="9" el="62" ec="10" bec="0" bev="0" fileid="42" />
+                <SequencePoint vc="0" uspid="189" ordinal="1" offset="1" sl="63" sc="13" el="66" ec="15" bec="0" bev="0" fileid="42" />
+                <SequencePoint vc="0" uspid="190" ordinal="2" offset="21" sl="67" sc="9" el="67" ec="10" bec="0" bev="0" fileid="42" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="188" ordinal="0" offset="0" sl="62" sc="9" el="62" ec="10" bec="0" bev="0" fileid="42" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663313</MetadataToken>
+              <Name>Projeto_NFe.Infra.CPF.Cpf Projeto_NFe.Common.Tests.Base.ObjectMother::GetCpf()</Name>
+              <FileRef uid="43" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="191" ordinal="0" offset="0" sl="13" sc="9" el="13" ec="10" bec="0" bev="0" fileid="43" />
+                <SequencePoint vc="0" uspid="192" ordinal="1" offset="1" sl="14" sc="13" el="17" ec="15" bec="0" bev="0" fileid="43" />
+                <SequencePoint vc="0" uspid="193" ordinal="2" offset="21" sl="18" sc="9" el="18" ec="10" bec="0" bev="0" fileid="43" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="191" ordinal="0" offset="0" sl="13" sc="9" el="13" ec="10" bec="0" bev="0" fileid="43" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663314</MetadataToken>
+              <Name>Projeto_NFe.Infra.CPF.Cpf Projeto_NFe.Common.Tests.Base.ObjectMother::GetCpfWithValueFormat()</Name>
+              <FileRef uid="43" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="194" ordinal="0" offset="0" sl="21" sc="9" el="21" ec="10" bec="0" bev="0" fileid="43" />
+                <SequencePoint vc="0" uspid="195" ordinal="1" offset="1" sl="22" sc="13" el="25" ec="15" bec="0" bev="0" fileid="43" />
+                <SequencePoint vc="0" uspid="196" ordinal="2" offset="21" sl="26" sc="9" el="26" ec="10" bec="0" bev="0" fileid="43" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="194" ordinal="0" offset="0" sl="21" sc="9" el="21" ec="10" bec="0" bev="0" fileid="43" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663315</MetadataToken>
+              <Name>Projeto_NFe.Infra.CPF.Cpf Projeto_NFe.Common.Tests.Base.ObjectMother::GetCpfWithValueEmpty()</Name>
+              <FileRef uid="43" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="197" ordinal="0" offset="0" sl="29" sc="9" el="29" ec="10" bec="0" bev="0" fileid="43" />
+                <SequencePoint vc="0" uspid="198" ordinal="1" offset="1" sl="30" sc="13" el="33" ec="15" bec="0" bev="0" fileid="43" />
+                <SequencePoint vc="0" uspid="199" ordinal="2" offset="21" sl="34" sc="9" el="34" ec="10" bec="0" bev="0" fileid="43" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="197" ordinal="0" offset="0" sl="29" sc="9" el="29" ec="10" bec="0" bev="0" fileid="43" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663316</MetadataToken>
+              <Name>Projeto_NFe.Infra.CPF.Cpf Projeto_NFe.Common.Tests.Base.ObjectMother::GetCpfInvalidValue()</Name>
+              <FileRef uid="43" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="200" ordinal="0" offset="0" sl="37" sc="9" el="37" ec="10" bec="0" bev="0" fileid="43" />
+                <SequencePoint vc="0" uspid="201" ordinal="1" offset="1" sl="38" sc="13" el="41" ec="15" bec="0" bev="0" fileid="43" />
+                <SequencePoint vc="0" uspid="202" ordinal="2" offset="21" sl="42" sc="9" el="42" ec="10" bec="0" bev="0" fileid="43" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="200" ordinal="0" offset="0" sl="37" sc="9" el="37" ec="10" bec="0" bev="0" fileid="43" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663317</MetadataToken>
+              <Name>Projeto_NFe.Infra.CPF.Cpf Projeto_NFe.Common.Tests.Base.ObjectMother::GetCpfEqualToZero()</Name>
+              <FileRef uid="43" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="203" ordinal="0" offset="0" sl="45" sc="9" el="45" ec="10" bec="0" bev="0" fileid="43" />
+                <SequencePoint vc="0" uspid="204" ordinal="1" offset="1" sl="46" sc="13" el="49" ec="15" bec="0" bev="0" fileid="43" />
+                <SequencePoint vc="0" uspid="205" ordinal="2" offset="21" sl="50" sc="9" el="50" ec="10" bec="0" bev="0" fileid="43" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="203" ordinal="0" offset="0" sl="45" sc="9" el="45" ec="10" bec="0" bev="0" fileid="43" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663318</MetadataToken>
+              <Name>Projeto_NFe.Infra.CPF.Cpf Projeto_NFe.Common.Tests.Base.ObjectMother::GetCpfLessThanEleven()</Name>
+              <FileRef uid="43" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="206" ordinal="0" offset="0" sl="53" sc="9" el="53" ec="10" bec="0" bev="0" fileid="43" />
+                <SequencePoint vc="0" uspid="207" ordinal="1" offset="1" sl="54" sc="13" el="57" ec="15" bec="0" bev="0" fileid="43" />
+                <SequencePoint vc="0" uspid="208" ordinal="2" offset="21" sl="58" sc="9" el="58" ec="10" bec="0" bev="0" fileid="43" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="206" ordinal="0" offset="0" sl="53" sc="9" el="53" ec="10" bec="0" bev="0" fileid="43" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663319</MetadataToken>
+              <Name>Projeto_NFe.Infra.CPF.Cpf Projeto_NFe.Common.Tests.Base.ObjectMother::GetCpfOverFlow()</Name>
+              <FileRef uid="43" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="209" ordinal="0" offset="0" sl="61" sc="9" el="61" ec="10" bec="0" bev="0" fileid="43" />
+                <SequencePoint vc="0" uspid="210" ordinal="1" offset="1" sl="62" sc="13" el="65" ec="15" bec="0" bev="0" fileid="43" />
+                <SequencePoint vc="0" uspid="211" ordinal="2" offset="21" sl="66" sc="9" el="66" ec="10" bec="0" bev="0" fileid="43" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="209" ordinal="0" offset="0" sl="61" sc="9" el="61" ec="10" bec="0" bev="0" fileid="43" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663320</MetadataToken>
+              <Name>Projeto_NFe.Infra.CPF.Cpf Projeto_NFe.Common.Tests.Base.ObjectMother::GetCpfIncorrectValue()</Name>
+              <FileRef uid="43" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="212" ordinal="0" offset="0" sl="70" sc="9" el="70" ec="10" bec="0" bev="0" fileid="43" />
+                <SequencePoint vc="0" uspid="213" ordinal="1" offset="1" sl="71" sc="13" el="74" ec="15" bec="0" bev="0" fileid="43" />
+                <SequencePoint vc="0" uspid="214" ordinal="2" offset="21" sl="75" sc="9" el="75" ec="10" bec="0" bev="0" fileid="43" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="212" ordinal="0" offset="0" sl="70" sc="9" el="70" ec="10" bec="0" bev="0" fileid="43" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663321</MetadataToken>
+              <Name>Projeto_NFe.Domain.Features.Conveyors.Conveyor Projeto_NFe.Common.Tests.Base.ObjectMother::GetPhysicalConveyor(Projeto_NFe.Domain.Features.Addresses.Address)</Name>
+              <FileRef uid="44" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="215" ordinal="0" offset="0" sl="18" sc="3" el="18" ec="4" bec="0" bev="0" fileid="44" />
+                <SequencePoint vc="0" uspid="216" ordinal="1" offset="1" sl="19" sc="4" el="25" ec="6" bec="0" bev="0" fileid="44" />
+                <SequencePoint vc="0" uspid="217" ordinal="2" offset="57" sl="26" sc="3" el="26" ec="4" bec="0" bev="0" fileid="44" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="215" ordinal="0" offset="0" sl="18" sc="3" el="18" ec="4" bec="0" bev="0" fileid="44" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663322</MetadataToken>
+              <Name>Projeto_NFe.Domain.Features.Conveyors.Conveyor Projeto_NFe.Common.Tests.Base.ObjectMother::GetLegalConveyor(Projeto_NFe.Domain.Features.Addresses.Address)</Name>
+              <FileRef uid="44" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="218" ordinal="0" offset="0" sl="29" sc="3" el="29" ec="4" bec="0" bev="0" fileid="44" />
+                <SequencePoint vc="0" uspid="219" ordinal="1" offset="1" sl="30" sc="4" el="36" ec="6" bec="0" bev="0" fileid="44" />
+                <SequencePoint vc="0" uspid="220" ordinal="2" offset="57" sl="37" sc="3" el="37" ec="4" bec="0" bev="0" fileid="44" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="218" ordinal="0" offset="0" sl="29" sc="3" el="29" ec="4" bec="0" bev="0" fileid="44" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663323</MetadataToken>
+              <Name>Projeto_NFe.Domain.Features.ItemInvoices.ItemInvoice Projeto_NFe.Common.Tests.Base.ObjectMother::GetItemInvoice(Projeto_NFe.Domain.Features.Products.Product,Projeto_NFe.Domain.Features.Invoices.InvoiceInProcess)</Name>
+              <FileRef uid="45" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="221" ordinal="0" offset="0" sl="15" sc="9" el="15" ec="10" bec="0" bev="0" fileid="45" />
+                <SequencePoint vc="0" uspid="222" ordinal="1" offset="1" sl="16" sc="13" el="21" ec="15" bec="0" bev="0" fileid="45" />
+                <SequencePoint vc="0" uspid="223" ordinal="2" offset="33" sl="22" sc="9" el="22" ec="10" bec="0" bev="0" fileid="45" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="221" ordinal="0" offset="0" sl="15" sc="9" el="15" ec="10" bec="0" bev="0" fileid="45" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663324</MetadataToken>
+              <Name>Projeto_NFe.Domain.Features.ItemInvoices.ItemInvoice Projeto_NFe.Common.Tests.Base.ObjectMother::GetItemInvoiceWithoutInvoice(Projeto_NFe.Domain.Features.Products.Product)</Name>
+              <FileRef uid="45" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="224" ordinal="0" offset="0" sl="25" sc="9" el="25" ec="10" bec="0" bev="0" fileid="45" />
+                <SequencePoint vc="0" uspid="225" ordinal="1" offset="1" sl="26" sc="13" el="30" ec="15" bec="0" bev="0" fileid="45" />
+                <SequencePoint vc="0" uspid="226" ordinal="2" offset="25" sl="31" sc="9" el="31" ec="10" bec="0" bev="0" fileid="45" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="224" ordinal="0" offset="0" sl="25" sc="9" el="25" ec="10" bec="0" bev="0" fileid="45" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663325</MetadataToken>
+              <Name>Projeto_NFe.Domain.Features.ItemInvoices.ItemInvoice Projeto_NFe.Common.Tests.Base.ObjectMother::GetItemInvoiceInvalidInvoice(Projeto_NFe.Domain.Features.Products.Product)</Name>
+              <FileRef uid="45" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="227" ordinal="0" offset="0" sl="34" sc="9" el="34" ec="10" bec="0" bev="0" fileid="45" />
+                <SequencePoint vc="0" uspid="228" ordinal="1" offset="1" sl="35" sc="13" el="39" ec="15" bec="0" bev="0" fileid="45" />
+                <SequencePoint vc="0" uspid="229" ordinal="2" offset="25" sl="40" sc="9" el="40" ec="10" bec="0" bev="0" fileid="45" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="227" ordinal="0" offset="0" sl="34" sc="9" el="34" ec="10" bec="0" bev="0" fileid="45" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663326</MetadataToken>
+              <Name>Projeto_NFe.Domain.Features.ItemInvoices.ItemInvoice Projeto_NFe.Common.Tests.Base.ObjectMother::GetItemInvoiceInvalidProduct(Projeto_NFe.Domain.Features.Invoices.InvoiceInProcess)</Name>
+              <FileRef uid="45" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="230" ordinal="0" offset="0" sl="43" sc="9" el="43" ec="10" bec="0" bev="0" fileid="45" />
+                <SequencePoint vc="0" uspid="231" ordinal="1" offset="1" sl="44" sc="13" el="48" ec="15" bec="0" bev="0" fileid="45" />
+                <SequencePoint vc="0" uspid="232" ordinal="2" offset="25" sl="49" sc="9" el="49" ec="10" bec="0" bev="0" fileid="45" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="230" ordinal="0" offset="0" sl="43" sc="9" el="43" ec="10" bec="0" bev="0" fileid="45" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663327</MetadataToken>
+              <Name>Projeto_NFe.Domain.Features.ItemInvoices.ItemInvoice Projeto_NFe.Common.Tests.Base.ObjectMother::GetItemInvoiceInvalidQuantity(Projeto_NFe.Domain.Features.Products.Product,Projeto_NFe.Domain.Features.Invoices.InvoiceInProcess)</Name>
+              <FileRef uid="45" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="233" ordinal="0" offset="0" sl="52" sc="9" el="52" ec="10" bec="0" bev="0" fileid="45" />
+                <SequencePoint vc="0" uspid="234" ordinal="1" offset="1" sl="53" sc="13" el="58" ec="15" bec="0" bev="0" fileid="45" />
+                <SequencePoint vc="0" uspid="235" ordinal="2" offset="33" sl="59" sc="9" el="59" ec="10" bec="0" bev="0" fileid="45" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="233" ordinal="0" offset="0" sl="52" sc="9" el="52" ec="10" bec="0" bev="0" fileid="45" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663328</MetadataToken>
+              <Name>Projeto_NFe.Domain.Features.Products.Product Projeto_NFe.Common.Tests.Base.ObjectMother::GetProduct()</Name>
+              <FileRef uid="46" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="236" ordinal="0" offset="0" sl="13" sc="9" el="13" ec="10" bec="0" bev="0" fileid="46" />
+                <SequencePoint vc="0" uspid="237" ordinal="1" offset="1" sl="14" sc="13" el="19" ec="15" bec="0" bev="0" fileid="46" />
+                <SequencePoint vc="0" uspid="238" ordinal="2" offset="49" sl="20" sc="9" el="20" ec="10" bec="0" bev="0" fileid="46" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="236" ordinal="0" offset="0" sl="13" sc="9" el="13" ec="10" bec="0" bev="0" fileid="46" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663329</MetadataToken>
+              <Name>Projeto_NFe.Domain.Features.Products.Product Projeto_NFe.Common.Tests.Base.ObjectMother::GetProductWithCodeNullOrEmpty()</Name>
+              <FileRef uid="46" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="239" ordinal="0" offset="0" sl="23" sc="9" el="23" ec="10" bec="0" bev="0" fileid="46" />
+                <SequencePoint vc="0" uspid="240" ordinal="1" offset="1" sl="24" sc="13" el="28" ec="15" bec="0" bev="0" fileid="46" />
+                <SequencePoint vc="0" uspid="241" ordinal="2" offset="37" sl="29" sc="9" el="29" ec="10" bec="0" bev="0" fileid="46" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="239" ordinal="0" offset="0" sl="23" sc="9" el="23" ec="10" bec="0" bev="0" fileid="46" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663330</MetadataToken>
+              <Name>Projeto_NFe.Domain.Features.Products.Product Projeto_NFe.Common.Tests.Base.ObjectMother::GetProductWithCodeNotNumerical()</Name>
+              <FileRef uid="46" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="242" ordinal="0" offset="0" sl="32" sc="9" el="32" ec="10" bec="0" bev="0" fileid="46" />
+                <SequencePoint vc="0" uspid="243" ordinal="1" offset="1" sl="33" sc="13" el="38" ec="15" bec="0" bev="0" fileid="46" />
+                <SequencePoint vc="0" uspid="244" ordinal="2" offset="49" sl="39" sc="9" el="39" ec="10" bec="0" bev="0" fileid="46" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="242" ordinal="0" offset="0" sl="32" sc="9" el="32" ec="10" bec="0" bev="0" fileid="46" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663331</MetadataToken>
+              <Name>Projeto_NFe.Domain.Features.Products.Product Projeto_NFe.Common.Tests.Base.ObjectMother::GetProductWithDescriptionNullOrEmpty()</Name>
+              <FileRef uid="46" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="245" ordinal="0" offset="0" sl="42" sc="9" el="42" ec="10" bec="0" bev="0" fileid="46" />
+                <SequencePoint vc="0" uspid="246" ordinal="1" offset="1" sl="43" sc="13" el="47" ec="15" bec="0" bev="0" fileid="46" />
+                <SequencePoint vc="0" uspid="247" ordinal="2" offset="37" sl="48" sc="9" el="48" ec="10" bec="0" bev="0" fileid="46" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="245" ordinal="0" offset="0" sl="42" sc="9" el="42" ec="10" bec="0" bev="0" fileid="46" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663332</MetadataToken>
+              <Name>Projeto_NFe.Domain.Features.Products.Product Projeto_NFe.Common.Tests.Base.ObjectMother::GetProductWithDescriptionWithLessThanThreeCharacters()</Name>
+              <FileRef uid="46" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="248" ordinal="0" offset="0" sl="51" sc="9" el="51" ec="10" bec="0" bev="0" fileid="46" />
+                <SequencePoint vc="0" uspid="249" ordinal="1" offset="1" sl="52" sc="13" el="57" ec="15" bec="0" bev="0" fileid="46" />
+                <SequencePoint vc="0" uspid="250" ordinal="2" offset="49" sl="58" sc="9" el="58" ec="10" bec="0" bev="0" fileid="46" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="248" ordinal="0" offset="0" sl="51" sc="9" el="51" ec="10" bec="0" bev="0" fileid="46" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663333</MetadataToken>
+              <Name>Projeto_NFe.Domain.Features.Products.Product Projeto_NFe.Common.Tests.Base.ObjectMother::GetProductWithUnitaryValueWithLessThanNumberZero()</Name>
+              <FileRef uid="46" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="251" ordinal="0" offset="0" sl="61" sc="9" el="61" ec="10" bec="0" bev="0" fileid="46" />
+                <SequencePoint vc="0" uspid="252" ordinal="1" offset="1" sl="62" sc="13" el="67" ec="15" bec="0" bev="0" fileid="46" />
+                <SequencePoint vc="0" uspid="253" ordinal="2" offset="49" sl="68" sc="9" el="68" ec="10" bec="0" bev="0" fileid="46" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="251" ordinal="0" offset="0" sl="61" sc="9" el="61" ec="10" bec="0" bev="0" fileid="46" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" crapScore="1" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663334</MetadataToken>
+              <Name>Projeto_NFe.Domain.Features.Receivers.Receiver Projeto_NFe.Common.Tests.Base.ObjectMother::GetReceiverPhysical(Projeto_NFe.Domain.Features.Addresses.Address)</Name>
+              <FileRef uid="47" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="254" ordinal="0" offset="0" sl="17" sc="9" el="17" ec="10" bec="0" bev="0" fileid="47" />
+                <SequencePoint vc="1" uspid="255" ordinal="1" offset="1" sl="18" sc="13" el="25" ec="15" bec="0" bev="0" fileid="47" />
+                <SequencePoint vc="1" uspid="256" ordinal="2" offset="61" sl="26" sc="9" el="26" ec="10" bec="0" bev="0" fileid="47" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="254" ordinal="0" offset="0" sl="17" sc="9" el="17" ec="10" bec="0" bev="0" fileid="47" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" crapScore="1" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="1" minCrapScore="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663335</MetadataToken>
+              <Name>Projeto_NFe.Domain.Features.Receivers.Receiver Projeto_NFe.Common.Tests.Base.ObjectMother::GetReceiverLegal(Projeto_NFe.Domain.Features.Addresses.Address)</Name>
+              <FileRef uid="47" />
+              <SequencePoints>
+                <SequencePoint vc="2" uspid="257" ordinal="0" offset="0" sl="29" sc="9" el="29" ec="10" bec="0" bev="0" fileid="47" />
+                <SequencePoint vc="2" uspid="258" ordinal="1" offset="1" sl="30" sc="13" el="37" ec="15" bec="0" bev="0" fileid="47" />
+                <SequencePoint vc="2" uspid="259" ordinal="2" offset="61" sl="38" sc="9" el="38" ec="10" bec="0" bev="0" fileid="47" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="2" uspid="257" ordinal="0" offset="0" sl="29" sc="9" el="29" ec="10" bec="0" bev="0" fileid="47" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="0" />
+              <MetadataToken>100663336</MetadataToken>
+              <Name>System.Void Projeto_NFe.Common.Tests.Base.ObjectMother::.ctor()</Name>
+              <SequencePoints />
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="260" ordinal="0" offset="0" />
+            </Method>
+          </Methods>
+        </Class>
+      </Classes>
+    </Module>
+  </Modules>
+</CoverageSession>

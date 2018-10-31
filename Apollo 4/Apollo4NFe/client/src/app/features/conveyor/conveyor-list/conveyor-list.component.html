@@ -1,0 +1,44 @@
+<kendo-grid [style.height]="'100%'" [loading]="gridService.loading" [data]="gridService | async" [pageSize]="state.take"
+    [selectable]="selectableSettings" [skip]="state.skip" [sort]="state.sort" [sortable]="true" [pageable]="pageableSettings"
+    [scrollable]="'none'" (dataStateChange)="dataStateChange($event)" (selectionChange)="onSelectionChange($event)">
+
+    <ng-template kendoGridToolbarTemplate position="top">
+        <div class="pkg-manager-grid__action-container">
+            <button [routerLink]="['create']" class="pkg-manager-grid__action">
+                <i class="ndd-font ndd-font-create pkg-manager-grid__action__icon"></i>
+                <span class="pkg-manager-grid__action__description">Novo Transportador</span>
+            </button>
+            <button (click)="deleteConveyor()" class="pkg-manager-grid__action" [disabled]="!selectedRows.length">
+                <i class="ndd-font ndd-font-delete pkg-manager-grid__action__icon"></i>
+                <span class="pkg-manager-grid__action__description">Remover</span>
+            </button>
+            <button (click)="redirectOpenConveyor()" class="pkg-manager-grid__action" [disabled]="selectedRows.length != 1">
+                <i class="ndd-font ndd-font-open pkg-manager-grid__action__icon"></i>
+                <span class="pkg-manager-grid__action__description">Abrir</span>
+            </button>
+        </div>
+    </ng-template>
+
+    <kendo-grid-checkbox-column width="20"></kendo-grid-checkbox-column>
+    <kendo-grid-column field="id" title="ID" width="40"></kendo-grid-column>
+    <kendo-grid-column field="personType" title="" width="5" [style]="{'text-align': 'center'}">
+        <ng-template kendoGridCellTemplate let-gridService>
+            <div *ngIf="gridService.personType == '1'">
+                <i class="ndd-font ndd-font-client"></i>
+            </div>
+            <div *ngIf="gridService.personType == '2'">
+                <i class="ndd-font ndd-font-enterprise"></i>
+            </div>
+        </ng-template>
+    </kendo-grid-column>
+    <kendo-grid-column field="nameCompanyName" title="Razão Social/Nome" width="500">
+        <ng-template kendoGridCellTemplate let-conveyor>
+            <a href="javascript:void(0);" (click)="redirectOpenConveyorLink(conveyor)">{{ conveyor.nameCompanyName }}</a>
+        </ng-template>
+    </kendo-grid-column>
+    <kendo-grid-column field="cpfCnpj" title="Documento" width="300">
+        <ng-template kendoGridCellTemplate let-conveyor>
+            {{ conveyor.cpfCnpj | nddCpfCnpj }}
+        </ng-template>
+    </kendo-grid-column>
+</kendo-grid>

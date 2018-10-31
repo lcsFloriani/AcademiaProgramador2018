@@ -1,0 +1,51 @@
+<kendo-grid [style.height]="'100%'" [loading]="gridService.loading" [data]="gridService | async" [pageSize]="state.take"
+    [selectable]="selectableSettings" [skip]="state.skip" [sort]="state.sort" [sortable]="true" [pageable]="pageableSettings"
+    [scrollable]="'none'" (dataStateChange)="dataStateChange($event)" (selectionChange)="onSelectionChange($event)">
+
+    <ng-template kendoGridToolbarTemplate position="top">
+        <div class="pkg-manager-grid__action-container">
+            <button [routerLink]="['create']" class="pkg-manager-grid__action">
+                <i class="ndd-font ndd-font-create pkg-manager-grid__action__icon"></i>
+                <span class="pkg-manager-grid__action__description">Novo Destinatário</span>
+            </button>
+            <button (click)="deleteReceiver()" class="pkg-manager-grid__action" [disabled]="selectedRows.length != 1">
+                <i class="ndd-font ndd-font-delete pkg-manager-grid__action__icon"></i>
+                <span class="pkg-manager-grid__action__description">Remover</span>
+            </button>
+            <button (click)="redirectOpenReceiver()" class="pkg-manager-grid__action" [disabled]="!selectedRows.length">
+                <i class="ndd-font ndd-font-open pkg-manager-grid__action__icon"></i>
+                <span class="pkg-manager-grid__action__description">Abrir</span>
+            </button>
+        </div>
+    </ng-template>
+
+    <kendo-grid-checkbox-column width="30"></kendo-grid-checkbox-column>
+    <kendo-grid-column field="id" title="ID" width="10"></kendo-grid-column>
+    <kendo-grid-column field="type" title="" width="5" [style]="{'text-align': 'center'}">
+        <ng-template kendoGridCellTemplate let-receiver>
+            <div *ngIf="receiver.type == '1'">
+                <i class="ndd-font ndd-font-client"></i>
+            </div>
+            <div *ngIf="receiver.type == '2'">
+                <i class="ndd-font ndd-font-enterprise"></i>
+            </div>
+        </ng-template>
+    </kendo-grid-column>
+    <kendo-grid-column field="nameCompanyName" title="Nome" width="450">
+        <ng-template kendoGridCellTemplate let-receiver>
+            <a href="javascript:void(0);" (click)="redirectOpenReceiverLink(receiver)">{{ receiver.nameCompanyName }}</a>
+        </ng-template>
+    </kendo-grid-column>
+    <kendo-grid-column field="cpfCnpj" title="Documento" width="10">
+        <ng-template kendoGridCellTemplate let-receiver>
+            {{ receiver.cpfCnpj | nddCpfCnpj }}
+        </ng-template>
+    </kendo-grid-column>
+    <kendo-grid-column field="address.city" title="Cidade" width="50"></kendo-grid-column>
+    <kendo-grid-column field="address.state" title="Estado" width="150">
+        <ng-template kendoGridCellTemplate let-receiver>
+            {{ receiver.address.state | nddState }}
+        </ng-template>
+    </kendo-grid-column>
+
+</kendo-grid>

@@ -1,0 +1,64 @@
+<section class="feature-view">
+    <form class="form" class="feature-view-tab feature-form" [formGroup]="formModel">
+        <div class="feature-view-tab__content">
+            <div class="row">
+                <div class="col-sm-12">
+                    <span class="feature-view__title">Informações do produto</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-9 col-sm-12">
+                    <div class="row ">
+                        <div class="form-group col-md-6">
+                            <label class="form__label" for="code">
+                                Código
+                            </label>
+                            <input formControlName="code" class="form__input" type="text" id="code" placeholder="Digit product code" />
+                            <label class="form__label form__label--required"></label>
+                            <label class="form__label form__label--error" *ngIf="formModel.get('code').hasError('required') && formModel.get('code').touched">
+                                Campo obrigatório
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <label class="form__label" for="description">
+                                Descrição
+                            </label>
+                            <input formControlName="description" class="form__input" type="text" id="description" placeholder="enter your description">
+                            <span class="form__label form__label--required"></span>
+                            <label *ngIf="formModel.get('description').touched">
+                                <label class="form__label form__label--error" *ngIf="formModel.get('description').hasError('required')">
+                                    Campo obrigatório
+                                </label>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <label class="form__label" for="unitaryValue">
+                                Valor Unitário
+                            </label>
+                            <input formControlName="unitaryValue" class="form__input" type="text" id="unitaryValue" placeholder="Enter your unitary value">
+                            <span class="form__label form__label--required"></span>
+                            <span class="form__label form__label--error" *ngIf="formModel.get('unitaryValue').errors && formModel.get('unitaryValue').touched">
+                                <span *ngIf="formModel.get('unitaryValue').hasError('required')">
+                                    Campo obrigatório
+                                </span>
+                            </span>
+                            <span class="form__label form__label--error" *ngIf="formModel.get('unitaryValue').hasError('valueEmpty') && !formModel.get('unitaryValue').hasError('required')">
+                                O valor não pode ser 0 ou negativo
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="feature-view-tab__footer">
+        <button class="ndd-ng-button ndd-ng-button--primary" (click)="onEdit()" [disabled]="formModel.invalid">Salvar</button>
+        <button class="ndd-ng-button ndd-ng-button--cancel" (click)="redirect()">Cancelar</button>
+    </div>
+    <div class="ndd-ng-spinner__spinner" *ngIf="isLoading"></div>
+    <div class="ndd-ng-spinner__color" *ngIf="isLoading"></div>
+</section>

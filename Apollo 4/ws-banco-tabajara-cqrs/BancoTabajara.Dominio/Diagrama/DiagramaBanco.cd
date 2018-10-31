@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BancoTabajara.Dominio.Cliente">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAIAAAAAAAgAAAAAAACAAAIAAAAAAAAAAAEAgAA=</HashCode>
+      <FileName>Funcionalidades\Clientes\Cliente.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Conta" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BancoTabajara.Dominio.Conta">
+    <Position X="3.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAASACAAIAAAAAAAABCAAQAAAAAAGAAAAAIABAAAEAg=</HashCode>
+      <FileName>Funcionalidades\Contas\Conta.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Movimentacoes" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="BancoTabajara.Dominio.Movimentacao">
+    <Position X="7" Y="1.25" Width="1.5" />
+    <AssociationLine Name="Conta" Type="BancoTabajara.Dominio.Conta" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.75" Y="1.25" />
+        <Point X="7.75" Y="0.875" />
+        <Point X="4.25" Y="0.875" />
+        <Point X="4.25" Y="1.25" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAgAAAAAAAAEAAAAABAAAQAAAAAAgAA=</HashCode>
+      <FileName>Funcionalidades\Movimentacoes\Movimentacao.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Conta" />
+      <Property Name="Operacao" />
+    </ShowAsAssociation>
+  </Class>
+  <Enum Name="BancoTabajara.Dominio.TipoOperacao">
+    <Position X="7" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Enum\TipoOperacao.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

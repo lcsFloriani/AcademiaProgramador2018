@@ -1,0 +1,113 @@
+<div [formGroup]="formModel">
+    <div class="row">
+        <div class="col-sm-12">
+            <span class="feature-view__title">Informações de Endereço</span>
+        </div>
+    </div>
+    <div class="row feature-view__group">
+
+        <div class="form__group">
+
+            <div class="col-sm-8 feature-view__body">
+                <div>
+                    <label class="form__label" for="street">
+                        Logradouro
+                        <span class="form__label form__label--required">*</span>
+                    </label>
+                </div>
+                <div>
+                    <input formControlName="street" type="text" id="street" class="form__input" autocomplete="off" placeholder="Insira o logradouro">
+                </div>
+                <div>
+                    <label class="form__label" for="street">
+                        <span class="form__label form__label--error" *ngIf="formModel.get('street').hasError('required') && formModel.get('street').touched">
+                            Campo obrigatório
+                        </span>
+                    </label>
+                </div>
+            </div>
+            <div class="col-sm-4 feature-view__body">
+                <div>
+                    <label class="form__label" for="number">
+                        Número
+                        <span class="form__label form__label--required">*</span>
+                    </label>
+                </div>
+                <div>
+                    <input formControlName="number" type="text" id="number" class="form__input" autocomplete="off" placeholder="Insira o número">
+                </div>
+                <div>
+                    <label class="form__label" for="number">
+                        <span class="form__label form__label--error" *ngIf="formModel.get('number').hasError('required') && formModel.get('number').touched">
+                            Campo obrigatório
+                        </span>
+                    </label>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-sm-12 feature-view__body">
+            <div class="form__group">
+                <div>
+                    <label class="form__label" for="neighbourhood">
+                        Bairro
+                        <span class="form__label form__label--required">*</span>
+                    </label>
+                </div>
+                <div>
+                    <input formControlName="neighbourhood" type="text" id="neighbourhood" class="form__input" autocomplete="off" placeholder="Insira o bairro">
+                </div>
+                <div>
+                    <label class="form__label" for="neighbourhood">
+                        <span class="form__label form__label--error" *ngIf="formModel.get('neighbourhood').hasError('required') && formModel.get('neighbourhood').touched">
+                            Campo obrigatório
+                        </span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 feature-view__body">
+            <div class="form__group">
+                <div class="row">
+                    <div class="col-sm-8 feature-view__body">
+                        <div>
+                            <label class="form__label" for="city">
+                                Município
+                                <span class="form__label form__label--required">*</span>
+                            </label>
+                        </div>
+                        <div>
+                            <input formControlName="city" type="text" id="city" class="form__input" autocomplete="off" placeholder="Insira o município">
+                        </div>
+                        <div>
+                            <label class="form__label" for="city">
+                                <span class="form__label form__label--error" *ngIf="formModel.get('city').hasError('required') && formModel.get('city').touched">
+                                    Campo obrigatório
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 feature-view__body">
+                        <div>
+                            <label class="form__label" for="state">
+                                Estado
+                                <span class="form__label form__label--required">*</span>
+                            </label>
+                        </div>
+                        <div>
+                            <kendo-dropdownlist formControlName="state" [data]="listStates" textField="name" valueField="value" [valuePrimitive]="true">
+                            </kendo-dropdownlist>
+                        </div>
+                        <div>
+                            <label class="form__label" for="state">
+                                <span class="form__label form__label--error" *ngIf="formModel.get('state').hasError('required') && formModel.get('state').touched">
+                                    Campo obrigatório
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
